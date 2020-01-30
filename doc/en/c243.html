@@ -1,0 +1,341 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Search menu</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="TEA Manual"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Edit menu, or how to cut without scissors and violence.
+"
+HREF="c226.html"><LINK
+REL="NEXT"
+TITLE="
+Marking menu
+"
+HREF="x286.html"></HEAD
+><BODY
+CLASS="chapter"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>TEA Manual</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="c226.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x286.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="chapter"
+><H1
+><A
+NAME="menu_search"
+></A
+>Chapter 7. Search menu</H1
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="AEN245"
+>7.1. Common searching functions</A
+></H1
+><P
+>&#13;Want to find something? Write it to the <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Famous text entry</B
+></SPAN
+> and press Enter or Ctrl-F. Want to <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Find next</B
+></SPAN
+>? Press F3. Note that TEA always search from the current cursor position.
+</P
+><P
+>If you need more traditional search tool, you can use the <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Search and Replace window</B
+></SPAN
+>. It is far from the ideal, but somehow usable.
+</P
+><P
+>&#13;<SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Replace</B
+></SPAN
+> - replaces the current selection with a content of the Famous text entry. The common use of that - find/find next some text, and when the text that founded will be selected, use this function. 
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Run grep</B
+></SPAN
+> - write the search string into the Famouse text entry. then use this function. Results will appear at the Logmemo. Double click a line there to open a file with the text that been found.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Goto line</B
+></SPAN
+> - enter the line number into the famous text entry, and use this function.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Replace all</B
+></SPAN
+> - again, dealing with the Famous text entry. But now in a special format:
+<SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>text to find~text for replace</I
+></SPAN
+>. For example: <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>hell~heck</I
+></SPAN
+>.
+</P
+><P
+>&#13;<SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Find and mark</B
+></SPAN
+> find the string (from the Famous text entry) in the current document and mark all found entries.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Find in files</B
+></SPAN
+>. TEA has a simple built-in utility to search text within files. It's a single thread function and it has no any <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Stop</B
+></SPAN
+> button so you'll need some patience while TEA tries to find the text in files. Drink some tea...
+</P
+><P
+>To search, put some text into the <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Text to find</B
+></SPAN
+> entry, then choose a text encoding from the list below, select the starting directory and file name pattern (something like "*.html"). Press the <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Find</B
+></SPAN
+> button. The search shall begin recursively from the given directory. TEA searches the text in plain text, KOffice KWD, AbiWord ABI, OpenOffice.org sxw, and OpenDocument ODT files. A note about the <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>File pattern</B
+></SPAN
+> entry- only two metachars are supported there: * and ?. 
+</P
+><P
+>&#13;To open a file from the list of files those found, double click on the list item.
+</P
+><P
+>&#13;Also you can save the list of files those found  as a TEA session to load files later at any time. Press <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Save as a session</B
+></SPAN
+> button to save the list as a session. Also you can copy all found files to some directory using the <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Copy to the directory</B
+></SPAN
+> button. And the <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Clear a list</B
+></SPAN
+> button clears a list of found files.
+</P
+><P
+>&#13;<SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Mark lines &#62; n characters</B
+></SPAN
+>. Put the maximum line length to the Famous text entry and use this function. All lines those are larger than N (the value in the Famous text entry) charaters will be marked.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Scan for local links</B
+></SPAN
+> - scans current document for href-links to local files, and add them (if any) into the menu <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Nav &#62; Links</B
+></SPAN
+>, from which you can open a text file in TEA, and a picture in the built-in or external viewer (like a <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Open at cursor</B
+></SPAN
+>). 
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Scan for SRC's</B
+></SPAN
+> - similar to <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Scan for local links</B
+></SPAN
+>, but now it fills <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Nav &#62; Links</B
+></SPAN
+> menu with all local SRC-stuff - for most cases with images. It's very useful if you want to see some banner or another picture and don't want to find it in the code manually. 
+</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="c226.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x286.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Edit menu, or how to cut without scissors and violence.</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Marking menu</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

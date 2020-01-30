@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Строка</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="TEA - полное ноговодство"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Функции"
+HREF="c320.html"><LINK
+REL="PREVIOUS"
+TITLE="Числа"
+HREF="x545.html"><LINK
+REL="NEXT"
+TITLE="Сортировка"
+HREF="x601.html"></HEAD
+><BODY
+CLASS="section"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>TEA - полное ноговодство</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x545.html"
+ACCESSKEY="P"
+>&#1055;&#1088;&#1077;&#1076;.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>&#1043;&#1083;&#1072;&#1074;&#1072; 9. Функции</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x601.html"
+ACCESSKEY="N"
+>&#1057;&#1083;&#1077;&#1076;.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="AEN562"
+>9.15. Строка</A
+></H1
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Разбить на TeX-параграфы</B
+></SPAN
+> - разбивает текст на параграфы формата TeX, то есть вставляя между каждым параграфом пустую строку. Если вы переводите обычный текст в TeX, то эту функцию целесообразно применить прежде всего.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Конвертировать обычные кавычки в TeX</B
+></SPAN
+> - работает только для двойных кавычек. Конвертирует их к TeX'овые парные.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Пронумеровать строки</B
+></SPAN
+> - нумерует выделенные строки в соответсвии с заданным форматом. Формат очень дурной: <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>printf-подобный формат~шаг счетчика~начальное значение счетчика</I
+></SPAN
+>. Два последних параметра опциональны, и по умолчанию их значения равны единице.</P
+><P
+>В первом параметре для представления строки и счетчика используются макросы %s и %d соответственно. То есть при вызове функции нумерации, строка формата будет применена к каждой строке выделенного текста. И там, где в строке формата будет %s, этот макрос заменится на текст из обрабатываемой строке. А там, где %d - на числовое значение счетчика. Вот несколько примеров:
+</P
+><P
+CLASS="literallayout"
+>%d.)%s<br>
+%d.)%s~10<br>
+%d.)%s~10~4</P
+><P
+>Во второй строке мы задаем еще и шаг, он равен 10. В третьей строке мы задаем и шаг, и начальное значение счетчика (4).
+</P
+><P
+>Вы также можете использовать %d после %s, т.е. <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>%s (%d)</I
+></SPAN
+>. Например, при обработке "чистого", без нумерации, списка групп форматом <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>%s (%d)</I
+></SPAN
+> мы получим такую нумерацию:
+</P
+><P
+CLASS="literallayout"
+>Nirvana&nbsp;(1)<br>
+Scorn&nbsp;(2)<br>
+Napalm&nbsp;Death&nbsp;(3)<br>
+Defecation&nbsp;(4)<br>
+Neck&nbsp;(5)<br>
+JR&nbsp;Ewing&nbsp;(6)<br>
+Fall&nbsp;(7)<br>
+Meathook&nbsp;Seed&nbsp;(8)<br>
+Guano&nbsp;Apes&nbsp;(9)<br>
+Led&nbsp;Zeppelin&nbsp;(10)</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Конвертировать табы в пробелы</B
+></SPAN
+> - и так ясно. Но, сначала нужно ввести в знаменитое поле ввода число - количество пробелов на один таб. То бишь каждый таб будет переведен в указанное вами количество пробелов.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Конвертировать пробелы в табы</B
+></SPAN
+> - обратная функция. На сей раз в знаменитом поле ввода должно быть число, характеризующее количество пробелов, каждое нахождение которых функция будет переводить в символ табуляции.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Реверс</B
+></SPAN
+> - переворачивает текст. Было <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>roxton</I
+></SPAN
+>, будет <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>notxor</I
+></SPAN
+>. 
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Кодировать e-mail адрес супротив спама</B
+></SPAN
+> -  - делает выделенный в тексте адрес e-mail невидимым для спаммерских сканнеров, конвертируя текст в числовые коды, которые, тем не менее, воспринимаются браузером как текст. Например, если вы посмотрите в исходник этого документа, то <A
+HREF="mailto:tea@list.ru"
+TARGET="_top"
+>эта 
+ссылка</A
+> будет выглядеть как куча мусора. Я взял идею из одного номера <A
+HREF="http://linuxgazette.net"
+TARGET="_top"
+>LinuxGazette</A
+>.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Удалить пустые строки</B
+></SPAN
+> - не думаю, что это такая уж полезная функция, но пусть будет.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Удалить дубликаты</B
+></SPAN
+> - удаляет повторяющиеся <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>строки</B
+></SPAN
+>. 
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Применить шаблон к каждой строке</B
+></SPAN
+> - и снова работаем со знаменитым полем ввода :) Например, я хочу добавить тэг br в конец каждой строки выделенного текста. Я пишу в знаменитом поле:
+</P
+><P
+>%s&#60;br&#62;
+</P
+><P
+>И применяю функцию (конечно же, я не забыл выделить текст). В итоге я получаю требуемый br в конце каждой строки. Другой пример - я хочу заключить каждую строку в тэг HREF, чтобы строка была как в SRC, так и в надписи. Ввожу в знаменитое поле ввода:
+</P
+><P
+>&#60;a href="%s"&#62;%s&#60;/a&#62;
+</P
+><P
+>Получаю искомое :) Как вы поняли, макрос %s при работе функции подменяется текстом каждой обрабатываемой строки.
+</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x545.html"
+ACCESSKEY="P"
+>&#1055;&#1088;&#1077;&#1076;.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>&#1053;&#1072;&#1095;&#1072;&#1083;&#1086;</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x601.html"
+ACCESSKEY="N"
+>&#1057;&#1083;&#1077;&#1076;.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Числа</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c320.html"
+ACCESSKEY="U"
+>&#1059;&#1088;&#1086;&#1074;&#1077;&#1085;&#1100; &#1074;&#1099;&#1096;&#1077;</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Сортировка</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

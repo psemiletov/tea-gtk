@@ -1,0 +1,2633 @@
+# translation of ru.po to Русский
+# translation of tea.po to Русский
+# This file is a public domain
+# written by roxton <tea@list.ru>, 2003-2006
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ru\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-30 12:48+0200\n"
+"PO-Revision-Date: 2008-05-29 18:16+0000\n"
+"Last-Translator: Peter Semiletov <tea@list.ru>\n"
+"Language-Team: roxton\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: TEA for Linux\n"
+
+#: interface.c:118
+msgid "Save under a different name"
+msgstr "Сохранить под другим именем"
+
+#: interface.c:119
+msgid "Save the current file"
+msgstr "Сохранить текущий файл"
+
+#: interface.c:120
+msgid "Open a file"
+msgstr "Открыть файл"
+
+#: interface.c:121
+msgid "Create a new file"
+msgstr "Создать новый файл"
+
+#: interface.c:198
+msgid "Close the current document"
+msgstr "Закрыть текущий документ"
+
+#: interface.c:200
+msgid "File"
+msgstr "Файл"
+
+#: interface.c:204
+msgid "New"
+msgstr "Новый"
+
+#: interface.c:205
+msgid "New Kwas (file manager)"
+msgstr "Новый Квас (файловый приказчикъ) "
+
+#: interface.c:214
+msgid "Crapbook"
+msgstr "Фигня"
+
+#: interface.c:217 callbacks.c:6231
+msgid "Print"
+msgstr "Печатать"
+
+#: interface.c:221
+msgid "Add to..."
+msgstr "Добавить..."
+
+#: interface.c:224
+msgid "Add to Bookmarks"
+msgstr "Добавить в Закладки"
+
+#: interface.c:225
+msgid "Add to the autosaving list"
+msgstr "Добавить в список автосохранения"
+
+#: interface.c:229
+msgid "Open"
+msgstr "Открыть"
+
+#: interface.c:231
+msgid "The last opened file"
+msgstr "Последний открытый файл"
+
+#: interface.c:233
+msgid "Open different"
+msgstr "Открыть иначе"
+
+#: interface.c:236
+msgid "Open movie"
+msgstr "Открыть фильм"
+
+#: interface.c:238
+msgid "Open the autosaved session"
+msgstr "Открыть автосохраненную сессию"
+
+#: interface.c:239
+msgid "Open from the Famous text entry"
+msgstr "Открыть из знаменитого поля ввода"
+
+#: interface.c:243
+msgid "Recent files"
+msgstr "Последние файлы"
+
+#: interface.c:246 tea_kwas.c:974
+msgid "Bookmarks"
+msgstr "Закладки"
+
+#: interface.c:249 tea_config.c:77 tea_options.c:985
+msgid "Sessions"
+msgstr "Сессии"
+
+#: interface.c:252 tea_config.c:74 tea_options.c:953
+msgid "Templates"
+msgstr "Шаблоны"
+
+#: interface.c:257
+msgid "Save"
+msgstr "Сохранить"
+
+#: interface.c:258
+msgid "Save as"
+msgstr "Сохранить как"
+
+#: interface.c:260
+msgid "Save different"
+msgstr "Сохранить иначе"
+
+#: interface.c:264
+msgid "Save a session"
+msgstr "Сохранить сессию"
+
+#: interface.c:266
+msgid "Save as a template"
+msgstr "Сохранить как шаблон"
+
+#: interface.c:267
+msgid "Save as a snippet"
+msgstr "Сохранить как сниппет"
+
+#: interface.c:268
+msgid "Save as a replacement table"
+msgstr "Сохранить как таблицу замен"
+
+#: interface.c:270
+msgid "Save version"
+msgstr "Сохранить версию"
+
+#: interface.c:271
+msgid "Backup"
+msgstr "Сделать резервную копию"
+
+#: interface.c:273
+msgid "Save packed"
+msgstr "Сохранить упакованным"
+
+#: interface.c:275
+msgid "Save all"
+msgstr "Сохранить все"
+
+#: interface.c:277
+msgid "Revert to saved"
+msgstr "Вернуться к сохранённому"
+
+#: interface.c:281
+msgid "Manage utility files"
+msgstr "Файлы настроек"
+
+#: interface.c:284
+msgid "Autoreplace words file"
+msgstr "Файл слов для автозамены"
+
+#: interface.c:285
+msgid "Autosaving list"
+msgstr "Список автосохранения"
+
+#: interface.c:286
+msgid "Main config"
+msgstr "Главный конфиг"
+
+#: interface.c:287
+msgid "Hotkeys config"
+msgstr "Конфиг клавиш"
+
+#: interface.c:288
+msgid "External programs list config"
+msgstr "Список внешних программ для запуска"
+
+#: interface.c:289
+msgid "Bookmarks file"
+msgstr "Файл закладок"
+
+#: interface.c:290
+msgid "Open the crashfile"
+msgstr "Открыть файл аварийного сохранения"
+
+#: interface.c:292
+msgid "Preferences"
+msgstr "Настройки"
+
+#: interface.c:296
+msgid "Close current"
+msgstr "Закрыть текущий файл"
+
+#: interface.c:297
+msgid "Close all"
+msgstr "Закрыть все"
+
+#: interface.c:299
+msgid "Quit"
+msgstr "Выход"
+
+#: interface.c:302
+msgid "Edit"
+msgstr "Правка"
+
+#: interface.c:306
+msgid "Indent"
+msgstr "Отступ"
+
+#: interface.c:307
+msgid "Unindent"
+msgstr "Отступ обратно"
+
+#: interface.c:311
+msgid "Copy"
+msgstr "Копировать"
+
+#: interface.c:312
+msgid "Copy all"
+msgstr "Копировать всё"
+
+#: interface.c:313
+msgid "Copy the current filename"
+msgstr "Копировать имя текущего файла"
+
+#: interface.c:315
+msgid "Cut!"
+msgstr "Вырезать"
+
+#: interface.c:316
+msgid "Paste"
+msgstr "Вставить"
+
+#: interface.c:317
+msgid "Swop"
+msgstr "Поменять"
+
+#: interface.c:320
+msgid "Move a line up"
+msgstr "Сдвинуть строку вверх"
+
+#: interface.c:322
+msgid "Move a line down"
+msgstr "Сдвинуть строку вниз"
+
+#: interface.c:327
+msgid "Cut to new"
+msgstr "Вырезать в новый"
+
+#: interface.c:328
+msgid "Copy to new"
+msgstr "Копировать в новый"
+
+#: interface.c:329
+msgid "Paste to new"
+msgstr "Вставить в новый"
+
+#: interface.c:330
+msgid "Add to Crapbook"
+msgstr "Добавить в Фигню"
+
+#: interface.c:332
+msgid "Select all"
+msgstr "Выделить всё"
+
+#: interface.c:334
+msgid "Delete current line"
+msgstr "Удалить текущую строку"
+
+#: interface.c:335
+msgid "Delete"
+msgstr "Удалить"
+
+#: interface.c:339
+msgid "Undo"
+msgstr "Отмена"
+
+#: interface.c:340
+msgid "Redo"
+msgstr "Снова"
+
+#: interface.c:343
+msgid "Search"
+msgstr "Поиск"
+
+#: interface.c:348
+msgid "Marking"
+msgstr "Цветовые пометки"
+
+#: interface.c:352
+msgid "Mark"
+msgstr "Отметить"
+
+#: interface.c:353
+msgid "Copy marked"
+msgstr "Копировать отмеченное"
+
+#: interface.c:354
+msgid "Unmark all"
+msgstr "Снять отметки со всего"
+
+#: interface.c:355
+msgid "Mark each n-th line"
+msgstr "Отметить каждую n-ую строку"
+
+#: interface.c:356
+msgid "Mark lines containing the string"
+msgstr "Пометить строки, содержащие фразу"
+
+#: interface.c:357
+msgid "Mark by regexp"
+msgstr "Пометить по регулярному выражению"
+
+#: interface.c:358
+msgid "Mark all fuzzy and empty translations"
+msgstr "Пометить все неточные и пустые переводы"
+
+#: interface.c:359
+msgid "Find and mark"
+msgstr "Найти и отметить"
+
+#: interface.c:360
+msgid "Mark lines > n characters"
+msgstr "Отметить строки длиной > N символов"
+
+#: interface.c:362 tea_findfiles_mult.c:296
+msgid "Find in files"
+msgstr "Найти в файлах"
+
+#: interface.c:363
+msgid "Search and Replace (tool)"
+msgstr "Окно Поиска и Замены"
+
+#: interface.c:364 tea_fr.c:139 tea_findfiles_mult.c:324
+msgid "Find"
+msgstr "Найти"
+
+#: interface.c:365
+msgid "Find case insensitive"
+msgstr "Найти, плюя на регистр"
+
+#: interface.c:366 tea_fr.c:131
+msgid "Find next"
+msgstr "Найти дальше"
+
+#: interface.c:367
+msgid "Find next case insensitive"
+msgstr "Найти дальше плюя на регистр"
+
+#: interface.c:368 tea_fr.c:123
+msgid "Replace"
+msgstr "Заменить"
+
+#: interface.c:369
+msgid "Goto line"
+msgstr "Перейти к строке"
+
+#: interface.c:370
+msgid "Replace all"
+msgstr "Заменить ну всё"
+
+#: interface.c:372
+msgid "Mark broken local links"
+msgstr "Найти ошибочные локальные ссылки"
+
+#: interface.c:373
+msgid "Scan for local links"
+msgstr "Найти локальные ссылки"
+
+#: interface.c:374
+msgid "Scan for SRC"
+msgstr "Найти SRC"
+
+#: interface.c:375
+msgid "Run grep"
+msgstr "Запустить grep"
+
+#: interface.c:379
+msgid "Markup"
+msgstr "Вёрстка"
+
+#: interface.c:383
+msgid "Markup mode"
+msgstr "Режим вёрстки"
+
+#: interface.c:393
+msgid "Wikipedia elements"
+msgstr "Элементы Wikipedia"
+
+#: interface.c:397
+msgid "Internal link"
+msgstr "Внутренняя ссылка"
+
+#: interface.c:399
+msgid "LaTeX elements"
+msgstr "Элементы LaTeX"
+
+#: interface.c:404
+msgid "Begin/end block"
+msgstr "Начало/конец блока"
+
+#: interface.c:431
+msgid "Docbook elements"
+msgstr "Элементы Docbook"
+
+#: interface.c:451
+msgid "HTML tools"
+msgstr "Утилиты HTML"
+
+#: interface.c:455
+msgid "Built-in template"
+msgstr "Встроенный шаблон"
+
+#: interface.c:457
+msgid "Strip tags"
+msgstr "Убить все тэги!"
+
+#: interface.c:458
+msgid "Enclose selected link into tags"
+msgstr "Заключить выделенную ссылку в тэги"
+
+#: interface.c:459
+msgid "Convert tags to entities"
+msgstr "Конвертировать тэги в entities"
+
+#: interface.c:460
+msgid "Document weight"
+msgstr "Вес документа"
+
+#: interface.c:461
+msgid "Text to HTML"
+msgstr "Перевести текст в HTML"
+
+#: interface.c:465
+msgid "Bold"
+msgstr "Жирный"
+
+#: interface.c:466
+msgid "Italic"
+msgstr "Курсив"
+
+#: interface.c:468
+msgid "Emphasis"
+msgstr "Выразительно"
+
+#: interface.c:469
+msgid "Underline"
+msgstr "Подчеркнуть"
+
+#: interface.c:473
+msgid "Close the current tag"
+msgstr "Закрыть текущий тэг"
+
+#: interface.c:474
+msgid "Comment"
+msgstr "Комментарий"
+
+#: interface.c:475
+msgid "Chapter"
+msgstr "Глава"
+
+#: interface.c:476
+msgid "Section"
+msgstr "Секция"
+
+#: interface.c:477
+msgid "Paragraph"
+msgstr "Параграф"
+
+#: interface.c:478
+msgid "Link"
+msgstr "Ссылка"
+
+#: interface.c:479
+msgid "Color"
+msgstr "Цвет"
+
+#: interface.c:480
+msgid "Image"
+msgstr "Картинка"
+
+#: interface.c:481
+msgid "Line break"
+msgstr "Разделитель строк"
+
+#: interface.c:484
+msgid "Non-breaking space"
+msgstr "Неразрывный пробел"
+
+#: interface.c:491
+msgid "List stuff"
+msgstr "Списки"
+
+#: interface.c:495
+msgid "Itemized list"
+msgstr "Поэлементный список"
+
+#: interface.c:496
+msgid "Enumerated list"
+msgstr "Нумерованный список"
+
+#: interface.c:497
+msgid "List item"
+msgstr "Элемент списка"
+
+#: interface.c:499
+msgid "Table stuff"
+msgstr "Таблицы"
+
+#: interface.c:503
+msgid "Make a table"
+msgstr "Сделать таблицу"
+
+#: interface.c:504
+msgid "Table"
+msgstr "Таблица"
+
+#: interface.c:505
+msgid "Row"
+msgstr "Ряд"
+
+#: interface.c:506
+msgid "Cell"
+msgstr "Ячейка"
+
+#: interface.c:508
+msgid "H"
+msgstr "Заголовок"
+
+#: interface.c:522
+msgid "Align"
+msgstr "Выравнивание"
+
+#: interface.c:531 tea_options.c:942 tea_options.c:1360 image_browser.c:806
+msgid "Functions"
+msgstr "Функции"
+
+#: interface.c:535 tea_calendar.c:191
+msgid "Calendar"
+msgstr "Календарик"
+
+#: interface.c:537
+msgid "Document stats"
+msgstr "Статистика документа"
+
+#: interface.c:538
+msgid "Document readability"
+msgstr "Читабельность документа"
+
+#: interface.c:542
+msgid "Spell-checker languages"
+msgstr "Языки для проверки правописания"
+
+#: interface.c:544 interface.c:551
+msgid "Spell check"
+msgstr "Проверить правописание"
+
+#: interface.c:545 interface.c:552
+msgid "Suggest a word"
+msgstr "Предположить верное написание"
+
+#: interface.c:546
+msgid "Add to dictionary"
+msgstr "Добавить в словарь"
+
+#: interface.c:553
+msgid "Add to dict"
+msgstr "Добавить в словарь"
+
+#: interface.c:561 tea_options.c:454
+msgid "Process with LaTeX"
+msgstr "Обработать в LaTeX"
+
+#: interface.c:562 tea_options.c:455
+msgid "Process with pdflatex"
+msgstr "Обработать в pdflatex"
+
+#: interface.c:564 tea_options.c:457
+msgid "dvi to PS"
+msgstr "dvi в PS"
+
+#: interface.c:565 tea_options.c:456
+msgid "dvi to PDF"
+msgstr "dvi в PDF"
+
+#: interface.c:566 tea_options.c:459
+msgid "View PDF"
+msgstr "Просмотр PDF"
+
+#: interface.c:567 tea_options.c:458
+msgid "View dvi"
+msgstr "Просмотр dvi"
+
+#: interface.c:568 tea_options.c:460
+msgid "View PS"
+msgstr "Просмотр PS"
+
+#: interface.c:570 tea_options.c:1078
+msgid "IDE"
+msgstr "Среда разработки"
+
+#: interface.c:574
+msgid "New project"
+msgstr "Новый проект"
+
+#: interface.c:575
+msgid "Open project"
+msgstr "Открыть проект"
+
+#: interface.c:576
+msgid "Save project"
+msgstr "Сохранить проект"
+
+#: interface.c:577
+msgid "Save project as"
+msgstr "Сохранить проект как"
+
+#: interface.c:578 tea_proj.c:184
+msgid "Project properties"
+msgstr "Свойства проекта"
+
+#: interface.c:579
+msgid "Make"
+msgstr "Собрать"
+
+#: interface.c:580
+msgid "Execute"
+msgstr "Выполнить"
+
+#: interface.c:581
+msgid "Refresh tags with ctags"
+msgstr "Обновить тэги с помощью ctags"
+
+#: interface.c:583
+msgid "UNIversal Text AnalyZer"
+msgstr "УНИТАЗ"
+
+#: interface.c:586
+msgid "Call UNITAZ with sorting abc"
+msgstr "Вызвать УНИТАЗ с сортировкой"
+
+#: interface.c:587
+msgid "Call UNITAZ with sorting by count"
+msgstr "Вызвать УНИТАЗ с сортировкой по количеству"
+
+#: interface.c:588
+msgid "Call UNITAZ with sorting abc case insensitive"
+msgstr "УНИТАЗ с сортировкой и плевать на регистр "
+
+#: interface.c:589
+msgid "Call UNITAZ with sorting by count case insensitive"
+msgstr "УНИТАЗ с сортировкой по количеству и плевать на регистр"
+
+#: interface.c:590
+msgid "Call UNITAZ plain"
+msgstr "Просто вызвать УНИТАЗ"
+
+#: interface.c:591
+msgid "Extract words"
+msgstr "Извлечь слова"
+
+#: interface.c:595
+msgid "Replacement tables"
+msgstr "Таблицы замен"
+
+#: interface.c:598 tea_config.c:78 tea_options.c:1001
+msgid "Scripts"
+msgstr "Скрипты"
+
+#: interface.c:601 tea_config.c:76 tea_options.c:969
+msgid "Snippets"
+msgstr "Сниппеты"
+
+#: interface.c:604
+msgid "Tools"
+msgstr "Инструменты"
+
+#: interface.c:608
+msgid "Mass encode tool"
+msgstr "Инструмент массовой перекодировки"
+
+#: interface.c:612
+msgid "Insert"
+msgstr "Вставка"
+
+#: interface.c:616
+msgid "Insert entity"
+msgstr "Вставить entity"
+
+#: interface.c:622
+msgid "Insert DOCTYPE"
+msgstr "Вставить DOCTYPE"
+
+#: interface.c:634
+msgid "Lorem ipsum"
+msgstr "Lorem ipsum"
+
+#: interface.c:635
+msgid "Date/Time"
+msgstr "Дата/Время"
+
+#: interface.c:636
+msgid "Dump menu"
+msgstr "Выдать список пунктов меню"
+
+#: interface.c:639
+msgid "Case"
+msgstr "Регистр"
+
+#: interface.c:643
+msgid "UPCASE"
+msgstr "БОЛЬШИЕ БУКВЫ"
+
+#: interface.c:646
+msgid "lowcase"
+msgstr "маленькие буковки"
+
+#: interface.c:649
+msgid "Upcase The First Letter Of Each Word"
+msgstr "Каждая Первая Буква Слова Большая"
+
+#: interface.c:651
+msgid "cRAcKeriZE"
+msgstr "кРэКЕРиЗиРоВать"
+
+#: interface.c:653
+msgid "Numbers"
+msgstr "Числа"
+
+#: interface.c:657 tea_calendar.c:218
+msgid "Calculate"
+msgstr "Подсчитать"
+
+#: interface.c:658
+msgid "Arabian to Roman"
+msgstr "Арабское в римское"
+
+#: interface.c:659
+msgid "Roman to Arabian"
+msgstr "Римское в арабское"
+
+#: interface.c:661
+msgid "HEX to decimal"
+msgstr "Шестнадцатиричное в десятичное"
+
+#: interface.c:662
+msgid "Decimal to hex"
+msgstr "Десятичное в шестнадцатиричное"
+
+#: interface.c:663
+msgid "Binary to decimal"
+msgstr "Двоичное в десятичное"
+
+#: interface.c:664
+msgid "Counter"
+msgstr "Счетчик"
+
+#: interface.c:666
+msgid "Format"
+msgstr "Формат"
+
+#: interface.c:670
+msgid "Browser to text"
+msgstr "Браузер в текст"
+
+#: interface.c:672
+msgid "Kill formatting"
+msgstr "Убить форматирование"
+
+#: interface.c:673
+msgid "Kill formatting on each line"
+msgstr "Убить форматирование в каждой строке"
+
+#: interface.c:675
+msgid "Wrap raw at position"
+msgstr "Перенос строк в позиции..."
+
+#: interface.c:676
+msgid "Wrap on spaces at position"
+msgstr "Перенос строк на словах в позиции..."
+
+#: interface.c:678
+msgid "Kill leading whitespace on each line"
+msgstr "Убить начальные пробелы в каждой строке"
+
+#: interface.c:679
+msgid "Kill trailing whitespace on each line"
+msgstr "Убить конечные пробелы в каждой строке"
+
+#: interface.c:681
+msgid "Sort"
+msgstr "Сортировка"
+
+#: interface.c:685
+msgid "Sort lines"
+msgstr "Сортировать строки"
+
+#: interface.c:686
+msgid "Sort lines by length"
+msgstr "Сортировать строки по длине"
+
+#: interface.c:687
+msgid "Sort lines case insensitive"
+msgstr "Сортировать строки и плевать на регистр"
+
+#: interface.c:688
+msgid "Reverse order of lines"
+msgstr "Обратный порядок строк"
+
+#: interface.c:690
+msgid "String"
+msgstr "Строка"
+
+#: interface.c:694
+msgid "Double quotes to facing quotes"
+msgstr "Конвертировать двойные кавычки в кавычки елочкой"
+
+#: interface.c:696
+msgid "CSV-like table to LaTeX table"
+msgstr "CSV-подобная таблица в LaTeX таблицу"
+
+#: interface.c:697
+msgid "Convert usual quotes to TeX quotes"
+msgstr "Конвертировать обычные кавычки в TeX"
+
+#: interface.c:698
+msgid "Escape and quote"
+msgstr ""
+
+#: interface.c:699
+msgid "Unescape and unquote"
+msgstr ""
+
+#: interface.c:700
+msgid "Reverse"
+msgstr "Реверс"
+
+#: interface.c:701
+msgid "Antispam e-mail"
+msgstr "Кодировать e-mail адрес супротив спама"
+
+#: interface.c:702
+msgid "Remove blank lines"
+msgstr "Удалить пустые строки"
+
+#: interface.c:703
+msgid "Kill duplicates"
+msgstr "Убить дубликаты"
+
+#: interface.c:704
+msgid "Numerate lines"
+msgstr "Пронумеровать строки"
+
+#: interface.c:706
+msgid "Shuffle lines"
+msgstr "Перетасовать строки"
+
+#: interface.c:707
+msgid "Convert tabs to spaces"
+msgstr "Конвертировать табы в пробелы"
+
+#: interface.c:708
+msgid "Convert spaces to tabs"
+msgstr "Конвертировать пробелы в табы"
+
+#: interface.c:709
+msgid "Split to TeX paragraphs"
+msgstr "Разбить на TeX-параграфы"
+
+#: interface.c:710
+msgid "Split by the delimiter"
+msgstr "Разбить по разделителю"
+
+#: interface.c:711
+msgid "Split after the delimiter"
+msgstr "Разбить после разделителя"
+
+#: interface.c:713
+msgid "Apply a template to each line"
+msgstr "Применить шаблон к каждой строке"
+
+#: interface.c:715
+msgid "Filter"
+msgstr "Фильтр"
+
+#: interface.c:719
+msgid "Extract at the each line"
+msgstr "Извлечь в каждой строке"
+
+#: interface.c:720
+msgid "Extract at the each line before a separator"
+msgstr "Извлечь перед разделителем в каждой строке"
+
+#: interface.c:721
+msgid "Extract at the each line after a separator"
+msgstr "Извлечь после разделителя в каждой строке"
+
+#: interface.c:723
+msgid "Kill lines containing the phrase"
+msgstr "Убить строки, содержащие фразу"
+
+#: interface.c:724
+msgid "Kill all lines except with the phrase"
+msgstr "Убить все строки без фразы"
+
+#: interface.c:726
+msgid "Kill lines containing a regexp"
+msgstr "Убить строки, содержащие регулярное выражение"
+
+#: interface.c:727
+msgid "Kill all lines without a regexp"
+msgstr "Убить все строки без регулярного выражения"
+
+#: interface.c:729
+msgid "Kill all lines <= N characters"
+msgstr "Убить строки длиной <= N символов"
+
+#: interface.c:730
+msgid "Kill all lines > N characters"
+msgstr "Убить строки длиной > N символов"
+
+#: interface.c:732
+msgid "End of line"
+msgstr "Конец строки"
+
+#: interface.c:735
+msgid "Convert to LF"
+msgstr "Перевести в LF"
+
+#: interface.c:736
+msgid "Convert to CR"
+msgstr "Перевести в CR"
+
+#: interface.c:737
+msgid "Convert to CR/LF"
+msgstr "Перевести в CR/LF"
+
+#: interface.c:739
+msgid "Morse code"
+msgstr "Код Морзе"
+
+#: interface.c:742
+msgid "Encode to Morse code EN"
+msgstr "Кодировать в морзянку (англ.)"
+
+#: interface.c:743
+msgid "Decode from Morse code EN"
+msgstr "Кодировать из морзянки (англ.)"
+
+#: interface.c:745
+msgid "Last used"
+msgstr "Последнее"
+
+#: interface.c:747
+msgid "Tabs"
+msgstr "Табы"
+
+#: interface.c:750
+msgid "Run"
+msgstr "Запуск"
+
+#: interface.c:753
+msgid "Nav"
+msgstr "Нав"
+
+#: interface.c:757
+msgid "Links"
+msgstr "Ссылки"
+
+#: interface.c:760
+msgid "Save the position"
+msgstr "Сохранить позицию"
+
+#: interface.c:761
+msgid "Jump to the saved position"
+msgstr "Перейти на сохраненную позицию"
+
+#: interface.c:763
+msgid "Go to the block start {"
+msgstr "Перейти к началу блока {"
+
+#: interface.c:768
+msgid "Go to the block end }"
+msgstr "Перейти к концу блока }"
+
+#: interface.c:773
+msgid "Go to recent tab"
+msgstr "Перейти к предшествующему табу"
+
+#: interface.c:774
+msgid "Go to next tab"
+msgstr "Перейти к следующему табу"
+
+#: interface.c:775
+msgid "Go to previous tab"
+msgstr "Перейти к предыдущему табу"
+
+#: interface.c:776
+msgid "Go to first tab"
+msgstr "Перейти к первому табу"
+
+#: interface.c:777
+msgid "Go to last tab"
+msgstr "Перейти к последнему табу"
+
+#: interface.c:778
+msgid "Go to selection"
+msgstr "Перейти к выделенному тексту"
+
+#: interface.c:780
+msgid "Focus the FAMOUS text entry"
+msgstr "Фокус в знаменитое поле ввода"
+
+#: interface.c:781
+msgid "Focus the text"
+msgstr "Фокус в текст"
+
+#: interface.c:783
+msgid "Open at cursor"
+msgstr "Открыть в месте курсора"
+
+#: interface.c:785
+msgid "Edit at cursor"
+msgstr "Править в месте курсора"
+
+#: interface.c:786
+msgid "Browse the symbol's definition"
+msgstr "Найти определение функции"
+
+#: interface.c:788
+msgid "View"
+msgstr "Вид"
+
+#: interface.c:792 tea_options.c:1356
+msgid "Encoding"
+msgstr "Кодировки"
+
+#: interface.c:796
+msgid "Profiles"
+msgstr "Профили"
+
+#: interface.c:798
+msgid "Save profile"
+msgstr "Сохранить профиль"
+
+#: interface.c:800
+msgid "Hide error marks"
+msgstr "Скрыть помеченное как ошибки"
+
+#: interface.c:801 tea_options.c:533
+msgid "Word wrap"
+msgstr "Перенос слов по границе окна"
+
+#: interface.c:802
+msgid "Line numbers"
+msgstr "Номера строк"
+
+#: interface.c:803
+msgid "Toggle image visibility"
+msgstr "Переключить видимость картинок"
+
+#: interface.c:805
+msgid "Switch header/source"
+msgstr "Переключить исходник/заголовок"
+
+#: interface.c:806
+msgid "Preview with Mplayer"
+msgstr "Смотреть в Mplayer"
+
+#: interface.c:807
+msgid "Fullscreen"
+msgstr "Полноэкранный режим"
+
+#: interface.c:808
+msgid "Un-fullscreen"
+msgstr "Выйти из полноэкранного режима"
+
+#: interface.c:809
+msgid "Window on top"
+msgstr "Окно поверх других"
+
+#: interface.c:812
+msgid "Help"
+msgstr "Помощь"
+
+#: interface.c:816 tea_about.c:84
+msgid "About"
+msgstr "О программе"
+
+#: interface.c:818
+msgid "Read the fine manual"
+msgstr "Открыть руководство"
+
+#: interface.c:819
+msgid "Read the fine English manual anyway"
+msgstr "Прочитать самое свежее руководство - английское"
+
+#: interface.c:820
+msgid "Self check"
+msgstr "Самопроверка"
+
+#: interface.c:896
+msgid "Click here to search this through the text"
+msgstr "Нажмите тут, чтобы искать этот текст"
+
+#: interface.c:900
+msgid "Click here to open a file"
+msgstr "Нажмите тут, чтобы открыть файл"
+
+#: interface.c:952
+msgid "PLEASE read the manual :)"
+msgstr "Взываю к разумным - читайте руководство!"
+
+#: interface.c:968
+msgid "It is the Famous text entry... Read the Manual for more!"
+msgstr ""
+"Это - Знаменитое поле ввода! Читайте ноговодство для дальнейшего "
+"просветления."
+
+#: callbacks.c:257
+msgid "Read the manual!"
+msgstr "Читайте документацию!"
+
+#: callbacks.c:461
+#, c-format
+msgid "%s saved OK"
+msgstr "%s сохранён ОК"
+
+#: callbacks.c:583
+msgid "Save the file first..."
+msgstr "Сначала сохраните файл..."
+
+#: callbacks.c:990
+msgid "Save the session as:"
+msgstr "Сохранить сессию как:"
+
+#: callbacks.c:1135 callbacks.c:4944
+msgid "File open"
+msgstr "Открытие файла"
+
+#: callbacks.c:1142
+msgid "Image files"
+msgstr "Картинки"
+
+#: callbacks.c:1158 callbacks.c:4960
+msgid "All files"
+msgstr "Все файлы"
+
+#: callbacks.c:1461
+msgid "Now look into the Links menu ;)"
+msgstr "А теперь поглядите в меню Нав > Ссылки ;)"
+
+#: callbacks.c:1476
+msgid "No, I can't!"
+msgstr "Нет, я не могу..."
+
+#: callbacks.c:1679
+#, c-format
+msgid "I can't reload %s :("
+msgstr "Я не могу перечитать %s"
+
+#: callbacks.c:1681
+#, c-format
+msgid "%s is reloaded :)"
+msgstr "%s перезагружен нормально."
+
+#: callbacks.c:1833 callbacks.c:1841
+#, c-format
+msgid "%s = %d Kb"
+msgstr "%s = %d килобайт"
+
+#: callbacks.c:1847
+#, c-format
+msgid "Total weight for %s is %d Kb"
+msgstr "Общий вес для %s равен %d кило"
+
+#: callbacks.c:1897
+msgid "Now look into Links menu ;)"
+msgstr "А теперь поглядите в меню Нав > Ссылки ;)"
+
+#: callbacks.c:1908
+msgid "Select a color"
+msgstr "Выберите цвет"
+
+#: callbacks.c:2054
+msgid "Please unselect the text, then try again"
+msgstr "Снимите выделение с текста, а затем снова попробуйте функцию"
+
+#: callbacks.c:2986
+msgid "you can put some crap here..."
+msgstr "можете вносить сюда какую-то фигню, она автоматически сохранится"
+
+#: callbacks.c:3177 callbacks.c:3200
+msgid "text to find"
+msgstr "текст, который надо найти"
+
+#: callbacks.c:3368
+msgid "Before using that, go to File > Open different > Open movie."
+msgstr "Сначала выберите фильм с помощью Файл > Открыть иначе > Открыть фильм"
+
+#: callbacks.c:3443
+msgid "Open a movie:"
+msgstr "Открыть фильм:"
+
+#: callbacks.c:3894
+msgid "Save a project"
+msgstr "Сохранить проект"
+
+#: callbacks.c:3937
+msgid "Open a project"
+msgstr "Открыть проект"
+
+#: callbacks.c:4151
+msgid "Open the file first"
+msgstr "Сначала откройте файл!"
+
+#: callbacks.c:4920
+#, c-format
+msgid "%s session is saved"
+msgstr "сессия %s сохранена"
+
+#: callbacks.c:4962
+msgid "Plain text files"
+msgstr "Просто текстовые файлы"
+
+#: callbacks.c:4965
+msgid "Office text format files"
+msgstr "Офисные текстовые файлы"
+
+#: callbacks.c:4993
+msgid "TEA special locations:"
+msgstr "Особые папки TEA:"
+
+#: callbacks.c:4994 callbacks.c:5099
+msgid "Encoding: "
+msgstr "Кодировка: "
+
+#: callbacks.c:5061
+msgid "Save as..."
+msgstr "Сохранить как..."
+
+#: callbacks.c:5152 tea_text_document.c:2312
+msgid "Question"
+msgstr "Вопрос"
+
+#: callbacks.c:5152
+#, c-format
+msgid "%s is exists. Do you want to overwrite it?"
+msgstr "%s уже существует. Хотите перезаписать его?"
+
+#: callbacks.c:5169
+#, c-format
+msgid "error by saving %s!!!"
+msgstr "ошибка сохранения %s!!"
+
+#: callbacks.c:5730
+#, c-format
+msgid ""
+"for %s:\n"
+"fuzzy = %d\n"
+"empty = %d\n"
+"fuzzy + empty = %d\n"
+"not translated: %.3f%%"
+msgstr ""
+
+#: callbacks.c:5920
+msgid "antiword - ok //it helps TEA to open MS Word documents"
+msgstr "antiword - есть //нужен TEA чтобы открывать документы MS Word"
+
+#: callbacks.c:5922
+msgid "antiword - not found //TEA cannot open MS Word documents without it"
+msgstr ""
+"antiword - не найден //нужен для TEA, чтобы открывать документы MS Word"
+
+#: callbacks.c:5928
+msgid "gunzip - ok //it lets TEA to read ZIP and GZ files"
+msgstr "gunzip - есть //нужен для TEA, чтобы читать файлы ZIP и GZ"
+
+#: callbacks.c:5930
+msgid "gunzip - not found //TEA cannot open read ZIP and GZ files without it"
+msgstr "gunzip - не найден //нужен для TEA, чтобы читать файлы ZIP и GZ"
+
+#: callbacks.c:6329
+msgid "Save the profile as:"
+msgstr "Сохранить профиль как:"
+
+#: callbacks.c:6485
+msgid "Save your document as a normal text file first, then save it packed"
+msgstr ""
+"Сначала сохраните текст как обычный файл, а потом уже сохраняйте как "
+"упакованный"
+
+#: callbacks.c:6493
+msgid "A file is packed OK"
+msgstr "Файл упакован благополучно."
+
+#: tea_funx.c:164
+#, c-format
+msgid "noname_%d"
+msgstr "без_имени_%d"
+
+#: tea_funx.c:917
+#, c-format
+msgid "(built on %s with GTK %d.%d.%d and GLib %d.%d.%d)"
+msgstr "(собрано %s на GTK %d.%d.%d и GLib %d.%d.%d)"
+
+#: tea_config.c:75 tea_options.c:1018
+msgid "Tables"
+msgstr "Таблицы"
+
+#: tea_config.c:429
+#, c-format
+msgid "%s is not exists"
+msgstr "%s не существует"
+
+#: tea_config.c:503
+msgid "Left"
+msgstr "Лево"
+
+#: tea_config.c:504
+msgid "Right"
+msgstr "Право"
+
+#: tea_config.c:505
+msgid "Top"
+msgstr "Вверх"
+
+#: tea_config.c:506
+msgid "Bottom"
+msgstr "Вниз"
+
+#: tea_config.c:735
+msgid "non-breaking space"
+msgstr "неразрывный пробел"
+
+#: tea_config.c:736
+msgid "cent sign"
+msgstr "цент"
+
+#: tea_config.c:737
+msgid "pound sign"
+msgstr "фунт"
+
+#: tea_config.c:738
+msgid "currency sign"
+msgstr "валюта"
+
+#: tea_config.c:739
+msgid "yen sign"
+msgstr "йена"
+
+#: tea_config.c:740
+msgid "section sign"
+msgstr "секция"
+
+#: tea_config.c:741
+msgid "copyright sign"
+msgstr "копирайт"
+
+#: tea_config.c:742
+msgid "trade mark sign"
+msgstr "торговая марка"
+
+#: tea_config.c:743
+msgid "feminine ordinal indicator"
+msgstr "женский символ"
+
+#: tea_config.c:744
+msgid "left-pointing double angle quotation mark"
+msgstr "левая двойная кавычка"
+
+#: tea_config.c:745
+msgid "soft hyphen"
+msgstr "мягкий перенос"
+
+#: tea_config.c:746
+msgid "registered sign"
+msgstr "(r)"
+
+#: tea_config.c:747
+msgid "degree sign"
+msgstr "градус"
+
+#: tea_config.c:748
+msgid "plus-minus sign"
+msgstr "плюс/минус"
+
+#: tea_config.c:749
+msgid "right-pointing double angle quotation mark"
+msgstr "правая двойная кавычка"
+
+#: tea_config.c:750
+msgid "left single quotation mark"
+msgstr "левая одинарная кавычка"
+
+#: tea_config.c:751
+msgid "right single quotation mark"
+msgstr "правая одинарная кавычка"
+
+#: tea_config.c:752
+msgid "euro sign"
+msgstr "евро"
+
+#: tea_config.c:753
+msgid "greek pi symbol"
+msgstr "PI"
+
+#: tea_config.c:754
+msgid "leftwards arrow"
+msgstr "стрелка влево"
+
+#: tea_config.c:755
+msgid "upwards arrow"
+msgstr "стрелка вверх"
+
+#: tea_config.c:756
+msgid "rightwards arrow"
+msgstr "стрелка вправо"
+
+#: tea_config.c:757
+msgid "downwards arrow"
+msgstr "стрелка вниз"
+
+#: tea_config.c:758
+msgid "square root"
+msgstr "квадратный корень"
+
+#: tea_config.c:759
+msgid "spade suit"
+msgstr "масть пики"
+
+#: tea_config.c:760
+msgid "club suit"
+msgstr "масть трефы"
+
+#: tea_config.c:761
+msgid "heart suit"
+msgstr "масть червы"
+
+#: tea_config.c:762
+msgid "diamond suit"
+msgstr "масть бубны"
+
+#: tea_config.c:763
+msgid "masculine ordinal indicator"
+msgstr "мужской символ"
+
+#: tea_config.c:764
+msgid "quotation mark"
+msgstr "кавычка"
+
+#: tea_config.c:765
+msgid "ampersand"
+msgstr "амперсанд"
+
+#: tea_config.c:766
+msgid "less-than sign"
+msgstr "меньше, чем"
+
+#: tea_config.c:767
+msgid "greater-than sign"
+msgstr "больше, чем"
+
+#: tea_config.c:768
+msgid "apostrophe"
+msgstr "апостроф"
+
+#: tea_config.c:944
+msgid "#TEA editor configuration file. Please read the manual"
+msgstr ""
+"#Файл настроек. Удобнее не править его руками, а использовать окно Настроек."
+
+#: tea_text_document.c:1599
+#, c-format
+msgid ""
+"Sorry, but I cannot determine the charset of %s. Please try again and select "
+"it manually."
+msgstr "Простите, я не могу определить кодировку %s. Выберите ее вручную."
+
+#: tea_text_document.c:1625 tea_text_document.c:4171
+msgid "This file is read-only"
+msgstr "Этот файл только для чтения"
+
+#: tea_text_document.c:1634 tea_text_document.c:4180
+msgid "Warning!"
+msgstr "Внимание!"
+
+#: tea_text_document.c:1634 tea_text_document.c:1635 tea_text_document.c:4180
+#: tea_text_document.c:4181
+#, c-format
+msgid "%s is not writable for you!"
+msgstr "%s не доступен для записи!"
+
+#: tea_text_document.c:1641 tea_text_document.c:4187
+msgid "And how I can save this text file as a DIRECTORY?!"
+msgstr "Ну и как мне сохранить этот файл в качестве КАТАЛОГА?!"
+
+#: tea_text_document.c:1660
+msgid "config reloaded"
+msgstr "Конфиг перечитан"
+
+#: tea_text_document.c:1666
+msgid "hotkeys reloaded"
+msgstr "файл сочетаний клавиш перечитан"
+
+#: tea_text_document.c:1672
+msgid "external programs list reloaded"
+msgstr "список внешних программ перечитан"
+
+#: tea_text_document.c:1681 tea_text_document.c:1687
+#, c-format
+msgid "%s reloaded"
+msgstr "%s перечитан"
+
+#: tea_text_document.c:2007
+msgid "Cannot convert filename to UTF-8, abort"
+msgstr "Не могу перевести имя файла в UTF-8, прерываю операцию"
+
+#: tea_text_document.c:2013 tea_text_document.c:2046
+#, c-format
+msgid "%s is not exists!"
+msgstr "%s не существует"
+
+#: tea_text_document.c:2020 tea_text_document.c:2038
+#, c-format
+msgid "You have NO access to %s"
+msgstr "У вас НЕТ прав доступа к файлу %s"
+
+#: tea_text_document.c:2205
+#, c-format
+msgid "%s is opened"
+msgstr "%s открыт"
+
+#: tea_text_document.c:2312
+#, c-format
+msgid "%s is modified but not saved. Save it?"
+msgstr "%s изменен, однако не сохранен. Сохранить его?"
+
+#: tea_text_document.c:3341
+msgid "Saving all documents... begin"
+msgstr "Сохранение всех документов. Начинаю."
+
+#: tea_text_document.c:3351 tea_text_document.c:4197
+#, c-format
+msgid "%s is saved"
+msgstr "%s сохранен"
+
+#: tea_text_document.c:3357
+msgid "Saving all documents... end"
+msgstr "Сохранение всех документов. Сделано."
+
+#: tea_text_document.c:3974
+#, c-format
+msgid "%d words were replaced"
+msgstr "%d слов было заменено"
+
+#: tea_text_document.c:4465
+#, c-format
+msgid "bytes: %d\n"
+msgstr "байтов: %d\n"
+
+#: tea_text_document.c:4466
+#, c-format
+msgid "lines: %d\n"
+msgstr "строк: %d\n"
+
+#: tea_text_document.c:4467 tea_text_document.c:4828
+#, c-format
+msgid "words: %d\n"
+msgstr "слов: %d\n"
+
+#: tea_text_document.c:4468 tea_text_document.c:4829
+#, c-format
+msgid "chars: %d\n"
+msgstr "символов: %d\n"
+
+#: tea_text_document.c:4469
+#, c-format
+msgid "chars non-space: %d\n"
+msgstr "символов без пробелов: %d\n"
+
+#: tea_text_document.c:4474
+msgid "stats for "
+msgstr "Статистика для "
+
+#: tea_text_document.c:4484
+msgid "stats for selected:\n"
+msgstr "Статистика для выделенного:\n"
+
+#: tea_text_document.c:4745
+#, c-format
+msgid "Text analysis results for %s:"
+msgstr "Анализ текста для %s:"
+
+#: tea_text_document.c:4746
+#, c-format
+msgid "Words total: %d"
+msgstr "слов всего: %d"
+
+#: tea_text_document.c:4747
+#, c-format
+msgid "Words unique: %d"
+msgstr "слов единичных: %d"
+
+#: tea_text_document.c:4748
+#, c-format
+msgid "Words total / Words unique = %.6f"
+msgstr "Слов всего / Слов единичных = %.6f"
+
+#: tea_text_document.c:4749
+#, c-format
+msgid "Sentences = %d"
+msgstr "Предложений = %d"
+
+#: tea_text_document.c:4750
+#, c-format
+msgid "Average sentence length (words) = %.6f"
+msgstr "Средняя длина предложения (в словах) = %.6f"
+
+#: tea_text_document.c:4751
+#, c-format
+msgid "Average word length = %.6f"
+msgstr "Средняя длина слова = %.6f"
+
+#: tea_text_document.c:4753
+msgid "Number:"
+msgstr "Количество:"
+
+#: tea_text_document.c:4753
+msgid "Word:"
+msgstr "Слов:"
+
+#: tea_text_document.c:4827
+#, c-format
+msgid "sentences: %d\n"
+msgstr "предложений: %d\n"
+
+#: tea_text_document.c:4833
+msgid "Readability:\n"
+msgstr "Читабельность: \n"
+
+#: tea_text_document.c:4834
+msgid "Automated Readability Index (ARI): "
+msgstr ""
+
+#: tea_text_document.c:4835
+msgid "Coleman-Liau Index: "
+msgstr "Индекс Coleman-Liau"
+
+#: tea_text_document.c:4836
+msgid "Stats:\n"
+msgstr "Статистика:\n"
+
+#: tea_about.c:70
+#, c-format
+msgid "%s is missing! I cannot show you the About window :("
+msgstr "%s отсутствует! Увы, я не могу показать окно О программе :("
+
+#: tea_about.c:110
+msgid "Code"
+msgstr "Код"
+
+#: tea_about.c:125
+msgid "Acknowledgements"
+msgstr "Благодарности"
+
+#: tea_about.c:140
+msgid "Translators"
+msgstr "Переводчики"
+
+#: tea_about.c:155
+msgid "Packages"
+msgstr "Пакеты"
+
+#: tea_fr.c:88
+msgid "Search and Replace window"
+msgstr "Окно Поиска и Замены"
+
+#: tea_fr.c:98 tea_findfiles_mult.c:314
+msgid "Text to find"
+msgstr "Найти текст"
+
+#: tea_fr.c:107
+msgid "Replace with"
+msgstr "Заменить на"
+
+#: tea_fr.c:113
+msgid "Case insensitive"
+msgstr "Плевать на регистр"
+
+#: tea_fr.c:147
+msgid "Jump to top"
+msgstr "К началу текста"
+
+#: tea_kwas.c:462
+#, c-format
+msgid "%-10d Kb"
+msgstr "%-10d Кб"
+
+#: tea_kwas.c:826
+msgid "Names: "
+msgstr "Имена: "
+
+#: tea_kwas.c:832
+msgid "Access: "
+msgstr "Доступ: "
+
+#: tea_kwas.c:838
+msgid "Size: "
+msgstr "Размер: "
+
+#: tea_kwas.c:844
+msgid "Date and time: "
+msgstr "Дата и время: "
+
+#: tea_kwas.c:936
+msgid "Kwas"
+msgstr "Квас"
+
+#: tea_kwas.c:954
+msgid "Actions"
+msgstr "Действия"
+
+#: tea_kwas.c:958
+msgid "Refresh Kwas"
+msgstr "Обновить Квас"
+
+#: tea_kwas.c:963
+msgid "Get file info"
+msgstr "Справка о файле"
+
+#: tea_kwas.c:965
+msgid "Run with..."
+msgstr "Запустить с..."
+
+#: tea_kwas.c:966
+msgid "Copy current file name"
+msgstr "Копировать имя текущего файла"
+
+#: tea_kwas.c:968
+msgid "Navigate"
+msgstr "Навигация"
+
+#: tea_kwas.c:972
+msgid "Go to the home directory"
+msgstr "Перейти в домашний каталог"
+
+#: tea_kwas.c:979
+msgid "Ins to editor"
+msgstr "Вставка в редактор"
+
+#: tea_kwas.c:982
+msgid "Insert image"
+msgstr "Вставить картинку"
+
+#: tea_kwas.c:983
+msgid "Insert link"
+msgstr "Вставить ссылку"
+
+#: tea_kwas.c:1047
+msgid "Go to"
+msgstr "Перейти"
+
+#: tea_gtk_utils.c:186 tea_findfiles_mult.c:154
+msgid "Select a directory"
+msgstr "Выберите директорию"
+
+#: tea_options.c:91
+msgid "Highlighting color scheme"
+msgstr "Цветовая схема подсветки"
+
+#: tea_options.c:346
+msgid "Defaults"
+msgstr "Значения по умолчанию"
+
+#: tea_options.c:354
+msgid "Default charset for File open"
+msgstr "Кодировка по умолчанию для открытия файла"
+
+#: tea_options.c:355
+msgid "Default charset for File save as"
+msgstr "Кодировка по умолчанию для сохранения файла"
+
+#: tea_options.c:356
+msgid "Default charset for RTF"
+msgstr "Кодировка по умолчанию для RTF"
+
+#: tea_options.c:358 tea_options.c:430
+msgid "Misc"
+msgstr "Разное"
+
+#: tea_options.c:366
+msgid "Detect a charset by the [X]HTML meta header"
+msgstr "Определять кодировку по заголовку meta в [X]HTML"
+
+#: tea_options.c:367
+msgid "On autodetect failed, fallback to this charset:"
+msgstr "При неудачном автоопр., исп. эту кодировку:"
+
+#: tea_options.c:368
+msgid "Fallback charset"
+msgstr "Кодировка:"
+
+#: tea_options.c:370
+msgid "Autodetect"
+msgstr "Определять автоматически"
+
+#: tea_options.c:379
+msgid "CP 1251"
+msgstr "CP 1251"
+
+#: tea_options.c:380
+msgid "KOI8-R"
+msgstr "KOI8-R"
+
+#: tea_options.c:381
+msgid "KOI8-U"
+msgstr "KOI8-U"
+
+#: tea_options.c:382
+msgid "DOS 866"
+msgstr "DOS 866"
+
+#: tea_options.c:383
+msgid "Czech"
+msgstr "Чешский"
+
+#: tea_options.c:384
+msgid "Finnish"
+msgstr "Финский"
+
+#: tea_options.c:385
+msgid "German"
+msgstr "Немецкий"
+
+#: tea_options.c:386
+msgid "Serbian"
+msgstr "Сербский"
+
+#: tea_options.c:387
+msgid "Latvian"
+msgstr "Латвийский"
+
+#: tea_options.c:388
+msgid "Polish"
+msgstr "Польский"
+
+#: tea_options.c:389
+msgid "Portuguese"
+msgstr "Португальский"
+
+#: tea_options.c:390
+msgid "Slovak"
+msgstr "Словацский"
+
+#: tea_options.c:391
+msgid "Slovenian"
+msgstr "Словенский"
+
+#: tea_options.c:392
+msgid "Spanish"
+msgstr "Испанский"
+
+#: tea_options.c:393
+msgid "Turkish"
+msgstr "Турецкий"
+
+#: tea_options.c:395
+msgid "Management"
+msgstr "Управление"
+
+#: tea_options.c:416
+msgid "Selected"
+msgstr "Выбранные"
+
+#: tea_options.c:419
+msgid "Configure charsets"
+msgstr "Настроить кодировки"
+
+#: tea_options.c:438
+msgid "External image editor"
+msgstr "Внешний редактор изображений"
+
+#: tea_options.c:439
+msgid "External image viewer"
+msgstr "Внешняя смотрелка изображений"
+
+#: tea_options.c:440
+msgid "Run Mplayer with subtitles"
+msgstr "Запустить Mplayer с субтитрами"
+
+#: tea_options.c:441
+msgid "A command for Save packed"
+msgstr "Команда для Сохранить упакованным"
+
+#: tea_options.c:443
+msgid "Browser for the manual"
+msgstr "Браузер для просмотра руководства"
+
+#: tea_options.c:444
+msgid "Use this browser"
+msgstr "Использовать этот браузер"
+
+#: tea_options.c:446
+msgid "LaTeX"
+msgstr "LaTeX"
+
+#: tea_options.c:471
+msgid "Now Playing string format"
+msgstr "Формат строки *Сейчас играет*"
+
+#: tea_options.c:472
+msgid "Date and time format"
+msgstr "Формат даты и времени"
+
+#: tea_options.c:473
+msgid "Date format for Save version"
+msgstr "Формат даты для Сохранить версию"
+
+#: tea_options.c:475
+msgid "The format of the Color function"
+msgstr "Формат функции Цвет"
+
+#: tea_options.c:476
+msgid "JPEG compression (1..100)"
+msgstr "Степень сжатия JPEG (1..100)"
+
+#: tea_options.c:488
+msgid "Save/Open dialogs width per cents"
+msgstr "Ширина окон открытия/сохранения, в процентах"
+
+#: tea_options.c:489
+msgid "Save/Open dialogs height per cents"
+msgstr "высота окон открытия/сохранения, в процентах"
+
+#: tea_options.c:490
+msgid "Image thumbnail width"
+msgstr "Ширина миниатюр изображений"
+
+#: tea_options.c:491
+msgid "Image thumbnail height"
+msgstr "Высота миниатюр изображений"
+
+#: tea_options.c:493
+msgid "Exclusive \"Enter\" mode at save/open dialogs"
+msgstr "Особый режим \"Enter\" для окон открытия/сохранения"
+
+#: tea_options.c:494
+msgid "Show the full path in the window caption"
+msgstr "Показывать полный путь в заголовке окна"
+
+#: tea_options.c:495
+msgid "Show the main toolbar"
+msgstr "Показывать главный тулбар"
+
+#: tea_options.c:496
+msgid "Show the common close button"
+msgstr "Показывать общую кнопку закрытия"
+
+#: tea_options.c:497
+msgid "Show the cursor position at statusbar"
+msgstr "Показывать положение курсора в строке состояния"
+
+#: tea_options.c:499
+msgid "Start in the full-screen mode"
+msgstr "Запускаться в полноэкранном режиме"
+
+#: tea_options.c:501
+msgid "Tabs position"
+msgstr "Положение корешков документов"
+
+#: tea_options.c:503
+msgid "Max. recent files"
+msgstr "Максимум последних файлов"
+
+#: tea_options.c:504
+msgid "Logmemo lines limit"
+msgstr "Максимум строк в логмемо"
+
+#: tea_options.c:517
+msgid "Automatic markup mode"
+msgstr "Автоматический режим верстки"
+
+#: tea_options.c:519
+msgid "Save the crashfile on terminate"
+msgstr "Делать аварийное сохранение"
+
+#: tea_options.c:520
+msgid "Save all on the abnormal termination (SIGTERM, etc)"
+msgstr "Сохранять всё при ненормальном закрытии TEA"
+
+#: tea_options.c:522
+msgid "Restore the last session on start"
+msgstr "Восстанавливать последнюю сессию при запуске"
+
+#: tea_options.c:523
+msgid "Start TEA with a blank file"
+msgstr "Запускать TEA с новым пустым файлом"
+
+#: tea_options.c:525
+msgid "Determine a scripts highlighting by the content"
+msgstr "Определять подсветку скриптов по содержимому"
+
+#: tea_options.c:529
+msgid "Show hidden files in Kwas"
+msgstr "Показывать скрытые файлы в Квасе"
+
+#: tea_options.c:530
+msgid "Use external image viewer"
+msgstr "Использовать внешнюю смотрелку"
+
+#: tea_options.c:531
+msgid "Do backup"
+msgstr "Делать резервные копии при сохранении"
+
+#: tea_options.c:532
+msgid "Show line numbers"
+msgstr "Показывать по умолчанию номера строк"
+
+#: tea_options.c:534
+msgid "Scan for links on file open"
+msgstr "Сканировать ссылки при открытии файла"
+
+#: tea_options.c:535
+msgid "Imageplane insert tags by default"
+msgstr "Imageplane по умолчанию вставляет тэги"
+
+#: tea_options.c:546
+msgid "Warn before closing a modified file"
+msgstr "Попытка закрыть измененный файл"
+
+#: tea_options.c:547
+msgid "Overwrite the existing file"
+msgstr "Перезапись существующего файла"
+
+#: tea_options.c:565
+msgid "Please select the font"
+msgstr "Выберите шрифт"
+
+#: tea_options.c:598
+msgid "Configuration restored, please close and reopen the Preferences window."
+msgstr ""
+"Настройки восстановлены. Теперь закройте и откройте заново окно Настроек"
+
+#: tea_options.c:610
+msgid ""
+"Configuration is reseted to default, please close and reopen the Preferences "
+"window."
+msgstr ""
+"Настройки сброшены в значения по умолчанию. Теперь закройте и откройте "
+"заново окно Настроек"
+
+#: tea_options.c:623 tea_options.c:678 tea_options.c:733 tea_options.c:788
+#: tea_options.c:878
+msgid "Confirmation!"
+msgstr "Подтверждение!"
+
+#: tea_options.c:623 tea_options.c:678 tea_options.c:733 tea_options.c:788
+#: tea_options.c:878
+#, c-format
+msgid "Are you sure to delete %s?"
+msgstr "А вы уверены, что хотите удалить %s?"
+
+#: tea_options.c:647 tea_options.c:702 tea_options.c:757 tea_options.c:812
+#: tea_options.c:911
+msgid "Rename as:"
+msgstr "Переименовать в:"
+
+#: tea_options.c:838
+msgid "Select a file:"
+msgstr "Выберите файл:"
+
+#: tea_options.c:944
+msgid "Backup the current config"
+msgstr "Резервировать текущий конфиг"
+
+#: tea_options.c:945
+msgid "Config restore"
+msgstr "Восстановить конфиг из резервной копии"
+
+#: tea_options.c:946
+msgid "Reset config to default"
+msgstr "Сбросить настройки в значения по умолчанию"
+
+#: tea_options.c:947
+msgid "Put the launcher to the desktop"
+msgstr "Поместить иконку на рабочий стол"
+
+#: tea_options.c:948
+msgid "Remove the launcher from the desktop"
+msgstr "Удалить иконку с рабочего стола"
+
+#: tea_options.c:959
+msgid "Templates management"
+msgstr "Управление шаблонами"
+
+#: tea_options.c:964 tea_options.c:980 tea_options.c:996 tea_options.c:1013
+#: tea_options.c:1029 tea_options.c:1327
+msgid "Remove"
+msgstr "Удалить"
+
+#: tea_options.c:965 tea_options.c:981 tea_options.c:997 tea_options.c:1014
+#: tea_options.c:1030
+msgid "Rename"
+msgstr "Переименовать"
+
+#: tea_options.c:975
+msgid "Snippets management"
+msgstr "Управление сниппетами"
+
+#: tea_options.c:991
+msgid "Sessions management"
+msgstr "Управление сессиями"
+
+#: tea_options.c:1007
+msgid "Scripts management"
+msgstr "Управление скриптами"
+
+#: tea_options.c:1012
+msgid "Add"
+msgstr "Добавить"
+
+#: tea_options.c:1024
+msgid "Replacement tables management"
+msgstr "Управление таблицами замены"
+
+#: tea_options.c:1044 tea_options.c:1362
+msgid "Editor"
+msgstr "Редактор"
+
+#: tea_options.c:1046
+msgid "Text foreground"
+msgstr "Текст"
+
+#: tea_options.c:1047
+msgid "Text background"
+msgstr "Фон текста"
+
+#: tea_options.c:1048
+msgid "Selected foreground"
+msgstr "Выбранный текст"
+
+#: tea_options.c:1049
+msgid "Selected background"
+msgstr "Фон выбранного текста"
+
+#: tea_options.c:1051
+msgid "Marking function foreground"
+msgstr "Передний план отметок"
+
+#: tea_options.c:1052
+msgid "Marking function background"
+msgstr "Фон отметок"
+
+#: tea_options.c:1054
+msgid "Current line foreground"
+msgstr "Цвет букв текущей строки"
+
+#: tea_options.c:1055
+msgid "Current line background"
+msgstr "Цвет фона текущей строки"
+
+#: tea_options.c:1057
+msgid "Spellchecker marks"
+msgstr "Цвет ошибок для проверки орфографии"
+
+#: tea_options.c:1080
+msgid "Errors foreground (logmemo)"
+msgstr "Сообщения об ошибках в logmemo, цвет букв"
+
+#: tea_options.c:1081
+msgid "Errors background (logmemo)"
+msgstr "Сообщения об ошибках в logmemo, цвет фона"
+
+#: tea_options.c:1111
+msgid "Font"
+msgstr "Шрифт"
+
+#: tea_options.c:1114
+msgid "Max undo levels"
+msgstr "Количество уровней отмены"
+
+#: tea_options.c:1116
+msgid "Tab size in spaces"
+msgstr "Размер таба в пробелах"
+
+#: tea_options.c:1117
+msgid "Smart Home/End"
+msgstr "Умный Home/End"
+
+#: tea_options.c:1119
+msgid "Insert spaces on TAB key"
+msgstr "Вставлять пробелы по клавише TAB"
+
+#: tea_options.c:1120
+msgid "Automatic indent"
+msgstr "Автоматический отступ"
+
+#: tea_options.c:1121
+msgid "Autoreplace"
+msgstr "Автозамена"
+
+#: tea_options.c:1122
+msgid "Autoclose tags"
+msgstr "Автозавершение тэгов"
+
+#: tea_options.c:1123
+msgid "Cursor blink"
+msgstr "Мигание курсора"
+
+#: tea_options.c:1124
+msgid "Autosaving interval, minutes"
+msgstr "Промежуток автосохранения, в минутах"
+
+#: tea_options.c:1125
+msgid "Enable the autosaving"
+msgstr "Включить автосохранение"
+
+#: tea_options.c:1126
+msgid "Autosave a session on each interval"
+msgstr "Автоматически сохранять сессию через промежуток"
+
+#: tea_options.c:1128
+msgid "Highlight the current line"
+msgstr "Подсвечивать текущую строку"
+
+#: tea_options.c:1130
+msgid "Show the margin"
+msgstr "Показывать правую границу"
+
+#: tea_options.c:1131
+msgid "Position of the margin (GtkSourceView-only)"
+msgstr "Позиция правой границы (только для GtkSourceView)"
+
+#: tea_options.c:1142
+msgid "Default file saving directory"
+msgstr "Каталог по умолчанию для сохранения"
+
+#: tea_options.c:1143
+msgid "Use default saving directory"
+msgstr "Использовать каталог по умолчанию для сохранения"
+
+#: tea_options.c:1144
+msgid "Default file opening directory"
+msgstr "Каталог по умолчанию для открытия файлов"
+
+#: tea_options.c:1145
+msgid "Use default file opening directory"
+msgstr "Использовать каталог по умолчанию для открытия файлов"
+
+#: tea_options.c:1147
+msgid "Add this extension to the file which is *Saving as*"
+msgstr "Добавлять это расширение при Сохранить как"
+
+#: tea_options.c:1148
+msgid "(<i>for example, txt, html, etc</i>)"
+msgstr "<i>Например, txt, html</i>"
+
+#: tea_options.c:1302
+msgid "Quick search"
+msgstr "Быстрый поиск"
+
+#: tea_options.c:1324
+msgid "Shortcut"
+msgstr "Сочетание клавиш"
+
+#: tea_options.c:1326
+msgid "Assign"
+msgstr "Назначить"
+
+#: tea_options.c:1339
+msgid "Options, I presume..."
+msgstr "Настройки, я полагаю..."
+
+#: tea_options.c:1355
+msgid "Switches"
+msgstr "Переключатели"
+
+#: tea_options.c:1361
+msgid "Interface"
+msgstr "Интерфейс"
+
+#: tea_options.c:1366
+msgid "Highlighting"
+msgstr "Подсветка"
+
+#: tea_options.c:1368
+msgid "Colors"
+msgstr "Цвета"
+
+#: tea_options.c:1370
+msgid "Commands"
+msgstr "Команды"
+
+#: tea_options.c:1372
+msgid "Paths"
+msgstr "Пути"
+
+#: tea_options.c:1374
+msgid "Confirmations"
+msgstr "Подтверждения"
+
+#: tea_options.c:1376
+msgid "Maintenance"
+msgstr "Обслуживание"
+
+#: tea_options.c:1377
+msgid "Keyboard"
+msgstr "Клавиатура"
+
+#: tea_options.c:1405
+msgid "Save and apply"
+msgstr "Сохранить и применить"
+
+#: tea_proj.c:56
+msgid "Project name"
+msgstr "Имя проекта"
+
+#: tea_proj.c:57
+msgid "Makefile directory"
+msgstr "Директория с makefile"
+
+#: tea_proj.c:58
+msgid "Source directory"
+msgstr "Директория с исходным кодом"
+
+#: tea_proj.c:59
+msgid "Target executable"
+msgstr "Исполняемый файл"
+
+#: tea_proj.c:197
+msgid "Main"
+msgstr "Главные"
+
+#: tea_findfiles_mult.c:236
+msgid "File save"
+msgstr "Сохранить файл"
+
+#: tea_findfiles_mult.c:321
+msgid "And where to find?"
+msgstr "А где искать?"
+
+#: tea_findfiles_mult.c:322 tea_encode.c:211
+msgid "File pattern"
+msgstr "Шаблон имени файла"
+
+#: tea_findfiles_mult.c:325
+msgid "Copy to the directory"
+msgstr "Копировать в каталог"
+
+#: tea_findfiles_mult.c:326
+msgid "Save as a session"
+msgstr "Сохранить как сессию"
+
+#: tea_findfiles_mult.c:327
+msgid "Copy a filename"
+msgstr "Копировать имя текущего файла"
+
+#: tea_findfiles_mult.c:328
+msgid "Clear a list"
+msgstr "Очистить список"
+
+#: tea_findfiles_mult.c:330
+msgid "Found files"
+msgstr "Найдены файлы"
+
+#: tea_calendar.c:167
+#, c-format
+msgid "Days between %s and %s = %d"
+msgstr "Дней между %s и %s = %d"
+
+#: tea_calendar.c:197
+msgid "Days between"
+msgstr "Дней между"
+
+#: tea_calendar.c:208
+msgid "date1"
+msgstr "дата1"
+
+#: tea_calendar.c:213
+msgid "date2"
+msgstr "дата2"
+
+#: tea_calendar.c:225
+msgid "Insert as a date"
+msgstr "Вставить как дату"
+
+#: tea_calendar.c:230
+msgid "Insert as a julian day"
+msgstr "Вставить как юлианский день"
+
+#: tea_calendar.c:235
+msgid "Insert as a day of year"
+msgstr "Вставить как день года"
+
+#: image_browser.c:591
+msgid "Slow zoom in (+)"
+msgstr "Увеличить точно (+)"
+
+#: image_browser.c:592
+msgid "Slow zoom out (-)"
+msgstr "Уменьшить точно (-)"
+
+#: image_browser.c:593
+msgid "Actual size (=)"
+msgstr "Действительный размер (=)"
+
+#: image_browser.c:594
+msgid "Zoom to fit screen (S)"
+msgstr "Масштабировать к размеру экрана (S)"
+
+#: image_browser.c:595
+msgid "Fast zoom in (*)"
+msgstr "Увеличить быстро (*)"
+
+#: image_browser.c:596
+msgid "Fast zoom out (/)"
+msgstr "Уменьшить медленно (/)"
+
+#: image_browser.c:600
+msgid "Set image as wallpaper centered"
+msgstr "Установить картинку обоями по центру"
+
+#: image_browser.c:601
+msgid "Set image as wallpaper scaled"
+msgstr "Установить картинку обоями на весь экран"
+
+#: image_browser.c:604
+msgid "Toggle fullscreen (F)"
+msgstr "Полноэкранный режим (F)"
+
+#: image_browser.c:605
+msgid "Insert this image into the current document (Ins or I)"
+msgstr "Вставить эту картинку в текущий документ (Ins или I)"
+
+#: image_browser.c:606
+msgid "Insert this image into the current document //with the current size (D)"
+msgstr "Вставить эту картинку (с видимым размером) в текущий документ (D)"
+
+#: image_browser.c:608
+msgid "Copy this image to clipboard"
+msgstr "Копировать эту картинку в буфер обмена"
+
+#: image_browser.c:610
+msgid "Load next image (PgDown)"
+msgstr "Загрузить следующую картинку (PgDown)"
+
+#: image_browser.c:611
+msgid "Load previous image (PgUp)"
+msgstr "Загрузить предшествующую картинку (PgUp)"
+
+#: image_browser.c:910
+msgid "Insert tags"
+msgstr "Вставлять тэги"
+
+#: image_browser.c:919
+msgid "Insert the tag rather than view image"
+msgstr "Вставять тэг вместо просмотра картинки"
+
+#: latex_support.c:51 latex_support.c:76 latex_support.c:100
+#: latex_support.c:126
+msgid "Done"
+msgstr "Завершено"
+
+#: latex_support.c:55
+#, c-format
+msgid "dvi to PS results for %s:"
+msgstr "результаты dvi в PS для %s:"
+
+#: latex_support.c:80
+#, c-format
+msgid "LaTeX processing results for %s:"
+msgstr "Результаты обработки для %s:"
+
+#: latex_support.c:104
+#, c-format
+msgid "pdflatex processing results for %s:"
+msgstr "Результаты обработки %s в pdflatex:"
+
+#: latex_support.c:130
+#, c-format
+msgid "dvi to PDF results for %s:"
+msgstr "обработка %s:"
+
+#: tea_encode.c:196
+msgid "Encode files"
+msgstr "Кодировать файлы"
+
+#: tea_encode.c:210
+msgid "Directory"
+msgstr "Каталог: "
+
+#: tea_encode.c:213
+msgid "Convert ends of lines"
+msgstr "Конвертировать концы строк"
+
+#: tea_encode.c:228
+msgid "Find and convert"
+msgstr "Найти и перевести"
+
+#: tea_encode.c:240
+msgid "From: "
+msgstr "Из: "
+
+#: tea_encode.c:243
+msgid "To: "
+msgstr "В: "
+
+#~ msgid "Check for broken links"
+#~ msgstr "Найти битые ссылки"
+
+#~ msgid "*Now playing* string from Amarok"
+#~ msgstr "Строка *Сейчас играет* из Amarok"
+
+#~ msgid "Checking... Please wait!"
+#~ msgstr "Проверяю... Обождите!"
+
+#~ msgid "Take screenshot (screen)"
+#~ msgstr "Сделать снимок экрана"
+
+#~ msgid "Take screenshot (window)"
+#~ msgstr "Сделать снимок указанного окна"
+
+#~ msgid "Take screenshot (region)"
+#~ msgstr "Сделать снимок области"
+
+#~ msgid "Take screenshot (clipboard)"
+#~ msgstr "Сделать снимок (из буфера обмена)"
+
+#~ msgid "Highlighting mode"
+#~ msgstr "Режим подсветки"
+
+#~ msgid "Refresh highlighting"
+#~ msgstr "Обновить подсветку"
+
+#~ msgid "Hide highlighting"
+#~ msgstr "Скрыть подсветку"
+
+#~ msgid "[X]HTML/XML and CSS files"
+#~ msgstr "Файлы [X]HTML/XML и CSS"
+
+#~ msgid "C/C++ sources and headers"
+#~ msgstr "C/C++ исходники и заголовки"
+
+#~ msgid "Screenshot is saved to %s OK"
+#~ msgstr "Снимок экрана успешно сохранен в %s"
+
+#~ msgid "Available highlighting modes"
+#~ msgstr "Доступные режимы подсветки"
+
+#~ msgid "Elements"
+#~ msgstr "Элементы"
+
+#~ msgid "Element foreground"
+#~ msgstr "Цвет текста элемента"
+
+#~ msgid "Strikethrough"
+#~ msgstr "Перечеркнутый"
+
+#~ msgid "Screenshot delay (in seconds)"
+#~ msgstr "Задержка перед снимком экрана (в секундах)"
+
+#~ msgid "Cursor color"
+#~ msgstr "Цвет курсора"
+
+#~ msgid "Comments"
+#~ msgstr "Комментарии"
+
+#~ msgid "Identifiers"
+#~ msgstr "Идентификаторы"
+
+#~ msgid "Digits"
+#~ msgstr "Цифры"
+
+#~ msgid "Strings"
+#~ msgstr "Строки"
+
+#~ msgid "HTML tags"
+#~ msgstr "HTML-тэги"
+
+#~ msgid "Preprocessor"
+#~ msgstr "Директивы препроцессора"
+
+#~ msgid "Types"
+#~ msgstr "Типы"
+
+#~ msgid "Editor font"
+#~ msgstr "Шрифт редактора"
+
+#~ msgid "Comments font"
+#~ msgstr "Шрифт комментариев"
+
+#~ msgid "Identifiers font"
+#~ msgstr "Шрифт идентификаторов"
+
+#~ msgid "Digits font"
+#~ msgstr "Шрифт цифр"
+
+#~ msgid "Strings font"
+#~ msgstr "Шрифт строк"
+
+#~ msgid "HTML tags font"
+#~ msgstr "Шрифт тэгов HTML"
+
+#~ msgid "Preprocessor font"
+#~ msgstr "Шрифт директив препроцессора"
+
+#~ msgid "Types font"
+#~ msgstr "Шрифт типов"
+
+#~ msgid "Change all fonts"
+#~ msgstr "Сменить все шрифты сразу"
+
+#~ msgid "Fonts"
+#~ msgstr "Шрифты"
+
+#~ msgid "Famous text entry autocompletion min. prefix, in characters"
+#~ msgstr "Мин. префикс автодоп. знам. поля ввода, в символах"
+
+#~ msgid "Clear the Famous text entry history"
+#~ msgstr "Очистить историю знаменитого поля ввода"
+
+#~ msgid "Quarter Moon"
+#~ msgstr "четверть Луны"
+
+#~ msgid "Available"
+#~ msgstr "Доступные"

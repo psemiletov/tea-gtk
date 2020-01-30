@@ -1,0 +1,657 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>The transcendental shining of the File menu
+</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="TEA Manual"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="How to edit and preview SRT-subtitles
+"
+HREF="c102.html"><LINK
+REL="NEXT"
+TITLE="Edit menu, or how to cut without scissors and violence.
+"
+HREF="c226.html"></HEAD
+><BODY
+CLASS="chapter"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>TEA Manual</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="c102.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="c226.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="chapter"
+><H1
+><A
+NAME="ch_file_menu"
+></A
+>Chapter 5. The transcendental shining of the File menu
+</H1
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>New</B
+></SPAN
+> - makes a new empty document in the UTF-8 encoding. Of course you can save it in the charster what you like.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>New Kwas</B
+></SPAN
+> - opens a new Kwas window. Please read the chapter <A
+HREF="c958.html"
+>What is Kwas?</A
+>.</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Crapbook</B
+></SPAN
+> - Crapbook is a simply text file that stored at <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>$HOME/.config/tea/crapbook.txt</I
+></SPAN
+>. You can call it by Alt-M. TEA saves this file automatically when you close TEA or <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>crapbook.txt</I
+></SPAN
+> itself. I think this is useful for writing some notes, quotes and the similar stuff.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Add to... &#62; Add to Bookmarks</B
+></SPAN
+> - adds a new bookmark record into Bookmarks list. Each record includes fields: filename, charset, position. To edit the bookmarks file (which is a simple text file with a list of items) go to <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>File &#62; Manage config files &#62; Bookmarks file</B
+></SPAN
+>. Edit it and then save. Changes will be applied immediately.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Add to... &#62; Add to the autosaving list</B
+></SPAN
+> - adds the current file to a special list of files. These files will be saved automaticaly when you close it. To edit the file with that list go to <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>File &#62; Manage config files &#62; Autosaving list</B
+></SPAN
+> 
+</P
+><P
+>This feature is useful if you want to keep some files as collectors for a different info. You can, for example, make a shortcut in KDE to run something like <B
+CLASS="command"
+>tea ~/my_links.txt</B
+>, and put <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>my_links.txt</I
+></SPAN
+> into the autosaving files list.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Open</B
+></SPAN
+> - opens a file[s]. There are a charset selector in the File open dialog window. Choose the correct encoding or you will be angry. For details about how TEA deals with charsets please read the chapter <A
+HREF="c68.html"
+>How TEA works with different charsets?</A
+>
+</P
+><P
+>By open multiply files, they must be in the same encoding (the charset that selected), or shit can happen. I cannot say about the nature of that hypothetical shit, but now you are warned.  
+</P
+><P
+>TEA uses File open widget introduced in GTK+ 2.4. It supports some keyboard shortcuts for different actions:
+</P
+><P
+></P
+><UL
+><LI
+><P
+>Directory up - Alt-Up</P
+></LI
+><LI
+><P
+>Directory down - Alt-Down</P
+></LI
+><LI
+><P
+>Goto home directory - Alt-Home</P
+></LI
+></UL
+><P
+>&#13;At the bottom of this dialog window you can see the <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>TEA special locations</B
+></SPAN
+> drop-down menu. Use it to change the current directory to the one of directories where TEA keeps your snippets, scripts, templates, sessions and replacement tables. Please note, that all those files <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>must be</B
+></SPAN
+> in the UTF-8 encoding. So don't save your templates etc. in other encodings.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>About RTF files</B
+></SPAN
+> - yes, TEA can OPEN them. Not to save. To open it correctly you must define the default encoding for RTF. It can be done in <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Preferences &#62; Encoding &#62; Default charset for RTF</B
+></SPAN
+>. If you are an English-speaking user, do not worry, it is not affects you much. 
+</P
+><P
+>An another question is <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>how</I
+></SPAN
+> TEA opens RTF's. It really sucks, but it works. To just read RTF quickly, use TEA. But if you want to edit them, then use OOo, or KWord, or AbiWord, or whatever else.
+</P
+><P
+>&#13;By the way, TEA can open OpenDocument, OpenOffice.org Writer, KWord, Microsoft Word and AbiWord files in the read-only mode. So you can use TEA as the viewer of those files, or to convert them into the plain text (using <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Save as</B
+></SPAN
+> with another filename). I can notice that TEA reads KWord slightly better than OOo and Abiword formats. To open Microsoft Word, you need to have the <A
+HREF="http://www.winfield.demon.nl"
+TARGET="_top"
+>Antiword</A
+> program installed. And to open OpenDocument, OpenOffice.org Writer and KWord you need the following programs: <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>gunzip</I
+></SPAN
+>, <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>bzip2</I
+></SPAN
+> and <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>tar</I
+></SPAN
+>.  
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>About archieved files</B
+></SPAN
+>. Currently TEA supports in the read-only mode files comressed with .gz, bz2, zip, tar.gz, tar.bz2 and tar.zip. There are two limitations for that. In a such mode TEA can open only UTF-8 files (or with a normal English text). And, TEA can handle an archieve if it contains just a single file. For archieves support you also need <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>gunzip</I
+></SPAN
+>, <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>bzip2</I
+></SPAN
+> and <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>tar</I
+></SPAN
+>. 
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Open different &#62; Open a movie</B
+></SPAN
+> menu item. It is destined for SRT-subtitles editing. For the further info read the chapter about <A
+HREF="c843.html"
+>View menu</A
+>. 
+</P
+><P
+>&#13;The <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Open different &#62; Open from the Famous text entry</B
+></SPAN
+>. How it works? Enter or paste the full file name into the Famous text entry, then use this function and enjoy.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Open different  &#62;Open the autosaved session</B
+></SPAN
+> - open the session that was automatically saved, if <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Preferences &#62; Editor &#62; Autosave a session on each interval</B
+></SPAN
+> is turned on.</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Templates</B
+></SPAN
+> - from this menu user templates are available. All templates are stored by default in <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>$HOME/.config/tea/templates</I
+></SPAN
+>. To save the file as a template, use <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Save different &#62; Save as template</B
+></SPAN
+> menu item. To manage templates, use <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Preferences &#62; Maintainance</B
+></SPAN
+> page. To open a template for editing use the file open dialog's <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>TEA special locations</B
+></SPAN
+> drop-down list.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Sessions</B
+></SPAN
+> - the stuff like in the Opera browser - you can store lists of files, and then load them as well. To open a session file in TEA like a normal text file, without loading a filelist from it, use the file open dialog's <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>TEA special locations</B
+></SPAN
+> drop-down list. TEA stores to each session 3 elements per file - the filename, the encoding and the cursor position.
+</P
+><P
+>To store the files as a session, use <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Save different &#62; Save session</B
+></SPAN
+> menu item. To manage sessions, use <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Preferences &#62; Maintainance</B
+></SPAN
+> page.
+</P
+><P
+><SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>Now playing: Yab Yum - Dead Moon Ritual (Source Mutation Mix)</I
+></SPAN
+>
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Save different &#62; Backup</B
+></SPAN
+> - TEA makes copy of the currently editing text as the backup-file.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Save</B
+></SPAN
+> - you know, right? Just a one note - document will be saved in same encoding as you've opened it.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Save as</B
+></SPAN
+> -  by the way, in this dialog you can select from the list any of the encodings that available. So if you want to convert your file into another charset, use this feature. 
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Save different &#62; Save as template</B
+></SPAN
+> - saves a current file as template in a default templates directory <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>$HOME/.config/tea/templates</I
+></SPAN
+>.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Save different &#62; Save version</B
+></SPAN
+> - save a copy of the current file with the name, based on this file name and current date and time. You can customize the date/time format at <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Preferences &#62; Functions &#62; Date format for Save version</B
+></SPAN
+>. For the details, see <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Functions &#62; Insert &#62; Date/Time</B
+></SPAN
+> description.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Save different &#62; Save packed</B
+></SPAN
+> - save a packed copy of the current file using the command line that you can modify at <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Preferences &#62; Interface &#62; A command for Save packed</B
+></SPAN
+>. Before using <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Save packed</B
+></SPAN
+>, save the current document first, because the external archiever tool needs an existing file to pack.
+</P
+><P
+>Manage utility files - from here you can open directly any of TEA configuration files (saved at <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>$HOME/.config/tea/</I
+></SPAN
+>). The changes will be applied after editing and saving. I do not recommend you edit the Main config, because TEA has a fine tool for that - the <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Preferences window</B
+></SPAN
+>, but do as you wish.
+</P
+><P
+>&#13;<SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>Current music is: Nirvana - Talk To Me</I
+></SPAN
+></P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Manage utility files &#62; Autoreplace words file</B
+></SPAN
+> - here you can open the file with words for autoreplacing (which you can turn ON at <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Preferences &#62; Editor &#62; Autoreplace</B
+></SPAN
+>). This file contains lines in a very simply format: <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>string1=string2</I
+></SPAN
+>.
+For example:
+</P
+><PRE
+CLASS="programlisting"
+>Linux=GNU/Linux
+sxe=straight edge
+FSOL=Future Sound Of London
+hl=highlighting</PRE
+><P
+>After you save this file, the inner list of autoreplacing will be updated. To use it, just turn autoreplacing on, and start to type your text. All words from the list there will be replaced/expanded when you enter their short equivalent and press SPACE or any punctuation key. <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>Autoreplacing is case-sensetive</I
+></SPAN
+>.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Manage utility files &#62; Hotkeys config</B
+></SPAN
+> - using this file you can assign your hotkey/shortcut for any menu item. Note: Better use the GUI at <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Preferences - Keyboard</B
+></SPAN
+> section! All hotkeys are stored in the <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>$HOME/.config/tea/tea_keys</I
+></SPAN
+> file. This file MUST contain only UTF-8 data. All changes will be applied after you save this file.
+</P
+><P
+>Each line of <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>tea_keys</I
+></SPAN
+> has a simple format: <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>menu item caption=hotkey</I
+></SPAN
+>. For example:
+</P
+><PRE
+CLASS="programlisting"
+>Reverse=Alt Shift R
+Read this fine manual=F1</PRE
+><P
+>Some notes. The menu item's caption is case-sensitive. So you must write it exactly as in the TEA menu. Otherwise, the hotkey is not case-sensitive, so you can write freely something like that: "shift ctrl F5" or so. Available modifiers are: <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>Alt, Ctrl, Shift</I
+></SPAN
+>. You must divide them by spaces.
+</P
+><P
+>You can assign a hotkey to any menu item, even for dynamical-created items like bookmarks. 
+</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="c102.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="c226.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>How to edit and preview SRT-subtitles</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Edit menu, or how to cut without scissors and violence.</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

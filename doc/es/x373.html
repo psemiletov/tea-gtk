@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Recortes</title>
+  <meta name="GENERATOR" content=
+  "Modular DocBook HTML Stylesheet Version 1.7" />
+  <link rel="HOME" title="TEA: Manual de usuario" href=
+  "index.html" />
+  <link rel="UP" title="Funciones" href="c298.html" />
+  <link rel="PREVIOUS" title="Menú personalizado" href=
+  "x366.html" />
+  <link rel="NEXT" title="Formato" href="x388.html" />
+  <link rel="STYLESHEET" type="text/css" href="style.css" />
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8" />
+<style type="text/css">
+/*<![CDATA[*/
+ body {
+  background-color: #FFFFFF;
+  color: #000000;
+ }
+ :link { color: #0000FF }
+ :visited { color: #840084 }
+ :active { color: #0000FF }
+ hr.c28 {text-align: left}
+/*]]>*/
+</style>
+</head>
+
+<body class="section">
+  <div class="NAVHEADER">
+    <table summary="Header navigation table" width="100%" border=
+    "0" cellpadding="0" cellspacing="0">
+      <tr>
+        <th colspan="3" align="center"><img src="img/logo.gif" alt=
+        "logo" /></th>
+      </tr>
+
+      <tr>
+        <td align="left" valign="bottom"><a href=
+        "x366.html" accesskey="P"><img src="img/prev.gif"
+        alt="Prev" /></a></td>
+
+        <td align="center" valign="bottom">9.
+        Funciones</td>
+
+        <td align="right" valign="bottom"><a href=
+        "x388.html" accesskey="N"><img src="img/next.gif"
+        alt="Next" /></a></td>
+      </tr>
+    </table>
+    <hr class="c28" />
+  </div>
+
+  <div class="section">
+    <h1 class="section"><a name="AEN385" id="AEN385"></a>9.7.
+    Recortes</h1>
+
+    <p>Un recorte es un trozo de código que se puede insertar en un
+    documento. TEA guarda cada recorte en un archivo por separado
+    en <span class="emphasis"><i class=
+    "emphasis">$HOME/.tea/snippets</i></span> . El nombre de
+    archivo de un recorte es un elemento del menú Recortes, es
+    decir el contenido del menú de Recortes es la lista de archivos
+    que hay en <span class="emphasis"><i class=
+    "emphasis">$HOME/.tea/snippets</i></span>. Para crear uno
+    nuevo:</p>
+
+    <p>1. Escribir algún texto.</p>
+
+    <p>2. Ir a <span class="bold"><b class="emphasis">Archivo &gt;
+    Guardar (Especial) &gt; Guardar como recorte</b></span>.</p>
+
+    <p>3. Disfrutar :)</p>
+
+    <div class="caution">
+      <table class="caution" width="100%" border="0">
+        <tr>
+          <td align="center" valign="top"><img src=
+          "img/caution.gif" alt="" /></td>
+
+          <td align="left" valign="top">
+            <p>Los recortes sólo se pueden guardar en UTF-8</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <p>Se puede crear un recorte que modifique un texto
+    seleccionado de cierta forma. Por ejemplo, se puede crear un
+    recorte que encierre el texto seleccionado entre unas etiquetas
+    HTML. Si <span class="emphasis"><i class=
+    "emphasis">%s</i></span> representa ese texto. Este sería el
+    código del recorte:</p>
+
+    <p>&lt;a href="%s"&gt;%s&lt;/a&gt;</p>
+
+    <p>Cuando se aplique este recorte, %s será sustituido por el
+    texto seleccionado. Si no hubiera algo seleccinado, el
+    contenido del recorte se incrustaría en el documento.</p>
+  </div>
+
+  <div class="NAVFOOTER">
+    <hr class="c28" />
+
+    <table summary="Footer navigation table" width="100%" border=
+    "0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="left" valign="top"><a href=
+        "x366.html" accesskey="P"><img src="img/prev.gif"
+        alt="Prev" /></a></td>
+
+        <td align="center" valign="top"><a href=
+        "index.html" accesskey="H"><img src="img/home.gif"
+        alt="Home" /></a></td>
+
+        <td align="right" valign="top"><a href=
+        "x388.html" accesskey="N"><img src="img/next.gif"
+        alt="Next" /></a></td>
+      </tr>
+
+      <tr>
+        <td align="left" valign="top">Menú
+        personalizado</td>
+
+        <td align="center" valign="top"><a href=
+        "c298.html" accesskey="U"><img src="img/up.gif"
+        alt="Up" /></a></td>
+
+        <td align="right" valign="top">Formato</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

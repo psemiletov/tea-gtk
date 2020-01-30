@@ -1,0 +1,2585 @@
+# translation of tea-de-80.po to 
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tea-es-10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-30 12:48+0200\n"
+"PO-Revision-Date: 2005-06-15 16:01+0100\n"
+"Last-Translator: \n"
+"Language-Team:  <es@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: interface.c:118
+msgid "Save under a different name"
+msgstr ""
+
+#: interface.c:119
+msgid "Save the current file"
+msgstr "Guardar archivo actual"
+
+#: interface.c:120
+msgid "Open a file"
+msgstr "Abrir archivo"
+
+#: interface.c:121
+msgid "Create a new file"
+msgstr "Crear nuevo archivo"
+
+#: interface.c:198
+msgid "Close the current document"
+msgstr "Cerrar la etiqueta actual"
+
+#: interface.c:200
+msgid "File"
+msgstr "Archivo"
+
+#: interface.c:204
+msgid "New"
+msgstr "Nuevo"
+
+#: interface.c:205
+msgid "New Kwas (file manager)"
+msgstr "Nuevo Kwas (gestor de archivos)"
+
+#: interface.c:214
+msgid "Crapbook"
+msgstr "Borrador"
+
+#: interface.c:217 callbacks.c:6231
+msgid "Print"
+msgstr ""
+
+#: interface.c:221
+msgid "Add to..."
+msgstr "Añadir a..."
+
+#: interface.c:224
+msgid "Add to Bookmarks"
+msgstr "Añadir a Marcadores"
+
+#: interface.c:225
+msgid "Add to the autosaving list"
+msgstr "Añadir a la lista de autoguardados"
+
+#: interface.c:229
+msgid "Open"
+msgstr "Abrir"
+
+#: interface.c:231
+msgid "The last opened file"
+msgstr "Ultimo archivo abierto"
+
+#: interface.c:233
+msgid "Open different"
+msgstr "Abrir (Especial)"
+
+#: interface.c:236
+msgid "Open movie"
+msgstr "Reproducir video"
+
+#: interface.c:238
+msgid "Open the autosaved session"
+msgstr ""
+
+#: interface.c:239
+msgid "Open from the Famous text entry"
+msgstr "Abrir desde la entrada de texto"
+
+#: interface.c:243
+msgid "Recent files"
+msgstr "Archivos recientes"
+
+#: interface.c:246 tea_kwas.c:974
+msgid "Bookmarks"
+msgstr "Marcadores"
+
+#: interface.c:249 tea_config.c:77 tea_options.c:985
+msgid "Sessions"
+msgstr "Sesiones"
+
+#: interface.c:252 tea_config.c:74 tea_options.c:953
+msgid "Templates"
+msgstr "Plantillas"
+
+#: interface.c:257
+msgid "Save"
+msgstr "Guardar"
+
+#: interface.c:258
+msgid "Save as"
+msgstr "Guardar como"
+
+#: interface.c:260
+msgid "Save different"
+msgstr "Guardar (Especial)"
+
+#: interface.c:264
+msgid "Save a session"
+msgstr "Guardar sesión"
+
+#: interface.c:266
+msgid "Save as a template"
+msgstr "Guardar como plantilla"
+
+#: interface.c:267
+msgid "Save as a snippet"
+msgstr ""
+
+#: interface.c:268
+msgid "Save as a replacement table"
+msgstr ""
+
+#: interface.c:270
+msgid "Save version"
+msgstr "Guardar versión"
+
+#: interface.c:271
+msgid "Backup"
+msgstr "Copia de seguridad"
+
+#: interface.c:273
+msgid "Save packed"
+msgstr ""
+
+#: interface.c:275
+msgid "Save all"
+msgstr "Guardar todos"
+
+#: interface.c:277
+msgid "Revert to saved"
+msgstr "Volver a guardado"
+
+#: interface.c:281
+msgid "Manage utility files"
+msgstr ""
+
+#: interface.c:284
+msgid "Autoreplace words file"
+msgstr "Archivo de palabras de sustitución automática"
+
+#: interface.c:285
+msgid "Autosaving list"
+msgstr "Lista de guardado automático"
+
+#: interface.c:286
+msgid "Main config"
+msgstr "Configuración principal"
+
+#: interface.c:287
+msgid "Hotkeys config"
+msgstr "Configuración de atajos de teclado"
+
+#: interface.c:288
+msgid "External programs list config"
+msgstr ""
+
+#: interface.c:289
+msgid "Bookmarks file"
+msgstr "Marcadores"
+
+#: interface.c:290
+msgid "Open the crashfile"
+msgstr ""
+
+#: interface.c:292
+msgid "Preferences"
+msgstr "Opciones"
+
+#: interface.c:296
+msgid "Close current"
+msgstr "Cerrar archivo actual"
+
+#: interface.c:297
+msgid "Close all"
+msgstr "Cerrar todos"
+
+#: interface.c:299
+msgid "Quit"
+msgstr "Salir"
+
+#: interface.c:302
+msgid "Edit"
+msgstr "Editar"
+
+#: interface.c:306
+msgid "Indent"
+msgstr "Margen"
+
+#: interface.c:307
+msgid "Unindent"
+msgstr "Quitar margen"
+
+#: interface.c:311
+msgid "Copy"
+msgstr "Copiar"
+
+#: interface.c:312
+msgid "Copy all"
+msgstr "Copiar todos"
+
+#: interface.c:313
+msgid "Copy the current filename"
+msgstr "Copiar archivo actual"
+
+#: interface.c:315
+msgid "Cut!"
+msgstr "Cortar"
+
+#: interface.c:316
+msgid "Paste"
+msgstr "Pegar"
+
+#: interface.c:317
+msgid "Swop"
+msgstr "Barrer"
+
+#: interface.c:320
+msgid "Move a line up"
+msgstr "Subir una línea"
+
+#: interface.c:322
+msgid "Move a line down"
+msgstr "Bajar una línea"
+
+#: interface.c:327
+msgid "Cut to new"
+msgstr "Cortar a nuevo"
+
+#: interface.c:328
+msgid "Copy to new"
+msgstr "Copiar a nuevo"
+
+#: interface.c:329
+msgid "Paste to new"
+msgstr "Pegar en nuevo"
+
+#: interface.c:330
+msgid "Add to Crapbook"
+msgstr "Enviar al borrador"
+
+#: interface.c:332
+msgid "Select all"
+msgstr "Seleccionar todo"
+
+#: interface.c:334
+msgid "Delete current line"
+msgstr "Borrar línea actual"
+
+#: interface.c:335
+msgid "Delete"
+msgstr "Borrar"
+
+#: interface.c:339
+msgid "Undo"
+msgstr "Deshacer"
+
+#: interface.c:340
+msgid "Redo"
+msgstr "Rehacer"
+
+#: interface.c:343
+msgid "Search"
+msgstr "Buscar"
+
+#: interface.c:348
+msgid "Marking"
+msgstr ""
+
+#: interface.c:352
+msgid "Mark"
+msgstr "Marcar"
+
+#: interface.c:353
+msgid "Copy marked"
+msgstr "Copiar los marcados"
+
+#: interface.c:354
+msgid "Unmark all"
+msgstr "Desmarcar todos"
+
+#: interface.c:355
+msgid "Mark each n-th line"
+msgstr ""
+
+#: interface.c:356
+msgid "Mark lines containing the string"
+msgstr ""
+
+#: interface.c:357
+msgid "Mark by regexp"
+msgstr ""
+
+#: interface.c:358
+msgid "Mark all fuzzy and empty translations"
+msgstr ""
+
+#: interface.c:359
+msgid "Find and mark"
+msgstr "Buscar y marcar"
+
+#: interface.c:360
+msgid "Mark lines > n characters"
+msgstr "Marcar las líneas de > n caracteres"
+
+#: interface.c:362 tea_findfiles_mult.c:296
+msgid "Find in files"
+msgstr ""
+
+#: interface.c:363
+msgid "Search and Replace (tool)"
+msgstr "Buscar & Reemplazar"
+
+#: interface.c:364 tea_fr.c:139 tea_findfiles_mult.c:324
+msgid "Find"
+msgstr "Buscar"
+
+#: interface.c:365
+msgid "Find case insensitive"
+msgstr "Buscar (no distinguir mayúsculas/minúsculas)"
+
+#: interface.c:366 tea_fr.c:131
+msgid "Find next"
+msgstr "Buscar siguiente coincidencia"
+
+#: interface.c:367
+msgid "Find next case insensitive"
+msgstr "Buscar siguiente coincidencia (no distinguir mayúsculas/minúsculas)"
+
+#: interface.c:368 tea_fr.c:123
+msgid "Replace"
+msgstr "Sustituir"
+
+#: interface.c:369
+msgid "Goto line"
+msgstr "Ir a la línea"
+
+#: interface.c:370
+msgid "Replace all"
+msgstr "Sustituir todas"
+
+#: interface.c:372
+msgid "Mark broken local links"
+msgstr ""
+
+#: interface.c:373
+msgid "Scan for local links"
+msgstr "Buscar en enlaces locales"
+
+#: interface.c:374
+msgid "Scan for SRC"
+msgstr "Buscar en SRC"
+
+#: interface.c:375
+msgid "Run grep"
+msgstr ""
+
+#: interface.c:379
+msgid "Markup"
+msgstr "Etiquetas"
+
+#: interface.c:383
+msgid "Markup mode"
+msgstr "Modo de resaltado"
+
+#: interface.c:393
+msgid "Wikipedia elements"
+msgstr "Componentes de Wikipedia"
+
+#: interface.c:397
+msgid "Internal link"
+msgstr "Enlace interno"
+
+#: interface.c:399
+msgid "LaTeX elements"
+msgstr "Componentes de LaTeX"
+
+#: interface.c:404
+msgid "Begin/end block"
+msgstr "Bloque inicial/final"
+
+#: interface.c:431
+msgid "Docbook elements"
+msgstr "Componentes DocBook"
+
+#: interface.c:451
+msgid "HTML tools"
+msgstr "Herramientas HTML"
+
+#: interface.c:455
+msgid "Built-in template"
+msgstr ""
+
+#: interface.c:457
+msgid "Strip tags"
+msgstr "Recortar etiquetas"
+
+#: interface.c:458
+msgid "Enclose selected link into tags"
+msgstr "Poner enlace seleccionado entre etiquetas"
+
+#: interface.c:459
+msgid "Convert tags to entities"
+msgstr "Convertir etiquetas en HTML"
+
+#: interface.c:460
+msgid "Document weight"
+msgstr "Tamaño del documento"
+
+#: interface.c:461
+msgid "Text to HTML"
+msgstr "Convertir texto en HTML"
+
+#: interface.c:465
+msgid "Bold"
+msgstr "Negrita"
+
+#: interface.c:466
+msgid "Italic"
+msgstr "Cursiva"
+
+#: interface.c:468
+msgid "Emphasis"
+msgstr "Resaltado"
+
+#: interface.c:469
+msgid "Underline"
+msgstr "Subrayado"
+
+#: interface.c:473
+msgid "Close the current tag"
+msgstr "Cerrar la etiqueta actual"
+
+#: interface.c:474
+msgid "Comment"
+msgstr "Comentario"
+
+#: interface.c:475
+msgid "Chapter"
+msgstr "Capítulo"
+
+#: interface.c:476
+msgid "Section"
+msgstr "Sección"
+
+#: interface.c:477
+msgid "Paragraph"
+msgstr "Párrafo"
+
+#: interface.c:478
+msgid "Link"
+msgstr "Enlace"
+
+#: interface.c:479
+msgid "Color"
+msgstr "Color"
+
+#: interface.c:480
+msgid "Image"
+msgstr "Imagen"
+
+#: interface.c:481
+msgid "Line break"
+msgstr "Salto de línea"
+
+#: interface.c:484
+msgid "Non-breaking space"
+msgstr "Espacio de no separación (nbsp)"
+
+#: interface.c:491
+msgid "List stuff"
+msgstr "Listas"
+
+#: interface.c:495
+msgid "Itemized list"
+msgstr "Lista detallada"
+
+#: interface.c:496
+msgid "Enumerated list"
+msgstr "Lista ordenada"
+
+#: interface.c:497
+msgid "List item"
+msgstr "Elemento de lista"
+
+#: interface.c:499
+msgid "Table stuff"
+msgstr "Tablas"
+
+#: interface.c:503
+msgid "Make a table"
+msgstr "Construir tabla"
+
+#: interface.c:504
+msgid "Table"
+msgstr "Tabla"
+
+#: interface.c:505
+msgid "Row"
+msgstr "Fila"
+
+#: interface.c:506
+msgid "Cell"
+msgstr "Celda"
+
+#: interface.c:508
+msgid "H"
+msgstr "<Hn>"
+
+#: interface.c:522
+msgid "Align"
+msgstr "Alineación"
+
+#: interface.c:531 tea_options.c:942 tea_options.c:1360 image_browser.c:806
+msgid "Functions"
+msgstr "Funciones"
+
+#: interface.c:535 tea_calendar.c:191
+msgid "Calendar"
+msgstr "Calendario"
+
+#: interface.c:537
+msgid "Document stats"
+msgstr "Estadísticas del documento"
+
+#: interface.c:538
+msgid "Document readability"
+msgstr ""
+
+#: interface.c:542
+msgid "Spell-checker languages"
+msgstr ""
+
+#: interface.c:544 interface.c:551
+msgid "Spell check"
+msgstr "Ortografía"
+
+#: interface.c:545 interface.c:552
+msgid "Suggest a word"
+msgstr ""
+
+#: interface.c:546
+msgid "Add to dictionary"
+msgstr ""
+
+#: interface.c:553
+msgid "Add to dict"
+msgstr ""
+
+#: interface.c:561 tea_options.c:454
+msgid "Process with LaTeX"
+msgstr "Procesar con LaTeX"
+
+#: interface.c:562 tea_options.c:455
+msgid "Process with pdflatex"
+msgstr "Procesar con pdflatex"
+
+#: interface.c:564 tea_options.c:457
+msgid "dvi to PS"
+msgstr "DVI a PS"
+
+#: interface.c:565 tea_options.c:456
+msgid "dvi to PDF"
+msgstr "DVI a PDF"
+
+#: interface.c:566 tea_options.c:459
+msgid "View PDF"
+msgstr "Ver PDF"
+
+#: interface.c:567 tea_options.c:458
+msgid "View dvi"
+msgstr "Ver dvi"
+
+#: interface.c:568 tea_options.c:460
+msgid "View PS"
+msgstr "Ver PS"
+
+#: interface.c:570 tea_options.c:1078
+msgid "IDE"
+msgstr "IDE"
+
+#: interface.c:574
+msgid "New project"
+msgstr "Nuevo proyecto"
+
+#: interface.c:575
+msgid "Open project"
+msgstr "Abrir proyecto"
+
+#: interface.c:576
+msgid "Save project"
+msgstr "Guardar proyecto"
+
+#: interface.c:577
+msgid "Save project as"
+msgstr "Guardar proyecto como"
+
+#: interface.c:578 tea_proj.c:184
+msgid "Project properties"
+msgstr "Propiedades del proyecto"
+
+#: interface.c:579
+msgid "Make"
+msgstr "Compilar"
+
+#: interface.c:580
+msgid "Execute"
+msgstr "Ejecutar"
+
+#: interface.c:581
+msgid "Refresh tags with ctags"
+msgstr ""
+
+#: interface.c:583
+msgid "UNIversal Text AnalyZer"
+msgstr "UNIversal Text AnalyZer"
+
+#: interface.c:586
+msgid "Call UNITAZ with sorting abc"
+msgstr "Invocar UNITAZ con orden alfabético"
+
+#: interface.c:587
+msgid "Call UNITAZ with sorting by count"
+msgstr "Invocar UNITAZ con orden numérico"
+
+#: interface.c:588
+msgid "Call UNITAZ with sorting abc case insensitive"
+msgstr "UNITAZ por orden alfabético sin distinguir mayúsculas/minúsculas"
+
+#: interface.c:589
+msgid "Call UNITAZ with sorting by count case insensitive"
+msgstr "UNITAZ con orden numérico sin distinguir mayúsculas/minúsculas"
+
+#: interface.c:590
+msgid "Call UNITAZ plain"
+msgstr "Invocar UNITAZ (sin parámetros)"
+
+#: interface.c:591
+msgid "Extract words"
+msgstr "Extraer palabras"
+
+#: interface.c:595
+msgid "Replacement tables"
+msgstr ""
+
+#: interface.c:598 tea_config.c:78 tea_options.c:1001
+msgid "Scripts"
+msgstr ""
+
+#: interface.c:601 tea_config.c:76 tea_options.c:969
+msgid "Snippets"
+msgstr ""
+
+#: interface.c:604
+msgid "Tools"
+msgstr ""
+
+#: interface.c:608
+msgid "Mass encode tool"
+msgstr ""
+
+#: interface.c:612
+msgid "Insert"
+msgstr "Insertar"
+
+#: interface.c:616
+msgid "Insert entity"
+msgstr "Insertar código HTML"
+
+#: interface.c:622
+msgid "Insert DOCTYPE"
+msgstr "Insertar DOCTYPE"
+
+#: interface.c:634
+msgid "Lorem ipsum"
+msgstr ""
+
+#: interface.c:635
+msgid "Date/Time"
+msgstr "Fecha/Hora"
+
+#: interface.c:636
+msgid "Dump menu"
+msgstr "Volcar menú"
+
+#: interface.c:639
+msgid "Case"
+msgstr "Mayúsculas/Minúsculas"
+
+#: interface.c:643
+msgid "UPCASE"
+msgstr "MAYUSCULAS"
+
+#: interface.c:646
+msgid "lowcase"
+msgstr "minúsculas"
+
+#: interface.c:649
+msgid "Upcase The First Letter Of Each Word"
+msgstr "Poner En Mayúscula La Primera Letra De Cada Palabra"
+
+#: interface.c:651
+msgid "cRAcKeriZE"
+msgstr "dEStruCTor"
+
+#: interface.c:653
+msgid "Numbers"
+msgstr "Números"
+
+#: interface.c:657 tea_calendar.c:218
+msgid "Calculate"
+msgstr "Calcular"
+
+#: interface.c:658
+msgid "Arabian to Roman"
+msgstr "Arábigo a romano"
+
+#: interface.c:659
+msgid "Roman to Arabian"
+msgstr ""
+
+#: interface.c:661
+msgid "HEX to decimal"
+msgstr "HEX a decimal"
+
+#: interface.c:662
+msgid "Decimal to hex"
+msgstr ""
+
+#: interface.c:663
+msgid "Binary to decimal"
+msgstr "Binario a decimal"
+
+#: interface.c:664
+msgid "Counter"
+msgstr "Contador"
+
+#: interface.c:666
+msgid "Format"
+msgstr "Formato"
+
+#: interface.c:670
+msgid "Browser to text"
+msgstr "Navegador a texto"
+
+#: interface.c:672
+msgid "Kill formatting"
+msgstr "Borrar formato"
+
+#: interface.c:673
+msgid "Kill formatting on each line"
+msgstr "Borrar formato en cada línea"
+
+#: interface.c:675
+msgid "Wrap raw at position"
+msgstr "Ajustar texto en la posición actual"
+
+#: interface.c:676
+msgid "Wrap on spaces at position"
+msgstr "Ajustar espaciado en la posición actual"
+
+#: interface.c:678
+msgid "Kill leading whitespace on each line"
+msgstr ""
+"Eliminar \n"
+" al inicio de cada línea"
+
+#: interface.c:679
+msgid "Kill trailing whitespace on each line"
+msgstr ""
+"Eliminar \n"
+" al final de cada línea"
+
+#: interface.c:681
+msgid "Sort"
+msgstr "Ordenar"
+
+#: interface.c:685
+msgid "Sort lines"
+msgstr "Ordenar líneas"
+
+#: interface.c:686
+msgid "Sort lines by length"
+msgstr "Ordenar líneas por longitud"
+
+#: interface.c:687
+msgid "Sort lines case insensitive"
+msgstr "Ordenar líneas sin distinguir mayúsculas/minúsculas"
+
+#: interface.c:688
+msgid "Reverse order of lines"
+msgstr "Invertir orden de líneas"
+
+#: interface.c:690
+msgid "String"
+msgstr "Cadena de texto"
+
+#: interface.c:694
+msgid "Double quotes to facing quotes"
+msgstr ""
+
+#: interface.c:696
+msgid "CSV-like table to LaTeX table"
+msgstr "Convertir tabla CSV a LaTeX"
+
+#: interface.c:697
+msgid "Convert usual quotes to TeX quotes"
+msgstr "Convertir comillas a TeX"
+
+#: interface.c:698
+msgid "Escape and quote"
+msgstr "Escape y comillas"
+
+#: interface.c:699
+msgid "Unescape and unquote"
+msgstr "Quitar comillas y escape"
+
+#: interface.c:700
+msgid "Reverse"
+msgstr "Invertir"
+
+#: interface.c:701
+msgid "Antispam e-mail"
+msgstr "Antispam E-Mail"
+
+#: interface.c:702
+msgid "Remove blank lines"
+msgstr "Eliminar líneas en blanco"
+
+#: interface.c:703
+msgid "Kill duplicates"
+msgstr "Eliminar duplicados"
+
+#: interface.c:704
+msgid "Numerate lines"
+msgstr "Enumerar líneas"
+
+#: interface.c:706
+msgid "Shuffle lines"
+msgstr "Mezclar líneas"
+
+#: interface.c:707
+msgid "Convert tabs to spaces"
+msgstr "Convertir tabulaciones en espacios en blanco"
+
+#: interface.c:708
+msgid "Convert spaces to tabs"
+msgstr "Convertir espacios en blanco en tabulaciones"
+
+#: interface.c:709
+msgid "Split to TeX paragraphs"
+msgstr "Separar en párrafos de TeX"
+
+#: interface.c:710
+msgid "Split by the delimiter"
+msgstr ""
+
+#: interface.c:711
+msgid "Split after the delimiter"
+msgstr ""
+
+#: interface.c:713
+msgid "Apply a template to each line"
+msgstr "Aplicar una plantilla a cada línea"
+
+#: interface.c:715
+msgid "Filter"
+msgstr "Filtro"
+
+#: interface.c:719
+msgid "Extract at the each line"
+msgstr ""
+
+#: interface.c:720
+msgid "Extract at the each line before a separator"
+msgstr ""
+
+#: interface.c:721
+msgid "Extract at the each line after a separator"
+msgstr ""
+
+#: interface.c:723
+msgid "Kill lines containing the phrase"
+msgstr "Borrar las líneas que contengan la expresión"
+
+#: interface.c:724
+msgid "Kill all lines except with the phrase"
+msgstr "Borrar todas las líneas que no tengan la expresión"
+
+#: interface.c:726
+msgid "Kill lines containing a regexp"
+msgstr "Borrar las líneas que contengan la expresión"
+
+#: interface.c:727
+msgid "Kill all lines without a regexp"
+msgstr "Borrar todas las líneas que no tengan la expresión"
+
+#: interface.c:729
+msgid "Kill all lines <= N characters"
+msgstr "Borrar todas las líneas de <= N caracteres"
+
+#: interface.c:730
+msgid "Kill all lines > N characters"
+msgstr "Borrar todas las líneas > N caracteres"
+
+#: interface.c:732
+msgid "End of line"
+msgstr "Final de línea"
+
+#: interface.c:735
+msgid "Convert to LF"
+msgstr ""
+
+#: interface.c:736
+msgid "Convert to CR"
+msgstr ""
+
+#: interface.c:737
+msgid "Convert to CR/LF"
+msgstr ""
+
+#: interface.c:739
+msgid "Morse code"
+msgstr "Código Morse"
+
+#: interface.c:742
+msgid "Encode to Morse code EN"
+msgstr "Codificar en Morse (EN)"
+
+#: interface.c:743
+msgid "Decode from Morse code EN"
+msgstr "Decodificar en Morse (EN)"
+
+#: interface.c:745
+msgid "Last used"
+msgstr ""
+
+#: interface.c:747
+msgid "Tabs"
+msgstr "Tabs"
+
+#: interface.c:750
+msgid "Run"
+msgstr "Ejecutar"
+
+#: interface.c:753
+msgid "Nav"
+msgstr "Nav"
+
+#: interface.c:757
+msgid "Links"
+msgstr "Enlaces"
+
+#: interface.c:760
+msgid "Save the position"
+msgstr "Guardar la posición"
+
+#: interface.c:761
+msgid "Jump to the saved position"
+msgstr "Ir a la posición guardada"
+
+#: interface.c:763
+msgid "Go to the block start {"
+msgstr "Ir al bloque inicial {"
+
+#: interface.c:768
+msgid "Go to the block end }"
+msgstr "Ir al bloque final }"
+
+#: interface.c:773
+msgid "Go to recent tab"
+msgstr "Ir a la pestaña más reciente"
+
+#: interface.c:774
+msgid "Go to next tab"
+msgstr "Ir a la pestaña siguiente"
+
+#: interface.c:775
+msgid "Go to previous tab"
+msgstr "Ir a la pestaña anterior"
+
+#: interface.c:776
+msgid "Go to first tab"
+msgstr "Ir a la primera pestaña"
+
+#: interface.c:777
+msgid "Go to last tab"
+msgstr "Ir a la última pestaña"
+
+#: interface.c:778
+msgid "Go to selection"
+msgstr "Ir a la selección"
+
+#: interface.c:780
+msgid "Focus the FAMOUS text entry"
+msgstr "Enfocar la FAMOSA entrada de texto"
+
+#: interface.c:781
+msgid "Focus the text"
+msgstr "Enfocar el texto"
+
+#: interface.c:783
+msgid "Open at cursor"
+msgstr "Abrir en la posición del cursor"
+
+#: interface.c:785
+msgid "Edit at cursor"
+msgstr "Editar en la posición del cursor"
+
+#: interface.c:786
+msgid "Browse the symbol's definition"
+msgstr ""
+
+#: interface.c:788
+msgid "View"
+msgstr "Ver"
+
+#: interface.c:792 tea_options.c:1356
+msgid "Encoding"
+msgstr "Codificación"
+
+#: interface.c:796
+msgid "Profiles"
+msgstr ""
+
+#: interface.c:798
+msgid "Save profile"
+msgstr ""
+
+#: interface.c:800
+msgid "Hide error marks"
+msgstr ""
+
+#: interface.c:801 tea_options.c:533
+msgid "Word wrap"
+msgstr "Ajuste de línea"
+
+#: interface.c:802
+msgid "Line numbers"
+msgstr "Números de línea"
+
+#: interface.c:803
+msgid "Toggle image visibility"
+msgstr "Modificar visibilidad de imágenes"
+
+#: interface.c:805
+msgid "Switch header/source"
+msgstr "Cambiar entre cabecera/fuente"
+
+#: interface.c:806
+msgid "Preview with Mplayer"
+msgstr "Previsualizar con Mplayer"
+
+#: interface.c:807
+msgid "Fullscreen"
+msgstr "Pantalla Completa"
+
+#: interface.c:808
+msgid "Un-fullscreen"
+msgstr "Salir de pantalla completa"
+
+#: interface.c:809
+msgid "Window on top"
+msgstr ""
+
+#: interface.c:812
+msgid "Help"
+msgstr "Ayuda"
+
+#: interface.c:816 tea_about.c:84
+msgid "About"
+msgstr "Acerca de"
+
+#: interface.c:818
+msgid "Read the fine manual"
+msgstr "Leer manual"
+
+#: interface.c:819
+msgid "Read the fine English manual anyway"
+msgstr ""
+
+#: interface.c:820
+msgid "Self check"
+msgstr "Ortografía"
+
+#: interface.c:896
+msgid "Click here to search this through the text"
+msgstr "Pulsa aquí para buscar la cadena en el documento"
+
+#: interface.c:900
+msgid "Click here to open a file"
+msgstr "Pulsa aquí para abrir un archivo"
+
+#: interface.c:952
+msgid "PLEASE read the manual :)"
+msgstr "POR FAVOR leer el manual :)"
+
+#: interface.c:968
+msgid "It is the Famous text entry... Read the Manual for more!"
+msgstr "Esta es la Famosa entrada de texto... ¡Leer el manual para saber más!"
+
+#: callbacks.c:257
+msgid "Read the manual!"
+msgstr "¡Leer el manual!"
+
+#: callbacks.c:461
+#, c-format
+msgid "%s saved OK"
+msgstr "%s guardado OK"
+
+#: callbacks.c:583
+msgid "Save the file first..."
+msgstr "Guardar primero el archivo..."
+
+#: callbacks.c:990
+msgid "Save the session as:"
+msgstr "Guardar sesión como:"
+
+#: callbacks.c:1135 callbacks.c:4944
+msgid "File open"
+msgstr "Abrir archivo"
+
+#: callbacks.c:1142
+msgid "Image files"
+msgstr "Imágenes"
+
+#: callbacks.c:1158 callbacks.c:4960
+msgid "All files"
+msgstr "Todos los archivos"
+
+#: callbacks.c:1461
+msgid "Now look into the Links menu ;)"
+msgstr ""
+
+#: callbacks.c:1476
+msgid "No, I can't!"
+msgstr "No, ¡no se puede!"
+
+#: callbacks.c:1679
+#, c-format
+msgid "I can't reload %s :("
+msgstr "No se ha podido recargar %s :("
+
+#: callbacks.c:1681
+#, c-format
+msgid "%s is reloaded :)"
+msgstr "%s recargado :)"
+
+#: callbacks.c:1833 callbacks.c:1841
+#, c-format
+msgid "%s = %d Kb"
+msgstr "%s = %d KB"
+
+#: callbacks.c:1847
+#, c-format
+msgid "Total weight for %s is %d Kb"
+msgstr "El Tamaño total de %s es %d KB"
+
+#: callbacks.c:1897
+msgid "Now look into Links menu ;)"
+msgstr "Ahora mira el menú de Enlaces ;)"
+
+#: callbacks.c:1908
+msgid "Select a color"
+msgstr "Elegir un color"
+
+#: callbacks.c:2054
+msgid "Please unselect the text, then try again"
+msgstr ""
+
+#: callbacks.c:2986
+msgid "you can put some crap here..."
+msgstr "se puede poner tu borrador aqui..."
+
+#: callbacks.c:3177 callbacks.c:3200
+msgid "text to find"
+msgstr "buscar el texto"
+
+#: callbacks.c:3368
+msgid "Before using that, go to File > Open different > Open movie."
+msgstr "Antes, ir a Archivo > Abrir (Especial) > Abrir video"
+
+#: callbacks.c:3443
+msgid "Open a movie:"
+msgstr "Abrir video:"
+
+#: callbacks.c:3894
+msgid "Save a project"
+msgstr "Guardar proyecto"
+
+#: callbacks.c:3937
+msgid "Open a project"
+msgstr "Abrir proyecto"
+
+#: callbacks.c:4151
+msgid "Open the file first"
+msgstr "Abrir primero el archivo"
+
+#: callbacks.c:4920
+#, c-format
+msgid "%s session is saved"
+msgstr ""
+
+#: callbacks.c:4962
+msgid "Plain text files"
+msgstr "Archivos de texto plano"
+
+#: callbacks.c:4965
+msgid "Office text format files"
+msgstr "Archivos de texto de Office"
+
+#: callbacks.c:4993
+msgid "TEA special locations:"
+msgstr ""
+
+#: callbacks.c:4994 callbacks.c:5099
+msgid "Encoding: "
+msgstr "Codificación:"
+
+#: callbacks.c:5061
+msgid "Save as..."
+msgstr "Guardar como..."
+
+#: callbacks.c:5152 tea_text_document.c:2312
+msgid "Question"
+msgstr "Pregunta"
+
+#: callbacks.c:5152
+#, c-format
+msgid "%s is exists. Do you want to overwrite it?"
+msgstr "%s existe. ¿Sobreescribir?"
+
+#: callbacks.c:5169
+#, c-format
+msgid "error by saving %s!!!"
+msgstr "¡Error al guardar %s!"
+
+#: callbacks.c:5730
+#, c-format
+msgid ""
+"for %s:\n"
+"fuzzy = %d\n"
+"empty = %d\n"
+"fuzzy + empty = %d\n"
+"not translated: %.3f%%"
+msgstr ""
+
+#: callbacks.c:5920
+msgid "antiword - ok //it helps TEA to open MS Word documents"
+msgstr ""
+
+#: callbacks.c:5922
+msgid "antiword - not found //TEA cannot open MS Word documents without it"
+msgstr ""
+
+#: callbacks.c:5928
+msgid "gunzip - ok //it lets TEA to read ZIP and GZ files"
+msgstr ""
+
+#: callbacks.c:5930
+msgid "gunzip - not found //TEA cannot open read ZIP and GZ files without it"
+msgstr ""
+
+#: callbacks.c:6329
+msgid "Save the profile as:"
+msgstr ""
+
+#: callbacks.c:6485
+msgid "Save your document as a normal text file first, then save it packed"
+msgstr ""
+
+#: callbacks.c:6493
+msgid "A file is packed OK"
+msgstr ""
+
+#: tea_funx.c:164
+#, c-format
+msgid "noname_%d"
+msgstr ""
+
+#: tea_funx.c:917
+#, c-format
+msgid "(built on %s with GTK %d.%d.%d and GLib %d.%d.%d)"
+msgstr ""
+
+#: tea_config.c:75 tea_options.c:1018
+msgid "Tables"
+msgstr ""
+
+#: tea_config.c:429
+#, c-format
+msgid "%s is not exists"
+msgstr "%s no existe"
+
+#: tea_config.c:503
+msgid "Left"
+msgstr "Izquierda"
+
+#: tea_config.c:504
+msgid "Right"
+msgstr "Derecha"
+
+#: tea_config.c:505
+msgid "Top"
+msgstr "Arriba"
+
+#: tea_config.c:506
+msgid "Bottom"
+msgstr "Abajo"
+
+#: tea_config.c:735
+msgid "non-breaking space"
+msgstr "espacio de no separación (nbsp)"
+
+#: tea_config.c:736
+msgid "cent sign"
+msgstr "símbolo del céntimo"
+
+#: tea_config.c:737
+msgid "pound sign"
+msgstr "símbolo de la libra esterlina"
+
+#: tea_config.c:738
+msgid "currency sign"
+msgstr "símbolo divisa"
+
+#: tea_config.c:739
+msgid "yen sign"
+msgstr "símbolo del yen"
+
+#: tea_config.c:740
+msgid "section sign"
+msgstr "símbolo de sección"
+
+#: tea_config.c:741
+msgid "copyright sign"
+msgstr "símbolo de copyright"
+
+#: tea_config.c:742
+msgid "trade mark sign"
+msgstr "símbolo de marca registrada"
+
+#: tea_config.c:743
+msgid "feminine ordinal indicator"
+msgstr "indicador de ordinal en femenino"
+
+#: tea_config.c:744
+msgid "left-pointing double angle quotation mark"
+msgstr "comillas dobles inclinadas a la izquierda"
+
+#: tea_config.c:745
+msgid "soft hyphen"
+msgstr "guión"
+
+#: tea_config.c:746
+msgid "registered sign"
+msgstr "símbolo de registrado"
+
+#: tea_config.c:747
+msgid "degree sign"
+msgstr "símbolo del grado"
+
+#: tea_config.c:748
+msgid "plus-minus sign"
+msgstr "símbolo de la suma"
+
+#: tea_config.c:749
+msgid "right-pointing double angle quotation mark"
+msgstr "comillas dobles inclinadas a la derecha"
+
+#: tea_config.c:750
+msgid "left single quotation mark"
+msgstr "comilla simple a la izquierda"
+
+#: tea_config.c:751
+msgid "right single quotation mark"
+msgstr "comilla simple a la derecha"
+
+#: tea_config.c:752
+msgid "euro sign"
+msgstr "símbolo del euro"
+
+#: tea_config.c:753
+msgid "greek pi symbol"
+msgstr "símbolo de pi"
+
+#: tea_config.c:754
+msgid "leftwards arrow"
+msgstr "flecha a la izquierda"
+
+#: tea_config.c:755
+msgid "upwards arrow"
+msgstr "flecha hacia arriba"
+
+#: tea_config.c:756
+msgid "rightwards arrow"
+msgstr "flecha a la derecha"
+
+#: tea_config.c:757
+msgid "downwards arrow"
+msgstr "flecha hacia abajo"
+
+#: tea_config.c:758
+msgid "square root"
+msgstr "raíz cuadrada"
+
+#: tea_config.c:759
+msgid "spade suit"
+msgstr "cartas - picas"
+
+#: tea_config.c:760
+msgid "club suit"
+msgstr "cartas - trébol"
+
+#: tea_config.c:761
+msgid "heart suit"
+msgstr "cartas - corazones"
+
+#: tea_config.c:762
+msgid "diamond suit"
+msgstr "cartas - rombos"
+
+#: tea_config.c:763
+msgid "masculine ordinal indicator"
+msgstr "indicador de ordinal en masculino"
+
+#: tea_config.c:764
+msgid "quotation mark"
+msgstr "comilla"
+
+#: tea_config.c:765
+msgid "ampersand"
+msgstr "ampersand"
+
+#: tea_config.c:766
+msgid "less-than sign"
+msgstr "símbolo de menor-que"
+
+#: tea_config.c:767
+msgid "greater-than sign"
+msgstr "símbolo de mayor-que"
+
+#: tea_config.c:768
+msgid "apostrophe"
+msgstr "apóstrofe"
+
+#: tea_config.c:944
+msgid "#TEA editor configuration file. Please read the manual"
+msgstr ""
+
+#: tea_text_document.c:1599
+#, c-format
+msgid ""
+"Sorry, but I cannot determine the charset of %s. Please try again and select "
+"it manually."
+msgstr ""
+"No se ha podido determinar la codificación de %s. Por favor inténtalo de "
+"nuevo y eligela manualmente."
+
+#: tea_text_document.c:1625 tea_text_document.c:4171
+msgid "This file is read-only"
+msgstr "Este archivo es de sólo lectura"
+
+#: tea_text_document.c:1634 tea_text_document.c:4180
+msgid "Warning!"
+msgstr ""
+
+#: tea_text_document.c:1634 tea_text_document.c:1635 tea_text_document.c:4180
+#: tea_text_document.c:4181
+#, c-format
+msgid "%s is not writable for you!"
+msgstr "¡no tienes permisos de escritura en %s!"
+
+#: tea_text_document.c:1641 tea_text_document.c:4187
+msgid "And how I can save this text file as a DIRECTORY?!"
+msgstr "¿Y cómo voy a poder guardar este archivo de texto como un DIRECTORIO?"
+
+#: tea_text_document.c:1660
+msgid "config reloaded"
+msgstr "configuración recargada"
+
+#: tea_text_document.c:1666
+msgid "hotkeys reloaded"
+msgstr "atajos de teclado recargados"
+
+#: tea_text_document.c:1672
+msgid "external programs list reloaded"
+msgstr ""
+
+#: tea_text_document.c:1681 tea_text_document.c:1687
+#, c-format
+msgid "%s reloaded"
+msgstr "%s recargado"
+
+#: tea_text_document.c:2007
+msgid "Cannot convert filename to UTF-8, abort"
+msgstr ""
+
+#: tea_text_document.c:2013 tea_text_document.c:2046
+#, c-format
+msgid "%s is not exists!"
+msgstr "¡%s no existe!"
+
+#: tea_text_document.c:2020 tea_text_document.c:2038
+#, c-format
+msgid "You have NO access to %s"
+msgstr "NO tienes acceso a %s"
+
+#: tea_text_document.c:2205
+#, c-format
+msgid "%s is opened"
+msgstr "%s abierto"
+
+#: tea_text_document.c:2312
+#, c-format
+msgid "%s is modified but not saved. Save it?"
+msgstr "%s se ha modificado, ¿guardar cambios?"
+
+#: tea_text_document.c:3341
+msgid "Saving all documents... begin"
+msgstr "Guardando todos los documentos... empezando"
+
+#: tea_text_document.c:3351 tea_text_document.c:4197
+#, c-format
+msgid "%s is saved"
+msgstr "%s se ha guardado"
+
+#: tea_text_document.c:3357
+msgid "Saving all documents... end"
+msgstr "Guardando todos los documentos... finalizado"
+
+#: tea_text_document.c:3974
+#, c-format
+msgid "%d words were replaced"
+msgstr ""
+
+#: tea_text_document.c:4465
+#, c-format
+msgid "bytes: %d\n"
+msgstr "bytes: %d\n"
+
+#: tea_text_document.c:4466
+#, c-format
+msgid "lines: %d\n"
+msgstr "líneas: %d\n"
+
+#: tea_text_document.c:4467 tea_text_document.c:4828
+#, c-format
+msgid "words: %d\n"
+msgstr "palabras: %d\n"
+
+#: tea_text_document.c:4468 tea_text_document.c:4829
+#, c-format
+msgid "chars: %d\n"
+msgstr "caracteres: %d\n"
+
+#: tea_text_document.c:4469
+#, c-format
+msgid "chars non-space: %d\n"
+msgstr "caracteres (sin espacios en blanco): %d\n"
+
+#: tea_text_document.c:4474
+msgid "stats for "
+msgstr "estadíticas de"
+
+#: tea_text_document.c:4484
+msgid "stats for selected:\n"
+msgstr "estadísticas del seleccionado:\n"
+
+#: tea_text_document.c:4745
+#, c-format
+msgid "Text analysis results for %s:"
+msgstr "Resultados del análisis del texto para %s:"
+
+#: tea_text_document.c:4746
+#, c-format
+msgid "Words total: %d"
+msgstr "Total de palabras: %d"
+
+#: tea_text_document.c:4747
+#, c-format
+msgid "Words unique: %d"
+msgstr "Palabras distintas: %d"
+
+# c-format
+#: tea_text_document.c:4748
+#, c-format
+msgid "Words total / Words unique = %.6f"
+msgstr "Total de palabras / Palabras distintas = %.6f"
+
+#: tea_text_document.c:4749
+#, c-format
+msgid "Sentences = %d"
+msgstr ""
+
+#: tea_text_document.c:4750
+#, c-format
+msgid "Average sentence length (words) = %.6f"
+msgstr ""
+
+#: tea_text_document.c:4751
+#, c-format
+msgid "Average word length = %.6f"
+msgstr ""
+
+#: tea_text_document.c:4753
+msgid "Number:"
+msgstr "Número"
+
+#: tea_text_document.c:4753
+msgid "Word:"
+msgstr "Palabra:"
+
+#: tea_text_document.c:4827
+#, c-format
+msgid "sentences: %d\n"
+msgstr ""
+
+#: tea_text_document.c:4833
+msgid "Readability:\n"
+msgstr ""
+
+#: tea_text_document.c:4834
+msgid "Automated Readability Index (ARI): "
+msgstr ""
+
+#: tea_text_document.c:4835
+msgid "Coleman-Liau Index: "
+msgstr ""
+
+#: tea_text_document.c:4836
+msgid "Stats:\n"
+msgstr ""
+
+#: tea_about.c:70
+#, c-format
+msgid "%s is missing! I cannot show you the About window :("
+msgstr "!%s no se encuentra! No puedo mostrar la ventana Acerca de :("
+
+#: tea_about.c:110
+msgid "Code"
+msgstr "Código"
+
+#: tea_about.c:125
+msgid "Acknowledgements"
+msgstr "Agradecimientos"
+
+#: tea_about.c:140
+msgid "Translators"
+msgstr "Traductores"
+
+#: tea_about.c:155
+msgid "Packages"
+msgstr "Paquetes"
+
+#: tea_fr.c:88
+msgid "Search and Replace window"
+msgstr "Buscar & Reemplazar"
+
+#: tea_fr.c:98 tea_findfiles_mult.c:314
+msgid "Text to find"
+msgstr "Buscar texto"
+
+#: tea_fr.c:107
+msgid "Replace with"
+msgstr "Sustituir con"
+
+#: tea_fr.c:113
+msgid "Case insensitive"
+msgstr "No distinguir mayúsculas/minúsculas"
+
+#: tea_fr.c:147
+msgid "Jump to top"
+msgstr "Ir al principio"
+
+#: tea_kwas.c:462
+#, c-format
+msgid "%-10d Kb"
+msgstr ""
+
+#: tea_kwas.c:826
+msgid "Names: "
+msgstr "Nombres: "
+
+#: tea_kwas.c:832
+msgid "Access: "
+msgstr "Acceso: "
+
+#: tea_kwas.c:838
+msgid "Size: "
+msgstr "Tamaño: "
+
+#: tea_kwas.c:844
+msgid "Date and time: "
+msgstr "Fecha y hora: "
+
+#: tea_kwas.c:936
+msgid "Kwas"
+msgstr "Kwas"
+
+#: tea_kwas.c:954
+msgid "Actions"
+msgstr "Acciones"
+
+#: tea_kwas.c:958
+msgid "Refresh Kwas"
+msgstr "Actualizar Kwas"
+
+#: tea_kwas.c:963
+msgid "Get file info"
+msgstr "Información del archivo"
+
+#: tea_kwas.c:965
+msgid "Run with..."
+msgstr "Ejecutar con..."
+
+#: tea_kwas.c:966
+msgid "Copy current file name"
+msgstr "Copiar nombre del archivo actual"
+
+#: tea_kwas.c:968
+msgid "Navigate"
+msgstr "Navegar"
+
+#: tea_kwas.c:972
+msgid "Go to the home directory"
+msgstr "Ir al directorio home"
+
+#: tea_kwas.c:979
+msgid "Ins to editor"
+msgstr "Insertar en el editor"
+
+#: tea_kwas.c:982
+msgid "Insert image"
+msgstr "Insertar imagen"
+
+#: tea_kwas.c:983
+msgid "Insert link"
+msgstr "Insertar imagen"
+
+#: tea_kwas.c:1047
+msgid "Go to"
+msgstr "Ir a"
+
+#: tea_gtk_utils.c:186 tea_findfiles_mult.c:154
+msgid "Select a directory"
+msgstr "Elegir un directorio"
+
+#: tea_options.c:91
+msgid "Highlighting color scheme"
+msgstr ""
+
+#: tea_options.c:346
+msgid "Defaults"
+msgstr "Valores por defecto"
+
+#: tea_options.c:354
+msgid "Default charset for File open"
+msgstr "Juego de caracteres por defecto para Abrir archivo"
+
+#: tea_options.c:355
+msgid "Default charset for File save as"
+msgstr "Juego de caracteres por defecto para Guardar archivo como"
+
+#: tea_options.c:356
+msgid "Default charset for RTF"
+msgstr "Juego de caracteres por defecto para RTF"
+
+#: tea_options.c:358 tea_options.c:430
+msgid "Misc"
+msgstr "Misc:"
+
+#: tea_options.c:366
+msgid "Detect a charset by the [X]HTML meta header"
+msgstr ""
+
+#: tea_options.c:367
+msgid "On autodetect failed, fallback to this charset:"
+msgstr ""
+
+#: tea_options.c:368
+msgid "Fallback charset"
+msgstr ""
+
+#: tea_options.c:370
+msgid "Autodetect"
+msgstr "Autodetectar"
+
+#: tea_options.c:379
+msgid "CP 1251"
+msgstr "CP 1251"
+
+#: tea_options.c:380
+msgid "KOI8-R"
+msgstr "KOI8-R"
+
+#: tea_options.c:381
+msgid "KOI8-U"
+msgstr "KOI8-U"
+
+#: tea_options.c:382
+msgid "DOS 866"
+msgstr "DOS 866"
+
+#: tea_options.c:383
+msgid "Czech"
+msgstr "Checo"
+
+#: tea_options.c:384
+msgid "Finnish"
+msgstr "Finlandés"
+
+#: tea_options.c:385
+msgid "German"
+msgstr "Alemán"
+
+#: tea_options.c:386
+msgid "Serbian"
+msgstr "Serbio"
+
+#: tea_options.c:387
+msgid "Latvian"
+msgstr "Letón"
+
+#: tea_options.c:388
+msgid "Polish"
+msgstr "Polaco"
+
+#: tea_options.c:389
+msgid "Portuguese"
+msgstr "Portugués"
+
+#: tea_options.c:390
+msgid "Slovak"
+msgstr "Eslovaco"
+
+#: tea_options.c:391
+msgid "Slovenian"
+msgstr "Esloveno"
+
+#: tea_options.c:392
+msgid "Spanish"
+msgstr "Español"
+
+#: tea_options.c:393
+msgid "Turkish"
+msgstr "Turco"
+
+#: tea_options.c:395
+msgid "Management"
+msgstr "Gestión"
+
+#: tea_options.c:416
+msgid "Selected"
+msgstr "Seleccionado"
+
+#: tea_options.c:419
+msgid "Configure charsets"
+msgstr "Configurar juegos de caracteres"
+
+#: tea_options.c:438
+msgid "External image editor"
+msgstr "Editor de imágenes externo"
+
+#: tea_options.c:439
+msgid "External image viewer"
+msgstr "Visor de imágenes externo"
+
+#: tea_options.c:440
+msgid "Run Mplayer with subtitles"
+msgstr "Ejecutar Mplayer con subtítulos"
+
+#: tea_options.c:441
+msgid "A command for Save packed"
+msgstr ""
+
+#: tea_options.c:443
+msgid "Browser for the manual"
+msgstr "Navegador del Manual"
+
+#: tea_options.c:444
+msgid "Use this browser"
+msgstr "Usar este navegador"
+
+#: tea_options.c:446
+msgid "LaTeX"
+msgstr "LaTex"
+
+#: tea_options.c:471
+msgid "Now Playing string format"
+msgstr "Formato de 'Reproduciendo'"
+
+#: tea_options.c:472
+msgid "Date and time format"
+msgstr "Formato de la fecha y hora"
+
+#: tea_options.c:473
+msgid "Date format for Save version"
+msgstr ""
+
+#: tea_options.c:475
+msgid "The format of the Color function"
+msgstr "Formato de la función Color"
+
+#: tea_options.c:476
+msgid "JPEG compression (1..100)"
+msgstr ""
+
+#: tea_options.c:488
+msgid "Save/Open dialogs width per cents"
+msgstr "Anchura de los diálogos Guardar/Abrir (en %)"
+
+#: tea_options.c:489
+msgid "Save/Open dialogs height per cents"
+msgstr "Altura de los diálogos Guardar/Abrir (en %)"
+
+#: tea_options.c:490
+msgid "Image thumbnail width"
+msgstr "Anchura de la imagen en miniatura"
+
+#: tea_options.c:491
+msgid "Image thumbnail height"
+msgstr "Altura de la imagen en miniatura"
+
+#: tea_options.c:493
+msgid "Exclusive \"Enter\" mode at save/open dialogs"
+msgstr ""
+
+#: tea_options.c:494
+msgid "Show the full path in the window caption"
+msgstr "Mostrar la trayectoria absoluta en la ventana"
+
+#: tea_options.c:495
+msgid "Show the main toolbar"
+msgstr "Mostrar la barra de tareas principal"
+
+#: tea_options.c:496
+msgid "Show the common close button"
+msgstr ""
+
+#: tea_options.c:497
+msgid "Show the cursor position at statusbar"
+msgstr ""
+
+#: tea_options.c:499
+msgid "Start in the full-screen mode"
+msgstr "Comenzar a pantalla completa"
+
+#: tea_options.c:501
+msgid "Tabs position"
+msgstr "Posición de las pestañas"
+
+#: tea_options.c:503
+msgid "Max. recent files"
+msgstr "Número máx. de archivos recientes"
+
+#: tea_options.c:504
+msgid "Logmemo lines limit"
+msgstr "Longitud máxima del registro de sucesos"
+
+#: tea_options.c:517
+msgid "Automatic markup mode"
+msgstr ""
+
+#: tea_options.c:519
+msgid "Save the crashfile on terminate"
+msgstr ""
+
+#: tea_options.c:520
+msgid "Save all on the abnormal termination (SIGTERM, etc)"
+msgstr ""
+
+#: tea_options.c:522
+msgid "Restore the last session on start"
+msgstr ""
+
+#: tea_options.c:523
+msgid "Start TEA with a blank file"
+msgstr "Iniciar TEA con un archivo vacío"
+
+#: tea_options.c:525
+msgid "Determine a scripts highlighting by the content"
+msgstr "Determinar el resaltado por el contenido"
+
+#: tea_options.c:529
+msgid "Show hidden files in Kwas"
+msgstr "Mostrar archivos ocultos en Kwas"
+
+#: tea_options.c:530
+msgid "Use external image viewer"
+msgstr "Usar visor de imágenes externo"
+
+#: tea_options.c:531
+msgid "Do backup"
+msgstr "Hacer copia de seguridad"
+
+#: tea_options.c:532
+msgid "Show line numbers"
+msgstr "Mostrar números de línea"
+
+#: tea_options.c:534
+msgid "Scan for links on file open"
+msgstr "Buscar enlaces al abrir un archivo"
+
+#: tea_options.c:535
+msgid "Imageplane insert tags by default"
+msgstr "El plano de imágenes inserta los tags por defecto"
+
+#: tea_options.c:546
+msgid "Warn before closing a modified file"
+msgstr "Avisar antes de cerrar un archivo modificado"
+
+#: tea_options.c:547
+msgid "Overwrite the existing file"
+msgstr "Sobreescribir el archivo"
+
+#: tea_options.c:565
+msgid "Please select the font"
+msgstr ""
+
+#: tea_options.c:598
+msgid "Configuration restored, please close and reopen the Preferences window."
+msgstr ""
+"Configuración restaurada, por favor cierra y abre otra vez la ventana de "
+"Opciones"
+
+#: tea_options.c:610
+msgid ""
+"Configuration is reseted to default, please close and reopen the Preferences "
+"window."
+msgstr ""
+
+#: tea_options.c:623 tea_options.c:678 tea_options.c:733 tea_options.c:788
+#: tea_options.c:878
+msgid "Confirmation!"
+msgstr "Confirmaciones"
+
+#: tea_options.c:623 tea_options.c:678 tea_options.c:733 tea_options.c:788
+#: tea_options.c:878
+#, c-format
+msgid "Are you sure to delete %s?"
+msgstr ""
+
+#: tea_options.c:647 tea_options.c:702 tea_options.c:757 tea_options.c:812
+#: tea_options.c:911
+msgid "Rename as:"
+msgstr ""
+
+#: tea_options.c:838
+msgid "Select a file:"
+msgstr "Seleccionar todo"
+
+#: tea_options.c:944
+msgid "Backup the current config"
+msgstr "Hacer una copia de seguridad de la configuración actual"
+
+#: tea_options.c:945
+msgid "Config restore"
+msgstr "Restaurar configuración"
+
+#: tea_options.c:946
+msgid "Reset config to default"
+msgstr "Resetear a la configuración por defecto"
+
+#: tea_options.c:947
+msgid "Put the launcher to the desktop"
+msgstr "Colocar el lanzador en el escritorio"
+
+#: tea_options.c:948
+msgid "Remove the launcher from the desktop"
+msgstr "Quitar el lanzador del escritorio"
+
+#: tea_options.c:959
+msgid "Templates management"
+msgstr ""
+
+#: tea_options.c:964 tea_options.c:980 tea_options.c:996 tea_options.c:1013
+#: tea_options.c:1029 tea_options.c:1327
+msgid "Remove"
+msgstr ""
+
+#: tea_options.c:965 tea_options.c:981 tea_options.c:997 tea_options.c:1014
+#: tea_options.c:1030
+msgid "Rename"
+msgstr ""
+
+#: tea_options.c:975
+msgid "Snippets management"
+msgstr ""
+
+#: tea_options.c:991
+msgid "Sessions management"
+msgstr ""
+
+#: tea_options.c:1007
+msgid "Scripts management"
+msgstr ""
+
+#: tea_options.c:1012
+msgid "Add"
+msgstr ""
+
+#: tea_options.c:1024
+msgid "Replacement tables management"
+msgstr ""
+
+#: tea_options.c:1044 tea_options.c:1362
+msgid "Editor"
+msgstr "Editor"
+
+#: tea_options.c:1046
+msgid "Text foreground"
+msgstr "Texto en primer plano"
+
+#: tea_options.c:1047
+msgid "Text background"
+msgstr "Texto de fondo"
+
+#: tea_options.c:1048
+msgid "Selected foreground"
+msgstr "Primer plano seleccionado"
+
+#: tea_options.c:1049
+msgid "Selected background"
+msgstr "Fondo seleccionado"
+
+#: tea_options.c:1051
+msgid "Marking function foreground"
+msgstr "Marcado en primer plano"
+
+#: tea_options.c:1052
+msgid "Marking function background"
+msgstr "Marcado del fondo"
+
+#: tea_options.c:1054
+msgid "Current line foreground"
+msgstr ""
+
+#: tea_options.c:1055
+msgid "Current line background"
+msgstr ""
+
+#: tea_options.c:1057
+msgid "Spellchecker marks"
+msgstr "Marcas de ortografía"
+
+#: tea_options.c:1080
+msgid "Errors foreground (logmemo)"
+msgstr "Errores en primer plano (registro)"
+
+#: tea_options.c:1081
+msgid "Errors background (logmemo)"
+msgstr "Errores en segundo plano (registro)"
+
+#: tea_options.c:1111
+msgid "Font"
+msgstr ""
+
+#: tea_options.c:1114
+msgid "Max undo levels"
+msgstr ""
+
+#: tea_options.c:1116
+msgid "Tab size in spaces"
+msgstr "Tamaño de la tabulación en espacios"
+
+#: tea_options.c:1117
+msgid "Smart Home/End"
+msgstr ""
+
+#: tea_options.c:1119
+msgid "Insert spaces on TAB key"
+msgstr "Insertar espacios en la tecla TAB"
+
+#: tea_options.c:1120
+msgid "Automatic indent"
+msgstr "Margen automático"
+
+#: tea_options.c:1121
+msgid "Autoreplace"
+msgstr "Sustituición automática"
+
+#: tea_options.c:1122
+msgid "Autoclose tags"
+msgstr "Cerrar etiquetas automáticamente"
+
+#: tea_options.c:1123
+msgid "Cursor blink"
+msgstr "Cursor parpadeante"
+
+#: tea_options.c:1124
+msgid "Autosaving interval, minutes"
+msgstr "Intervalo de guardado automático, minutos"
+
+#: tea_options.c:1125
+msgid "Enable the autosaving"
+msgstr "Activar guardado automático"
+
+#: tea_options.c:1126
+msgid "Autosave a session on each interval"
+msgstr ""
+
+#: tea_options.c:1128
+msgid "Highlight the current line"
+msgstr ""
+
+#: tea_options.c:1130
+msgid "Show the margin"
+msgstr ""
+
+#: tea_options.c:1131
+msgid "Position of the margin (GtkSourceView-only)"
+msgstr ""
+
+#: tea_options.c:1142
+msgid "Default file saving directory"
+msgstr "Directorio para guardar por defecto"
+
+#: tea_options.c:1143
+msgid "Use default saving directory"
+msgstr "Usar directorio para guardar por defecto"
+
+#: tea_options.c:1144
+msgid "Default file opening directory"
+msgstr "Directorio para abrir por defecto"
+
+#: tea_options.c:1145
+msgid "Use default file opening directory"
+msgstr "Usar directorio para abrir por defecto"
+
+#: tea_options.c:1147
+msgid "Add this extension to the file which is *Saving as*"
+msgstr ""
+
+#: tea_options.c:1148
+msgid "(<i>for example, txt, html, etc</i>)"
+msgstr ""
+
+#: tea_options.c:1302
+msgid "Quick search"
+msgstr ""
+
+#: tea_options.c:1324
+msgid "Shortcut"
+msgstr ""
+
+#: tea_options.c:1326
+msgid "Assign"
+msgstr ""
+
+#: tea_options.c:1339
+msgid "Options, I presume..."
+msgstr "Opciones, supongo..."
+
+#: tea_options.c:1355
+msgid "Switches"
+msgstr "Cambios"
+
+#: tea_options.c:1361
+msgid "Interface"
+msgstr "Interface"
+
+#: tea_options.c:1366
+msgid "Highlighting"
+msgstr "Resaltado"
+
+#: tea_options.c:1368
+msgid "Colors"
+msgstr "Colores"
+
+#: tea_options.c:1370
+msgid "Commands"
+msgstr "Comandos"
+
+#: tea_options.c:1372
+msgid "Paths"
+msgstr "Trayectorias"
+
+#: tea_options.c:1374
+msgid "Confirmations"
+msgstr "Confirmaciones"
+
+#: tea_options.c:1376
+msgid "Maintenance"
+msgstr "Mantenimiento"
+
+#: tea_options.c:1377
+msgid "Keyboard"
+msgstr ""
+
+#: tea_options.c:1405
+msgid "Save and apply"
+msgstr "Guardar y aplicar"
+
+#: tea_proj.c:56
+msgid "Project name"
+msgstr "Nombre del proyecto"
+
+#: tea_proj.c:57
+msgid "Makefile directory"
+msgstr "Directorio Makefile"
+
+#: tea_proj.c:58
+msgid "Source directory"
+msgstr "Directorio de fuentes"
+
+#: tea_proj.c:59
+msgid "Target executable"
+msgstr "Ejecutable destino"
+
+#: tea_proj.c:197
+msgid "Main"
+msgstr "Principal"
+
+#: tea_findfiles_mult.c:236
+msgid "File save"
+msgstr ""
+
+#: tea_findfiles_mult.c:321
+msgid "And where to find?"
+msgstr ""
+
+#: tea_findfiles_mult.c:322 tea_encode.c:211
+msgid "File pattern"
+msgstr ""
+
+#: tea_findfiles_mult.c:325
+msgid "Copy to the directory"
+msgstr ""
+
+#: tea_findfiles_mult.c:326
+msgid "Save as a session"
+msgstr ""
+
+#: tea_findfiles_mult.c:327
+msgid "Copy a filename"
+msgstr ""
+
+#: tea_findfiles_mult.c:328
+msgid "Clear a list"
+msgstr ""
+
+#: tea_findfiles_mult.c:330
+msgid "Found files"
+msgstr ""
+
+#: tea_calendar.c:167
+#, c-format
+msgid "Days between %s and %s = %d"
+msgstr "Días entre %s y %s = %d"
+
+#: tea_calendar.c:197
+msgid "Days between"
+msgstr "Días entre"
+
+#: tea_calendar.c:208
+msgid "date1"
+msgstr "fecha1"
+
+#: tea_calendar.c:213
+msgid "date2"
+msgstr "fecha2"
+
+#: tea_calendar.c:225
+msgid "Insert as a date"
+msgstr "Insertar como fecha"
+
+#: tea_calendar.c:230
+msgid "Insert as a julian day"
+msgstr "Insertar como día juliano"
+
+#: tea_calendar.c:235
+msgid "Insert as a day of year"
+msgstr "Insertar como día del año"
+
+#: image_browser.c:591
+msgid "Slow zoom in (+)"
+msgstr ""
+
+#: image_browser.c:592
+msgid "Slow zoom out (-)"
+msgstr ""
+
+#: image_browser.c:593
+msgid "Actual size (=)"
+msgstr ""
+
+#: image_browser.c:594
+msgid "Zoom to fit screen (S)"
+msgstr ""
+
+#: image_browser.c:595
+msgid "Fast zoom in (*)"
+msgstr ""
+
+#: image_browser.c:596
+msgid "Fast zoom out (/)"
+msgstr ""
+
+#: image_browser.c:600
+msgid "Set image as wallpaper centered"
+msgstr ""
+
+#: image_browser.c:601
+msgid "Set image as wallpaper scaled"
+msgstr ""
+
+#: image_browser.c:604
+msgid "Toggle fullscreen (F)"
+msgstr ""
+
+#: image_browser.c:605
+msgid "Insert this image into the current document (Ins or I)"
+msgstr ""
+
+#: image_browser.c:606
+msgid "Insert this image into the current document //with the current size (D)"
+msgstr ""
+
+#: image_browser.c:608
+msgid "Copy this image to clipboard"
+msgstr ""
+
+#: image_browser.c:610
+msgid "Load next image (PgDown)"
+msgstr ""
+
+#: image_browser.c:611
+msgid "Load previous image (PgUp)"
+msgstr ""
+
+#: image_browser.c:910
+msgid "Insert tags"
+msgstr ""
+
+#: image_browser.c:919
+msgid "Insert the tag rather than view image"
+msgstr ""
+
+#: latex_support.c:51 latex_support.c:76 latex_support.c:100
+#: latex_support.c:126
+msgid "Done"
+msgstr ""
+
+#: latex_support.c:55
+#, c-format
+msgid "dvi to PS results for %s:"
+msgstr ""
+
+#: latex_support.c:80
+#, c-format
+msgid "LaTeX processing results for %s:"
+msgstr ""
+
+#: latex_support.c:104
+#, c-format
+msgid "pdflatex processing results for %s:"
+msgstr ""
+
+#: latex_support.c:130
+#, c-format
+msgid "dvi to PDF results for %s:"
+msgstr ""
+
+#: tea_encode.c:196
+msgid "Encode files"
+msgstr ""
+
+#: tea_encode.c:210
+msgid "Directory"
+msgstr "Directorio"
+
+#: tea_encode.c:213
+msgid "Convert ends of lines"
+msgstr ""
+
+#: tea_encode.c:228
+#, fuzzy
+msgid "Find and convert"
+msgstr "Buscar y marcar"
+
+#: tea_encode.c:240
+msgid "From: "
+msgstr ""
+
+#: tea_encode.c:243
+msgid "To: "
+msgstr ""
+
+#~ msgid "*Now playing* string from Amarok"
+#~ msgstr "Mensaje *Reproduciendo* de Amarok"
+
+#~ msgid "Highlighting mode"
+#~ msgstr "Modo resaltado"
+
+#~ msgid "Refresh highlighting"
+#~ msgstr "Actualizar resaltado"
+
+#~ msgid "Hide highlighting"
+#~ msgstr "Ocultar resaltado"
+
+#~ msgid "[X]HTML/XML and CSS files"
+#~ msgstr "Archivos [X]HTML/XML y CSS"
+
+#~ msgid "C/C++ sources and headers"
+#~ msgstr "Fuentes y cabeceras C/C++"
+
+#~ msgid "Elements"
+#~ msgstr "Componentes"
+
+#~ msgid "Cursor color"
+#~ msgstr "Color del Cursor"
+
+#~ msgid "Comments"
+#~ msgstr "Comentarios"
+
+#~ msgid "Identifiers"
+#~ msgstr "Identificadores"
+
+#~ msgid "Digits"
+#~ msgstr "Números"
+
+#~ msgid "Strings"
+#~ msgstr "Cadenas"
+
+#~ msgid "HTML tags"
+#~ msgstr "Etiquetas HTML"
+
+#~ msgid "Preprocessor"
+#~ msgstr "Preprocesador"
+
+#~ msgid "Types"
+#~ msgstr "Tipos"
+
+#~ msgid "Editor font"
+#~ msgstr "Fuente del editor"
+
+#~ msgid "Comments font"
+#~ msgstr "Fuente de Comentarios"
+
+#~ msgid "Identifiers font"
+#~ msgstr "Fuente de Identificadores"
+
+#~ msgid "Digits font"
+#~ msgstr "Fuente de Números"
+
+#~ msgid "Strings font"
+#~ msgstr "Fuente de Cadenas"
+
+#~ msgid "HTML tags font"
+#~ msgstr "Fuente de etiquetas HTML"
+
+#~ msgid "Preprocessor font"
+#~ msgstr "Fuente del Preprocesador"
+
+#~ msgid "Types font"
+#~ msgstr "Fuente para Tipos (contadores, booleanos etc.)"
+
+#~ msgid "Fonts"
+#~ msgstr "Fuentes"

@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;Как TEA ладит с разными кодировками?
+</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="TEA - полное ноговодство"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Диалоговые окна Открыть/Сохранить файл "
+HREF="x64.html"><LINK
+REL="NEXT"
+TITLE="О редактировании и просмотре субтитров формата SRT
+"
+HREF="c91.html"></HEAD
+><BODY
+CLASS="chapter"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>TEA - полное ноговодство</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x64.html"
+ACCESSKEY="P"
+>&#1055;&#1088;&#1077;&#1076;.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="c91.html"
+ACCESSKEY="N"
+>&#1057;&#1083;&#1077;&#1076;.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="chapter"
+><H1
+><A
+NAME="encodings"
+></A
+>&#1043;&#1083;&#1072;&#1074;&#1072; 3. 
+Как TEA ладит с разными кодировками?
+</H1
+><P
+>По умолчанию вам доступны следующие кодировки - это кодировка текущей локали (для жителей Украины и России, в старых дистрибутивах Linux обычно это были KOI8-R или KOI8-U, а нынче та же UTF-8) и UTF-8. Если обе кодировка совпадают, т.е. кодировка локали равна UTF-8, то двух UTF-8 в списке, понятное дело, не будет. Будет одна. При открытии файла вы можете также использовать автоматическое определение кодировки. Для этого надо выбрать в списке доступных кодировок пункт <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>autodetect</I
+></SPAN
+>. Но! Кроме этого, следует указать, какие именно кодировки подлежат автоматическому определению. Их надо выбрать в <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Настройки &#62; Кодировки &#62; Определять автоматически</B
+></SPAN
+>, поставив галочки напротив нужных кодировок.
+</P
+><P
+>&#13;Иногда функция автоматического определения кодировки не срабатывает. Вы можете задать кодировку, которая будет использоваться автоматическим определением в случае, если TEA не был способен определить кодировку сам. Для этого поставьте галочку на "При неудачном автоопр., исп. эту кодировку:", а ниже в списке <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Кодировка:</B
+></SPAN
+> выберите кодировку по вкусу. По сути, значения, выставленные по умолчанию, можно не трогать. 
+</P
+><P
+>Чтобы добавить другие кодировки в список доступных для открытия/сохранения файлов, надо пойти в <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Файл &#62; Настройки &#62; Кодировки</B
+></SPAN
+>, где на вкладке <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Настроить кодировки</B
+></SPAN
+> добавить нужые вам кодировки. Для этого надо  нажать на кнопку <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Добавить</B
+></SPAN
+> - появится  диалоговое окно с выбором кодировок. Чтобы удалить кодировку из списка <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Выбранные</B
+></SPAN
+>, надо выбрать в нем кодировку и нажать кнопку <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Удалить</B
+></SPAN
+>. 
+</P
+><P
+>&#13;После этого все списки кодировок, использующиеся в TEA, будут обновлены - это касается окон открытия и сохранения файлов, меню <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Вид &#62; Кодировки</B
+></SPAN
+>, внутреннего список кодировок в движке поиска текста в файлах. Кстати о меню <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Кодировки</B
+></SPAN
+> (подменю <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Вид</B
+></SPAN
+> - оно служит не для изменения текущей кодировки, а просто перечитывает файл с диска в выбранной кодировке. Так что если вам нужно перевести файл из одной кодировки в другую, используйте <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Сохранить как</B
+></SPAN
+>, а не <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Кодировки</B
+></SPAN
+>.
+</P
+><P
+>&#13;При перетаскивании файлов в окно TEA, а также при открытии оных из Знаменитого поля ввода, используется кодировка, выбранная в <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Настройки &#62; Кодировки &#62; Кодировка по умолчанию для открытия файла</B
+></SPAN
+>.
+</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x64.html"
+ACCESSKEY="P"
+>&#1055;&#1088;&#1077;&#1076;.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>&#1053;&#1072;&#1095;&#1072;&#1083;&#1086;</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="c91.html"
+ACCESSKEY="N"
+>&#1057;&#1083;&#1077;&#1076;.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Диалоговые окна Открыть/Сохранить файл</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>О редактировании и просмотре субтитров формата SRT</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

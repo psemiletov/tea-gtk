@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Functions</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="TEA Manual"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="List stuff"
+HREF="x367.html"><LINK
+REL="NEXT"
+TITLE="LaTeX"
+HREF="x400.html"></HEAD
+><BODY
+CLASS="chapter"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>TEA Manual</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x367.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x400.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="chapter"
+><H1
+><A
+NAME="functions_common"
+></A
+>Chapter 9. Functions</H1
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="AEN389"
+>9.1. Common</A
+></H1
+><P
+>To use text-processing functions, you must select some text first. If no text selected, TEA treats the whole text in a document as a selection. There are some special cases when TEA can treat the current word as selection when no text is actually selected. For example, it is a behavior of <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>UPCASE</B
+></SPAN
+> and <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>lowcase</B
+></SPAN
+> functions. But such behavior is a rare exception from the rule.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Document stats</B
+></SPAN
+> - outputs text statistics for the whole text or the selection into the Logmemo. 
+</P
+><P
+>&#13;<SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Document readability</B
+></SPAN
+>. Currently TEA implements two readability formulas: Automated Readability Index (ARI) and Coleman-Liau Index. I know that "its output approximates the U.S. grade level thought necessary to comprehend the text." (quote from Wikipedia), but I don't know how they are applicable to other languages than English.
+</P
+><P
+>&#13;You can notice that both result may vary from the results of <A
+HREF="http://www.online-utility.org/english/readability_test_and_improve.jsp"
+TARGET="_top"
+>Online readability tests</A
+>. That's because of the difference in algorithms of sentences cound and word count calculations. TEA uses the standart GTK stuff for that and I think that is a right stuff.
+</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x367.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x400.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>List stuff</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>LaTeX</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

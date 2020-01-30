@@ -1,0 +1,1346 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="http://txt2tags.sf.net">
+<TITLE>TEA Handbuch</TITLE>
+</HEAD><BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>TEA Handbuch</H1>
+<FONT SIZE="4">
+<I>Peter "Roxton" Semiletov</I><BR>
+mailto:peter.semiletov@gmail.com
+</FONT></CENTER>
+
+<P></P>
+<HR NOSHADE SIZE=1>
+<P></P>
+  <OL>
+  <LI><A HREF="#toc1">Eine Einleitung ist notwendig</A>
+  <LI><A HREF="#toc2">Benutzeroberfläche</A>
+    <UL>
+    <LI><A HREF="#toc3">2.1. Hauptfenster</A>
+    <LI><A HREF="#toc4">2.2. "Speichern" und "Öffnen" Benutzerfenster</A>
+    <LI><A HREF="#toc5">2.3. Zu drag and drop</A>
+    </UL>
+  <LI><A HREF="#toc6">Wie geht TEA mit Zeichensätzen um?</A>
+  <LI><A HREF="#toc7">Wie funktioniert editieren und preview von SRT-subtitles</A>
+  <LI><A HREF="#toc8">Das transzendentale Scheinen des Filemenus</A>
+  <LI><A HREF="#toc9">Das Bearbeiten-Menu, oder wie schneidet man ohne Schere und Gewalt</A>
+  <LI><A HREF="#toc10">Das Suchen-Menu</A>
+    <UL>
+    <LI><A HREF="#toc11">7.1. Allgemeine Suchen-Funktionen</A>
+    <LI><A HREF="#toc12">7.2. Menupunkt Markierung</A>
+    </UL>
+  <LI><A HREF="#toc13">Markup (Textauszeichnung)</A>
+    <UL>
+    <LI><A HREF="#toc14">8.1. Grundsätzliches zu diesem Zeug</A>
+    <LI><A HREF="#toc15">8.2. HTML Tools</A>
+    <LI><A HREF="#toc16">8.3. Common (Allgemeines)</A>
+    <LI><A HREF="#toc17">8.4. Listen</A>
+    </UL>
+  <LI><A HREF="#toc18">Funktionen</A>
+    <UL>
+    <LI><A HREF="#toc19">9.1. Common (Allgemeines)</A>
+    <LI><A HREF="#toc20">9.2. LaTeX</A>
+    <LI><A HREF="#toc21">9.3. IDE</A>
+    <LI><A HREF="#toc22">9.4. Kalender</A>
+    <LI><A HREF="#toc23">9.5. Rechtschreibprüfung</A>
+    <LI><A HREF="#toc24">9.6. UNIversal Text AnalyZer</A>
+    <LI><A HREF="#toc25">9.7. User Menu</A>
+    <LI><A HREF="#toc26">9.8. Replacement tables</A>
+    <LI><A HREF="#toc27">9.9. Scripte</A>
+      <UL>
+      <LI><A HREF="#toc28">9.9.1. Scripte aus Sicht des Users</A>
+      <LI><A HREF="#toc29">9.9.2. Scripte aus Sicht des Entwicklers</A>
+      </UL>
+    <LI><A HREF="#toc30">9.10. Snippets</A>
+    <LI><A HREF="#toc31">9.11. Tools</A>
+    <LI><A HREF="#toc32">9.12. Format</A>
+    <LI><A HREF="#toc33">9.13. Insert</A>
+    <LI><A HREF="#toc34">9.14. Case</A>
+    <LI><A HREF="#toc35">9.15. Numbers</A>
+    <LI><A HREF="#toc36">9.16. String</A>
+    <LI><A HREF="#toc37">9.17. Sort</A>
+    <LI><A HREF="#toc38">9.18. Filters</A>
+    <LI><A HREF="#toc39">9.19. Morse code</A>
+    </UL>
+  <LI><A HREF="#toc40">Run</A>
+  <LI><A HREF="#toc41">Nav[igation]</A>
+  <LI><A HREF="#toc42">View (Ansicht)</A>
+  <LI><A HREF="#toc43">Preferencen (Einstellungen), ich verstehe ...</A>
+    <UL>
+    <LI><A HREF="#toc44">13.1. Intro</A>
+    <LI><A HREF="#toc45">13.2. Switches</A>
+    <LI><A HREF="#toc46">13.3. Encoding</A>
+    <LI><A HREF="#toc47">13.4. Functions</A>
+    <LI><A HREF="#toc48">13.5. Interface</A>
+    <LI><A HREF="#toc49">13.6. Editor</A>
+    <LI><A HREF="#toc50">13.7. Browsers</A>
+    <LI><A HREF="#toc51">13.8. Paths</A>
+    <LI><A HREF="#toc52">13.9. Maintenance</A>
+    </UL>
+  <LI><A HREF="#toc53">Was ist Kwas?</A>
+    <UL>
+    <LI><A HREF="#toc54">14.1. Actions</A>
+    <LI><A HREF="#toc55">14.2. Ins to editor</A>
+    </UL>
+  <LI><A HREF="#toc56">Command line options</A>
+  <LI><A HREF="#toc57">Über den Autor</A>
+  <LI><A HREF="#toc58">Appendix: Ressourcen</A>
+  </OL>
+
+<P></P>
+<HR NOSHADE SIZE=1>
+<P></P>
+
+<P></P>
+<P>
+(übersetzt von Hans Fährmann; mailto:<A HREF="mailto:otium2010@freenet.de">otium2010@freenet.de</A>)
+</P>
+<P>
+Dieses Handbuch ist <I>public domain</I>.
+</P>
+<P>
+(Zur korrekten Darstellung der Umlaute, den Browser auf Zeichenkodierung <CODE>UTF-8</CODE> einstellen.)
+</P>
+<P>
+(Anmerkung des Übersetzers: Die Untermenupunkte und Befehle habe ich fast ausschliesslich in Englisch belassen, so dass auch ein User, der auf eine nicht lokalisierte Version trifft, damit umgehen kann. Und die wenigen englischen Begriffe sind ja schnell übersetzt, sofern erforderlich ;-) !)
+</P>
+<A NAME="toc1"></A>
+<H1>1. Eine Einleitung ist notwendig</H1>
+<P>
+Im Herbst des Jahres 2001 begann ich mit der Entwicklung des Text-Editors (für Windows), den ich <B>TEA</B> nannte (<B>T</B>ext <B>E</B>diting und <B>A</B>uthoring program). Er war populär in den Ländern der ex-USSR (Ukraine, Russland, Weiß-Russland und anderen). Bis 2004 schaffte ich 11 Versionen. Dann beendete ich die Entwicklung von TEA für Windows (<A HREF="http://my.elvisti.com/roxton/tea_w32.html">http://my.elvisti.com/roxton/tea_w32.html</A>) und begann mit der Entwicklung von TEA für Linux (jetzt einfach TEA genannt). Es ist mein erstes Linux-Programm und z.Zt. mein erstes C-Programm überhaupt :-). Ich bin kein Programmierer. Ich bin ein Schriftsteller und ein Journalist und wollte einen Editor für meinen Bedarf. So startete ich damit. <I>In diesem Zusammenhang, 2006 ist TEA für Windows (Win32) wiederauferstanden, aber es gibt nur eine Fassung in russischer Sprache. TEA (Win32) ist public domain, in Delphi geschrieben (ja, das proprietäre!), mit Scintilla als text editing engine.</I>
+</P>
+<P>
+Falls Du Fragen, Ideen, Vorschläge oder Patches hast - hab keine Hemmungen, schreib mir: mailto:<A HREF="mailto:peter.semiletov@gmail.com">peter.semiletov@gmail.com</A> . Schreib mir in Englisch oder Russisch.
+</P>
+<P>
+Lies dieses Handbuch vollständig, denn TEA ist in vielen Teilen kein Standard-Editor!
+</P>
+<P>
+<I>Jetzt hören: Nirwana - I hate myself and I want to die</I>
+</P>
+<A NAME="toc2"></A>
+<H1>2. Benutzeroberfläche</H1>
+<A NAME="toc3"></A>
+<H2>2.1. Hauptfenster</H2>
+<P>
+Einige Worte zur Benutzeroberfläche - Achtung bitte! Unser Flugzeug ist sicher aber etwas ungewöhnlich. Zu den einzelnen Menupunkten kommen wir im Folgenden noch. 
+</P>
+<P>
+Hier nur folgendes:
+</P>
+<P>
+Über den Schraubenschlüssel (Icon) <B>(Einstellungen)</B> ruft man das Einstellungsinterface für TEA auf (oder über <B>Preferences-&gt;Interface-&gt;Show the main toolbar</B>). Dieses GUI-Interface ist hardcoded, nicht änderbar - die GUI-Befehle erklären sich selbst.
+</P>
+<P>
+In dem Bereich <B>(Logmemo)</B> wird der output der Aktionen angezeigt (unterhalb des Eingabefensters).
+</P>
+<P>
+Im Bereich <B>(Texteingabe)</B> (im Handbuch immer wieder als "famose Texteingabe" bezeichnet - ganz unten im Fenster) kannst Du Text für die Suche oder für Selectionen eingeben. Beispiel: Willst Du zur Seite 77, gibt "77" ein, betätige <CODE>Alt-G</CODE>. Falls Du etwas suchst, gib den Text ein und betätige <CODE>Ctrl-F</CODE>.
+</P>
+<P>
+Der <B>Open</B>-Button (ganz rechts neben der <B>(Texteingabe)</B>) ist sehr hilfreich. Gib einen Dateinamen ein (den kompletten Pfad) und betätige den <CODE>Open</CODE>-Button. In den diesem Fall benutzt TEA die Codierung, welche in den Preferencen ausgewählt ist.
+</P>
+
+<A NAME="toc4"></A>
+<H2>2.2. "Speichern" und "Öffnen" Benutzerfenster</H2>
+<P>
+TEA hat geringfügig non-standard <CODE>Speichern</CODE> und <CODE>Öffnen</CODE> Dialog-Fenster. Sie sind relativ groß in der Grundeinstellung, können aber in (Einstellungen-&gt;Benutzeroberfläche) in der Größe angepasst werden. Der Standard-GTK+2 Dateiwähler hat keinen Dateinahmeneintrag, wenn er im "Datei öffnen"-Mode arbeitet. TEAs Dialog hat dies aber. Es sind zwei Einträge möglich: <B>Ordner</B> und <B>Dateiname</B>. Der <B>Ordner</B>-Eintrag ist für zwei Dinge gut. Zur Navigation im selben Ordner, gib eine URI, einen absoluten Pfad oder einen Ordnernamen ein und betätige <CODE>Enter</CODE> oder den <CODE>Go to</CODE>-Button. Um einen neuen Ordner im aktuellen Ordner zu kreieren, gib den Ordnernamen in den <B>Ordner</B>-Eintrag und betätige den <B>Create new</B>-Button.
+</P>
+<P>
+Zum Speichern oder Öffnen einer Datei, nimm den Dateinamen-Eintrag - das funktioniert in gleicher Weise wie in KDE. 
+</P>
+<A NAME="toc5"></A>
+<H2>2.3. Zu drag and drop</H2>
+<P>
+Wenn man eine txt.-Datei ins TEA-Window zieht, öffnet sich die Datei in TEA. Ein Image wird als IMG-Tag (oder media object für Docbooc) eingefügt. Das funktioniert mit Konqueror, Gqview, Nautilus etc.. Bei <CODE>drag and drop</CODE>-Aktionen unterstellt TEA, dass die Dateien entsprechend der Auswahl in <B>Einstellungen)</B> oder <B>Preferencen-&gt;Encoding-&gt;Default charset for File open</B> kodiert sind.
+</P>
+<P>
+<I>Jetzt hören: Scorn - Logghi Barogghi - Weakener</I>
+</P>
+<A NAME="toc6"></A>
+<H1>3. Wie geht TEA mit Zeichensätzen um?</H1>
+<P>
+TEA arbeitet mit allen Zeichensätzen, die Linux unterstützt (<CODE>iconv library</CODE>). Grundsätzlich kann man 2 Zeichensätze wählen für die <CODE>Datei speichern Aktion</CODE> - UTF8 und den aktuellen lokalen Zeichensatz. Für die <CODE>Öffnen Aktion</CODE> kannst Du diese wählen; zusätzlich gibt es <B>autodetect</B>.
+</P>
+<P>
+Wenn Du <B>autodetect</B> wählst, versucht TEA die aktuelle Kodierung automatisch zu bestimmen und falls das fehlschlägt, musst Du die passende Kodierung manuell auswählen. Die <B>autodetect</B>-Funktion ist vielgestaltig und in mehrere Unterfunktionen unterteilt. TEA hat zum Beispiel ein simples <B>autodetect</B> und eine <B>Japanese autodetect</B>-Funktion. Wählt man die erste, muss man einige Zeichensätze auswählen, welche TEA checkt. Alle Zeichensätze findet man in <B>Preferences-&gt;Encodings-&gt;Autodetect section</B> - es gibt dort eine Menge Checkboxen!
+</P>
+<P>
+Wenn Du eine Datei öffnest, kannst Du <B>autodetect</B>-Zeichensatz wählen und TEA versucht den Zeichensatz automatisch zu erkennen, welchen Du unter "Autodetect"-Preferences ausgewählt hast.
+</P>
+<P>
+Ein anderer Fall ist <B>Japanese autodetect</B>. Es ist getrennt vom "üblichen" <B>autodetect</B> und folgt seiner eigenen Implementation. 
+</P>
+<P>
+Wie kann man mehr Zeichensätze zur Liste der verfügbaren Kodierungen hinzufügen? Geh zu <B>File-&gt;Preferences-&gt;Encoding</B>, switche zur <B>Configure charsets</B>-Seite. Dort gibt es zwei Listen - <B>Available</B> und <B>Selected</B>. Wähle einen Zeichensatz in der <B>Available</B>-Liste und betätige den <B>Add</B>-Button, um diese Auswahl der <B>Selected</B>-Liste hinzuzufügen. Zeichensätze aus der <B>Selected</B>-Liste sind verfügbar im Datei Speichern/Öffnen-Dialog, im Kwas-Dateimanager etc..
+</P>
+<P>
+Um einen Zeichensatz aus der <B>Selected</B>-Liste zu entfernen, wähle ihn aus und betätige den <CODE>Delete</CODE>-Button zwischen den Listen.
+</P>
+<P>
+Menus/Listen mit verfügbaren Zeichensatz updates: für Öffnen/Speichern-Dialoge - wenn Du sie wieder öffnest; für Kwas - wenn Du Kwas in einem neuen Fenster öffnest.
+</P>
+<P>
+TEA hat ein eigentlich obsoletes <B>View-&gt;Code</B> Menü. Aus diesem Menü kann man die Kodierung des aktuellen Dokumentes ändern. Die Kodierungen sind die selben, wie im "Datei öffnen/speichern"-Dialog. Wenn Du die Kodierung wechselst, so bedeutet dies, dass der aktuelle Dateiinhalt neu geladen wird - mit der ausgewählten anderen Kodierung. <B><I>Benutze dies vorsichtig!</I></B>
+</P>
+<A NAME="toc7"></A>
+<H1>4. Wie funktioniert editieren und preview von SRT-subtitles</H1>
+<P>
+Mit TEA kann man SRT-subtitles editieren und previewen. Das läuft wie folgt:
+</P>
+<P>
+&gt; Öffne eine SRT-Datei wie eine gewöhnliche Text-Datei.
+</P>
+<P>
+&gt; "Öffne" eine Film-Datei über <B>File-&gt;Open different-&gt;Open movie</B>.
+</P>
+<P>
+&gt; Editiere die SRT-Datei. Speichere sie.
+</P>
+<P>
+&gt; Wenn Du <B>View-&gt;Preview in Mplayer</B> aktiviert hast, findet TEA die <I>start time</I> der aktuellen subtitle-section und startet Mplayer mit dem movie, welches Du vor <B>Open movie</B> ausgewählt hattest. TEA sagt also dem Mplayer, spring zu der Zeit, welche für die aktuelle subtitle section erforderlich ist (aktuell, nach "rewind", Mplayer zeigt den nächsten subtitle NACH dem aktuellen, wähle in TEA den vorherigen subtitle um den korrekten aktuellen zu zeigen. Ein gruseliger Satz, oder? Aber wage den Versuch und Du wirst verstehen).
+</P>
+<A NAME="toc8"></A>
+<H1>5. Das transzendentale Scheinen des Filemenus</H1>
+<P>
+<B>New</B> - öffnet ein neues Dokument mit <CODE>UTF-8</CODE>-Kodierung. Natürlich kannst Du es in einem Zeichensatz Deiner Wahl speichern.
+</P>
+<P>
+<B>New Kwas</B> - öffnet ein neues Kwas-Fenster. Lies bitte das Kapitel <I>Was ist Kwas?</I>.
+</P>
+<P>
+<B>Crapbook</B> - Crapbook (Notizbuch) ist eine einfache Textdatei unter <I>$HOME/.config/tea/crapbook.txt</I>. Du kannst es aufrufen mit <CODE>Alt-M</CODE>. TEA speichert diese Datei automatisch, wenn Du TEA schliesst oder wenn Du <I>crapbook.txt</I> schliesst. Es ist nützlich, um Notizen zu schreiben, Zitate festzuhalten oder ähnliches. 
+</P>
+<P>
+<B>Add to.. -&gt; Add to Bookmarks</B> - fügt eine neue Bookmark in die Bookmark Liste ein. Jeder Eintrag enthält: Dateiname, Zeichensatz, Position. Um die Bookmark-Datei zu editieren (eine simple Textdatei mit einer Liste von Begriffen) gehe zu <B>File-&gt;Manage config files-&gt;Bookmark file</B>. Editiere und speichere dann. Änderungen werden direkt angewendet.
+</P>
+<P>
+<B>Add to.. &gt; Add to the autosaving list</B> - fügt die aktuelle Datei in eine spezielle Datei-Liste ein. Diese Dateien werden automatisch gesichert, wenn Du sie schliesst. Um diese Liste zu editieren, gehe zu <B>File-&gt;Manage config files-&gt;Autosaving list</B>.
+Dieses Feature ist nützlich, wenn Du Dateien als Sammelstellen für verschiedene Infos nutzen willst. Du kannst z.B. in KDE einen shortcut anlegen, um etwas wie <B>tea ~/my_links.txt</B> zu starten und <I>my_links.txt</I> in die autosaving-Liste eintragen.
+</P>
+<P>
+<B>Open</B> - öffnet eine Datei. Im Open-Dialog ist ein Zeichensatz-Selector. Wähle die korrekte Kodierung oder Du wirst Dich ärgern. Einzelheiten zum TEA-Zeichensatz-Handling lies im Kapitel <I>Wie geht TEA mit Zeichensätzen um?</I>.
+Werden mehrere Dateien geöffnet, müssen sie mit dem selben Zeichensatz geöffnet werden - oder shit can happen. Ich kann Dir nichts zu dem hypothetischen shit sagen, aber jetzt bist Du gewarnt.
+</P>
+<P>
+TEA nutzt das File open widget von GTK+2.4. Es unterstützt einige keyboard shortcuts für verschiedene Aktionen:
+</P>
+<P>
+<B>&gt;</B> Directory up - <CODE>Alt-Up</CODE>
+</P>
+<P>
+<B>&gt;</B> Directory down - <CODE>Alt-Down</CODE>
+</P>
+<P>
+<B>&gt;</B> Goto home directory - <CODE>Alt-Home</CODE>
+</P>
+<P>
+Am Fuß dieses Dialog-Fensters ist das <B>TEA special locations</B> drop-down menu. Hier kannst Du vom aktuellen Ordner in Ordner wechseln, in denen TEA Deine snippets, scripte, templates, sessions und replacement tables ablegt. Zu beachten: all diese Dateien <B>müssen in UTF-8</B> kodiert sein. Speichere die templates etc. nicht in anderer Kodierung!
+</P>
+<P>
+<B>Über RTF-Dateien</B> - ja, TEA kann RTF-Dateien öffnen - aber nicht speichern! Um sie korrekt zu öffnen, muß die default-Kodierung für RTF's definiert sein. Das kann in <B>Preferences-&gt;Encoding-&gt;Default charset for RTF</B> vorgenommen werden. 
+</P>
+<P>
+Eine andere Frage ist, wie TEA RTF's öffnet. Es funktioniert und um RTF's schnell zu lesen, nimm TEA. Zum editieren nimm OOo, KWord, AbiWord, oder was auch immer.
+</P>
+<P>
+Bei der Gelegenheit, mit TEA kannst Du OpenDocument-, OO-Writer- KWord-, Microsoft Word- und AbiWord-Dateien öffnen - aber nur im Lesen-Modus. Man kann TEA als Viewer für diese Dateien nutzen, aber auch zum Konvertieren in Plain-Text (über <B>Saving as</B> unter anderem Dateinamen). Anzumerken ist: TEA liest KWord-Dateien besser als OOo- oder AbiWord-Formate. Um Microsoft Word-Formate zu öffnen, muss Antiword (<A HREF="http://www.winfield.demon.nl">http://www.winfield.demon.nl</A>) installiert sein. Und um OOo-Writer- und KWord-Dateien zu öffnen, benötigst Du <I>gunzip, bzip2</I> und <I>tar</I>.
+</P>
+<P>
+ <B>Zu archivierten Dateien.</B> TEA kann z.Zt. nur Dateien im Lesen-Modus handeln, die mit <I>.gz, bz2, zip, tar.gz, tar.bz2</I> und <I>tar.zip</I> komprimiert sind. Dafür gibt es zwei Gründe. TEA kann nur UTF-8 Dateien öffnen (oder einen normalen Englisch-Text) und TEA kann nur Archive handeln, die eine einzelne Datei enthalten.
+</P>
+<P>
+<B>Open different-&gt;Open a movie</B> Menu-Punkt. Dieser ist bestimmt für das Editieren von SRT-subtitles. Für weitere Informationen lies das Kapitel zum Menupunkt <B>Ansicht</B>.
+</P>
+<P>
+<B>Open different-&gt;Open from the Famous text entry</B>. Wie arbeitet es? Gib einen vollständigen Dateinamen ein (oder kopiere ihn ein), gebrauche die Funktion und hab Spass damit.
+</P>
+<P>
+<B>Open different-&gt;Open the autosaved session</B> - öffnet die Session, die automatisch gesichert wurde, wenn <B>Preferences-&gt;Editor-&gt;Autosave a session on each interval</B> aktiv ist.
+</P>
+<P>
+<B>Templates</B> - von diesem Menupunkt aus sind User-Templates verfügbar. Alle Templates werden in der Grundeinstellung in <I>$HOME/.config/tea/templates</I> gespeichert. Um eine Datei als Template zu speichern, gebrauche den <B>Save different-&gt;Save as template</B> Menupunkt. Templates können gemanagt werden auf der <B>Preferences-&gt;Maintainance</B>-Seite. Um Templates zum Editieren zu öffnen, gehe über das drop-down-menu des Öffnen-Dialogs <B>TEA special locations</B>.
+</P>
+<P>
+<B>Sessions</B> - das selbe Zeug wie im Opera Browser - Du kannst Dateilisten speichern und öffnen. Um eine Session-Datei wie eine Text-Datei zu öffnen, ohne eine Datei-Liste zu laden, nimm den Datei-öffnen-Dialog in dem drop-down-Menu von <B>TEA special locations</B>. TEA speichert für jede Session 3 Elemente per Datei - den Dateinamen, die Kodierung und die Cursor-Position. Um die Dateien als Session zu speichern, verwende den Menupunkt <B>Save different-&gt;Save sesion</B>. Sessions zu managen geht über die <B>Preferences-&gt;Maintainance</B>-Seite.
+</P>
+<P>
+<I>Jetzt hören: Yab Yum - Dead Moon Ritual (Source Mutation Mix)</I>
+</P>
+<P>
+<B>Save different-&gt;Backup</B> - TEA macht eine backup-copy des aktuellen Textes.
+</P>
+<P>
+<B>Save</B> - spricht für sich. Kurze Anmerkung: das Dokument wird in der selben Kodierung gespeichert, mit der es geöffnet wurde.
+</P>
+<P>
+<B>Save as</B> - in diesem Dialog kannst Du aus der Liste eine der verfügbaren Kodierungen wählen. Wenn Du den Text konvertieren willst, nimm dieses Feature.
+</P>
+<P>
+<B>Save different-&gt;Save as template</B> - speichert die aktuelle Datei als als Template im Grundeinstellungsordner <I>$HOME/.config.tea/templates</I>.
+</P>
+<P>
+<B>Save different-&gt;Save version</B> - speichert eine Kopie der aktuellen Datei mit Name, basierend auf dem Dateinamen, ergänzt mit aktuellem Datum und Zeit.
+</P>
+<P>
+<B>Manage utility files</B> (Hilfsdateien verwalten) - hier kannst Du direkt die TEA-Konfigurations-Datein öffnen (<I>$HOME/.config/tea/</I>). Die Änderungen werden wirksam nach dem Editieren und Speichern. Zu empfehlen ist aber, TEA über (Einstellungen) zu konfigurieren.
+</P>
+<P>
+<I>Jetzt hören: Nirvana - Talk To Me</I>
+</P>
+<P>
+<B>Manage utility files-&gt;Autoreplace words file</B> - hier kannst Du die Datei öffnen, in der die Wortersetzungen definiert sind (zu aktivieren unter <B>Preferences-&gt;Editor-&gt;Autoreplace</B>). Diese enthält Zeilen in einem simplen Format: <I>string1=string2</I>. Zum Beispiel:
+</P>
+<P>
+<CODE>Linux=GNU/Linux</CODE>
+</P>
+<P>
+<CODE>sxe=straight edge</CODE>
+</P>
+<P>
+<CODE>FSOL=Futur Sound Of London</CODE>
+</P>
+<P>
+<CODE>hl=highlighting</CODE> 
+</P>
+<P>
+Nach dem Speichern dieser Datei erfolgt ein update der inneren Liste der Wortersetzungen. Zur Anwendung, aktiviere die Wortersetzung und gib Deinen Text ein. Alle Worte der Liste werden ersetzt, wenn die shortcuts eingegeben werden und die Leertaste oder irgendeine Zeichentaste gedrückt wird. <I>Wortersetzung ist case-sensitive.</I>
+</P>
+<P>
+<B>Manage utility files-&gt;Hotkeys config</B> - mit dieser Datei kannst Du die hoteys/shorcuts für jede Menupunkt konfigurieren. Alle hotkeys sind gespeichert in <I>$HOME/.config/tea/tea_hotkeys</I>. Diese Datei darf nur UTF-8-Zeichen enthalten. Alle Änderungen werden angewendet, wenn die Datei gespeichert wird. Wenn ein neuer hotkey einen alten überschreibt, dann wirkt die Änderung nach dem Neustart von TEA. Vordefinierte hotkeys können nicht geändert werden.
+</P>
+<P>
+Die Zeilen in <I>tea_hotkeys</I> haben ein simples Format: <I>menu item captio=hotkey</I>. Zum Beispiel:
+</P>
+<P>
+<CODE>Reverse=Alt Shift R</CODE>
+</P>
+<P>
+<CODE>Read this file manual=F1</CODE>
+</P>
+<P>
+Kurze Anmerkung: Die Menu-Itembezeichnung ist case-sensitive. Deshalb ist sie genauso zu schreiben wie im TEA-Menu. Der hotkey ist nicht case-sensitive, so dass man schreiben könnte: "shift ctrlF5" oder ähnlich. Modifizierer sind <I>Alt, Ctrl, Shift</I>. Sie sind durch Leerzeichen zu trennen.
+</P>
+<P>
+Du kannst jedem Menupukt einen shortcut zu ordnen, sogar den dynamisch generierten Bookmarks.
+</P>
+<A NAME="toc9"></A>
+<H1>6. Das Bearbeiten-Menu, oder wie schneidet man ohne Schere und Gewalt</H1>
+<P>
+<B>Indent/Unindent</B> - bewegt den Text einen Tabulator nach rechts oder links (siehe <B>Peferences, Editor page</B>). Für <CODE>Indent</CODE> kannst Du auch den TAB-Key verwenden. Beide Funktionen wirken auf eine oder mehrere Zeilen.
+</P>
+<P>
+<B>Append to the Crapbook</B> - fügt die Auswahl dem Notizbuch hinzu. Dazu muss das Notizbuch nicht geöffnet sein.
+</P>
+<P>
+<B>Swop</B> - tauscht den ausgewählten Text mit dem Clipboard-Inhalt. Der ausgewählte Text geht in den Zwischenspeicher und der Inhalt des Zwischenspeichers geht an die Stelle des ausgewählten Textes.
+</P>
+<P>
+<B>Move line up/down</B> - tue es. Dazu musst Du keine Zeile auswählen. Die Operation wirkt auf die aktuelle Zeile (dort, wo der Cursor steht).
+</P>
+<P>
+<B>Copy all</B> - kopiert den gesamten Text in den Zwischenspeicher.
+</P>
+<P>
+<B>Copy current URL</B> - vor Anwendung musst Du den Cursor auf die URL im Text stellen.
+</P>
+<A NAME="toc10"></A>
+<H1>7. Das Suchen-Menu</H1>
+<A NAME="toc11"></A>
+<H2>7.1. Allgemeine Suchen-Funktionen</H2>
+<P>
+Willst Du etwas finden? Schreibe es in die famose (Texteingabe) und betätige <I>Enter</I> oder <I>Crl-F</I>. Du willst mehr finden? Betätige F3. Beachte, dass TEA immer ab der aktuellen Cursor-Position sucht.
+</P>
+<P>
+Willst Du ein traditionelleres Suchen-Werkzeug - dann kannst Du das <B>Search and Replace window</B> nutzen. Es ist weit weg vom Ideal, aber brauchbar.
+</P>
+<P>
+<B>Replace</B> - ersetzt den ausgewählten Text durch den Inhalt der famosen Texteingabe. Gewöhnlich sucht man den Text und wenn man ihn gefunden hat, verwendet man diese Funktion.
+</P>
+<P>
+<B>Goto line</B> - gib die Zeilennummer in die famose Texteingabe ein und ab mit dieser Funktion.
+</P>
+<P>
+<B>Replace all</B> - und noch einmal die famose Texteingabe. Aber diesmal in einem speziellen Format: <I>text to find~text for replace</I>. Zum Beispiel: <I>hell~heck</I>.
+</P>
+<P>
+<B>Find an mark</B> - findet den String (aus dem famosen Texteingabefeld) im aktuellen Dokument und markiert alles Gefundene.
+</P>
+<P>
+<B>Find in files</B>. TEA hat ein einfaches built-in-Werkzeug zur Suche in einer Datei. Es ist eine einfache Suchfunktion ohne Stop-Button. So kann es sein, das Du Geduld brauchst, wenn TEA sucht. Trink einen Tee ...
+</P>
+<P>
+Wahrscheinlich benötigen noch einige Felder dieses Fensters eine Erklärung. Hier ist sie. "And", "Or" und "Not" sind bestimmt für Wörter, die Du suchst oder nicht suchst. Stell Dir vor, Du willst alle Dateien finden, die die Wörter "Linux", "FreeBSD", aber nicht das Wort "MS DOS" enthalten. Dann schreibe "Linux" und "FreeBSD" in das "And"-Feld (ein Wort pro Zeile), und "MS DOS" in das "Not"-Feld.
+</P>
+<P>
+So, "And" bedeutet, das eine Datei alle gelisteten Wörter enthalten muss. "Or" bedeutet, das die Datei ein oder mehrere der in "Or" gelisteten Wörter enthalten muss. Und die "Not"-Liste? Die Datei darf keins der "Not"-Wörter enthalten.
+</P>
+<P>
+<B>File pattern</B> - nur zwei Metazeichen werden unterstützt: * und ?.
+</P>
+<P>
+Um eine Datei aus der Liste der gefundenen zu öffnen, genügt ein Doppelclick auf die gewünschte Datei.
+</P>
+<P>
+Du kannst die Liste aber auch als TEA-Session speichern und später wieder öffnen. Betätige <B>Save as a session</B>, um die Liste als Session zu speichern. Du kannst auch die gefundenen Dateien in einen Ordner kopieren: <B>Copy to the directory</B>.
+</P>
+<P>
+TEA sucht in <I>Plain-Text, KOffice KWD, AbiWord ABI, OpenOffice.org sxw und OpenOfficeDocument ODT</I> Dateien.
+</P>
+<P>
+In Plain-Text-Dateien wendet TEA alle Zeichensätze an, die in der Zeichensatzliste des File Open-Dialogs enthalten sind.
+</P>
+<P>
+<B>Mark lines-&gt; n characters</B>. Füge die maximale Zeilenlänge in das famose Texteingabefeld und betätige diese Funktion. Alle Zeilen, die länger als <I>N</I> sind (der Wert im Texteingabefeld) werden markiert.
+</P>
+<P>
+<B>Scan for local links</B> - scannt das aktuelle Dokument nach href-Links zu lokalen Dateien und fügt sie in den Menupunkt <B>Nav-&gt;Links</B> ein. Von dort kannst Du die Datei in TEA öffnen; ein Bild wird im built-in-Bildbetrachter geöffnet (analog <B>Open at cursor</B>).
+</P>
+<P>
+<B>Scan for SRC's</B> - ähnlich wie <B>Scan for local links</B>, aber füllt das <B>Nav-&gt;Links</B> Menu mit allen SRC-stuff - in den meisten Fällen mit Images. Es ist sehr hilfreich, wenn Du die Banner oder andere Bilder sehen, diese aber nicht manuell suchen willst.
+</P>
+<A NAME="toc12"></A>
+<H2>7.2. Menupunkt Markierung</H2>
+<P>
+<B>Mark</B>. Markieren ist ein spezielles Auswahlverfahren. Es gibt Dir die Fähigkeit, Text auf verschiedene Weise auszuwählen. Um Text zu markieren, ist der Text auf normale Art und Weise auszuwählen und dann <B>Mark</B> zu betätigen. Um den markierten Text wieder zu 'deselektieren', ist der Cursor auf den markierten Text zu positionieren und wieder <B>Mark</B> zu betätigen. Ein anderer Weg ist die Betätigung des <B>Unmark all</B> Menupunktes. Den markierten Text kopieren kann man mit der <B>Copy marked</B>-Funktion. 
+</P>
+<P>
+<B>Mark by regexp</B> - sucht im Text mit regexp, welche in der famosen Texteingabe eingegeben werden und markiert sämtliche Worte, welche zu den regexp passen. Zum Beispiel: regexp="p*r". Das führt zur Markierung der Worte "peter", "poor", "pair". Diese Suche ist case-sensitiv (Groß-/Kleinschreibung).
+</P>
+<P>
+Metazeichen <B>*</B> steht für jedes Zeichen, <B>?</B> steht für ein einzelnes Zeichen.
+</P>
+<P>
+Zum Beispiel: ein Suchmuster wie <I>"?og"</I>, findet <I>"dog"</I>, aber nicht <I>"frog"</I>. Wenn man "*og" definiert, markiert TEA sämtliche Wörter wie <I>dog, frog, bulldog, fog</I> und ähnlich diesen.
+</P>
+<P>
+<I>Jetzt hören: The Pixies - Santo</I>
+</P>
+<P>
+<B>Mark all fuzzy and empty translations</B> - nützlich, um .po-files zu editieren.
+</P>
+<P>
+<I>Jetzt hören: The Pixies - Evil Hearted You</I>
+</P>
+<P>
+<B>Mark each n-th line</B> - hiermit kannst Du jede n-te Zeile markieren. Gib die Zahl in die famose Texteingabe ein und betätige den Button.
+</P>
+<P>
+<B>Mark lines those contains a string</B> - markiert sämtliche Zeilen, die den String enthalten, der in der famosen Texteingabe eingegeben wurde.  
+</P>
+<A NAME="toc13"></A>
+<H1>8. Markup (Textauszeichnung)</H1>
+<A NAME="toc14"></A>
+<H2>8.1. Grundsätzliches zu diesem Zeug</H2>
+<P>
+Einige Worte zu dem Markup Menu. Es wirkt auf verschiedene Art und Weise, in Abhängigkeit von dem ausgewählten <B>Markup mode</B>. Verfügbar sind HTML-, XHTML-, Wikipedia-, LaTeX- und Docbook-Modes. Aber - nicht sämtliche Punkte des <B>Markup</B>-Menus unterstützen sämtliche markup-modes. Zum Beispiel: <B>Make a table</B> kreiert Tabellen in HTML, Wikipedia und Docbook, aber nicht in LaTeX. 
+</P>
+<P>
+TEA kann den <B>Markup mode</B> automatisch anpassen - das ist einzustellen über <B>Preferences-&gt;Switches-&gt;Automatic makup mode</B>.
+</P>
+<A NAME="toc15"></A>
+<H2>8.2. HTML Tools</H2>
+<P>
+<B>Document weight</B> - zeigt den totalen Speicherbedarf des Dokumentes  - inclusive SRC-staff(images, flashes etc.) Das Resultat ist im Logmemo zu sehen.
+</P>
+<P>
+<B>Build-in template</B> - fügt das HTML-template in das aktuelle Dokument ein.
+</P>
+<P>
+<B>Enclose selected link into tags</B> - tue es. Um <I><A HREF="http://www.foo.bar//">www.foo.bar//</A> oder //<A HREF="ftp://ftp.foo.bar//">ftp.foo.bar//</A> oder //mailto:<A HREF="mailto:foo@bar.com">foo@bar.com</A></I> mit einem <I>a href</I>-tag einzuschliessen, nutze diese Funktion und sei glücklich.
+</P>
+<P>
+<B>Strip tags</B> - entfernt sämtliche Tags aus dem HTML-Document.
+</P>
+<P>
+<B>Convert tags to entities</B> - willst Du HTML-Code in dem HTML-Dokument zeigen, wähle den Code aus und wende diese Funktion an. Du bekommst dann zum Beispiel:
+</P>
+<P>
+&amp;lt;b&amp;gt;demo&amp;lt;/b&amp;gt;
+</P>
+<P>
+<B>Text to HTML</B> - diese Funktion konvertiert Plain-Text zu HTML-formatierten Code mit Hilfe von CSS (in eine neue Datei - der Plain-Text bleibt in der ursprünglichen Datei erhalten). 
+</P>
+<A NAME="toc16"></A>
+<H2>8.3. Common (Allgemeines)</H2>
+<P>
+Einige der im Folgenden beschriebenen Funktionen wirken auf zweifache Art und Weise - ist kein Text ausgewählt, wird ein Tag-Paar eingefügt, andernfalls wird der ausgewählte Text in Tags eingeschlossen. 
+</P>
+<P>
+<B>Close the current tag</B> - schließt den aktuellen Tag. Tippe irgendeinen Tag mit "&gt;" am Ende und nutze dann diesen Menupunkt. Oder Du kannst auch das automatische Tag-closing in Betrieb nehmen über <B>Preferences-&gt;Editor-&gt;Autoclose Tags</B>. Das geht bei Docbook, HTML etc.
+</P>
+<P>
+<B>Comment</B> - schließt das Selektierte in Kommentar-Tags ein. Das geht in TeX-, HTML-, CSS-, Pascal und C/C++-Dateien, unter Berücksichtigung der Syntax-Regeln.
+</P>
+<P>
+<B>Color</B> - öffnet den Farbauswahl-Dialog. Wenn kein Text ausgewählt ist, dann wird eine HTML-Farbe an die Cursor-Position eingefügt; ansonsten wird der ausgewählte Text in span-Tags mit dem Farbwert eingeschlossen.
+</P>
+<P>
+<B>Image</B> - öffnet den Datei-öffnen Dialog. Du kannst ein Image(s) auswählen, welches dann mit den img-Tags eingefügt wird (mit Werten für die Attribute für <I>height</I> und <I>width</I>) oder image object (Docbook). Unterstützt werden sämtliche Formate, die GTK+2 gewöhnlich unterstützt - PNG, JPEG, GIF, WBMP etc..
+</P>
+<P>
+<B>Table stuff-&gt;Make table</B> - ich mag keine wizards, aber manchmal träumte ich von einem Tool, welches schnell leere Tabellen kreiert. Und ich machte dieses Tool. Und wieder nutzen wir den famosen Texteintrag: tippe <CODE>rows count~columns count</CODE> und betätige diese Funktion. Beispiel: wir wollen eine 2x4-Tabelle - 2 Reihen mit 4 Zellen pro Reihe. Dann geben wir ein: <CODE>2~4</CODE> und dann <I>Make table</I> - das wär's.
+</P>
+<A NAME="toc17"></A>
+<H2>8.4. Listen</H2>
+<P>
+<B>Itemized list</B> - geht im LaTeX- und Docbook-Mode. Ein Beispiel sieht so aus:
+</P>
+<UL>
+<LI>Scon
+<P></P>
+<LI>Nirvana
+<P></P>
+<LI>Guano Apes
+</UL>
+
+<P>
+<B>Enumareted list</B> - geht im LaTeX (als numerierte Liste) und Docbook- (als ordered list) Mode. Ein Beispiel sieht so aus:
+</P>
+ <OL>
+ <LI>Scorn
+ <P></P>
+ <LI>Nirvana
+ <P></P>
+ <LI>Guano Apes  
+ </OL>
+
+<A NAME="toc18"></A>
+<H1>9. Funktionen</H1>
+<A NAME="toc19"></A>
+<H2>9.1. Common (Allgemeines)</H2>
+<P>
+Um diese Text-processing-Funktionen zu nutzen, muss vorher Text ausgewählt werden. Ist kein Text ausgewählt, betrachtet Tea den gesamten Text eines Dokuments als ausgewählt. Es gibt einige spezielle Fälle, in denen TEA das aktuelle Wort als ausgewählt betrachtet, wenn kein Text ausgewählt ist. Zum Beispiel ist dies so bei der <B>UPCASE</B> und <B>lowcase</B> Funktion. Aber dieses Verhalten ist eine seltene Ausnahme von der Regel.
+</P>
+<P>
+<B>Documents stats</B> - gibt die Textstatistik für den gesamten Text oder den ausgewählten Text im (Logmemo) aus.
+</P>
+<A NAME="toc20"></A>
+<H2>9.2. LaTeX</H2>
+<P>
+Wie läuft es mit TeX/LaTeX-Dokumenten in TEA? Zuerst einmal - setze die <B>Preferences-&gt;Commands-&gt;LaTeX</B> Option. Die Grundeinstellung ist gut, aber prüfe sie trotzdem. <B>Aber</B> füge <B>NICHT</B> das &amp;-Zeichen an das Ende der Kommando-Zeile! Und natürlich musst Du die LaTeX-Werkzeuge installiert haben.
+</P>
+<P>
+Um das aktuelle LaTeX-Dokument in eine <I>dvi</I>-Datei umzuwandeln, nutze die <B>Process with LaTeX</B> Funktion und sieh im (Logmemo) nach eventuell auftretenden Fehlern. Ist dies ohne Fehler durchgelaufen, kannst Du die <I>dvi</I>-Datei zu <I>ps</I> oder <I>PDF</I> konvertieren. Mach dies mit der <B>dvi to PS</B> oder <B>dvi to PDF</B> Funktion. TEA speichert alle <I>dvi's</I> und resultierenden Dateien in dem Ordner, in dem das LaTeX-Dokument gespeichert ist. TEA achtet selbst auf die Dateinamen, mach Dir darüber keine Gedanken.
+</P>
+<P>
+Um eine <I>dvi</I>-Datei anzusehen, nutze den <B>View dvi</B>-Menupunkt. Um PostScript- oder PDF-Dateien anzusehen, nutze die <B>View PS</B> oder <B>View PDF</B> Funktion.
+</P>
+<P>
+Der übliche Weg um eine PDF zu produzieren ist: <B>Process with LaTeX</B>, dann <B>dvi to PDF</B>, dann <B>View PDF</B>, um sich das Resultat anzusehen.
+</P>
+<P>
+Oder, alternativ, wenn Du <I>pdflatex</I> installiert hast, nutze <B>Process with pdflatex</B> und dann <B>View PDF</B>.
+</P>
+<A NAME="toc21"></A>
+<H2>9.3. IDE</H2>
+<P>
+Zwischen all den Features gibt es in TEA auch ein Art IDE (Integrated Development Environment) Funktion, eine Art Projekt-Umgebung. TEA kann auch <B>make</B> aufrufen und eine binary-Datei ausführen.
+</P>
+<P>
+Wie funktioniert das? TEA IDE Projekt enthält nichts ausser einer Projekt-Datei. Um diese zu kreieren, nutze die <B>New projcet</B> Funktion. Du siehst ein Dialog-Fenster mit einigen Einträgen, wie:
+</P>
+<P>
+<B>Project name</B> - der Name des Projektes.
+</P>
+<P>
+<B>Makefile directory</B> - wo kann TEA die make-Datei des Projektes finden, um <B>make</B> aufzurufen.
+</P>
+<P>
+<B>Source directory</B> - wo werden die source-Dateien des Projektes gespeichert.
+</P>
+<P>
+<B>Target executable</B> - Dateiname (ohne den absoluten Pfad) der binary-Datei. TEA unterstellt, dass diese Datei im Source-Ordner ist. TEA führt <B>target executable</B> aus, wenn <B>Run</B> betätigt wird.
+</P>
+<P>
+<B>Project properties</B> - nutze dies, um die Projekteinstellungen zu editieren - vergiss nicht, dies zu speichern!
+</P>
+<P>
+Wenn Du mit TEA MAKE ausführst, werden Fehler und Warnhinweise im (Logmemo) angezeigt. Mit Doppelclick auf die Fehlermeldung springt TEA auf die entsprechende Zeile in der source-Datei. Die Farben der Fehlermeldungen können in <B>Preferences-&gt;Colors-&gt;IDE</B> eingestellt werden. 
+</P>
+<P>
+<B>Refresh tags with ctags</B> - kreiert die tag-Datei mit <B>ctags</B> im Ordner der aktuellen Datei.
+</P>
+<P>
+Zusätzlich zur IDE-Funktion kannst Du <B>View-&gt;Switch header/source</B> nutzen. Beachte: Das geht nur, wenn die source- und header-Dateien im selben Ordner sind. Nur C/C++ - Dateien werden unterstützt. Du kannst ausserdem nutzen <B>Nav-&gt;Browse the symbol's declaration</B> um zur Deklaration der C/C++ - Funktion zu springen, welche unter dem Cursor ist. Dies erfordert <I>tags</I>-Datei von <B>ctags</B>. Wenn TEA diese Datei nicht finden kann, führt TEA <B>ctags</B> aus, um diese <I>tags</I>-Datei zu erzeugen. Andernfalls nimmt TEA die existierende <I>tags</I>-Datei, wenn sie ausgegeben ist. Du kannst sie erneuern mit <B>IDE-&gt;Refresh ctags</B>.
+</P>
+<A NAME="toc22"></A>
+<H2>9.4. Kalender</H2>
+<P>
+TEA hat einen guten Kalender (aktuell ist es ein GTK+2 Widget). TEA bringt aber einige zusätzliche Funktionen mit. Mit <B>Days between</B> kannst Du ausrechnen, wieviel Tage zwischen zwei ausgewählten Datumsangaben liegen. Wähle das erste Datum und press <B>date1</B>, dann wähle das zweite Datum und press <B>date2</B>. Betätige <B>Calculate</B> - das Ergbnis steht im (Logmemo).
+</P>
+<P>
+Unter dem Kalender sind weitere Buttons, beginnend mit <B>Insert...</B>. Damit kannst Du ein Datum in das aktuelle Dokument in diversen Formaten einfügen.
+</P>
+<P>
+<I>Jetzt hören: Guano Apes - Electric Nights</I>
+</P>
+<A NAME="toc23"></A>
+<H2>9.5. Rechtschreibprüfung</H2>
+<P>
+<B>Spell-checker languages</B> - TEA verwendet Aspell (<A HREF="http://aspell.net">http://aspell.net</A>). In diesem Menupunkt findes Du die Liste der für Aspell installierten Wörterbücher. Zur Rechtschreibprüfung verwende einen der Menupunkte. Die Prüfung geht über den gesamten Text, nicht nur auf den selektierten.
+</P>
+<P>
+Mit diesem Menupunkt setzt Du auch die default-Rechtschreibsprache. Voreingestellt ist "en". Für eine einfache Rechtschreibprüfung wähle den Menupunkt <B>Spell check</B>.
+</P>
+<P>
+<B>Suggest a word</B> - zeigt eine Liste mit Vorschlägen für das unter dem Cursor befindliche Wort (geh mit dem Cursor auf ein nach der Rechtschreibprüfung farbig markiertes Wort und nutze den Menupunkt). 
+</P>
+<P>
+Die Farbe für die Markierung der als inkorrekt erkannten Worte kannst Du in <B>Preferences-&gt;Colors</B> bestimmen.
+</P>
+<P>
+TEA zeigt Dir nur die Fehler. Korrigieren musst Du sie manuell. Die Worte bleiben deshalb auch nach der Korrektur farbig markiert. Du musst erneut eine Rechtschreibprüfung durchführen, um die Markierungen abzudaten. Willst Du die Fehlermarkierungen verschwinden lassen, benutze den Menupunkt <B>View-&gt;Hide error marks</B>.
+</P>
+<A NAME="toc24"></A>
+<H2>9.6. UNIversal Text AnalyZer</H2>
+<P>
+Was ist UNITAZ? Es ist ein feines Werkzeug für die Text-Analyse. Es kann Dir die Liste der Wörter des aktuellen Dokuments zeigen und die Anzahl von jedem Wort. <B>Call UNITAZ with sorting abc</B> - analysiert und zeigt eine sortierte Liste; <B>Call UNITAZ plain</B> - zeigt das Analyseergebnis ohne Sortierung. <B>Call UNITAZ with sorting by count</B> - zeigt das Analyseergebnis, sortiert nach Wortanzahl.
+</P>
+<P>
+<B>Exract words</B> - extrahiert alle Worte des aktuellen Dokuments und stellt sie zeilenweise in einem neuen TAB dar. Das ist ganz hilfreich, um z.B. eine Sortierung für ein Wörterbuch zu machen. Aber Achtung! - diese Funktion ist relativ langsam, sei also geduldig - TEA ist nicht eingefroren! Warte, trink etwas, lies ein Buch, denke über das Universum nach .....
+</P>
+<P>
+Weiterhin zeigt UNITAZ die Gesamtmenge der Wörter und die Menge der einzelnen Worte - die Anzahl ohne Wiederholungen.
+</P>
+<A NAME="toc25"></A>
+<H2>9.7. User Menu</H2>
+<P>
+In TEA kannst Du Dein eigenes Menu kreieren, um Programme zu starten oder um damit Dateien zu öffnen. Um dieses Menu zu editieren, gehe zu <B>File-&gt;Manage config files-&gt;User-menu config</B>. Es öffnet sich die Menu-Konfiguration. Editiere sie und speichere sie dann. Das Menu wird dann upgedated. Das Format der Einträge ist simpel. Es sind Auflistungen wie diese:
+</P>
+<P>
+<CODE>Opera=opera %s &amp;</CODE>
+</P>
+<P>
+<CODE>Kwrite=kwrite%s &amp;</CODE>
+</P>
+<P>
+"%s"-macro meint die zu öffnende Datei. Damit das im Hintergrund läuft, muss "&amp;" hinzugefügt werden. Andernfalls friert TEA ein, bis das Programm beendet wird.
+</P>
+<A NAME="toc26"></A>
+<H2>9.8. Replacement tables</H2>
+<P>
+In TEA ist der <I>replacement tables</I> eine Sammlung von Regeln für die Textersetzung. Zuerst musst Du eine Datei mit einer Liste kreieren, z.B.:
+</P>
+<P>
+<CODE>cat=dog</CODE> 
+</P>
+<P>
+<CODE>mew=bow-wow</CODE> 
+</P>
+<P>
+Dann speichere diese Datei als replacement table (<B>in UTF-8 Kodierung!</B>) - <B>File-&gt;Save different-&gt;Save as a replacement table</B>. Danach taucht diese Verzeichnis im Menu <B>Functions-&gt;Replacement tables</B> auf.
+</P>
+<P>
+Wie wendet man dieses Verseichnis an? Tippe einen Text: <I>The cat says: "mew".</I> Markiere diesen Text, dann wähle Dein Verzeichnis im Menu aus und sieh, was passiert. Der neue Text müsste danach wie folgt aussehen: <I>The dog says: "bow-wow".</I> Der replacement table ist ein Weg, Mehrfachersetzungen durchzuführen.
+</P>
+<P>
+Um diese Ersetzungsverzeichnisse zu editieren, nutze im Datei-öffnen Dialog die <B>TEA spezial locations</B> drop-down Liste. Wenn Du die Verzeichnisse löschen oder umbenennen willst, schau auf die <B>Preferences-&gt;Maintainance</B> Seite.
+</P>
+<A NAME="toc27"></A>
+<H2>9.9. Scripte</H2>
+<A NAME="toc28"></A>
+<H3>9.9.1. Scripte aus Sicht des Users</H3>
+<P>
+In TEA kannst Du Scripte benutzen, um einen markierten oder den gesamten Text zu bearbeiten, genauso so, wie mit einer in TEA bereits vorhandenen Funktion. Wenn das Script Parameter nutzt, kann man diese in den famosen Texteintrag eingeben.
+</P>
+<P>
+TEA kann mit Scripten in Python, Perl, Ruby und Shellscripten arbeiten. Um ein Script zu installieren, kopiere es nach <B>$HOME/.config/tea/scripts</B> .Wenn es gepackt ist, dann entpacke es vorher. TEA findet das Script nach einem Neustart.
+</P>
+<A NAME="toc29"></A>
+<H3>9.9.2. Scripte aus Sicht des Entwicklers</H3>
+<P>
+Wie schreibt man ein Script für TEA? Das ist sehr einfach. Aber zuerst musst Du wissen, wie TEA den Text an das Script gibt und wie TEA den bearbeiteten Text an die ausgewählte Stelle zurück gibt. 
+</P>
+<P>
+TEA führt jedes Script mit einem oder zwei Parametern aus. Beide sind Dateinamen. Die erste Datei enthält den Text. Das ist der ausgwählte Text oder der gesamte Text des aktuellen Dokuments. 
+</P>
+<P>
+Die zweite Datei (wenn es sie gibt) enthält den Text aus dem famosen Texteintrag. So liest das Script erst den Text aus der ersten Datei und dann den Text aus der zweiten Datei als Parameter für das Script.
+</P>
+<P>
+Sei vorsichtig mit der Textbearbeitung - TEA operiert intern mit UTF-8 Kodierung, so dass die Textbearbeitung mit dem Script UTF-8-sicher sein muss. OK, nun sehen wir uns an, wie TEA einen Text zurück gibt. Schreib den zu bearbeitenden Text in die erste Datei, z.B. in die Datei, deren Namen Du aus dem ersten Parameter Deines Scriptes nimmst.
+</P>
+<P>
+Im folgenden siehst Du ein Beispiel eines UTF-8 sicheren Python-scripts, welches einen Text nimmt, die Groß-/Kleinschreibung ändert und den bearbeiteten Text zurück an TEA gibt.
+</P>
+<P>
+<CODE>import sys</CODE>
+</P>
+<P>
+<CODE>import string</CODE>
+</P>
+<P>
+<CODE>import codecs</CODE>
+</P>
+<P>
+<CODE>f = codecs.open(sys.argv[1], "r", "utf-8" )</CODE>
+</P>
+<P>
+<CODE>u = f.read()</CODE>
+</P>
+<P>
+<CODE>f.close</CODE>
+</P>
+<P>
+<CODE>u = u.swapcase()</CODE>
+</P>
+<P>
+<CODE>f = codecs.open(sysargv[1], "w+", "utf-8" )</CODE>
+</P>
+<P>
+<CODE>f.write (u)</CODE>
+</P>
+<P>
+<CODE>f.close</CODE>
+</P>
+<P>
+sys.argv[1] enthält den Namen der Datei mit dem Text aus TEA. Wir lesen den gesamten Text, dann verarbeiten wir den Text und schreiben ihn zurück in die sys.argv[1]-Datei. Voila! Bitte beachte den Gebrauch der codecs.
+</P>
+<P>
+Ein anderes Beispiel - der "inline" Kalkulator. Hier verwenden wir keine codecs, weil wir mit numerischen Daten arbeiten:
+</P>
+<P>
+<CODE>import sys</CODE>
+</P>
+<P>
+<CODE>f = file (sys.argv[1], ´r´)</CODE>
+</P>
+<P>
+<CODE>s = f.read()</CODE>
+</P>
+<P>
+<CODE>f.close</CODE>
+</P>
+<P>
+<CODE>t = eval (s)</CODE>
+</P>
+<P>
+<CODE>f = file (sys.argv[1], ´w+´)</CODE>
+</P>
+<P>
+<CODE>f.write (str (t))</CODE>
+</P>
+<P>
+<CODE>f.close</CODE>
+</P>
+<P>
+Aber was ist, wenn wir zusätzliche User-Parameter für das Script benötigen? Diese sind als String verfügbar und können aus der Datei sys.argv[2] (in Python) gelesen werden. Im Shell-Script verwende $1 für den ersten Parameter und $2 für den zweiten. Der zweite Parameter ist eine Datei, die Text aus dem famosen Texteintrag enthält. <I>Beachte, dass Ruby-Scripte den ersten Paramter in ARGV[0], den zweiten in ARGV[1] packen</I>.
+</P>
+<P>
+Wenn Du Scripte für das TEA-Script-repository beitragen willst, versieh sie mit dem public domain-Status. Oder wenigstens nicht mit einer proprietären Lizenz. Es ist auch nützlich, Kredits, eine Beschreibung und Kommentare in das Scipt einzufügen.
+</P>
+<A NAME="toc30"></A>
+<H2>9.10. Snippets</H2>
+<P>
+Ein Snippet (ein Schnippsel) ist ein Stück Code, welchen Du in den Text einfügen kannst. TEA hält jeden Snippet als einzelne Datei im <I>$HOME/.tea/snippets</I> - Ordner. Der Dateiname eines Snippets ist ein Menupunkt im Snippets-Menu; der Inhalt des Snippet-Menus ist die Liste der Dateien in <I>$HOME/.tea/snippets</I>. Um ein neues Snippet zu kreieren, kannst Du folgendes tun:
+</P>
+<P>
+1. Schreibe etwas Text. 2. <B>File-&gt;Save different-&gt;Save as snippet</B>. Nur UTF-8! 3. Enjoy :)
+</P>
+<P>
+Du kannst ein Snippet kreieren, welches eine Textauswahl in bestimmter Weise nutzt. Zum Beispiel möchtest Du ein Snippet, welches ausgewählten Text in HTML-Tags einschliesst. Das "%s"-macro repräsentiert die Textauswahl. Hier ist das Beispiel:
+</P>
+<P>
+&lt;a href="%s"&gt;%s&lt;/a&gt;
+</P>
+<P>
+Wenn dieses Snippet angewendet wird, dann wird %s ersetzt durch den ausgewählten Text. Ist kein Text ausgewählt, wird der Snippet-Inhalt eingefügt.
+</P>
+<A NAME="toc31"></A>
+<H2>9.11. Tools</H2>
+<P>
+<B>Mass encode tool</B> - mit diesem Tool kannst Du mehrere Dateien umkodieren. Zusätzlich kannst Du die <B>Convert ends of line</B> - Option anwenden und den LF- oder CR/LF-Mode wählen.
+</P>
+<P>
+<B>Take screenshot (screen/region/window/clipboard)</B>. Mit dieser Funktion kannst Du Screenshots machen, die in den aktuellen Ordner gespeichert werden. Also, erst eine Datei öffnen. Dann trag den Dateinamen (nicht den absoluten Pfad, z.B. "test.png" und nicht "/mnt/home/test/test.png") in den famosen Texteintrag ein. Dann wähle eins der Tools und mach den Screenshot.
+</P>
+<P>
+Wie wählt man das Image-Format? TEA bestimmt es anhand der Dateinamen-Endung. Du kannst "png" (TEA nutzt full-color-PNG für das Dateispeichen), "jpg", "jpeg", "bmp", "tif" und "tiff" wählen. Um den JPEG-Kompression-Level zu setzen, gehe zur <B>Preferences-&gt;Functions-&gt;JPG compression (1..100)</B> Option. Um die Verzögerung vor dem Screenshot einzustellen, nutze die <B>Preferences-&gt;Functions-&gt;Screenshot delay (in seconds)</B> Option. Während dieser Zeit wird TEA's Window versteckt und Du kannst die anderen Windows/den Desktop manipulieren.
+</P>
+<P>
+Einige Worte zum Screenshot vom Clipboard. Als ich es testete, funktionierte es gut mit GIMP. Du kannst etwas in GIMP auswählen, dann kopiere es und dann geh zu TEA und mach den Screenshot des Clipboards.
+</P>
+<A NAME="toc32"></A>
+<H2>9.12. Format</H2>
+<P>
+<B>Browser to text</B> - Was ist das? Damit wird Text reformatiert, der aus einem Browser nach TEA kopiert wurde. Intern löscht diese Funktion blanks zwischen Paragraphen und fügt spaces vor jeden Paragraphen ein. Du kannst das Format des Paragraphen in der famosen Texteingabe definieren. 
+</P>
+<P>
+<B>Kill formatting</B> - killt die Formatierung (tabs, new lines, double spaces etc.)
+</P>
+<P>
+<B>Wrap raw at position</B> - macht dasselbe wie <B>fold</B> ohne den -s Parameter. Bricht alle Zeilen an der Stelle um, die Du in der famosen Texteingabe eingegeben hast.
+</P>
+<P>
+<B>Wrap on spaces at position</B> - macht dasselbe wie <B>fold -s</B>. Bricht die Zeilen (teilt aber nicht die Worte) an der Stelle um, die Du in der famosen Texteingabe definiert hast.
+</P>
+<A NAME="toc33"></A>
+<H2>9.13. Insert</H2>
+<P>
+<B>*Now playing* string from Amarok</B> - macht dies. Bitte beachte, dass Du den format-string in <B>Preferences-&gt;Function-&gt;Now Playing string format</B> spezifizieren kannst. Das macro %s meint Artist und Songnamen.
+</P>
+<P>
+<B>Dump menu</B> - schreibt alle Menupunkte in eine neue Datei. Das ist nützlich, wenn Du einige Einträge in die hotkey config einfügen willst.
+</P>
+<P>
+<B>Date/Time</B> - fügt Datum/Zeit ein. Das Format muss in <B>Preferences-&gt;Functions-&gt;Date and Time Format</B> definiert werden.
+</P>
+<P>
+[Anmerkung des Übersetzers: Hier folgt im Handbuch von Peter Semiletov ein Auszug aus <I>The GNU C Library Reference Manual, for Version 2.2.x of the GNU C Library, Edition 0.10, last updated 2001-07-06</I> mit den Formatvorgaben. Diese erstrecken sich über fast 2 Seiten und ich habe sie, da auch im Original verständlich, nicht mit übersetzt.]
+</P>
+<P>
+Die default-Einstellung in TEA ist: "%d/%m/%Y %T" - was dann wie folgt aussieht: "29/06/2008 15:36:57"
+</P>
+<A NAME="toc34"></A>
+<H2>9.14. Case</H2>
+<P>
+<B>UPCASE/lowcase</B> - macht dies mit dem markierten Text oder dem Wort unter dem Cursor.
+</P>
+<P>
+<B>cRAcKeriZE</B> - MaChT dIes MIt deM TexT.
+</P>
+<A NAME="toc35"></A>
+<H2>9.15. Numbers</H2>
+<P>
+<B>Calculate</B> - berechnet den Ausdruck, der im Text markiert ist. Zum Beispiel kannst Du schreiben 2+2, dann markiere es und betätige <B>Calculate</B>. Danach siehst Du das Resultat im (Logmemo). In die Ausdrücke kannst Du Klammern und folgende Operatoren verwenden: +, -, *, /, so wie hier:
+</P>
+<P>
+<CODE>(2/3) + 123</CODE>
+</P>
+<P>
+<CODE>5 + 5 + 5</CODE>
+</P>
+<P>
+<CODE>1 - 200 * 89</CODE>
+</P>
+<P>
+<B>Arabian to Roman</B> - Beispiel: <I>1977</I> wird zu // MCMLXXVII//.
+</P>
+<P>
+<B>Counter</B> - generiert eine Liste von Zahlen. Den format-string musst Du im famosen Texteintrag definieren. Das Format sieht wie folgt aus: <I>start_value~end_value~[step]</I>. By the way, der default-Wert von "step" = 1. Ein Beispiel (mit dem Wert 5 für "step"):
+</P>
+<P>
+<CODE>1~10~5</CODE>
+</P>
+<P>
+Das Resultat:
+</P>
+<P>
+5
+</P>
+<P>
+10
+</P>
+<P>
+15
+</P>
+<P>
+20
+</P>
+<P>
+25
+</P>
+<P>
+30
+</P>
+<P>
+35
+</P>
+<P>
+40
+</P>
+<P>
+45
+</P>
+<P>
+50
+</P>
+<A NAME="toc36"></A>
+<H2>9.16. String</H2>
+<P>
+<B>Split by the delimiter</B> - dies ersetzt alle Trennzeichen im Text mit dem new line-Charakter. Der Wert ist im famosen Texteintrag zu setzen.
+</P>
+<P>
+<B>Split after the delimiter</B> - setzt den new line-Charakter nach jedem Trennzeichen im Text. Der Wert ist im famosen Texteintrag zu setzen.
+</P>
+<P>
+<B>CSV-like table to LaTeX table</B> - probiere es, wenn Du CSV-Tabellen in LaTeX-Tabellen formatieren willst. Funktioniert es? Öffne <I>OOoCalc</I> oder <I>Gnumeric</I> und speichere eine Tabelle als CSV-Datei. Das ist eine simple Text-Datei, in der die Zellen getrennt sind durch Trennzeichen (Separatoren), gewöhnlich Kommas. Falls Du Kommas in den Zellen hast, wähle einen anderen Charakter als Trennzeichen. In <I>Gnumeric</I> kannst Du <B>Save as-&gt;Export as text files</B> nutzen und den Separator definieren.
+</P>
+<P>
+Dann öffne die CSV-Datei in TEA. Markiere den Text. Betätige <B>CSV-like table to LaTeX table</B> - Voila!
+</P>
+<P>
+<B>Split to TeX paragraphs</B> - splittet den Text in TeX-Paragraphen und fügt Leerzeilen zwischen die strings. Um den Plain-Text in TeX umzuwandeln, sollte dies der erste Schritt sein.
+</P>
+<P>
+<B>Convert usual quotes to TeX quotes</B> - eine Anmerkung: das geht nur mit double quotes (").
+</P>
+<P>
+<B>Escape and quote/Unescape and unquote</B> - Du weisst, wenn Du escape/unescape brauchst, sind die strings oder Dateinamen voll von den verdammten <I>whitespaces</I>.
+</P>
+<P>
+<B>Numerate lines</B> - numeriert die ausgewählten Zeilen. Das Format der Numerierung ist in der famosen Texteingabe zu definieren. Das Format ist eigenartig: <I>print-like format string~step of the counter~initial value of the counter</I>. Die beiden letzten Parameter sind optional und sind gleich 1 bei default. Stell Dir vor, Du hast eine Liste von Bands:
+</P>
+<P>
+Nirvana
+</P>
+<P>
+Scorn
+</P>
+<P>
+Napalm Death
+</P>
+<P>
+Defacation
+</P>
+<P>
+Neck
+</P>
+<P>
+JR Ewing
+</P>
+<P>
+Fall
+</P>
+<P>
+Meathook Seed
+</P>
+<P>
+The Doors
+</P>
+<P>
+Led Zeppelin
+</P>
+<P>
+Nun möchtest Du eine Numerierung in diese Liste einfügen, und dies im custom-Format. So, TEA kann dies für Dich tun. Du musst den format-string in die famose Texteingabe eingeben. Du kannst zwei macros nehmen - %d für den counter und %s für den string.
+</P>
+<P>
+Hier das Beispiel für einen format-string:
+</P>
+<P>
+<CODE>%d.)%s</CODE>
+</P>
+<P>
+<CODE>%d.)%s~10</CODE>
+</P>
+<P>
+<CODE>%d.)%s~10~4</CODE>
+</P>
+<P>
+Die zweite Zeile ist ein format-string mit einem step-parameter. 10 ist der step-Wert. Die dritte Zeile ist ein format-string mit einem step- und einem inital-Wert für den counter. Dieser ist 4. Wenn Du <CODE>%d</CODE> nach <CODE>%s</CODE> nimmst = <CODE>%s (%d)</CODE> bekommst Du dies:
+</P>
+<P>
+Nirvana (1)
+</P>
+<P>
+Scorn (2)
+</P>
+<P>
+Napalm Death (3)
+</P>
+<P>
+Defacation (4)
+</P>
+<P>
+Neck (5)
+</P>
+<P>
+JR Ewing (6)
+</P>
+<P>
+Fall (7)
+</P>
+<P>
+Meathook Seed (8)
+</P>
+<P>
+The Doors (9)
+</P>
+<P>
+Led Zeppelin (10)
+</P>
+<P>
+<B>Convert tabs to spaces</B> - pass auf, dass Du vorher die tab-size in die famose Texteingabe eingibst. Der Wert eines tab-size ist die Nummer von Zeichen für einen tab.
+</P>
+<P>
+<B>Convert spaces to tabs</B> - und nun der famose Texteingabe-Inhalt = wie viel Leerzeichen sind durch tabs zu ersetzen.
+</P>
+<P>
+<B>Reverse</B> - dreht einen Text um. Aus <I>roxton</I> wird <I>notxor</I>.
+</P>
+<P>
+<B>Antispam e-mail</B> - macht einen markierten mailto-link möglicherweise unsichtbar für die verdammten spammer e-mail 'Erntemaschinen'. Die Adresse wird in integer-coded entities umgewandelt. Aus <I><A HREF="mailto:mail@mustermail.de">mail@mustermail.de</A></I> wird &amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#64;&amp;#109;&amp;#117;&amp;#115;&amp;#116;&amp;#101;&amp;#114;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#46;&amp;#100;&amp;#101; .
+Dies wird hoffentlich nicht von den Spam-Erntemaschinen erkannt.
+</P>
+<P>
+<B>Remove blank lines</B> - entfernt Leerzeilen aus dem markierten Text. Ob es nützlich ist ... das muss jeder für sich entscheiden.
+</P>
+<P>
+<B>Remove duplicates</B> - entfernt doppelte <B>Zeilen</B>.
+</P>
+<P>
+<B>Apply a template to each line</B> - und wieder nutzen wir den famosen Texteintrag. Zum Beispiel: Du möchtest den br-tag an das Ende jeder Zeile des markierten Textes einfügen. Du gibst ein:
+</P>
+<P>
+<CODE>%s&lt;br&gt;</CODE>
+</P>
+<P>
+und betätigst die Funktion und am Ende jeder Zeile wird ein br-tag hinzugefügt. Ein anderer Fall - jede Zeile in ein Paar li-tags einbinden:
+</P>
+<P>
+<CODE>&lt;li&gt;%s&lt;li&gt;</CODE>
+</P>
+<P>
+und jede Zeile ist in li-tags eingebunden.
+</P>
+<A NAME="toc37"></A>
+<H2>9.17. Sort</H2>
+<P>
+<B>Sort lines</B> - sortiert Zeilen in alphabetischer Order.
+</P>
+<P>
+<B>Reverse order of lines</B> - ein Beispiel:
+</P>
+<P>
+Line1
+</P>
+<P>
+Line2
+</P>
+<P>
+Line3
+</P>
+<P>
+wird zu:
+</P>
+<P>
+Line3
+</P>
+<P>
+Line2
+</P>
+<P>
+Line1
+</P>
+<A NAME="toc38"></A>
+<H2>9.18. Filters</H2>
+<P>
+<B>Extract at the each line</B> - extrahiert Text zwischen zwei Begrenzungen auf jeder Zeile. Der erste und der zweite Separator muss in den famosen Texteintrag geschrieben werden, in diesem Format: <I>first_delimiter~last_delimiter</I>. Ein Beispiel:
+</P>
+<P>
+<CODE>g_print ("hello\n");</CODE>
+</P>
+<P>
+<CODE>g_print ("world\n");</CODE>
+</P>
+<P>
+Wir geben "~" (double quotes, tilde, double quotes) in den famosen Texteintrag ein, markieren den Text und betätigen die Funktion - danach haben wir folgendes:
+</P>
+<P>
+<CODE>hello\n</CODE>
+</P>
+<P>
+<CODE>world\n</CODE>
+</P>
+<P>
+<B>Extract at the each line before a separator</B> und <B>Extract at the each line after a separator</B> - ein custom-Fall der vorherigen Funktion. Aber hier ist nur ein Begrenzer im famosen Texteintrag. Zum Beispiel, um alle Kommentare in einem C++ Text zu entfernen, kannst Du // als Begrenzer-Wert eingeben und die Funktion <B>Extract at the each line before a separator</B>.
+</P>
+<P>
+<B>Kill lines with a phrase</B>. Markiere einen Text. Gib eine Phrase in den famosen Texteintrag ein. Betätige diese Funktion. Resultat: Sämtliche Zeilen, in der die Phrase enthalten ist, wurden gelöscht.
+</P>
+<P>
+<B>Kill all lines except with a phrase</B>. Markiere einen Text. Gib eine Phrase in den famosen Texteintrag ein. Betätige diese Funktion. Resultat: Sämtliche Zeilen, in der die Phrase nicht  enthalten ist, wurden gelöscht.
+</P>
+<P>
+<B>Kill all lines &lt; N characters</B> - Löscht alle Zeilen in der Auswahl, kleiner als N (Wert in der famosen Texteingabe).
+</P>
+<A NAME="toc39"></A>
+<H2>9.19. Morse code</H2>
+<P>
+<B>Encode to Morse code EN</B>. Hiermit kannst Du englischen Text in Morse-code umwandeln - Beispiel:
+</P>
+<P>
+Drum and bass
+</P>
+<P>
+wird zu 
+</P>
+<P>
+-.. .-. ..- --  .- -. -..  -... .- ... ... 
+</P>
+<P>
+Beachte: TEA macht ein Leerzeichen zwischen zwei Morse-codes und zwei Leerzeichen zwischen Worte (auch im Morse-code).
+</P>
+<P>
+<B>Decode from Morse code EN</B>. Die umgekehrte Funktion zur vorherigen Funktion.
+</P>
+<A NAME="toc40"></A>
+<H1>10. Run</H1>
+<P>
+Dieses Menu ist dazu bestimmt, die aktuelle Datei mit einem externen Programm auszuführen, z.B. mit einem Browser. Um Programme zu dem Menu hinzuzufügen, gehe zu <B>File-&gt;Manage config files-&gt;External programs list config</B>, editiere diese Datei und speichere sie. Diese Konfigurationsdatei hat das simple ini-like Format.
+</P>
+<P>
+Ein Beispiel für einen Browser-Start: <B>konqueror=konqueror %s &amp;</B>. %s repräsentiert den Dateinamen. Benutze es an der richtigen Stelle.
+</P>
+<A NAME="toc41"></A>
+<H1>11. Nav[igation]</H1>
+<P>
+<B>Save the position</B> - speichert die Cursor-Position. Dann kannst Du zu dieser Position springen, wenn Du den <B>Jump to the saved position</B> Menupunkt nutzt.
+</P>
+<P>
+<B>Links</B> - willst Du die Namen von lokalen Dateien, die in dem aktuellen Dokument verlinkt sind, dann bekommst Du sie über <B>Search-&gt;Scan for local links</B>. Von diesem Menu kannst Du zu dem in TEA geöffneten Dokument switchen.
+</P>
+<P>
+<B>Go to recent tab</B> - switcht zu dem zuletzt geöffneten Tag.
+</P>
+<P>
+<B>Focus the text/Focus the Famous text entry</B> - nützlich, wenn Du hotkeys zuweisen willst, für das Switchen zwischen Text-Tab und dem famosen Texteintrag.
+</P>
+<P>
+<B>Go to the block start/end</B> - tue es. Es ist für C-ähnliche Sprachen und Python. Es bewegt den Cursor zum Start oder Ende des aktuellen Blocks. (<B>{</B> und <B>}</B> Zeichen). Ich denke, es ist nützlich.
+</P>
+<P>
+<B>Open at cursor</B> - wenn Du einen Link zu einer lokalen Datei in Deinem HTML-Dokument hast, dann kannst Du sie mit dieser Funktion öffnen. Positioniere den Cursor auf den Link und nutze diese Funktion (oder F2). Positionierst Du auf ein Image-file, wird es in dem built-in Viewer geöffnet (Scaling wird unterstützt). Du kannst aber auch einen einen externen Viewer nutzen - setze in in <B>Preferences-&gt;Commands</B>. Zum Beispiel - <B>display %s&amp;</B>. In diesem Fall: <B>Preferences-&gt;Switches-&gt;Use external image viewer</B>. 
+</P>
+<P>
+Wenn die Datei kein Image ist, <B>Open at cursor</B> öffnet diese dann in TEA als Textdatei, mit der Kodierung des aktuellen Datei. Die so geöffnete Datei wird damit die aktuelle Datei.
+</P>
+<P>
+Eine letzte Bemerkung zu dieser Funktion. Du kannst auch einen Dateinamen im Text auswählen und versuchen, sie zu öffnen. Es ist nützlich, wenn der Dateiname nicht mit Quotes eingefasst ist.
+</P>
+<P>
+<B>Edit at cursor</B> - das selbe wie der vorstehend beschriebene Punkt, aber es öffnet die Datei in einem externen Editor. Unter <B>Preferences-&gt;Commands</B> kannst Du bestimmen, welcher dies sein soll. Beispiel: <B>gimp %s&amp;</B>.
+</P>
+<P>
+<B>Nav-&gt;Browse the symbol's declaration</B>-  springt zu der Deklaration der C/C++-Funktion, auf die der Cursor positioniert ist. Das erfordert <I>tags</I>-file von <B>ctags</B>. Wenn TEA dieses file nicht findet, dann führt TEA <B>ctags</B> aus, um das <I>tags</I>-file zu erzeugen. Andernfalls nimmt TEA das vorhandene <I>tags</I>-file, wenn vorhanden. Du kannst es erneuern mit <B>IDE-&gt;Refresh tags with ctags</B>.
+</P>
+<A NAME="toc42"></A>
+<H1>12. View (Ansicht)</H1>
+<P>
+<B>Highlighting mode</B> - (nur für TEA in der *legacy mode* Version) - von diesem Submenu aus kannst Du den lokalen Highlighting mode auswählen, für das aktuelle Dokument.
+</P>
+<P>
+<B>Hide highlighting</B> - (nur für TEA in der *legacy mode* Version) - nimmt den lokalen Highlighting mode für das aktuelle Dokument weg und auch die Rechtschreibprüfungsmarkierungen.
+</P>
+<P>
+<B>Toggle images visibility</B> - zeigt oder verbirgt images nahe den IMG/SRC-tags direkt im Text. Zur Zeit nur für HTML und XHTML Dateien.
+</P>
+<P>
+<B>Refresh highlighting</B> (nur für TEA in der *legacy mode* Version) - TEA *legacy mode* hat eine sehr hässliche Art und Weise, den highlighting mode anzuwenden. Mit dieser Funktion kannst Du highlighting manuell updaten. Mach es so häufig wie möglich.
+</P>
+<P>
+<B>Word wrap</B> - brauchst Du eine Erklärung?
+</P>
+<P>
+<B>Line numbers</B> - the song remains the same ....
+</P>
+<P>
+<B>Preview with Mplayer</B> - dies steht in Beziehung zum Kapitel <I>How to edit and preview SRT-subtitles</I>.
+</P>
+<P>
+<B>Imageplane</B> - öffnet den thumbnailed image Browser. Damit kannst Du images mit dem built-in <B>image viewer</B> ansehen oder image-tags/elements in das aktuelle Dokument einfügen. Um das image im Vollbild-Modus zu sehen, führe einen Doppelclick auf die thumbnail aus. Um image-tags einzufügen, gehe zur <B>Insert tags</B>-Option und dann führe einen Doppelclick auf den thumbnail aus. Um diese Option by default zu setzen, gehe zu <B>Preferences-&gt;Switchers-&gt;Imageplane insert tags by default</B>.
+</P>
+<P>
+By the way - Imageplane nimmt die thumbnails aus <I>$HOME/.thumbnails/normal</I>. Dieser Platz wird von der Free Desktop specification unterstützt. Einige Programme (z.B. <I>GQview</I>) nimmt diesen Ordner, um die thumbnails zu speichern. TEA selbst speichert keine thumbnails, liest sie nur.
+</P>
+<P>
+Einige Worte zum Imageviewer. Er hat ein selbsterklärendes context-menu (Rechtsclick) für verschiedene image-Manipulationen. (mit keyboard-shortcuts). Mac OS-user können ein normales Menu nutzen - anstatt dem context-menu.
+</P>
+<P>
+<B>Encoding</B> - nutze dieses Menu, um die aktuelle Datei erneut mit einer anderen Kodierung zu laden. Der aktuelle Dokumenteninhalt wird ersetzt mit dem Dateiinhalt von der Platte.
+</P>
+<A NAME="toc43"></A>
+<H1>13. Preferencen (Einstellungen), ich verstehe ...</H1>
+<A NAME="toc44"></A>
+<H2>13.1. Intro</H2>
+<P>
+Ab TEA 3.0 gibt es das <B>File-&gt;Preferences</B>-Fenster - kein text-config editieren mehr. Nutze das grafische Interface - es ist keine Ketzerei. Nun kann ich mehr Variablen einfügen, die selbsterklärende Buttons im Preferencen-Fenster haben.
+</P>
+<P>
+Tabbed-Seiten und zwei grosse Buttons findest Du dort. Die Buttons: <B>Close</B> und <B>Save and apply</B>. <B>Close</B> schließt das Preferencen-Fenster, mehr nicht. <B>Save and apply</B> sichert alle Optionen und startet die config gleichzeitig neu. TEA speichert die main config nicht beim Schließen! TEA speichert nur, wenn Du <B>Save and apply</B> betätigst.
+</P>
+<P>
+Nun einige Informationen zur Preferencen-Sektion.
+</P>
+<A NAME="toc45"></A>
+<H2>13.2. Switches</H2>
+<P>
+Verschiedenes - da sind:
+</P>
+<P>
+<B>Show the common close button</B> - zeigt oder verbirgt den Button (nahe dem Hauptmenu), welches das aktuelle Dokument schließt.
+</P>
+<P>
+<B>Restore the last session on start</B> - wenn diese Option aktiviert ist, speichert TEA die Session und stellt sie beim nächsten Start wieder her.
+</P>
+<P>
+<B>Save all on the abnormal termination (SIGTERM, SIGHUP, SIGABRT, SIGINT)</B> - speichert alle aktuell offenen Dateien, wenn die Kiste abschmiert. Aber: wenn die Datei beschädigt ist, wird sie in diesem beschädigten Zustand gespeichert. Default: aus. Ich denke, dass es besser ist, das Crashfile zu nehmen: <B>Save the crashfile on terminate</B>. Das ist der vorherigen Option ähnlich, arbeitet aber nur mit einer einzelnen Datei (der aktuellen) und der Text wird in einer  speziellen Datei gespeichert - - dem <I>crash-file</I>, die im TEA-Konfigurationsordner zu finden ist. Du kannst sie später öffnen mit <B>From-&gt;Manage utility files-&gt;Open the crashfile</B>.
+</P>
+<P>
+<B>Determine a scripts highlighting by the content</B> -  das ist für das Syntax-Highlighting. Schalte es an, wenn Du Bash-Scripts ohne <I>sh</I>-extension auto-highlighten willst.
+</P>
+<P>
+<B>Use snippets</B> - Snippets funktionieren, wenn diese Option aktiviert ist. Wofür ist das? Manchmal findest Du, dass TEA Snippets zu langsam scannt und Du möchtest das deaktivieren.
+</P>
+<P>
+<B>Show line numbers</B> - zeigt sie oder zeigt sie nicht.
+</P>
+<P>
+<B>Word wrap</B> - wrap oder nicht wrap - "yes" ist default.
+</P>
+<P>
+<B>Scan for links on file open</B> - Wenn dies "On" ist, dann scannt TEA lokale Links automatisch. "Off" ist default.
+</P>
+<P>
+<B>Do backup</B> - Check dies, wenn Du möchtest, dass TEA ein backup macht beim Datei-Speichern. 
+</P>
+<A NAME="toc46"></A>
+<H2>13.3. Encoding</H2>
+<P>
+Hier kannst Du die Autodetection-Kodierung aktivieren und die Charsets, die Du beim Autodetect erkannt haben willst. Für Einzelheiten, wie TEA mit Charsets umgeht, lies das kapitel <I>Wie geht TEA mit Zeichensätzen um</I>.
+</P>
+<A NAME="toc47"></A>
+<H2>13.4. Functions</H2>
+<P>
+<B>The Format of the Color function</B> - dies wirkt als Resultat der <B>Markup-&gt;Color</B>-Funktion. Nutze das @color-macro, um den Farbwert zu definieren und das @text-macro für das Ersetzen von ausgewähltem Text.
+</P>
+<A NAME="toc48"></A>
+<H2>13.5. Interface</H2>
+<P>
+Hier kannst Du die Fensterhöhe und - weite des Speichern/Öffnen-Fensters in Prozent festlegen und die <B>Show the full path in the window caption</B>, wenn Du den Datei-Namen in dem Fenstertitel sehen willst.
+</P>
+<P>
+<B>Show the common close button</B> - zeigt oder verbirgt den Close-Button, welches das aktuelle Dokument schliesst.
+</P>
+<A NAME="toc49"></A>
+<H2>13.6. Editor</H2>
+<P>
+<B>Smart Home/End</B> - wenn aktiv, bewegt sich der Cursor zum Paragraphen-Start/Ende.
+</P>
+<P>
+<B>Tab size in spaces</B> - definiert die default Tab-Größe mit dem Maß von zeichen: 3 Zeichen=3 Leerstellen.
+</P>
+<P>
+<B>Enable the autosaving</B> - ja, das ist es. Aber Du musst den <B>Autosaving interval</B> definieren - in Minuten. Änderungen kommen nach einem Neustart von TEA zur Anwendung.
+</P>
+<A NAME="toc50"></A>
+<H2>13.7. Browsers</H2>
+<P>
+Hier kannst Du die default-Werte für die Browser ändern. Mit der Option <B>Browser for the manual</B> kannst Du definieren, mit welchem Browser Du das TEA-Manual lesen willst. Zusätzlich solltest Du aber <B>Use this browser</B> aktivieren.
+</P>
+<P>
+By the way, wenn Du keinen Brwoser definierst, wird sich TEA einen der installierten auswählen.
+</P>
+<A NAME="toc51"></A>
+<H2>13.8. Paths</H2>
+<P>
+<B>Default file saving directory</B> und <B>Use default saving directory</B>. Hier kanst Du einstellen, in welche Ordner TEA Dateien speichert (Speichern als) oder bei <I>Open</I> sucht.
+</P>
+<P>
+**Add this extension to the file which is *Saving as* **- nutze diese Option, wenn Du eine default-Option für die Dateiendung bei "Speichern als" setzen willst, sofern Du nicht jeweils eine Endung manuell einsetzen willst.
+</P>
+<A NAME="toc52"></A>
+<H2>13.9. Maintenance</H2>
+<P>
+<B>Put the launcher to the desktop/Remove the launcher from the desktop</B> - TEA unterstützt einige FreeDesctop-Spezifikationen und wenn Deine Desktopsumgebung es zulässt, kannst Du einen TEA-Starter hinzufügen oder entfernen.
+</P>
+<A NAME="toc53"></A>
+<H1>14. Was ist Kwas?</H1>
+<P>
+Kwas wurde als Ersatz für für das Standard-Datei öffnen-Fenster entwickelt - also, erwarte nicht zuviel davon. Du kannst Kwas in mehreren Fenstern öffnen, kannst durch die Ordner navigieren und kannst Dateien öffnen und Images ansehen. Künftig wird diese Liste erweitert, aber z.zt. ist es alles.
+</P>
+<A NAME="toc54"></A>
+<H2>14.1. Actions</H2>
+<P>
+Von hier aus kannst Du:
+</P>
+<P>
+<B>Refresh Kwas</B> - updated die Datei-Liste. Kwas macht das nicht automatisch.
+</P>
+<P>
+<B>Get file info</B> - zeigt die Dateiinformation zur markierten Datei. Sieh ins Logmemo. TEA nutzt das Standard-<B>File</B>-Utility dafür.
+</P>
+<P>
+<B>Run with ...</B> - führt die markierte Datei mit dem definierten Programm aus. Tippe das Kommando in den famosen Texteintrag - nur den Programmnamen: z.B. <B>opera</B> oder <B>gimp</B>.
+</P>
+<P>
+<I>Jetzt spiele: Scorn - Anamnesis - Rarities 1994-1997 - maker of Angels</I>
+</P>
+<A NAME="toc55"></A>
+<H2>14.2. Ins to editor</H2>
+<P>
+Da ist auch ein Menu <B>Ins to editor</B>:
+</P>
+<P>
+<B>Insert image</B> - fügt das markierte Image als image tag/element in den aktuellen Text ein.
+</P>
+<P>
+<B>Inser link</B> - fügt die markierte Datei als HREF-tag in das aktuelle Dokument ein.
+</P>
+<A NAME="toc56"></A>
+<H1>15. Command line options</H1>
+<P>
+<B>--crapbook</B> - startet TEA mit einem geöffneten Notizbuch.
+</P>
+<P>
+<B>--charset</B>=<I>charset_name</I> - setzt den Zeichensatz für die zu öffnende Datei. Zum Beispiel: Du möchtest die Datei1 mit dem CP125-Charset öffnen und Datei2 mit UTF-8 - dann gibst Du ein: <B>tea --charset=cp125 Datei1 --charset=utf-8 Datei2</B>.
+</P>
+<A NAME="toc57"></A>
+<H1>16. Über den Autor</H1>
+<P>
+Name: Peter Semiletov, Nickname: Roxton (reverse XOR und NOT Operatoren); geboren in Kiev (USSR) 1977. Arbeitet z.Zt.als Journalist und schreibt meistens über Freie Software/Open source und digitales Sound-/Video-processing. Nebenbei singt er ab und zu in einer Underground Punk/grindcore Band, schreibt Novellen und Stories, macht Synthesizer-Musik und spielt Gitarre. Ausserdem ist er Drummer in der Punk/Folk Band <I>Kakayato</I> (dies kann mit "jemand" übersetzt werden). Er ist Vegetarier (aus ethischen Gründen) und Atheist. Seine Homesite: <A HREF="http://www.roxton.kiev.ua">http://www.roxton.kiev.ua</A>
+</P>
+<P>
+Seine Vorlieben (in chaotischer Aufzählung):
+</P>
+<UL>
+<LI>Literatur: Russische realistische Klassiker (Sholohov, Shedrin, Tynyanov, Shookshin, Andreev etc.)
+<P></P>
+<LI>Musik: The Pixies, Can, Nirvana, Scorn, Guano Apes, Tuxedomoon, Modest Musorgsky, Sergey Prokofiev, Bach, Brahms, Napalm Death, Fall, Juno Reactor und weitere.
+<P></P>
+<LI>Essen: fry potato und Cola
+<P></P>
+<LI>Filme: Sowjetische Filme (Parajanov, Bondarchuk, Kalasatov, Danelia, Row, Shookshin, Churay, Ptooshko, Gabriadze, Michaeljan), alte Horror/Zombie Filme, Filme von Lynch, Kubrick, McGigan, Gilliam, Kurosava, Kitano, Imoe, Farelly brothers, Coscarelly, Costner, Coen brothers, Buster Keaton, Fatty Arbuckle, etc.
+<P></P>
+<LI>OS: Mandriva
+<P></P>
+<LI>Mail client: Claws mail
+<P></P>
+<LI>Spreadsheet: Gnumeric
+<P></P>
+<LI>Desktop: KDE
+<P></P>
+<LI>Media players: Amarok, Audacious
+<P></P>
+<LI>IDE: KDevelop
+<P></P>
+<LI>Spiele: Fallout, Baldur's Gate, Quest for Glory, Oblivion, Mortal Kombat, Resident Evil, Blood, Prehistorik 2, alte Spiele für NES (Famicon) und SEGA Genesis/Megadrive; Spiele für Spectrum.
+<P></P>
+<LI>Browsers: Firefox
+<P></P>
+<LI>File managers: mc, Konqueror
+<P></P>
+<LI>Gitarren: relativ billiger Stratocaster-Klone (made in Taiwan)
+<P></P>
+<LI>Mediators: Fender.73 M (für die elektrische Gitarre), Fender .88 M (für die akustische)
+</UL>
+
+<A NAME="toc58"></A>
+<H1>17. Appendix: Ressourcen</H1>
+<UL>
+<LI>TEA Homepage (<A HREF="http://tea-editor.sourceforge.net">http://tea-editor.sourceforge.net</A>)
+<P></P>
+<LI>Live Journal TEA Community (<A HREF="http://www.livejournal.com/userinfo.bml?user=tea4linux">http://www.livejournal.com/userinfo.bml?user=tea4linux</A>)
+<P></P>
+<LI>TEA newsletter: - für subscribe: sende eine leere e-mail an <A HREF="mailto:tea-announce-subscribe@linux.kiev.ua">tea-announce-subscribe@linux.kiev.ua</A> (mailto:<A HREF="mailto:tea-announce-subscribe@linux.kiev.ua">tea-announce-subscribe@linux.kiev.ua</A>)
+<P></P>
+<LI>Peter Semiletov's Homepage (in Russischer Sprache) (<A HREF="http://www.roxton.kiev.ua">http://www.roxton.kiev.ua</A>)
+<P></P>
+</UL>
+
+
+<!-- html code generated by txt2tags 2.3 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags /home/zeithunter/Tea/1_deckblatt.txt -->
+</BODY></HTML>

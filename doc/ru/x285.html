@@ -1,0 +1,206 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Общие функции</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="TEA - полное ноговодство"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Вёрстка"
+HREF="c254.html"><LINK
+REL="PREVIOUS"
+TITLE="Утилиты HTML"
+HREF="x264.html"><LINK
+REL="NEXT"
+TITLE="Списки"
+HREF="x300.html"></HEAD
+><BODY
+CLASS="section"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>TEA - полное ноговодство</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x264.html"
+ACCESSKEY="P"
+>&#1055;&#1088;&#1077;&#1076;.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>&#1043;&#1083;&#1072;&#1074;&#1072; 8. Вёрстка</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x300.html"
+ACCESSKEY="N"
+>&#1057;&#1083;&#1077;&#1076;.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="AEN285"
+>8.3. Общие функции</A
+></H1
+><P
+>Некоторые из описанных ниже функций имеют двойственную природу, то бишь если текст был выделен, то обрамляют его некими тэгами, иначе же просто вставляют эти тэги в текущую позицию курсора. Для остальных функций надо сначала выделить текст, а уж потом их применять.</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Комментарий</B
+></SPAN
+> - закомментировать выделенный текст. Работает для HTML, CSS, Pascal и C/C++. 
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Цвет</B
+></SPAN
+> - выбор цвета! Когда выделен некий текст, то он "раскрашивается" элементом <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>span</I
+></SPAN
+> с соответствующим цветовым атрибутом в CSS'е, в противном случае просто вставляет HTML-цвет туда, где курсор.</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Картинка</B
+></SPAN
+> - являет пред очи диалог выбора файла. Выбирайте. В текущий файл вставится тэг изображения с заполненными параметрами - названием, размерами и тэ пэ. Поддержка форматов зависит от GTK+: PNG, JPEG, WBMP (старый формат для мобилок), GIF... Полагаю, что для вставки такого тэга лучше использовать Квас (там есть функция <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Вставить картинку</B
+></SPAN
+>), Imageplane или перетащить в документ файл-картинку из какого-нибудь файлового менеджера вроде Konqueror или смотрелки GQview.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Таблицы &#62; Сделать таблицу</B
+></SPAN
+> - если вы ожидали увидеть мастера таблиц или мастера починки телевизоров, то его следует искать в другом месте. Я сам не пользуюсь никакими визардами, но всегда хотел иметь простое средство создания таблиц. И я его сделал. Надо лишь ввести размеры таблицы в ЗНАМЕНИТОЕ поле ввода, и применить эту функцию. Традиционно, формат будет такой: 
+<SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>количество рядов~количество столбцов</I
+></SPAN
+>. Например, вы хотите таблицу из 2 рядов по 4 столбца в каждом ряду. Тогда вам нужно  ввести: <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>2~4</I
+></SPAN
+>
+</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x264.html"
+ACCESSKEY="P"
+>&#1055;&#1088;&#1077;&#1076;.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>&#1053;&#1072;&#1095;&#1072;&#1083;&#1086;</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x300.html"
+ACCESSKEY="N"
+>&#1057;&#1083;&#1077;&#1076;.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Утилиты HTML</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c254.html"
+ACCESSKEY="U"
+>&#1059;&#1088;&#1086;&#1074;&#1077;&#1085;&#1100; &#1074;&#1099;&#1096;&#1077;</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Списки</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

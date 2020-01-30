@@ -1,0 +1,230 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Scripts</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="TEA Manual"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Functions"
+HREF="c387.html"><LINK
+REL="PREVIOUS"
+TITLE="Replacement tables"
+HREF="x505.html"><LINK
+REL="NEXT"
+TITLE="Snippets"
+HREF="x541.html"></HEAD
+><BODY
+CLASS="section"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>TEA Manual</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x505.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Chapter 9. Functions</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x541.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="AEN520"
+>9.9. Scripts</A
+></H1
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="AEN522"
+>9.9.1. Scripts from the user's point of view</A
+></H2
+><P
+>In TEA you can use scripts to process a selected text or a whole text, just as you use a built-in TEA functions. If the script can handle some parameters, put them into the Famous text entry.
+</P
+><P
+>&#13;TEA can work with scripts those written in Python, Perl, Ruby and Bash (Sh). To install a script, just copy him to <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>$HOME/.config/tea/scripts</B
+></SPAN
+>. If a script is packed, please unpack it first. TEA will "see" the newly installed scripts after restart.
+</P
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="AEN527"
+>9.9.2. Scripts from the developer's point of view</A
+></H2
+><P
+>&#13;How to write a script for TEA? It's a quite simple. But the first thing that you must to know it is how TEA gives a text to the script and how TEA takes a processed text back to replace the selection with it.
+</P
+><P
+>&#13;TEA runs each script with one or two parameters. Both of them are file names. The first file contains the text. This text is a selected of a whole text that TEA takes from the current document.
+</P
+><P
+>&#13;And the second file (if exists) contains a text from the Famous text entry. So your script can read the first file to obtain the text data, and read the second file to get some optional parameters for your script.
+</P
+><P
+>&#13;Be careful with a text handling - TEA internally operates with UTF-8 encoding, so all text processing at the script musb be UTF-8-safe. OK, now let's see how a script can return a processed text. Just write that processed text to the first file again, i.e. to the file, which file name you take from the first parameter of your script.
+</P
+><P
+>Below this lines you shall see an example of UTF8-safe Python-script that takes a text, swaps the case, and returns the processed text back to the TEA. 
+</P
+><PRE
+CLASS="programlisting"
+>import sys
+import string
+import codecs
+f = codecs.open(sys.argv[1], "r", "utf-8" )
+u = f.read()
+f.close
+u = u.swapcase()
+f = codecs.open(sys.argv[1], "w+", "utf-8" )
+f.write (u)
+f.close
+</PRE
+><P
+>sys.argv[1] contains a name of file with the text from TEA. We read the whole content of that file, then we process this content, and then we write it back to the sys.argv[1]-file. Voila! Please note how to use the codecs.
+</P
+><P
+>&#13;And another example - the "inline" calculator. Here we don't use any codecs because we work with a numerical data:
+</P
+><PRE
+CLASS="programlisting"
+>import sys
+f = file (sys.argv[1], 'r')
+s = f.read()
+f.close
+t = eval (s)
+f = file (sys.argv[1], 'w+')
+f.write (str (t))
+f.close</PRE
+><P
+>&#13;But what if we need to get some additional user's parameters to the script? They are available as a string, and you can read it from the file that named at sys.argv[2] (in Python). At Bash-script, use $1 to get the first parameter, and $2 for the second. Let me explain one more time. The second parameter is a file which contains a text from the Famous text entry. <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>Note that Ruby scripts takes the first parameter in ARGV[0], and the second in ARGV[1].</I
+></SPAN
+>
+</P
+><P
+>&#13;If you wish to contribute some scripts to the TEA site scripts repository, please consider to contribute your script with a public domain status. Or at least not with the proprietaty license. There is also will be useful to put the credits and the description somewhere in the comments within your script.
+</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x505.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x541.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Replacement tables</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c387.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Snippets</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

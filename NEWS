@@ -1,0 +1,17 @@
+NEWS ABOUT TEA-GTK
+
+TEA-GTK 18.0.0, 03 July 2013
+http://semiletov.org/tea
+
+   Yes. I was cursed to renew TEA-GTK, so I did it to my joy and pleasure. TEA-GTK now ported to GTK3.
+   Other changes are damn major.
+   Scons is used instead of Autotools. Scons is good.
+   For removed functions list - see the ChangeLog. Now TEA-GTK depends just on two libs - GTK3 and GtkSourceView 3. Libaspell and zziplib are optional.
+   Most of package-related code tweaks now obsolete.
+   Documentation is old and based on GTK2-branch.
+   Code can be unstable because I have no time to test it seriously. My main worked editor is still TEA-QT, and TEA-GTK became a some sort of the hack value. Yes, I want to improve it further, but TEA-QT has priority.
+   Please test TEA-GTK and send me a feedback to tea@list.ru
+
+P.S. GTK-branch of TEA has a name: teagtk. So, to run "old fasioned", GTK-based TEA, use "teagtk" command instead of "tea". 
+ 
+Peter Semiletov

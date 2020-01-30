@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Cómo editar y previsualizar subtítulos SRT</title>
+  <meta name="GENERATOR" content=
+  "Modular DocBook HTML Stylesheet Version 1.7" />
+  <link rel="HOME" title="TEA: Manual de usuario" href=
+  "index.html" />
+  <link rel="PREVIOUS" title=
+  " ¿Cómo gestiona TEA diferentes juegos de caracteres? " href=
+  "c63.html" />
+  <link rel="NEXT" title="El trascendental menú de Archivo " href=
+  "c105.html" />
+  <link rel="STYLESHEET" type="text/css" href="style.css" />
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8" />
+<style type="text/css">
+/*<![CDATA[*/
+ body {
+  background-color: #FFFFFF;
+  color: #000000;
+ }
+ :link { color: #0000FF }
+ :visited { color: #840084 }
+ :active { color: #0000FF }
+ hr.c18 {text-align: left}
+/*]]>*/
+</style>
+</head>
+
+<body class="chapter">
+  <div class="NAVHEADER">
+    <table summary="Header navigation table" width="100%" border=
+    "0" cellpadding="0" cellspacing="0">
+      <tr>
+        <th colspan="3" align="center"><img src="img/logo.gif" alt=
+        "logo" /></th>
+      </tr>
+
+      <tr>
+        <td align="left" valign="bottom"><a href=
+        "c63.html" accesskey="P"><img src="img/prev.gif"
+        alt="Prev" /></a></td>
+
+        <td align="center" valign="bottom"></td>
+
+        <td align="right" valign="bottom"><a href=
+        "c105.html" accesskey="N"><img src="img/next.gif"
+        alt="Next" /></a></td>
+      </tr>
+    </table>
+    <hr class="c18" />
+  </div>
+
+  <div class="chapter">
+    <h1><a name="srt_edit" id="srt_edit"></a>4. Cómo editar y
+    previsualizar subtítulos SRT</h1>
+
+<div id="srtex">
+<p class="music">
+1
+</p>
+<p>
+00:01:02,383 --> 00:01:05,133
+</p>
+<p>
+"Campos de Opio, Tíbet"
+</p>
+<p class="music">
+2
+</p>
+<p>
+00:02:21,960 --> 00:02:25,735
+</p>
+<p>
+Tú y tus hermanos habéis asesinado
+a 3 de nuestros hombres.
+</p>
+<p class="music">
+3
+</p>
+<p>
+00:02:25,800 --> 00:02:27,327
+</p>
+<p>
+Él habría hecho lo mismo.
+</p>
+</div>
+
+
+<p>Los archivos srt son ficheros de texto que contienen los subtítulos
+asociados a un video. 
+</p>
+
+<p>Utilizan el formato subrip, en el que se almacena esta
+información: 
+</p>
+<pre class="programlisting">
+- nº de subtítulo 
+- intervalo de tiempo en el que aparece 
+- texto del subtítulo
+</pre>
+
+<p>Al tratarse de archivos de texto hay que tener en cuenta su
+codificación, que en muchos casos no es correcta. Seleccionando la
+que se ajuste a nuestro idioma (iso 8859-1 ó mejor utf-8) se pueden 
+evitar problemas con acentos y símbolos.</p>
+
+<p>
+Un ejemplo del contenido de un archivo srt sería el indicado a la derecha.
+</p>
+
+
+    <p>TEA permite editar y previsualizar subtítulos en formato
+    SRT. Para poder trabajar con ellos hacer lo siguiente:</p>
+
+    <p>1. Abrir el archivo SRT como un archivo normal de texto.</p>
+
+    <p>2. "Abrir" el video con <span class="bold"><b class=
+    "emphasis">Archivo &gt; Abrir (Especial) &gt; Reproducir
+    video.</b></span></p>
+
+    <p>3. Editar el SRT y guardarlo.</p>
+
+    <p>4. Cuando actives <span class="bold"><b class="emphasis">Ver
+    &gt; Previsualizar con Mplayer</b></span>, TEA buscará el
+    <span class="emphasis"><i class="emphasis">tiempo de
+    inicio</i></span> de la sección corrrespondiente del subtítulo,
+    y lanzará Mplayer con el video que hayas seleccionado antes en
+    <span class="bold"><b class="emphasis">Reproducir
+    video</b></span>. TEA también puede indicarle al Mplayer que
+    reproduzca el video en un instante concreto de los subtítulos
+    (en realidad, después de semejante "retroceso", debido al
+    funcionamiento del Mplayer, mostrará el SIGUIENTE al subtítulo
+    actual, por lo que es recomendable elegir en TEA el subtítulo
+    anterior para ver el actual. Parece raro, ¿verdad? Pero, si se
+    utiliza es muy sencillo de entender).</p>
+
+    <p>Entre los mejores reproductores disponibles para vídeo se
+    encuentra <a href="http://www.videolan.org">
+    VideoLan</a>, que gestiona de forma interna los codecs
+    de audio/vídeo, tiene skins para personalizarlo y no necesita
+    muchos recursos del sistema. Así, nos podemos olvidar del
+    formato del archivo a reproducir (salvo alguna excepción como
+    el formato de apple .aac, .asf ó .wmv de ms y, .rm de RealMedia
+    que son propietarios) porque este programa se encargará de ello
+    sin problemas. La calidad de imagen también se puede ajustar en
+    las opciones de postproceso.</p>
+
+    <p>Si eres un maniático de querer ocupar toda la pantalla y
+    ajustar el formato de la imagen de salida para eliminar las
+    bandas negras, VLC lo permite. Es decir, la relación de aspecto
+    se puede modificar según nos parezca. En la última versión el
+    menú se encuentra en <span class="bold"><b class=
+    "emphasis">Opciones &gt; Preferencias</b></span>. Se activa la
+    casilla <span class="emphasis"><i class="emphasis">Opciones
+    avanzadas</i></span> en la ventana, y en <span class=
+    "bold"><b class="emphasis">Opciones generales &gt;
+    Video</b></span> se modifica el valor de <span class=
+    "emphasis"><i class="emphasis">Relación de aspecto de
+    fuente</i></span> (4:3 ó 16:9, este último para panorámico).
+    Para que se guarden los cambios se ha de cerrar y volver a
+    abrir la aplicación.</p>
+
+    <div class="tip">
+      <table class="tip" width="100%" border="0">
+        <tr>
+          <td align="center" valign="top"><img src=
+          "img/tip.gif" alt="" /></td>
+
+          <td align="left" valign="top">
+            <p>Hay una forma alternativa de cargar los subtítulos
+            de una película sin el menú <span class=
+            "bold"><b class="emphasis">Abrir archivo</b></span> de
+            VideoLan. Para ello basta con ponerlos en el mismo
+            sitio en el que se encuentre el video y con el mismo
+            nombre, y abrir únicamente el archivo a reproducir. Por
+            ejemplo, si tuviéramos un archivo <span class=
+            "emphasis"><i class="emphasis">maHou.avi</i></span> los
+            subtítulos tendrían que llamarse <span class=
+            "emphasis"><i class="emphasis">maHou.srt</i></span>.
+            Luego se selecciona la pista de subtítulos en el menú
+            desplegable que aparece encima del video.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="NAVFOOTER">
+    <hr class="c18" />
+
+    <table summary="Footer navigation table" width="100%" border=
+    "0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="left" valign="top"><a href=
+        "c63.html" accesskey="P"><img src="img/prev.gif"
+        alt="Prev" /></a></td>
+
+        <td align="center" valign="top"><a href=
+        "index.html" accesskey="H"><img src="img/home.gif" 
+         alt="Home" /></a></td>
+
+        <td align="right" valign="top"><a href=
+        "c105.html" accesskey="N"><img src="img/next.gif"
+        alt="Next" /></a></td>
+      </tr>
+
+      <tr>
+        <td align="left" valign="top">¿Cómo gestiona
+        TEA diferentes juegos de caracteres?</td>
+
+        <td align="center" valign="top">&nbsp;</td>
+
+        <td align="right" valign="top">El trascendental
+        menú de Archivo</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

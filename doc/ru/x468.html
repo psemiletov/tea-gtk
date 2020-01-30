@@ -1,0 +1,314 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Insert</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="TEA - полное ноговодство"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Функции"
+HREF="c320.html"><LINK
+REL="PREVIOUS"
+TITLE="Формат"
+HREF="x458.html"><LINK
+REL="NEXT"
+TITLE="Регистр"
+HREF="x541.html"></HEAD
+><BODY
+CLASS="section"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>TEA - полное ноговодство</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x458.html"
+ACCESSKEY="P"
+>&#1055;&#1088;&#1077;&#1076;.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>&#1043;&#1083;&#1072;&#1074;&#1072; 9. Функции</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x541.html"
+ACCESSKEY="N"
+>&#1057;&#1083;&#1077;&#1076;.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="AEN468"
+>9.12. Insert</A
+></H1
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Строка *Сейчас играет* из Amarok</B
+></SPAN
+> - вставляет в документ название текущей песни из плейера Amarok. Формат вставляемой строки задается в <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Настройки &#62; Функции &#62; Формат строки *сейчас играет*</B
+></SPAN
+>.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Дата/Время</B
+></SPAN
+> - вставляет текущие дату и время по заданному вами формату. Формат задается в <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Настройки &#62; Функции &#62; Формат даты и времени</B
+></SPAN
+> строкой особого формата. По умолчанию это <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>%d/%m/%Y %T</I
+></SPAN
+>, что в итоге дает дату и время такого вида: <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>08/02/2004 12:50:02</I
+></SPAN
+>. Полное описание синтаксиса формата смотрите в английской версии документации, здесь же я приведу только немного оттуда:
+</P
+><P
+></P
+><UL
+><LI
+><P
+>%a - день недели сокращенно, в зависимости от текущей локали.</P
+></LI
+><LI
+><P
+>%A - день недели полностью, в зависимости от текущей локали.</P
+></LI
+><LI
+><P
+>%b - месяц сокращенно, в зависимости от текущей локали.</P
+></LI
+><LI
+><P
+>%B - месяц полностью, в зависимости от текущей локали.</P
+></LI
+><LI
+><P
+>%c - предпочтительное отображение календарного времени для текущей локали.</P
+></LI
+><LI
+><P
+>%C - век года.</P
+></LI
+><LI
+><P
+>%d - день месяца, десятичный.</P
+></LI
+><LI
+><P
+>%D - дата формата %m/%d/%y.</P
+></LI
+><LI
+><P
+>%F - дата формата %Y-%m-%d.</P
+></LI
+><LI
+><P
+>%H - час, от 00 до 23.</P
+></LI
+><LI
+><P
+>%I - час, от 01 до 12.</P
+></LI
+><LI
+><P
+>%j - день года, от 001 до 366.</P
+></LI
+><LI
+><P
+>%m - номер месяца (от 01 до 12).</P
+></LI
+><LI
+><P
+>%M - минута (от 00 до 59).</P
+></LI
+><LI
+><P
+>%n - новая строка.</P
+></LI
+><LI
+><P
+>%p - AM или PM.</P
+></LI
+><LI
+><P
+>%P - аналогично, но в зависимости от локали.</P
+></LI
+><LI
+><P
+>%r - полное календарное время в формате AM/PM для текущей локали.</P
+></LI
+><LI
+><P
+>%R - часы и минуты в десятичном формате %H:%M.</P
+></LI
+><LI
+><P
+>%s - сколько секунд прошло с 1970-01-01 00:00:00 UTC. //високосные секунды выпадают?</P
+></LI
+><LI
+><P
+>%S - секунды,  от 00 до 60.</P
+></LI
+><LI
+><P
+>%t - таб.</P
+></LI
+><LI
+><P
+>%T - время дня в формате %H:%M:%S.</P
+></LI
+><LI
+><P
+>%u - День недели (от 1 до 7), понедельник = 1.</P
+></LI
+><LI
+><P
+>%U - номер недели от 00 до 53), начиная с первого воскресенья первого дня первой недели (00).</P
+></LI
+><LI
+><P
+>%V - аналогично, однако с 01 по 53, и с первого понедельника.</P
+></LI
+><LI
+><P
+>%w - день недели, от 0 до 6, воскресенье = 0.</P
+></LI
+><LI
+><P
+>%x - предпочтительный формат даты для текущей локали.</P
+></LI
+><LI
+><P
+>%X - предпочтительное для текущей локали время дня.</P
+></LI
+><LI
+><P
+>%y - год без тысячелетия, от 00 до 99. То есть не 2004, а 04.</P
+></LI
+><LI
+><P
+>%Y - год по грегорианскому календарю.</P
+></LI
+></UL
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x458.html"
+ACCESSKEY="P"
+>&#1055;&#1088;&#1077;&#1076;.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>&#1053;&#1072;&#1095;&#1072;&#1083;&#1086;</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x541.html"
+ACCESSKEY="N"
+>&#1057;&#1083;&#1077;&#1076;.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Формат</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c320.html"
+ACCESSKEY="U"
+>&#1059;&#1088;&#1086;&#1074;&#1077;&#1085;&#1100; &#1074;&#1099;&#1096;&#1077;</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Регистр</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

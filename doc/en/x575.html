@@ -1,0 +1,383 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Insert</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="TEA Manual"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Functions"
+HREF="c387.html"><LINK
+REL="PREVIOUS"
+TITLE="Format"
+HREF="x563.html"><LINK
+REL="NEXT"
+TITLE="Case"
+HREF="x674.html"></HEAD
+><BODY
+CLASS="section"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>TEA Manual</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x563.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Chapter 9. Functions</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x674.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="AEN575"
+>9.13. Insert</A
+></H1
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>*Now playing* string from Amarok</B
+></SPAN
+> - does this. Please note that you can customize the format-string at <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Preferences &#62; Functions &#62; Now Playing string format</B
+></SPAN
+>. There is <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>%s</I
+></SPAN
+> macro that means artist and song names.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Dump menu</B
+></SPAN
+> - write all menu items names into the new file. It is useful when you want to add some entries into the hotkeys config. 
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Date/Time</B
+></SPAN
+> - inserts a date/time in a giver format. The format must be defined by you in the <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Preferences &#62; Functions &#62; Date And Time Format</B
+></SPAN
+> 
+</P
+><P
+>A quote from <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>Edition 0.10, last updated 2001-07-06, of The GNU C Library Reference Manual, for Version 2.2.x of the GNU C Library</I
+></SPAN
+> (the quoted text is edited, to make it short, by Roxton): 
+</P
+><P
+></P
+><UL
+><LI
+><P
+>%a - The abbreviated weekday name according to the current locale.</P
+></LI
+><LI
+><P
+>%A - The full weekday name according to the current locale.</P
+></LI
+><LI
+><P
+>%b - The abbreviated month name according to the current locale.</P
+></LI
+><LI
+><P
+>%B - The full month name according to the current locale.</P
+></LI
+><LI
+><P
+>%c - The preferred calendar time representation for the current locale.</P
+></LI
+><LI
+><P
+>%C - The century of the year. This is equivalent to the greatest integer not greater than the year divided by 100.</P
+></LI
+><LI
+><P
+>%d - The day of the month as a decimal number (range 01 through 31).</P
+></LI
+><LI
+><P
+>%D - The date using the format %m/%d/%y.</P
+></LI
+><LI
+><P
+>%e -  The day of the month like with %d, but padded with blank (range 1 through 31).</P
+></LI
+><LI
+><P
+>%F - The date using the format %Y-%m-%d. This is the form specified in the ISO 8601 standard and is the preferred form for all uses.</P
+></LI
+><LI
+><P
+>%g - The year corresponding to the ISO week number, but without the century (range 00 through 99). This has the same format and value as %y, except that if the ISO week number (see %V) belongs to the previous or next year, that year is used instead.</P
+></LI
+><LI
+><P
+>%G - The year corresponding to the ISO week number. This has the same format and value as %Y, except that if the ISO week number (see %V) belongs to the previous or next year, that year is used instead.</P
+></LI
+><LI
+><P
+>%h - The abbreviated month name according to the current locale. The action is the same as for %b.</P
+></LI
+><LI
+><P
+>%H - The hour as a decimal number, using a 24-hour clock (range 00 through 23).</P
+></LI
+><LI
+><P
+>%I - The hour as a decimal number, using a 12-hour clock (range 01 through 12).</P
+></LI
+><LI
+><P
+>%j - The day of the year as a decimal number (range 001 through 366).</P
+></LI
+><LI
+><P
+>%k - The hour as a decimal number, using a 24-hour clock like %H, but padded with blank (range 0 through 23). This format is a GNU extension.</P
+></LI
+><LI
+><P
+>%l - The hour as a decimal number, using a 12-hour clock like %I, but padded with blank (range 1 through 12). This format is a GNU extension.</P
+></LI
+><LI
+><P
+>%m - The month as a decimal number (range 01 through 12).</P
+></LI
+><LI
+><P
+>%M - The minute as a decimal number (range 00 through 59).</P
+></LI
+><LI
+><P
+>%n - A single \n (newline) character.</P
+></LI
+><LI
+><P
+>%p - Either AM or PM, according to the given time value; or the corresponding strings for the current locale. Noon is treated as PM and midnight as AM.</P
+></LI
+><LI
+><P
+>%P - Either am or pm, according to the given time value; or the corresponding strings for the current locale, printed in lowercase characters. Noon is treated as pm and midnight as am.</P
+></LI
+><LI
+><P
+>%r - The complete calendar time using the AM/PM format of the current locale.</P
+></LI
+><LI
+><P
+>%R - The hour and minute in decimal numbers using the format %H:%M.</P
+></LI
+><LI
+><P
+>&#13;%s - The number of seconds since the epoch, i.e., since 1970-01-01 00:00:00 UTC. Leap seconds are not counted unless leap second support is available. This format is a GNU extension.
+</P
+></LI
+><LI
+><P
+>&#13;%S - The seconds as a decimal number (range 00 through 60).
+</P
+></LI
+><LI
+><P
+>%t - A single \t (tabulator) character.</P
+></LI
+><LI
+><P
+>%T - The time of day using decimal numbers using the format %H:%M:%S.</P
+></LI
+><LI
+><P
+>%u - The day of the week as a decimal number (range 1 through 7), Monday being 1.</P
+></LI
+><LI
+><P
+>%U - The week number of the current year as a decimal number (range 00 through 53), starting with the first Sunday as the first day of the first week. Days preceding the first Sunday in the year are considered to be in week 00.</P
+></LI
+><LI
+><P
+>%V - The ISO 8601:1988 week number as a decimal number (range 01 through 53). ISO weeks start with Monday and end with Sunday. Week 01 of a year is the first week which has the majority of its days in that year; this is equivalent to the week containing the year's first Thursday, and it is also equivalent to the week containing January 4. Week 01 of a year can contain days from the previous year. The week before week 01 of a year is the last week (52 or 53) of the previous year even if it contains days from the new year.</P
+></LI
+><LI
+><P
+>%w - The day of the week as a decimal number (range 0 through 6), Sunday being 0.</P
+></LI
+><LI
+><P
+>%W - The week number of the current year as a decimal number (range 00 through 53), starting with the first Monday as the first day of the first week. All days preceding the first Monday in the year are considered to be in week 00.</P
+></LI
+><LI
+><P
+>%x - The preferred date representation for the current locale.</P
+></LI
+><LI
+><P
+>%X - The preferred time of day representation for the current locale.</P
+></LI
+><LI
+><P
+>%y - The year without a century as a decimal number (range 00 through 99). This is equivalent to the year modulo 100.</P
+></LI
+><LI
+><P
+>%Y - The year as a decimal number, using the Gregorian calendar. Years before the year 1 are numbered 0, -1, and so on.</P
+></LI
+><LI
+><P
+>%z - RFC 822/ISO 8601:1988 style numeric time zone (e.g., -0600 or +0100), or nothing if no time zone is determinable.A full RFC 822 timestamp is generated by the format "%a, %d %b %Y %H:%M:%S %z" (or the equivalent "%a, %d %b %Y %T %z").</P
+></LI
+><LI
+><P
+>%Z - The time zone abbreviation (empty if the time zone can't be determined).</P
+></LI
+><LI
+><P
+>%% - A literal % character.</P
+></LI
+></UL
+><P
+>By default TEA uses <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>"%d/%m/%Y %T"</I
+></SPAN
+> as the formatting string, so <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>date_time=%d/%m/%Y %T</I
+></SPAN
+>
+</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x563.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x674.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Format</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c387.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Case</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

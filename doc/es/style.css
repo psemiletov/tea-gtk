@@ -1,0 +1,442 @@
+/* General Styles and Formatting */
+a img {border: none}
+
+a {
+ TEXT-DECORATION: none;
+ font-weight: bold;
+ font-size : small;
+}
+
+a:link {
+ color : #008800;
+}
+
+a:visited {
+ color : #008800;
+}
+
+a:hover {
+ color : #00BB00;
+}
+
+pre.screen {
+ position: relative;
+ left: 2em;
+}
+
+pre.programlisting {
+ position: relative;
+ left: 2em;
+ font-size: small;
+ background-color: lightyellow;
+ border: 1px dashed green;
+ width: 25em;
+ padding:5px;
+}
+
+HR {
+ height: 3px;
+ border: 0;
+ color: #E2DDBC;
+ background-color: #E2DDBC;
+ }
+
+
+BODY{
+ background-color : White;
+ font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+ font-size : small;
+}
+
+BODY, table{
+ background-color : White;
+ font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+ font-size : small;
+}
+
+p{
+	font-size : small;
+}
+
+tr{
+ background-color : White;
+ font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+ font-size : small;
+}
+
+td{
+ background-color : White;
+ font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+ font-size : small;
+}
+
+div.NAVFOOTER td{
+ width: 33%; 
+ background-color : White;
+ font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+ font-size : x-small;
+}
+
+
+dt{
+ background-color : White;
+ font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+ font-size : small;
+ padding: .3pt;
+}
+
+div.variablelist dt{
+ background-color : White;
+ font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+ font-size : small;
+ padding-top: 5pt;
+}
+
+LI{
+ padding: 3pt;
+ list-style-type: square;
+}
+
+
+H1 {
+  font-family: Verdana, Geneva, Arial, Helvetica, Arial, sans-serif;
+  font-size: 180%;
+  color : #395294;
+}
+H2 {
+  font-family: Verdana, Geneva, Arial, Helvetica, Arial, sans-serif;
+  font-size: 160%;
+  color : #395294;
+}
+H3 {
+  font-family: Verdana, Geneva, Arial, Helvetica, Arial, sans-serif;
+  font-size: 140%;
+  color : #395294;
+}
+H4 {
+  font-family: Verdana, Geneva, Arial, Helvetica, Arial, sans-serif;
+  color : #395294;
+  font-size: 120%;
+}
+H5 {
+  font-family: Verdana, Geneva, Arial, Helvetica, Arial, sans-serif;
+  color : #395294;
+  font-size: 100%;
+}
+
+#srtex{
+float: right;
+margin: 20px 80px 30px 10px;
+padding: 5px;
+border: 1px dotted brown; 
+background-color:#E9EDF0; 
+width: 300px;
+text-align:left;
+}
+
+.entrada { 
+border: 3px solid #D6D2D6;
+}
+
+.comando { 
+border: 3px solid #EFEFEF;
+border-bottom:3px solid #EFEFEF
+}
+
+.entorno { 
+margin-left: 20px;
+border-bottom: 1px solid; 
+border-left: 1px solid ;
+border-top: 1px solid; 
+border-right:1px solid;
+}
+
+.literallayout{
+position: relative;
+ left: 2em;
+ font-size: small;
+ background-color: #E1F0F2;
+ border: 1px dashed green;
+ width: 25em;
+ padding:5px;
+}
+
+.music{
+color: #c52929;
+}
+
+/* CSS Menu - c105.html */
+
+ul.tree, li.tree {
+	margin:0;
+	padding:0;
+	display:block;
+}		
+
+ul.tree {
+	list-style:none;
+	width:300px;
+	padding:2px;
+	border-right:  2px solid #AAAAAA;
+	border-bottom: 2px solid #AAAAAA;
+	background:white;
+}	
+
+li.tree {
+	position:relative;
+	padding:3px;
+	background:#EFEFEF;
+	border:1px solid #EFEFEF;
+	z-index:9;
+	color:black;
+}
+
+li.tree:hover {
+	border:1px solid black;
+	background:#D6DBE6;
+	z-index:15;
+}
+
+/* Behavior: hide all submenus */
+		
+ul.tree ul.tree {
+	position:absolute;
+	display:none;
+	/*top:24px;*/
+	/*left:-3px;*/
+	right:-308px;
+	top:-2px;
+}
+		
+/* :hover specifications */
+		
+li.tree:hover ul.tree ul.tree {
+	display:none;
+}
+
+li.tree:hover ul.tree, li.tree:hover li.tree:hover ul.tree {
+	display:block;
+}
+
+/* End CSS Menu */
+
+a.nocolor:link {
+ color : black;
+}
+
+/* Interface layout - c34.html */
+
+#numeros {
+margin-top:0;
+margin-bottom:0;
+margin-left:0;
+background-color: #EFEFEF;
+padding: 2px 0px;
+width: 1em
+}
+
+#numeros ul {
+list-style-type: none;
+border: 0px none;
+padding: 0px 3px;
+margin-left:0;
+
+}
+
+#numeros li {
+margin-left: 0;
+padding: 2px 0px;
+width: 100%;
+display: block
+}
+
+#mess {
+margin-top:0;
+margin-left:0;
+background-color: #fff;
+color:red;
+width: 40em
+border: solid 1px gray;
+margin: 0px;
+padding: 0px 0px;
+border: 0px none; 
+
+}
+
+#mess ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+}
+
+#mess li {
+margin: 0;
+width: 100%;
+padding: 0;
+display: block
+}
+
+html>body #mess li {
+width: auto;
+}
+
+#mess li:first-child {
+border: none
+}
+
+/* End c34.html */
+
+/* Search & Replace - c210.html */
+.noborder{
+margin: 0px;
+padding: 4px 4px;
+border: 0px none; 
+}
+
+li.columna {
+ color : black;
+ background-color: #FFFBFF;
+ font-weight: normal;
+ border: 1px solid #EFEFEF;
+ margin:0; 
+ list-style: none; text-decoration: none;
+}
+
+#barra{
+	margin-left:0;
+	width: 612px;
+	display: inline; 
+	margin: 0px;
+   padding: 0px 0px;
+   border: 0px none; 
+   list-style-position: inside;
+}
+
+#barra li {
+    display: inline;
+    white-space: nowrap;
+	list-style: none; text-decoration: none;
+}
+
+#barra a {
+	height: 20px;
+   color: black;
+	padding: 0px 0px 1px 1px;
+   font: x-small Verdana, Arial, Geneva, Helvetica, sans-serif;
+	background-color: #EFEFEF;
+}
+
+#barra a:hover {
+    background-color: #D6DBE6;
+}
+
+/* End c210.html */
+
+/* Menu list Options - Switches c675.html x687.html*/
+
+ul.cambios  {
+margin:0;
+font-weight:normal;
+background-color: #EFEFEF;
+}
+
+li.cambios  {
+text-align:left;
+list-style-type: none;
+border:1px solid #EFEFEF; 
+padding:1px;
+}
+
+html> li.cambios {
+border:1px solid grey;
+}
+
+ul.prefs  {
+margin-top:0;
+list-style-type: none;
+padding: 0px 0px;
+font-weight:normal;
+background-color: #C5C6CE;
+}
+
+li.prefs  {
+text-align:center;
+list-style-type: none;
+border:1px solid #666464;
+padding:1px;
+background-color: #C5C6CE;
+}
+
+li.active{
+text-align:center;
+list-style-type: none;
+padding:1px;
+border:1px solid #666464; /*bug grey=#EFEF ie60 */
+background-color: #EFEFEF;
+}
+
+li.crap{
+color: #EFEFEF;
+text-align:center;
+list-style-type: none;
+padding:1px;
+background-color: #EFEFEF;
+}
+
+/* End c675.html x687.html */
+
+/* Kwas layout - c742.html*/
+
+#barrame{
+	margin-left:0;
+	width: 612px;
+	display: inline; 
+	margin: 10px;
+   padding: 0px 0px;
+   border: 0px none; 
+   list-style-position: inside;
+}
+
+#barrame li {
+    display: inline;
+	height: 5px;
+    white-space: nowrap;
+	list-style: none; text-decoration: none;
+}
+
+#barrame a {
+	height: 5px;
+   color: black;
+	padding: 0px 0px 1px 1px;
+   font: x-small Verdana, Arial, Geneva, Helvetica, sans-serif;
+	
+}
+
+#barrame a:hover {
+    background-color: #D6DBE6;
+}
+
+.kwaslist {
+margin-top:0;
+margin-bottom:0;
+margin-left:0;
+background-color: white;
+padding: 2px 0px;
+font-weight:bold;
+}
+
+ul.kwaslist {
+border: 0px none;
+padding: 0px 3px; /*unico padding que realmente lee?*/
+margin-left:0;
+
+}
+
+li.kwaslist {
+margin-left: 0;
+padding: 2px 0px;
+list-style-type: none;
+}
+
+/* End c742.html*/

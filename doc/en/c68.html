@@ -1,0 +1,299 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>&#13;How TEA works with different charsets?
+</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="TEA Manual"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="About drag and drop"
+HREF="x62.html"><LINK
+REL="NEXT"
+TITLE="How to edit and preview SRT-subtitles
+"
+HREF="c102.html"></HEAD
+><BODY
+CLASS="chapter"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>TEA Manual</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x62.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="c102.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="chapter"
+><H1
+><A
+NAME="encodings"
+></A
+>Chapter 3. 
+How TEA works with different charsets?
+</H1
+><P
+>TEA can handle all charsets that Linux supports through the <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>iconv library</I
+></SPAN
+>. Basicly you can use two character sets for the file save operation - there are UTF-8 and the current locale's charset. For the file opening action you can select them and in the addition there is a one more option - <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>autodetect</B
+></SPAN
+>. 
+</P
+><P
+>When you choose an autodetection, TEA tries to determine the actual encoding automatically, and if it fails, you need to select the proper encoding manually. The autodetection function has a polymorphic nature and divided into more than one sub-functions. For example, TEA has a simply <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>autodetect</B
+></SPAN
+> and <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Japanese autodetect</B
+></SPAN
+> functions. When you choose the first one, you must also select some charsets which TEA needs to check. All that charsets are available at <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Preferences &#62; Encodings &#62; Autodetect section</B
+></SPAN
+> - you may see a lot of checkboxes there.
+</P
+><P
+>So when you open the file, you can choose the <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>autodetect</B
+></SPAN
+> charset, and TEA will try to autodetect encodings which you select at "Autodetect" Preferences section. 
+</P
+><P
+>&#13;Due to GTK implementation of UTF-8 validation, the <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Autodetect</B
+></SPAN
+> function can fail on some Latin charset files. To avoid this, you can define the "fallback" charset using the <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>On autodetect failed, fallback to this charset</B
+></SPAN
+> checkbox combined the <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Fallback charset</B
+></SPAN
+> character set name at the <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Preferences &#62; Encodings &#62;</B
+></SPAN
+> page. When the fallback-charset is turned on, the autodetection failed, TEA shall try to open a file with the defined fallback-charset. Default values are "on" and "ISO-8859-1". 
+</P
+><P
+>And another case is <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Japanese autodetect</B
+></SPAN
+> - it is separated form the "usual" <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>autodetect</B
+></SPAN
+> function due to its inner implementation.
+</P
+><P
+>How to add more charsets to the list of available encodings? Go to <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>File &#62; Preferences &#62; Encoding</B
+></SPAN
+>, switch to <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Configure charsets</B
+></SPAN
+> page. Press the <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Add</B
+></SPAN
+> button to add selected (in the new dialog window) encoding to <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Selected</B
+></SPAN
+> list. Charsets from <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Selected</B
+></SPAN
+> will be available in File open/save dialogs, Kwas file manager et cetera.  
+</P
+><P
+>To remove an item from <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Selected</B
+></SPAN
+> list, select it and press <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Delete</B
+></SPAN
+> button between the lists.
+</P
+><P
+>Menus/lists with available charsets updates: for Open/Save dialogs - when you reopen them; for Kwas - when you start a new Kwas window.
+</P
+><P
+>TEA has an almost obsolete <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>View &#62; Co</B
+></SPAN
+> menu. From this menu you can switch encoding for the current document. Encodings are the same as in "File open/save as" dialogs. When you switch an encoding, it means that the current file's content will be reloaded with the different encoding. <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>So use it carefully, only if you want to change an encoding when you see some kind of crap in the place of a text</I
+></SPAN
+>.
+</P
+><P
+>And some additional words about the automatic language detection. TEA uses its own algorithm, but as I know now, it's somehow similar to the <A
+HREF="http://citeseer.ist.psu.edu/68861.html"
+TARGET="_top"
+>N-Gram-Based Text Categorization</A
+>.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x62.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="c102.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>About drag and drop</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>How to edit and preview SRT-subtitles</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

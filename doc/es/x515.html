@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Cadenas de texto</title>
+  <meta name="GENERATOR" content=
+  "Modular DocBook HTML Stylesheet Version 1.7" />
+  <link rel="HOME" title="TEA: Manual de usuario" href=
+  "index.html" />
+  <link rel="UP" title="Funciones" href="c298.html" />
+  <link rel="PREVIOUS" title="Números" href="x503.html" />
+  <link rel="NEXT" title="Ordenar" href="x558.html" />
+  <link rel="STYLESHEET" type="text/css" href="style.css" />
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8" />
+<style type="text/css">
+/*<![CDATA[*/
+ body {
+  background-color: #FFFFFF;
+  color: #000000;
+ }
+ :link { color: #0000FF }
+ :visited { color: #840084 }
+ :active { color: #0000FF }
+ hr.c33 {text-align: left}
+/*]]>*/
+</style>
+</head>
+
+<body class="section">
+  <div class="NAVHEADER">
+    <table summary="Header navigation table" width="100%" border=
+    "0" cellpadding="0" cellspacing="0">
+      <tr>
+        <th colspan="3" align="center"><img src="img/logo.gif" alt=
+        "logo" /></th>
+      </tr>
+
+      <tr>
+        <td align="left" valign="bottom"><a href=
+        "x503.html" accesskey="P"><img src="img/prev.gif"
+        alt="Prev" /></a></td>
+
+        <td align="center" valign="bottom">9.
+        Funciones</td>
+
+        <td align="right" valign="bottom"><a href=
+        "x558.html" accesskey="N"><img src="img/next.gif"
+        alt="Next" /></a></td>
+      </tr>
+    </table>
+    <hr class="c33" />
+  </div>
+
+  <div class="section">
+    <h1 class="section"><a name="AEN527" id="AEN527"></a>9.12.
+    Cadenas de texto</h1>
+
+    <p><span class="bold"><b class="emphasis">Separar en párrafos
+    de TeX</b></span> - realiza esta acción, añadiendo espacios en
+    blanco entre las cadenas de texto. Para convertir un archivo de
+    texto en TeX, el primer paso a seguir es utilizar esta
+    función.</p>
+
+    <p><span class="bold"><b class="emphasis">Convertir comillas a
+    TeX</b></span> - sí, así es. Sólo un detalle - únicamente
+    procesa las comillas dobles.</p>
+
+    <p><span class="bold"><b class="emphasis">Escape y
+    comillas/Quitar comillas y escape</b></span> - se utiliza en
+    programación, edición de código y demás menesteres, cuando es
+    necesario hacer un escape de ciertas partes del texto o nombres
+    de archivo con muchos espacios en blanco.</p>
+
+    <p><span class="bold"><b class="emphasis">Numerar
+    líneas</b></span> - numera las líneas seleccionadas. Se ha de
+    definir el formato de la numeración en la famosa entrada de
+    texto. El formato es el siguiente: <span class=
+    "emphasis"><i class="emphasis">formato con estilo printf~paso
+    del contador~valor inicial del contador</i></span>. Los dos
+    últimos parámetros son opcionales e iguales a 1 por defecto.
+    Supongamos que tenemos un listado de bandas musicales:</p>
+
+    <p class="literallayout">Nirvana<br />
+    Scorn<br />
+    Napalm&nbsp;Death<br />
+    Defecation<br />
+    Neck<br />
+    JR&nbsp;Ewing<br />
+    Fall<br />
+    Meathook&nbsp;Seed<br />
+    The&nbsp;Doors<br />
+    Led&nbsp;Zeppelin</p>
+
+    <p>Ahora quieres añadir una numeración a la lista, y con tu
+    propio formato. TEA puede hacerlo por ti. Escribes tu formato
+    favorito en la Famosa entrada de texto. El estilo es muy
+    similar al de printf, es decir hay que utilizar dos macros - 
+    <span class="music">%d</span> para el contador y 
+    <span class="music">%s</span> para la cadena de texto. Para ser más
+    exactos - <span class="music">%d</span> representa al contador, 
+	 y <span class="music">%s</span> representa un comentario.</p>
+
+    <p>A continuación se indican algunos ejemplos de formato:</p>
+
+    <p class="literallayout">%d.)%s<br />
+    %d.)%s~10<br />
+    %d.)%s~10~4</p>
+
+    <p>La segunda línea representa un formato de texto con un
+    parámetro de paso. El paso vale diez. La tercera línea es un
+    formato con el paso y un valor inicial del contador. Este
+    último es igual a 4.</p>
+
+    <p>También se puede emplear <span class="music">%d</span> 
+	después de <span class="music">%s</span>, es decir
+    <span class="emphasis"><i class="emphasis">%s (%d)</i></span>
+    daría como resultado:</p>
+
+    <p class="literallayout">Nirvana&nbsp;(1)<br />
+    Scorn&nbsp;(2)<br />
+    Napalm&nbsp;Death&nbsp;(3)<br />
+    Defecation&nbsp;(4)<br />
+    Neck&nbsp;(5)<br />
+    JR&nbsp;Ewing&nbsp;(6)<br />
+    Fall&nbsp;(7)<br />
+    Meathook&nbsp;Seed&nbsp;(8)<br />
+    The&nbsp;Doors&nbsp;(9)<br />
+    Led&nbsp;Zeppelin&nbsp;(10)</p>
+
+    <p><span class="bold"><b class="emphasis">Convertir
+    tabulaciones en espacios en blanco</b></span> - hay que
+    asegurarse de haber introducido antes el tamaño de la
+    tabulación en la Famosa entrada de texto. Su valor es el número
+    de caracteres por tabulación.</p>
+
+    <p><span class="bold"><b class="emphasis">Convertir espacios en
+    blanco en tabulaciones</b></span> - y en este caso el contenido
+    de la Famosa entrada de texto = cuántos espacios hay que
+    asignar a cada tabulación.</p>
+
+    <p><span class="bold"><b class="emphasis">Invertir</b></span> -
+    invierte el contenido de un texto. Por ejemplo, <span class=
+    "emphasis"><i class="emphasis">roxton</i></span> se convertiría
+    en <span class="emphasis"><i class=
+    "emphasis">notxor</i></span>. No valen palíndromos.</p>
+
+    <p><span class="bold"><b class="emphasis">Antispam
+    e-mail</b></span> - hace invisible un enlace mailt a los
+    impresentables spammers, codificando una dirección en un
+    entero. Por ejemplo, si observas la fuente de esta documento,
+    se vería como código basura <a href="mailto:tea@list.ru">
+   este enlace</a>. Espero que no lo lleguen a
+    comprender los spammers. La idea surgió de un artículo que
+    apareció en la <a href="http://linuxgazette.net/">
+   LinuxGazette</a>.</p>
+
+    <p>Eliminar líneas en blanco - elimina las líneas en blanco del
+    texto seleccionado. No creo que tenga alguna utilidad, pero...
+    Quizás le sirva a alguien para algo.</p>
+
+    <p><span class="bold"><b class="emphasis">Eliminar
+    duplicados</b></span> - borra todas las <span class=
+    "bold"><b class="emphasis">líneas</b></span> repetidas.</p>
+
+    <p><span class="bold"><b class="emphasis">Aplicar una plantilla
+    a cada línea</b></span> - una vez más se ha de utilizar la
+    Famosa entrada de texto. Por ejemplo, si quiero añadir una
+    etiqueta <span class="music">br</span> al final de cada línea 
+	del texto seleccionado. Se escribiría lo siguiente:</p>
+
+    <p>%s&lt;br&gt;</p>
+
+    <p>Y luego ejecutaría la función y ya tendría esa etiqueta 
+	<span class="music">br</span> al final de cada línea. Otro ejemplo, 
+	si quisiera encerrar cada línea entre etiquetas <span class="music">li
+	</span> teclearía:</p>
+
+    <p>&lt;li&gt;%s&lt;/li&gt;</p>
+
+    <p>Y ejecuto esta función después. El comodín <span class=
+    "emphasis"><i class="emphasis">%s</i></span> = texto de la
+    línea. Y un ejemplo más:</p>
+
+    <p>&lt;a href="%s"&gt;%s&lt;/a&gt;</p>
+  </div>
+
+  <div class="NAVFOOTER">
+    <hr class="c33" />
+
+    <table summary="Footer navigation table" width="100%" border=
+    "0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="left" valign="top"><a href=
+        "x503.html" accesskey="P"><img src="img/prev.gif" 
+        alt="Prev" /></a></td>
+
+        <td align="center" valign="top"><a href=
+        "index.html" accesskey="H"><img src="img/home.gif"
+        alt="Home" /></a></td>
+
+        <td align="right" valign="top"><a href=
+        "x558.html" accesskey="N"><img src="img/next.gif"
+        alt="Next" /></a></td>
+      </tr>
+
+      <tr>
+        <td align="left" valign="top">Números</td>
+
+        <td align="center" valign="top"><a href=
+        "c298.html" accesskey="U"><img src="img/up.gif"
+        alt="Up" /></a></td>
+
+        <td align="right" valign="top">Ordenar</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

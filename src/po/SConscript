@@ -1,0 +1,14 @@
+# src/po/SConscript
+Import('env')
+
+#env['LINGUAS_FILE'] = 1
+env['POTDOMAIN'] = 'teagtk'
+#POUpdate();
+
+env['XGETTEXTFLAGS'] = '--keyword=_'
+
+
+
+env['POAUTOINIT'] = 1
+env.Translate(LINGUAS_FILE=1, XGETTEXTFROM='POTFILES.in', XGETTEXTPATH=['../'])
+env.MOFiles(LINGUAS_FILE = 1)

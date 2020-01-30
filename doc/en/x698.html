@@ -1,0 +1,383 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>String</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="TEA Manual"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Functions"
+HREF="c387.html"><LINK
+REL="PREVIOUS"
+TITLE="Numbers"
+HREF="x680.html"><LINK
+REL="NEXT"
+TITLE="Sort"
+HREF="x751.html"></HEAD
+><BODY
+CLASS="section"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>TEA Manual</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x680.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Chapter 9. Functions</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x751.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="AEN698"
+>9.16. String</A
+></H1
+><P
+>&#13;<SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Split by the delimeter</B
+></SPAN
+> - actually, this function replaces all delimeters in a text with the new line character. Set the delimeter value in the Famous text entry. 
+</P
+><P
+>&#13;<SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Split after the delimeter</B
+></SPAN
+> - adds the line line character after the each delimeter found in a text. Set the delimeter value in the Famous text entry. 
+</P
+><P
+>&#13;<SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>CSV-like table to LaTeX table</B
+></SPAN
+> - use this function if you want to convert a CSV-like table into the LaTeX table format. How it works?
+</P
+><P
+>&#13;Open the OpenOffice.org Calc or Gnumeric, and save your table sheet as a CSV-file. It is a simple text file where cells are separated with some delimiting character (separator), usually comma (comma-separated file). But if you have commas in cells, use another character as a delimiter. If Gnumeric you should use <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Save as - Export as text files</B
+></SPAN
+> where you can define the separator.
+</P
+><P
+>&#13;Then open your CSV-file in TEA. Select the text. Use <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>CSV-like table to LaTeX table</B
+></SPAN
+>. Voila!
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Split to TeX paragraphs</B
+></SPAN
+> - splits the text to TeX paragraphs, adding empty lines between strings. To convert your plain text into TeX, your first step should be use of this function.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Convert usual quotes to TeX quotes</B
+></SPAN
+> - yes it is. Just a one note - it process double-quotes only.
+</P
+><P
+>&#13;<SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Escape and quote/Unescape and unquote</B
+></SPAN
+> - you know, all that coders stuff, when you need escape/unescape some string or a filename full of that damned whitespaces. 
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Numerate lines</B
+></SPAN
+> - numerates selected lines. Define the format of numeration in the famous text entry. The format is a weird one: 
+<SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>printf-like format string~step of the counter~initial value of the counter</I
+></SPAN
+>. The two last parameters are optional and equal to 1 by default. Let's imagine that you have a list of music bands:
+</P
+><P
+CLASS="literallayout"
+>Nirvana<br>
+Scorn<br>
+Napalm&nbsp;Death<br>
+Defecation<br>
+Neck<br>
+JR&nbsp;Ewing<br>
+Fall<br>
+Meathook&nbsp;Seed<br>
+The&nbsp;Doors<br>
+Led&nbsp;Zeppelin</P
+><P
+>Now you want to add a numbering to that list, and in the custom format. So, TEA can do it for you. You write the format string into the FAMOUS text entry. The format string is a very printf-like, i.e. you can use two macros - %d for a counter and %s for a string. To be more clear - %d represents the counter, and %s represents a string. 
+</P
+><P
+>Here is some examples of format-string:
+</P
+><P
+CLASS="literallayout"
+>%d.)%s<br>
+%d.)%s~10<br>
+%d.)%s~10~4</P
+><P
+>The second line represents a format-string with a step parameter. Ten is the step value. 3-rd line is the format-string with the step and with the initial value of the counter. It is equal to 4. 
+</P
+><P
+>You can also use %d after %s, i.e. <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>%s (%d)</I
+></SPAN
+> give us a result:
+</P
+><P
+CLASS="literallayout"
+>Nirvana&nbsp;(1)<br>
+Scorn&nbsp;(2)<br>
+Napalm&nbsp;Death&nbsp;(3)<br>
+Defecation&nbsp;(4)<br>
+Neck&nbsp;(5)<br>
+JR&nbsp;Ewing&nbsp;(6)<br>
+Fall&nbsp;(7)<br>
+Meathook&nbsp;Seed&nbsp;(8)<br>
+The&nbsp;Doors&nbsp;(9)<br>
+Led&nbsp;Zeppelin&nbsp;(10)</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Convert tabs to spaces</B
+></SPAN
+> - be sure to enter the tab size into the Famous text entry before. The value of a tab-size is the number of characters per a one tab.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Convert spaces to tabs</B
+></SPAN
+> - and now the Famous text entry content = how many spaces to find for replace each of them to the tab.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Reverse</B
+></SPAN
+> - reverse a text. For example, was <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>roxton</I
+></SPAN
+>, will be <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>notxor</I
+></SPAN
+>. 
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Antispam e-mail</B
+></SPAN
+> - makes a selected mailto-link  possibly invisible to that damned spammer e-mail harvesters, by converting an address into integer-coded entities. For example, if you will look at the source of that document, so <A
+HREF="mailto:tea@list.ru"
+TARGET="_top"
+>this link</A
+> will look like a heap of garbage. I hope that spam harvesters do not understands it. I took an idea from a some issue of <A
+HREF="http://linuxgazette.net/"
+TARGET="_top"
+>LinuxGazette</A
+>.
+</P
+><P
+>Remove blank lines - removes blank lines form selected text. I do not think that it is a needful thing, but... Maybe it will be useful to someone.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Remove duplicates</B
+></SPAN
+> - removes duplicated <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>lines</B
+></SPAN
+>. 
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Apply a template to each line</B
+></SPAN
+> - and again we use the Famous text entry. For example, I want to add br-tag at the end of each line of the selected text. So I type into the entry:
+</P
+><P
+>%s&#60;br&#62;
+</P
+><P
+>And then I apply that function and get br-tag added to the end of each line. In another case, I want to enclose an each line into a pair of li-tags. I type: 
+</P
+><P
+>&#60;li&#62;%s&#60;/li&#62;
+</P
+><P
+>Then I apply the function. So, as you understand, the <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>%s</I
+></SPAN
+> macro = text of the line. And another example: 
+</P
+><P
+>&#60;a href="%s"&#62;%s&#60;/a&#62;
+</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x680.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x751.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Numbers</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c387.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Sort</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

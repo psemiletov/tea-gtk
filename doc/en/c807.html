@@ -1,0 +1,301 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Nav[igation]</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="TEA Manual"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Run"
+HREF="c801.html"><LINK
+REL="NEXT"
+TITLE="View"
+HREF="c843.html"></HEAD
+><BODY
+CLASS="chapter"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>TEA Manual</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="c801.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="c843.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="chapter"
+><H1
+><A
+NAME="menu_nav"
+></A
+>Chapter 11. Nav[igation]</H1
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Save the position</B
+></SPAN
+> - it saves the position of cursor. Then you can jump to that position using <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Jump to the saved position</B
+></SPAN
+> menu item. 
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Links</B
+></SPAN
+> - here are names of local files from links in the current document - you can get them by <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Search &#62; Scan for local links</B
+></SPAN
+> (I've described it previously). More of that, from this menu you can switch to yet opened (in TEA) document.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Go to recent tab</B
+></SPAN
+> - switch to the last accessed tab.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Focus the text/Focus the Famous text entry</B
+></SPAN
+> - useful, if you want to assign some hotkeys for switch between a text tab and the Famous text entry. 
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Go to the block start/end</B
+></SPAN
+> - really does it. For C-like languages or PHP. It moves the cursor to the current block's start or the end ({ and } characters). I think it is useful.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Open at cursor</B
+></SPAN
+> - if you have the link to a local file at your HTML-document, you can open it with this function. Just point to the filename in the text and use it (pressing F2 will be more quick). If you point to an image-file, it will be opened with built-in image viewer (which supports the scaling - use plus/minus keys (and "/" and "*" in Darwin to an addition scaling). You can also use an external viewer - setup it with <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Preferences &#62; Commands</B
+></SPAN
+>. For example, it can be the command line <B
+CLASS="command"
+>display %s&#38;</B
+>. Also in that case you need turn on the option <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Preferences &#62; Switches &#62; Use external image viewer</B
+></SPAN
+> 
+</P
+><P
+>If the file is not an image, <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Open at cursor</B
+></SPAN
+> open it in TEA as text file with a same encoding as of the current file's one. If the file is opened yet, it becomes the current one.
+</P
+><P
+><SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>If you have a link to the local "a name=" - label, press F2 to jump to the place of a definition of that label.</I
+></SPAN
+>
+</P
+><P
+>&#13;And a last note about this function. You can also select the file name in the text and try to open it. It is useful when the file name is not surrounded with quotes. 
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Edit at cursor</B
+></SPAN
+> - the same thing as the previous one, but it calls for a file not the viewer, but the external editor. Go to <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Preferences &#62; Commands</B
+></SPAN
+> and setup there the command line to run a such editor. Example of a command line: <B
+CLASS="command"
+>gimp %s&#38;</B
+>
+</P
+><P
+>&#13;<SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Nav &#62; Browse the symbol's declaration</B
+></SPAN
+>  - jump to the declaration of the C/C++ function that is under the cursor. It requires <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>tags</I
+></SPAN
+> file from <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>ctags</B
+></SPAN
+>. If TEA can't find this file, TEA run <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>ctags</B
+></SPAN
+> to create the <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>tags</I
+></SPAN
+> file. Otherwise TEA uses the existing <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>tags</I
+></SPAN
+> file, even if it is outdated. For sure you always can refresh it with <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>IDE &#62; Refresh tags with ctags</B
+></SPAN
+>.
+</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="c801.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="c843.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Run</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>View</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

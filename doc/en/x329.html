@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>HTML Tools</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="TEA Manual"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Markup"
+HREF="c319.html"><LINK
+REL="PREVIOUS"
+TITLE="Markup"
+HREF="c319.html"><LINK
+REL="NEXT"
+TITLE="Common"
+HREF="x350.html"></HEAD
+><BODY
+CLASS="section"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>TEA Manual</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="c319.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Chapter 8. Markup</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x350.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="AEN329"
+>8.2. HTML Tools</A
+></H1
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Check for broken links</B
+></SPAN
+> - check all local and remote links. For remote links your TEA must be compiled with libcurl. For remote links TEA can check only http or https URLs, for any other type TEA reports as an error (non-existing link). Thus, even if TEA checks a correct ftp link, it will be reported as non-existing. TEA can handle HREFs and SRCs.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Document weight</B
+></SPAN
+> - calculate a total document weight including all SRC-staff (images, flashes etc). Look for the result at the Logmemo.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Build-in template</B
+></SPAN
+> - insert the hardcoded HTML template into the current document.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Enclose selected link into tags</B
+></SPAN
+> - doing that. If you want to enclose a <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>www.foo.bar</I
+></SPAN
+> or <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>ftp.foo.bar</I
+></SPAN
+>, or <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>mailto:foo@bar.com</I
+></SPAN
+> with a <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>a href</I
+></SPAN
+>-tag, so use this function and be happy.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Strip tags</B
+></SPAN
+> - kill all tags from HTML-document. 
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Convert tags to entities</B
+></SPAN
+> - if you want to show some HTML-tagged code in your HTML-document, so select your code and use this function. You'll get, for example:
+</P
+><P
+>&#38;lt;b&#38;gt;demo&#38;lt;/b&#38;gt;
+</P
+><P
+>&#13;<SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Text to HTML</B
+></SPAN
+> - this function converts a plain text into the HTMl-formatted code using CSS.
+</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="c319.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x350.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Markup</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c319.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Common</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

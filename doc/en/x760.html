@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Filters</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="TEA Manual"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Functions"
+HREF="c387.html"><LINK
+REL="PREVIOUS"
+TITLE="Sort"
+HREF="x751.html"><LINK
+REL="NEXT"
+TITLE="Morse code"
+HREF="x791.html"></HEAD
+><BODY
+CLASS="section"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>TEA Manual</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x751.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Chapter 9. Functions</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x791.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="AEN760"
+>9.18. Filters</A
+></H1
+><P
+>&#13;<SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Kill lines containing a regexp</B
+></SPAN
+> and <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Kill all lines without a regexp</B
+></SPAN
+> - fine tool to filter some lines those contains (or not) some text. Put the regexp into the Famous text entry and then use the function.
+</P
+><P
+>&#13;For example, you have the list of names and you want to remove all those starts from "John". So use a regexp "John*" and apply <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Kill lines containing a regexp</B
+></SPAN
+>.
+</P
+><P
+>&#13;<SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Extract at the each line</B
+></SPAN
+> - extracts some text bewteen two delimeters, at the each line. The first and the second separators must be written into the Famous text entry in the form such as: <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>first_delimeter~last delimeter</I
+></SPAN
+>. For example, the text is:
+</P
+><P
+>&#13;<PRE
+CLASS="programlisting"
+>g_print ("hello\n"); 
+g_print ("world\n");</PRE
+>
+</P
+><P
+>&#13;We put the <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>"~"</I
+></SPAN
+> (double quotes, tilde, double) template into the famous text entry. Select the text and apply this function. After that you shall have as the result:
+</P
+><P
+>&#13;<PRE
+CLASS="programlisting"
+>hello\n
+world\n</PRE
+>
+</P
+><P
+>&#13;<SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Extract at the each line before a separator</B
+></SPAN
+> and <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Extract at the each line after a separator</B
+></SPAN
+> - a custom case of the previous function. But here is only one delimeter is used in the Famous text entry. For example, to cut off all comments in the C++-like text, you can set <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>//</I
+></SPAN
+> as the delimeter value and use the <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Extract at the each line before a separator</B
+></SPAN
+> function.
+
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Kill lines with a phrase</B
+></SPAN
+>. Select a text. Enter some phrase into the Famous text entry. Apply this function. As a result, all <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>lines</I
+></SPAN
+> containing your phrase will be deleted from the selection.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Kill all lines except with a phrase</B
+></SPAN
+>. Select some text. Enter some phrase into the famous text entry. Apply this function. As a result, all lines <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>without</I
+></SPAN
+> your phrase will be deleted from the selection.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Kill all lines &#60; N characters</B
+></SPAN
+> - Kill in the selection all lines smaller than N (value in the Famous text entry) characters.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Kill all lines &#62; N characters</B
+></SPAN
+> - Kill in the selection all lines smaller than N (value in the Famous text entry) characters.
+</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x751.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x791.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Sort</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c387.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Morse code</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

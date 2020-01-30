@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Interface</title>
+  <link rel="HOME" title="TEA: Manual de usuario" href=
+  "index.html" />
+  <link rel="PREVIOUS" title="Introducción" href="c18.html" />
+  <link rel="NEXT" title=
+  " ¿Cómo gestiona TEA diferentes juegos de caracteres? " href=
+  "c63.html" />
+  <link rel="STYLESHEET" type="text/css" href="style.css" />
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8" />
+<style type="text/css">
+/*<![CDATA[*/
+ body {
+  background-color: #FFFFFF;
+  color: #000000;
+ }
+ :link { color: #0000FF }
+ :visited { color: #840084 }
+ :active { color: #0000FF }
+ hr.c8 {text-align: left}
+/*]]>*/
+</style>
+</head>
+
+<body class="chapter">
+  <div class="NAVHEADER">
+    <table summary="Header navigation table" width="100%" border=
+    "0" cellpadding="0" cellspacing="0">
+      <tr>
+        <th colspan="3" align="center"><img src="img/logo.gif" alt=
+        "logo" /></th>
+      </tr>
+
+      <tr>
+        <td align="left" valign="bottom"><a href=
+        "c18.html" accesskey="P"><img src="img/prev.gif"
+        alt="Prev" /></a></td>
+
+        <td align="center" valign="bottom"></td>
+
+        <td align="right" valign="bottom"><a href=
+        "c63.html" accesskey="N"><img src="img/next.gif"
+        alt="Next" /></a></td>
+      </tr>
+    </table>
+    <hr class="c8" />
+  </div>
+
+  <div class="chapter">
+    <h1><a name="interface" id="interface"></a>2. Interface</h1>
+
+    <p>Una breve descripción del entorno gráfico. ¡Atención!
+    Nuestro avión es seguro pero algo especial. Aquí se indica la
+    disposición de los controles de TEA, de arriba a abajo:</p>
+	
+	<!-- Interface -->
+
+	<div style="width:610px; margin-left:40px; border:solid 1px #000000;">
+
+	<div style="background-color:#637594;color:white;width:610px; font-weight:bold; height:20px">
+	<img align="left" src="img/leftbuttons.png"alt="-" />
+	<img align="right" src="img/rightbuttons.png"alt="x" />
+	</div>
+
+	<div style="background-color: #EFEFEF; width:610px;">
+	<ul id='barra'>
+	   <li><a href='c105.html' id='Menu0'>Archivo</a></li> 
+		<li><a href='c197.html' id='Menu1'>Editar</a></li>
+	   <li><a href='c210.html' id='Menu2'>Buscar</a></li>
+		<li><a href='c231.html' id='Menu3'>Etiquetas</a></li>
+		<li><a href='c298.html' id='Menu4'>Funciones</a></li>
+		<li><a href='c590.html' id='Menu5'>LaTeX</a></li>
+		<li><a href='c34.html' id='Menu6'>Tabs</a></li>
+		<li><a href='c616.html' id='Menu7'>Web</a></li>
+		<li><a href='c623.html' id='Menu8'>Nav</a></li>
+		<li><a href='c651.html' id='Menu9'>Ver</a></li>
+		<li><a href='c792.html' id='Menu10'>Ayuda</a></li>
+	</ul>
+	</div>
+
+	<div style="background-color:#EFEFEF; color:white;width:610px; font-weight:bold; align:center;">
+	<span style="width:200px; background-color: #EFEFEF;">
+	<img src="img/toolbar.gif"
+  alt="bleft" />
+	</span> 
+	</div>
+
+	<div style="background-color:#EFEFEF;;color:black;width:610px; align:center; ">
+	<span style="width:200px;">
+	archivo.txt<img src="img/cross.png"
+  alt="bleft" />
+	</span> 
+	</div>
+
+	<div style="background-color:white;;color:black;width:600px; align:center;">
+	<ul id="numeros">
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+	</ul>
+	</div>
+
+	<div style="background-color:white;;color:black;width:604px; align:center; border:3px solid #EFEFEF;">
+	<ul id="mess">
+	<li>(3) TEA 8.2 @ http://tea.linux.kiev.ua</li>
+	<li>(2) (C)2000-2005 Peter 'Roxton' Semiletov roxton@ua.fm </li>
+	<li>(1) POR FAVOR leer el manual :)</li>
+	</ul>
+	</div>
+
+	<div style="background-color:white; color:black;width:604px; align:center; border:3px solid #EFEFEF; height:32px; margin-right:0; padding:0;">
+	<img align="right" src="img/runbutton.png"
+  alt="Run" />
+	</div>
+
+	<div style="background-color:#EFEFEF; color:black; width:610px; height:35px; padding:0;">
+	UTF-8<img align="right" src="img/resize.png"
+  alt="_" />
+	</div>
+
+	</div>
+	
+    <ul>
+      <li>
+        <p>Ventana principal. Se puede seleccionar en Opciones si 
+			se desea ver la trayectoria completa del archivo actual, o
+			sólo su nombre.</p>
+      </li>
+
+      <li>
+        <p>Menú. Echale un vistazo.</p>
+      </li>
+
+      <li>
+        <p>Barra de tareas. Hardcoded, no se puede personalizar,
+        pero es sencilla y útil. Se puede desactivar en
+        <span class="bold"><b class="emphasis">Opciones &gt;
+        Interface &gt; Mostrar la barra de tareas
+        principal</b></span>. Espero hacerla configurable.</p>
+      </li>
+
+      <li>
+        <p>Zona de las Pestañas de texto.</p>
+      </li>
+
+      <li>
+        <p>Campo de texto denominado <span class="bold"><b class=
+        "emphasis">Registro de sucesos (Logmemo)</b></span> que
+        informa de los acciones realizadas.</p>
+      </li>
+
+      <li>
+        <p>Entrada de texto (yo la llamo <span class=
+        "bold"><b class="emphasis">la famosa entrada de
+        texto</b></span>) que permite introducir distintos valores
+        como el texto a buscar, etiquetas para cerrar zonas
+        seleccionadas, etc. El botón <span class="bold"><b class=
+        "emphasis">Ejecutar</b></span> justo a la derecha realiza
+        la misma función que pulsar la tecla Enter en la entrada de
+        texto.</p>
+
+        <p>Por ejemplo, si quieres ir a la línea 77, simplemente
+        teclea 77 en el área de texto y pulsa Alt-G. Y, si
+        necesitas realizar una búsqueda, introduce el texto en este
+        mismo sitio y pulsa Enter o Ctrl-F.</p>
+      </li>
+
+      <li>
+        <p>Barra de estado</p>
+      </li>
+    </ul>
+
+    <div class="important">
+      <table class="important" width="100%" border="0">
+        <tr>
+          <td align="center" valign="top"><img src=
+          "img/important.gif" alt="" /></td>
+
+          <td align="left" valign="top">
+            <p><span class="bold"><b class="emphasis">Acerca de
+            arrastrar y pegar</b></span>. Cuando se pegan archivos
+            en la ventana de TEA, se abrirán en el editor. Si el
+            archivo es una imagen, TEA añade en el documento la
+            etiqueta IMG (o media object en Docbook). Esto funciona
+            sin problemas con Konqueror, Gqview, etc. Los archivos
+            que pegas en TEA los detecta con la codificación que
+            tengas seleccionada en <span class="bold"><b class=
+            "emphasis">Opciones &gt; Codificación &gt; Juego de
+            caracteres por defecto al Abrir archivo.</b></span></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+	
+	
+    <p><span class="music">&#9835; Tocando ahora:
+    Scorn - Logghi Barogghi - Weakener</span></p>
+  </div>
+
+  <div class="NAVFOOTER">
+    <hr class="c8" />
+
+    <table summary="Footer navigation table" width="100%"
+    cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="left" valign="top"><a href=
+        "c18.html" accesskey="P"><img src="img/prev.gif"
+        alt="Prev" /></a></td>
+
+        <td align="center" valign="top"><a href=
+        "index.html" accesskey="H"><img src="img/home.gif"
+        alt="Home" /></a></td>
+
+        <td align="right" valign="top"><a href=
+        "c63.html" accesskey="N"><img src="img/next.gif"
+        alt="Next" /></a></td>
+      </tr>
+
+      <tr>
+        <td align="left" valign="top">Introducción</td>
+
+        <td align="center" valign="top">&nbsp;</td>
+
+        <td align="right" valign="top">¿Cómo gestiona
+        TEA diferentes juegos de caracteres?</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

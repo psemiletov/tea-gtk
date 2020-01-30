@@ -1,0 +1,28 @@
+TO DO:
+//just ideas (outdated)
+
+Interesting:
+
+* better ODT parser
+* session manager (window with a list of session files and buttons: delete, add)
+
+Boring:
+
+* text to speech (speaks, festival)
+* better parsing of the compiler output (jump to prev or next error)
+* Unicode characters table
+* TEA uptime status
+* macros in templates
+* automatically find the right tab size for a document
+* improve the Search/Replace window
+* put "Search in files" code to the thread
+* use new tooltips API
+
+------- GTK+ 2.6+ stuff:
+* use g_remove to remove directories and files
+* gtk_combo_box_get_active_text
+-----------------------------------
+
+TO FIX:
+
+spellcheck don't work with some syntax hl? (sometimes, I need to inspect it)

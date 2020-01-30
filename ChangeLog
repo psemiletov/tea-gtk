@@ -1,0 +1,2045 @@
++ - added
+- removed
+* changed
+
+
+2013.june
+- autotools build system 
++ Scons build system
+- "*Now playing* string from Amarok" function
+- "Check for broken" links function
+- libcurl optional dependency
+
+
+2008.08.06 //17.6.6
+* "add encoding" bug fixed
+
+
+2008.07.12 //17.6.5
++ German Manual by Hans Faehrmann
+* small fixes
+
+2008.07.08 //17.6.4
+- Famous text entry autocompletion as buggy on amd64
+
+2008.06.23 //17.6.3
+* binary file is renamed to "teagtk"
+* all supplemental data installs into TEAGTK dirs (i.e. was: /usr/local/share/tea, now: /usr/local/share/teagtk)
+* documentation fixes
+
+
+2008.06.23 //17.6.2
+* fixed docs
+
+2008.06.03
+//17.6.1
+
+2008.05.08
+* spell-checker fixed
+
+2008.05.07
+* Morse code stuff is fixed
+
+2008.03.08 //17.6.0
+
+2008.02.28
+* some pango-related stuff fixed
+
+
+2008.02.25
++ Markup - HTML Tools - Check for broken links//libcurl-depended. Scope: local and remote hrefs and srcs, remote is HTTP only.
+All other links (ftp://, mailto etc.) TEA cannot check and reports "Does not exist". It a normal behavior.
+
+* log_to_memo function colored output fixed
+
+2008.02.24
+* some fixes around the logmemo default size
+
+2008.01.28
+* hex to dec function fixed
+
+2008.01.26
+* applied some patches from OpenBSD tree
+
+2008.01.12 //17.5.4
+* fixes for the Debian package compatibility
+
+2008.01.11 //17.5.3
+* fixes
+* Preferences - Encodings page is redesigned. New controls was added instead of drop-down lists to improve the speed
+* English and Russian manuals updated
+
+2008.01.09 //17.5.2
+
+2008.01.08
++ Preferences - Encoding - On autodetect failed, fallback to this charset
++ Preferences - Encoding - Fallback charset
+
+2008.01.07 //17.5.1
+* Tea cannot open odt files in directories with spaces - FIXED
+* zziplib support - FIXED
+
+2008.01.04
+* TAB-pressing fixed
+
+2007.12.30 //17.5.0
+
+
+2007.12.24
+* Document weight function - fixed
+* File open dialog :: remember a last filter
+
+2007.12.18
++ Preferences - Maintenance - Clear the Famous text entry history //changes will be applied after the TEA restart
++ Preferences - Interface - Famous text entry autocompletion min. prefix, in characters
+
+2007.12.14
++ Autocompletion for the Famous text entry
+
+2007.12.13
+* massive code cleanup, inner changes related to encogind handling
+* on Save as, the default charset is a current document charset
+
+2007.11.12 //17.4.1
+* English manual updated
+
+2007.11.11
+* French translation updated by Sylvain Cresto
+
+2007.11.11 //17.4.0
+
+2007.11.10
++ fine "directory up" behavior in Kwas
+
+2007.11.09
+* new format of the file name for Save version. Now it is: filename, date-time, extenstion
+* scrolling of lists in Preferences window - fixed
++ Imageplane keyboard scrolling
+* ImageViewer:: if an image size > screen size, image will be draw zoomed in a small window
+
+2007.11.08
+* cs.po is updated by Zbynek Mrkvicka
+
+2007.11.07
++ Preferences - Functions - Date format for Save version. Default: %Y-%m-%d-%T
+
+2007.11.03
+* some spell checking fixes again
+
+2007.10.30
++ more fancy spell-error underline
+
+2007.10.19 //17.3.5
+* text replacing stuff speedup
+* aspell is truly non-mandatory now. So if ./configure can't found aspell.h, the configuration process goes further
+* if TEA using GtkSourceView2, there no need in GnomeVFS anymore
+
+2007.10.14 //17.3.3
+* spell-checking speed improvement twise and more
+- all old config files (approx. TEA ver 6.x?) importing
+
+2007.10.12 //17.3.2
+* enchant support fixed
+
+2007.10.10
+* new bugfixes in spell-checking stuff
+
+2007.10.09 //17.3.1
+- Preferences - Highlight on file open //now it is allways ON
+
+2007.10.08
+* syntax hl is on on save
+* code cleanup related to GtkSourceView 2
+* legacy mode hl memory leak fixed
+
+2007.10.07
+* all spell-checking stuff that was broken is fixed now
+
+2007.09.28
+* French po is updated (Sylvain Cresto)
+
+2007.09.26
+* some "legacy mode" fixes //17.3.0
+
+2007.09.24
+* configuration.in fixes
++ cursor color setting is disabled when GtkSourceView2 is used (due to new color cshemes)
++ Functions - Add to dictionary //set the cursor on mispelled (underlined as mispelled) word and use this function to
+add a word to the user dict
+
+
+2007.09.18 //17.2.4
+* GtkSourceView 2 API compatibility
+* GtkSourceView 2 mode is default now. The configure script searches for GtkSourceView 2 first. If GtkSourceView 2 is not found, configure try to search GtkSourceView 1. You can still use --enable-legacy for disable any GtkSourceView at all.
+
+
+2007.09.15 //17.2.3
+* GtkSourceView 1.90.5 API compatibility
+
+
+2007.09.05 //17.2.2
+* GtkSourceView 1.90.4 API compatibility
+
+2007.09.04 //17.2.1
+
+2007.08.31
++ Functions - Numbers - Roman to Arabian (i.e. XX to 20)
+it works with numbers up to 999999999
+
+2007.08.27
++ Preferences - Highlighting - Highlighting color scheme //GtkSourceView 2 only
+
+2007.08.26
+- gconf lib dependency for the internal image viewer
+- Gthumb code
+* image viewer:: prev/next - new code
+
+2007.08.21 //17.2.0
++ GtkSourceView2 initial support. Use ./configure --enable-GtkSourceView2
+
+2007.08.13
++ View - Window on top //toggle
+
+2007.08.07
+* line-ending detection fixed - no segfaults enymore!
+
+2007.08.06
+* ru.po and uk.po updated
+
+
+2007.08.04
+* ZIP files loading - fixed
+
+
+2007.07.27
+* "Run grep" without an opened file - fixed //thanks to Cresto Sylvain
+* fr.po updated by Cresto Sylvain
+
+
+2007.07.25 //17.1.0
+- File - Save different - Save zipped
++ File - Save different - Save packed
++ Preferences - Interface - A command for Save packed //default = zip -j -q -9 %s.zip %s
+
+
+2007.07.22
+* zipped files can be opened in any encoding
+
+2007.07.19
++ Search - Run grep
+
+2007.07.17
+* fr.po updated by Cresto Sylvain
+
+2007.07.15
+* "Functions - End of line - LF to CR/LF" renamed to "Convert to CR/LF"
+* "Functions - End of line - CR/LF to LF" renamed to "Convert to LF"
++ Functions - End of line - Convert to CR
+* Mass encode tool redesigned
+* Mass encode tool:: Find files matching the pattern and encode them - renamed to Find and convert
+* Mass encode tool:: MAC line ending support
+
+2007.07.13 //17.0.2
+* fix an error with set_fam_text
+
+2007.07.12 //17.0.1
+* compilation with libgtk+2.0-dev 2.11 - fixed
+
+2007.07.10
++ new command line option: --n=filename
+It creates a new file in the current directory and opens it with TEA
+
+2007.07.08
++ optional libzip support to open ODT, kwd and sxw internally, without use of external unzip
++ File - Save different - Save zipped //libzip is needed
+
+2007.07.04 //17.0.0
+
+2007.06.23
++ Preferences - Interface - Exclusive "Enter" mode at save/open dialogs
+
+2007.06.07
+* File Save As/Open dialogs are redesigned to more standart form
+
+2007.05.31
++ Functions - String - Filter - Kill lines containing a regexp
++ Functions - String - Filter - Kill all lines without a regexp
+
+
+2007.05.26
+* The "Find in files" window redesigned
+
+2007.05.25
+* remove all traces of FTE autocomp
+
+2007.05.24
+* UNITAZ improved
+* Kwas - small bug was fixed
+
+2007.05.01 //16.1.1
+* Keybinging fixed
+
+2007.04.17
+* fr.po is updated by Sylvain Cresto
+
+2007.04.15
+* Czech translation updated (Zbynek Mrkvicka)
+
+2007.04.15 //16.1.0
+
+2007.04.11
+* keybinding fixed
+
+2007.04.09
+* View - Source/Header now supports .hh and .cc extensions
+
+2007.04.09
++ Image viewer - Set image as wallpaper centered //KDE and GNOME
++ Image viewer - Set image as wallpaper scaled //KDE and GNOME
+
+2007.04.07
+* misc bugfixes
+* "Mark all fuzzy and empty translations" now outputs the statistics to the logmemo
+
+2007.04.04
+* uk.po updated by roxton
+
+2007.03.24
++ Functions - Document readability //Coleman-Liau Index and Automated Readability Index
+
+2007.03.18
+* Insert color fixed (now you can insert the color if no text selected)
+
+2007.03.14
+* some bugs were fixed
+* legacy-mode HTML colorizer is fixed too
+
+2007.03.07
++ View - Profiles
++ View - Save profile
+
+2007.03.03 //16.0.5
+* two bugs were fixes
+
+2007.03.01 //16.0.4
+* Charset autodetection fixed
+
+2007.02.28 //16.0.3
+* French translation is updated by Sylvain Cresto
+
+2007.02.24 //16.0.2
+* Ukrainian translation updated (Oleg Matviychuk)
+* Czech translation updated (Zbynek Mrkvicka)
+
+2007.02.24 //16.0.1
+* GTK < 2.10 support is coming back
+
+2007.02.23 //16.0
+- Autocompletion of FTE is disabled
+- "current locale" item at encodings list. Now all charsets have names
+
+2007.02.15
++ --enable-enchant for ./configure
+
+2007.02.09
++ File - Print
+
+2007.02.07
++ Preferences - Keyboard //UI for hotkeys customization
+
+2007.01.27
+* tea hotkeys are at the tea_keys file now. Automigration is supported.
+
+2007.01.19
++ Functions - Numbers - Decimal to hex
+
+2007.01.04
+* fs.po is updated by Sylvain Cresto
+
+2007.01.03
+* new behavior of File - Add to bookmarks. Now it updates the bookmark (if exist), otherwise
+add a new bookmark.
+
+2006.12.30
+* cs.po is updated by Zbynek Mrkvicka
+
+2006.12.29 //15.0
+
+2006.12.25
+//+ Fuzzy entries in po-files will not be generated anymore.
+
+2006.12.26
+* fixed the bug: Kwas crashes on directories with "wrong" names (if something wrong with the encoding)
+
+2006.12.21
++ Functions - Tools - Take screenshot (clipboard)
+
+2006.12.20
+* Delete current line - fixed
+
+2006.12.16
++ Functions - Tools - Take screenshot (screen)
++ Functions - Tools - Take screenshot (window)
++ Functions - Tools - Take screenshot (region)
++ Preferences - Functions - JPEG compression (1..100)
++ Preferences - Functions - Screenshot delay (in seconds)
+
+2006.12.12
+- File - Open different - Open snippet
+- File - Open different - Open template
+- File - Open different - Open session file
++ File open dialog:: "TEA special locations" drop-down list
+
+2006.12.09
++ File open dialog - "TEA special locations" control. By selecting an item, user can direct file chooser
+to the directory with TEA templates, or snippets, or scripts etc.
+
+2006.12.07
++ Preferences - Maintenance - Tables
+
+2006.12.05
++ Functions - Replacement tables (menu)
++ File - Save different - Save as a replacement table
+
+2006.12.04
+* str_replace_all function was rewritten
+
+2006.11.26
++ Preferences - Interface - Famous text entry autocompletion list max items
++ Preferences - Interface - Famous text entry autocompletion minimun prefix length
++ Preferences - Maintenance - Scripts
+
+2006.11.25
++ autocompletion for the Famous text entry
+
+2006.11.17 //14.3.1
+* Syntax hl bugs fixed
+
+
+2006.11.12
+* All "Drag and drop" stuff fixed
+
+
+2006.11.11 //14.3
+
+2006.10.30
++ Preferences - Switches - Automatic markup mode
+/*
+Notes:
+Auto-mode works with XHTML, HTML, Docbook and LaTeX and makes decisions according to
+the file name.
+*/
+
+2006.10.25
++ Search - Mark broken local links //colorizes missing local links (HREF's and SRC's)
+* If an user runs a new TEA version in a first time, TEA shows NEWS and ChangeLog files automatically
+
+2006.10.20
+* French UI translation updated (Michele Garoche)
+* Misc. patches from Michele Garoche were applied
++ Preferences - Editor - Autosave a session on each interval
++ File - Open different - Open the autosaved session
+* File - some of "Open different" menu subitems were renamed
+- Rotation code is disabled for Mac OS (due to the buggy nature of that code)
+
+2006.10.04
+* Unitaz fixed (was: crash on no selected text)
+* code cleanup
+
+2006.09.12
+* French UI translation updated (Michele Garoche)
+* Misc. image viewer window improvements
+* + UI for templates/sessions/snippets management (Preferences - Maintainance, some new stuff there)
+
+2006.08.28
+* image viewer scaling stuff was rewritten (by Michele Garoche)
+
+2006.08.21
+* tea-config+version.patch from (Michele Garoche) applied
+
+2006.08.20
+* update_cursor_position in legacy mode works again
+* some legacy-mode fixes
+* image-scaling method was changed to adapt TEA to GTK 2.4, and a header for using GDK was added
+
+2006.08.19 //14.2.2-3
+* French UI translation updated (Michele Garoche)
+* some bugs were fixed (by Michele Garoche and Peter Semiletov)
+
+
+2006.08.16
+* two new patches from Michele Garoche were applied
+
+
+2006.08.15 14.2.1
+//temporary bugfix for a legacy mode
+
+2006.08.15 //14.2
+* French UI translation updated by Michele Garoche
+* some patches from Michele Garoche were applied
+
+2006.08.09
+* Michele Garoche's patch was applied to fix file size attributes at Kwas on Mac
+
+2006.08.05
++ Pereferences - Interface - Show the cursor position at statusbar (off by default)
+
+2006.08.03 //14.1.1
+- bug "double free or corruption" (on exit) is fixed, thanks to 1_ananas_1
+
+
+2006.07.21
++ Preferences - Editor - Max undo level (appears only if TEA is build with GtkSourceView)
+
+2006.07.07
++ Ruby scripts support
+
+2006.06.28
+* and again a small bugfix //14.0.2
+
+
+2006.06.25
+* some bugs were fixed
+
+2006.06.25
+* text to HTML - improved. <br>'s will be added in places of empty paragraphs. It's XHTML-safe, of course.
++ Functions - Numbers - Calculate (evaluates the expression from the seclection. For example: (2+2)/3)
+It supports: +, -, *, ^, / and braces
+
+2006.06.15
+* "Open at cursor" now can open the filename selected at the text
+
+2006.06.12
+- Edit - Copy current URL //as useless
+* GTK 2.4 or higher dependency came back
+
+2006.06.05
++ New image browser Imageplane
++ An image viewer (a single image view) has scaling functions (Plus/minus keys)
+
+2006.06.01
++ A new behavior of text-handling functions. If no text selected, a function will process the whole text
+
+2006.05.18
+* misc. bugfixes
+
+2006.05.16
+- funny days becomes - I've lost my job :(
+
+2006.05.11
++ Functions - Scripts menu item
++ Scripting support is added
+
+2006.04.29
+* TEA is GTK 2.9/10-safe
+
+2006.04.28 //13.2
+* bugfixes again
+
+2006.04.28 //13.1
+* bug with TEA closing - FIXED
+
+2006.04.26
+// TEA 13.0
+
+2006.04.20
++ Functions - Strings - Double quotes to facing quotes
+
+2006.04.06
++ Functions - Tool - Mass encode tool //converts multiply files from the one charset to another one
+
+2006.04.04
++ Functions - Filter - Extract at the each line before a separator
++ Functions - Filter - Extract at the each line after a separator
++ "Find in files" window - "Copy to the directory" button. It copies all files from the list
+to the destination directory.
+
+2006.04.02
++ Nav - Browse the symbol's declaration //needs ctags!
+* Nav - Go to selection (fixed, now it works)
+
+2006.03.31
++ Functions - IDE - Refresh tags with ctags
+//rebuilds the tags file in the current file's directory
+
+2006.03.30
++ Functions - Filter - Extract at the each line
+For example:
+The text is:
+g_print ("hello\n");
+g_print ("world\n");
+The Famous text entry text is: "~"
+Run this function and result will be such as:
+hello
+word
+So the format of the extraction template is: first delimeter~second delimeter
+Delimeters can be strings or sigle characters.
+
+2006.03.27
++ TEA can open MS Word documents. But you need have Antiword (www.winfield.demon.nl) installed
+
+2006.03.08
+* all [x]html generated by TEA are W3C-safe now. No deprecated tags anymore.
+
+2006.02.27
+* more natural "smart home/end" behaviour
+* --enable-chai option for the configure script is obsolete now,
+it is a default mode (with GtkSourceView). To configure TEA as the good old TEA (with GTK only)
+use --enable-legacy option instead
+
+
+2006.02.25
+- "Find in files" - "Save a list" button
+- "Find in files" - "Load a list" button
+Because those lists can be saved and loaded as a session
+
+
+2006.02.23
+* Markup mode is saves when it choosed from the menu
+- "Default markup mode" list from the Settings window
+
+2006.02.18
+* The "Marking" menu was moved to Search menu. "Find and mark" and "Mark lines > n characters" has moved to the Marking menu.
+
+2006.02.17
+* backup function now saves the content of a current file. Previous behavior was: copy the existing file to file.bak
+
+
+2006.02.08
+* French translation updated (by Silvian Cresto)
+
+2006.01.31
+//TEA 12.0 is ready
+
+2006.01.24
++ Functions - Insert - Lorem ipsum
+
+2006.01.23
++ Search - Find in files
++ Edit - Mark - Mark all fuzzy and empty translations
+* Ukrainian translation updated by Vlad
+
+2005.12.31
++ Edit - Marking - Mark by regexp //search through text by regexp defined at the Famous text entry and mark
+all words those founded according to regexp. For example, regexp = "p*r". So the words like "peter", "poor",
+"pair" will be marked.
+
+
+2005.12.28
+* German translation updated (by Tobias Toedter)
+
+2005.12.24
++ Preferences - Editor - Smart Home/End //(if enabled, the cursor moves to the paragraph's start/ending)
+
+2005.12.24
+* Cursor color bug fixed (some code is taken from Gedit - the more correct hack around it than a mine one)
+
+
+2005.11.29
++ Search - Replace //replaces the current selection with the content of the Famous text entry
+
+2005.11.25
++ Functions - String - Split after the delimeter //enter the delimeter into the Famous text entry
+* "Replace all" function fixed
+
+2005.11.22
+* LaTeX menu moved to Functions
+
+
+2005.11.21
+* Czech translation updated (by Zbynek Mrkvicka)
++ Functions - String - Split by the delimeter //enter the delimeter into the Famous text entry
+
+
+2005.11.10 //11.0
+* "View - Co" is renamed to "View - Encoding"
+
+2005.11.09
+- Preferences - Limits //some items are moved to the Interface page
++ Preferences - Editor - Show the margin
++ Preferences - Editor - Position of the margin
+
+2005.11.04
++ View - Hide error marks
+* "Functions - Spell check" is renamed to Spell-checker languages
+A choosed language is saved between sessions as the default spell-checker language
++ Functions - Spell check //a spell-checking with the default language
+
+2005.11.03
++ Preferences - Paths - Add this extension to the file which is *Saving as* //if no extension defined
+
+2005.11.02
+* some fixes related to the spell-checking function
+
+2005.10.27
+//TEA and CHAI are merged
+* tea_charsets was renamed to charsets, so user need to re-customize his charsets settings. DON'T
+rename an old file, just USE GUI!
+* [...]
+
+2005.10.21
++ Preferences - Interface - Show the common close button
+
+2005.10.17
++ Functions - Suggest a word //use it after the spellchecking with the cursor on the mispelled word
+
+2005.10.06
++ Edit - Marking menu
++ Edit - Marking - Mark lines those contains a string
+
+2005.10.01
++ Preferences - Switches - Save all on the abnormal termination (SIGTERM, etc)
+* "File - Manage config files" renamed to "Manage utility files"
++ File - Manage utility files - Open the crashfile
++ Preferences - Switches - Save the crashfile on terminate
+
+2005.09.30
++ Edit - Mark each n-th line
+
+2005.09.27
++ Preferences - Encodings - Detect a charset by the [X]HTML meta header
+- Preferences - Switches - Start TEA with a recent file //due to "Restore the last session on start"
+
+2005.09.17
+* --charset=xxxxx fixed
+
+
+2005.08.10
+* Polish .po updated (by Wit Wilinski)
+
+2005.07.30
++ Preferences - Switches - Restore the last session on start
+
+2005.07.18
+* TEA configuration directory is moved to ./.config/tea
+The old ./tea directory's (if exist) content will be copied to the new configuration directory automatically
+
+
+2005.07.04
+* Open Document format reader fixed
+
+2005.07.01 //10.1
+
+2005.06.26
+- Kwas - Actions - Generate the file list for Cinelerra
+
+2005.06.16
+* Spanish translation updated (by Miguel Latorre)
+
+2005.06.10
+* IDE - Run renamed to IDE - Execute
+* Bro menu renamed to Run menu
+- File - Manage config files - User-menu config
++ File - Manage config files - External programs list config (items of this file appears in the Run menu)
+* Preferences - Browsers - "Browser for the manual" and "Use this browser" moved to Preferences - Commands
+- Preferences - Browsers page
+
+2005.06.09
+* Polish translation updated (by Wit Wilinski)
++ Preferences - Editor - Highlight the current line
++ Preferences - Colors - Current line foreground
++ Preferences - Colors - Current line background
+
+2005.06.07
++ OpenDocument (.odt) format support (read-only) - need for test
+
+2005.06.01
++ Preferences - Fonts - "Change all fonts" button
+
+2005.05.31
+* tea Czech po updated by Zbynek Mrkvicka
+
+2005.05.31 //10.0
+
+2005.05.29
+- Kwas - Actions - Bookmark the current dir (was temporally disabled)
+
+2005.05.28
++ advanced images support. Now TEA supports all image formats those recognized by GTK thru its loading-modules interface.
+So if you have the SVG-support installed for GTK, you get in TEA too.
+
+2005.05.25
++ Edit - Unmark all
++ Search - Find and mark
++ Search - Mark lines > n characters
++ Kwas - Actions - Generate the file list for Cinelerra //the current dir in Kwas _must_ contain images only
+or else TEA can't determine file type and dimensions to write them into the index file
+
+
+2005.05.24
+- File - Manage config files - Kwas bookmarks config
++ Kwas now uses the standart GTK+2 programs boommarks list
++ Open/Save dialog - Directory entry and buttons "Go to", "Create new"
+
+2005.05.20
++ Edit - Mark
++ Edit - Copy marked
+
+2005.05.19
++ Preferences - Editor - Autosaving interval, minutes //changes will be applied after user restart TEA
++ Preferences - Editor - Enable the autosaving
+
+2005.05.18
++ Edit - Move line up (Alt - Up)
++ Edit - Move line down (Alt -Down)
++ File - Save different - Save all
+
+2005.05.17
++ Functions - Format - Browser to text
+What it does? It reformates the text copied from the HTML-browser. This function deletes blanks between paragraphs
+and inserts spaces before each paragraph. Actually, you can define the format of the paragraph at the Famous text entry.
+The idea comes when Sveta started do that manually and wasted a lot of time.
+
+2005.05.15
++ View - Fullscreen
++ View - Un-fullscreen
++ Preferences > Interface > Start in the full-screen mode
+
+
+2005.05.13 (Friday, 13 - heh ;)
++ Preferences > Interface > Tabs position (Top, Bottom, Left, Right). Thanks to Hetdegon for his advice
+
+
+2005.10.11 //9.1
+* Ukrainian translation updated (by Vlad Svetlichniy)
+* The "Insert image" function now works fine with relative paths
+
+2005.05.09
+* Czech translation updated (by Zbynek Mrkvicka)
+* Spanish manual updated (by Miguel Latorre)
+
+2005.05.06 //9.0
+
+04.05.2005
++ Filename entry in the File open dialog (with the working Enter key)
++ The ability to open files using the Famous text entry (paste your filename to it and press the Open button )
++ File - Open different - Open from the Famous text entry
+
+20.04.2005
+* French translation updated (by Silvian Cresto)
+* code cleanup
+
+17.04.2005
++ French translation by Silvian Cresto
+
+15.04.2005
+- Markup - HTML Tools - Text dirty formatting
++ Markup - HTML Tools - Text to HTML //it uses CSS for a fine-looking markup
+
+13.04.2005
++ Spanish manual by Miguel Latorre
+
+07.04.2005
+* Ukrainian UI translation updated (by Vlad Svitlichiy)
+* all bugs with autoreplace were fixed
+
+07.04.2005 //TEA 2005 April
+
+04.04.2005
++ Functions - String - CSV-like table to LaTeX table
+
+28.03.2005
++ Preferences - Editor - Cursor blink // on/off
++ the palette in the Color dialog
+
+26.03.2005
++ Recent files list engine is rewritten from zero
+
+25.03.2005
++ Latvian UI translation by Andrejs Meinerts
++ Spain UI translation by Miguel Latorre
+
+24.03.2005 //8.2
+
+22.03.2005
++ OpenOffice.org SXW format support (read-only)
++ KOffice KWD format support (read-only)
++ Abiword abw format support (read-only)
+
+20.03.2005
++ Imageplane reads $HOME./thumbnails/normal
+
+18.03.2005
+* User can close child windows with Esc.
+* File - Out renamed to Quit and had a new key binding - Ctrl-Q
+
+14.03.2005
++ Markup - Close the current tag
+//example: type <para>, use "Close the current tag" and get <para></para>
++ Preferences - Editor - Autoclose tags
+* Preferences - Co-author - Autoreplace moved to Preferences - Editor
+- Preferences - Co-author
+//current music is: Nirvana - Talk To Me
+
+10.03.2005
++ Preferences - Colors - Editor - Cursor color
+
+06.03.2005
+//8.0
+
+05.03.2005
++ German translation updated (by Ruediger Arp)
+
+04.03.2005
++ Preferences - Commands - Process with pdflatex
++ LaTeX - Process with pdflatex
+* IDE menu item moved to Functions
+
+02.03.2005
++ Serbian translation updated (by Dejan Cabrilo)
++ Ukrainian translation updated (by Vlad Svetlichny)
+
+28.02.2005
+* "Insert DOCTYPE" and "Insert entity" menus moved to Functions - Insert
+
+26.02.2005
++ Functions - Calendar
+
+24.02.2005
++ TeX/LaTeX highlighting mode
++ Preferences - Switches - Imageplane insert tags by default
+
+22.02.2005
+* Preview with Mplayer moved to View menu
+
+20.02.2005
++ Markup - Docbook elements menu
+
+19.02.2005
++ Markup - Markup mode - Docbook
+
+18.02.2005
+* Go to the block start/end - fixed //thanks to Jose
++ LaTeX menu
++ LaTeX - Process with LaTeX
++ LaTeX - dvi to PS
++ LaTeX - dvi to PDF
++ LaTeX - View dvi
++ LaTeX - View PDF
++ LaTeX - View PS
+//you can customize command lines of those actions using the following option:
++ Preferences - Commands - Process with LaTeX
++ Preferences - Commands - dvi to PS
++ Preferences - Commands - dvi to PDF
++ Preferences - Commands - View dvi
++ Preferences - Commands - View PDF
++ Preferences - Commands - View PS
++ Functions - String - Split to TeX paragraphs
++ Markup - LaTeX menu
++ Markup - LaTeX - Chapter
+
+17.02.2005
++ Function - String - Convert usual quotes to TeX quotes
++ Preferences - Maintenance - Put the launcher to the desktop
++ Preferences - Maintenance - Remove the launcher from the desktop
+
+16.02.2005
+* fixed the bug related to Preferences - Selected encodings listbox
+
+15.02.2005
++ File - Close all documents
++ To configure TEA with Debian-specific stuff, use ./configure --for-debian
+
+14.02.2005
++ Functions - Insert - *Now playing* string from Amarok
++ Preferences - Functions - "Now Playing string format" option
++ TEA can open .gz and .zip single-file archives (.tar.bz2, tar.gz also) in the read-only mode
+
+13.02.2005
+* Markup - Comment now supports TeX format (and you can comment multiply lines)
+
+11.02.2005
++ Markup - Markup mode //to select markup mode temporary while TEA is opened
++ View - Imageplane //Imageplane is a thumbnailed image browser
+
+10.02.2005
++ Preferences - Editor - Default markup mode
+- Preferences - Switches - XHTML mode for Markup stuff //as obsolote due to Default markup mode option
++ Markup - Wikipedia elements
+* "Make a table" moved to Markup - Table stuff
+* table generator now works in Wikipedia format too
+
+09.02.2005
++ "make install" now installs an entry to the system menu
+
+07.02.2005
++ Markup - HTML Tools - Text dirty formatting //convert a plaint text to HTML with some basic formatting
+
+06.02.2005
++ Edit - Copy current filename //it copies the name of a current file to Clipboard
++ TEA can preview unsaved files in the browser (using the temp file in ~/tmp dir)
++ Functions - String - Escape and quote
++ File - Close all
+
+21.01.2005
++ TEA Czech manual by Zbynek Mrkvicka <zbynek@oachot.cz>
++ Czech charset autodetection
+
+30.01.2005
+* File - Manage configs - Charsets config - "Choosed" renamed to "Selected"
+
+29.01.2005
++ Czech UI translation by Zbynek Mrkvicka
+
+28.01.2005 //7.0
+
+21.01.2005
++ Functions - String - Unescape and unquote
+
+19.01.2005
++ File - Manage configs - Charsets config
+
+12.01.2005
+* Kill trailing whitespace in each line - fixed
+
+08.01.2005
++ German translation by Ruediger Arp
+
+04.01.2005
++ File - Add to... menu
+* File - Add a bookmarks renamed to File - Add to... - Add to Bookmarks
++ File - Add to... - Add to the autosaving list
++ File - Manage config files - Autosaving list
+
+31.12.2004
++ Polish translation by Wit Wilinski
+
+29.12.2004
++ The command line option "--charset=<charset_name>". I.e. --charset=cp1251
+tea --charset=cp1251 filename.txt
+
+28.12.2004
++ The command line option "--crapbook" - start TEA with crapbook opened
+
+26.12.2004
+* "Show images in the text" renamed to "Toggle images visibility". Yes, now it can also hide images.
+
+26.12.2004
++ filters at File open and Insert image dialogs
+
+21.12.2004 //6.2
+* some bugs were fixed
+
+14.12.2004
++ Serbian translation by Dejan Cabrilo
++ Ukrainian translation by Vlad Svetlichniy
+
+11.12.2004
++ Preferences - Interface - Image thumbnail width
++ Preferences - Interface - Image thumbnail height
+
+09.12.2004
++ Preferences - Interface - Show the main toolbar
++ The main, hardcoded toolbar
+
+07.12.2004 //6.1
+* Preferences - Browsers page fixed
+* Japanese translation updated (by UTUMO Hirosi)
+
+06.12.2004
+* manually save the main config - fixed
+* set color of the search entry - fixed
+* "Attempt to close a modified file" renamed to "Warn before closing a modified file"
+
+04.12.2004 //6.0
+
+29.11.2004
+- "Query encoding" dialog (which leaded to the unstable recursion).
+* drag and drop now uses a charset from Preferences > Encodings > Default charset for File open
+
+28.11.2004
+* Co menu moved to the View menu
+* Spellchecker modules list //get it according to g_getenv ("LANG")
+
+27.11.2004
+- do_enc_autodetect config variable. New TEA uses Autodetect option from encoding selection menus.
+* Use Preferences > Encoding > Default charset for File open.
+
+26.11.2004
++ Preferences > Colors > IDE page
+* Remove duplicates function fixed
+
+25.11.2004
+* a revolution in my country :(
++ Preview in Insert image window
+* "Make a table" rewritten
+* Snippets engine fixed
+* Removing of obsolete "trimming" functions
+- Trim each line left on N
+- Trim each line right on char N
+- Trim each line left on char N
+
+20.11.2004
+* tea_icon_v2.png moved to pixmaps directory in the source tree
+* current music: The Rolling Stones - Mother's Little Helper
+
++ IDE menu at the top level
++ IDE > New project
++ IDE > Open project
++ IDE > Save project
++ IDE > Save project as
++ IDE > Project properties
++ IDE > Make
++ IDE > Run
+
+19.11.2004
+* HTML menu renamed to "HTML tools" and moved to Markup menu as its submenu
+
+16.11.2004
++ Preferences > Encodings > Default charset for File save as
++ View > Switch header/source (as the part of TEA IDE's stuff). Works for C/C++ only
+
+15.11.2004
+* TEA switched to GTK 2.4
+//keybingdings in the new GTKFileChooser:
+location-popup Control-L
+up-folder Alt-Up
+down-folder Alt-Down
+home-folder Alt-Home
+
+13.11.2204
++ Preferences > Maintenance page
++ Preferences > Maintenance > Backup the current config
++ Preferences > Maintenance > Config restore
++ Preferences > Maintenance > Reset config to default
+
+
+12.11.2004
+* best parts of code I wrote listening to Nirvana, Scorn, Radiohead, Napalm Death and Defecation. Also I found that the classical music is good for coding. Espesially Bach.
+
+11.11.2004
++ Preferences > Confirmations page
++ Preferences > Confirmations > Attempt to close a modified file
++ Preferences > Confirmations > Overwrite the existing file
++ Preferences > Confirmations > Warn me about those little green men in a toilet
+
+09.11.2004
++ Preferences > Switchers > Start TEA with a blank file
++ Preferences > Switchers > Start TEA with a recent file
+
+
+06.11.2004
++ Preferences > Encodings > Default charset for File open
++ "Japanese autodetect" item in the supported charsets list.
+
+05.11.2004 //5.1
+* "Save and Apply" now updates document settings immediately
+
+01.11.2004
++ File > The last opened file
+
+31.10.2004
+* File open/save as dialogs now have bookmarks (shared with Kwas) and more improved UI
++ Kwas > Ins to editor > Insert link
+
+
+29.10.2004
+* "Kill leading/trailing whitespace in each line" was fixed - now they do not kills empty lines.
++ Preferences > Switchers > Determine a scripts highlighting by the content
++ Edit > Append to the Crapbook //adds the selected text into the Crapbook, opened or not
+
+28.10.2004 //5.0
+* ja.po updated
+
+
+28.10.2004 //5.0
+* whoa!
+
+25.10.2004
+* an inner change: g_strncasecmp replaced by g_utf8_collate
+
+
+23.10.2004
++ "Kill formatting" function was rewritten
++ File > Manage Configs > Autoreplace words file
++ Options > Co-author > Autoreplace
+* Autoreplace is case-sensetive.
+
+
+21.10.2004
+* "insert color" function now generates the code with SPAN, not P tag
++ Options > Co-author > Autocompletion list items maximum //disabled
++ Options > Co-author > Mininum autocompletion word length //disabled
++ Options > Functions > The format of Color function
++ Options > Editor > Automatic indent
++ Edit > Indent
++ Edit > Unindent
+
+20.10.2004
++ Options > Editor > Insert spaces on TAB key
+
+18.10.2004
++ Options > Paths page
++ Options > Paths page > "Default file saving directory" entry
++ Options > Paths page > "Use default saving directory" checkbox
++ Nav > Save the position
++ Nav > Jump to the saved position
++ Options > Paths page > "Use default file opening directory" checkbox
++ Options > Paths page > "Default file opening directory" entry
+
+
+17.10.2004
+* When you do Save as template, the template will be saved in UTF-8 automaticaly
+
+
+16.10.2004
++ basic autocomletion is working //but disabled ;)
++ Options > Co-author > Automatic word completion //disabled
+
+15.10.04
++ Multiline indent (with the TAB key) //taken from Leafpad editor
+* Kwas now have a column with file access rights
+
+10.10.04
++ Gettext PO highlighting
+
+
+09.10.04
++ View > Highlighting mode menu
++ Bash Script highlighting
+
+
+07.10.04
+* I've been with Lisa in the art gallery
++ Python highlighting (very limited)
++ PHP highlighting (very limited)
+
+
+04.10.2004
++ a new config engine, more fast than the old one
+
+
+01.10.2004 //4.0
+- Ukrainian .po-file temporary excluded from source tree (as old and broken)
+* misc. cleanups
+* Insert image function fixed
+* all markup stuff can work properly with XHTML
+
+26.09.2004
+Do less - get more. No bloated shit anymore.
+
++ File > Sessions menu
+- File > Open session
++ File > Templates menu
+- File > New from template (as obsolete now)
+* File > Save session moved to File > Save Different menu
+
++ Functions > Morse menu
++ Functions > Morse code > Encode to Morse code EN
++ Functions > Morse code > Decode from Morse code EN
+
+
+25.09.2004
+* Markup > Color now operated with P and CSS, not with FONT tag
+
+23.09.2004
++ Markup > Insert entity
++ Options::Switches > XHTML mode for Markup stuff
+
+22.09.2004
++ Markup > Insert DOCTYPE menu.
+* Markup > Comment - works right also for CSS-files
+
+17.09.2004
++ Kwas:: "Ins to editor" menu
+
+15.09.2004
+* built-in HTML template improved
+
+13.09.2004 //TEA 3.3
++ Japanese translation by UTUMI Hirosi
+
+09.09.2004
+* documentation call bug fixed
+* some Kwas bugs were fixed
++ Options > Switchers > Show hidden files in Kwas
+
+05.09.2004
++ Nav > Preview in Mplayer
++ File > Open different > Open movie
+* "Options > Paths" page renamed to "Options > Commands"
++ Options > Commands > Run Mplayer with subtitles
+
+02.09.2004
+//3.0
+
+31.08.2004
++ Functions > Case > Upcase The First Letter Of Each Word
++ File > Open Different submenu
+* "Open session file" moved to "Open different" menu
+
+30.08.2004
++ menu Functions > End of line
++ End of line > CR/LF to LF
++ End of line > LF to CR/LF
++ menu File > Save different
+* "Save as template", "Save as snippet", "Save version", "Backup" moved to "Save different" menu.
+It's non-direct influence of GNOME HIG.
+
+
+28.08.2004
+* Edit > Comment moved to Markup > Comment
+
+27.08.2004
+* d'n'd of image bug fixed?
+* "Open a bookmarks file" moved to Manage config files and renamed into "Bookmarks file"
+* "Add a bookmark" moved to the File menu. "Manage bookmarks" was deleted.
+
+25.08.2004
++ Kwas > Actions > Insert image
+* what they gonna do with Firefox!?
+* new menu Manage config files
+* File > Open config moved to File > Manage config files > Main config
+also there were moved:
+1. Add encodings // renamed to Charsets config
+2. Customize hotkeys // renamed to Hotkeys config
+3. Edit user menu //renamed to User-menu config
+
+* "Dump menu" moved to Functions > Insert
+- Tools menu, Control center menu.
+* All items from Tools menu moved to Functions and File menus
+
+
+22.08.2004
+- config::window_caption_type variable
+- config::editor_color_style
++ main_wnd_show_full_path
++ Preferenses window //File > Preferences
++ File > New Kwas (file manager)
+
+21.08.2004
++config::boolean use_def_doc_browser
+
+
+19.08.2004
+* autoconf stuff fixed
+
+16.08.2004
++ Markup > Table stuff menu
++ New undo/
+
+12.08.2004
++ Functions > Case > cRAcKeriZE
+
+09.08.2004
+* the manual now installs into <prefix_install_dir>/share/tea/doc/
+this also works from make install
+* make dist now includes the "doc"-directory into the tarball
+
+
+08.08.2004 //2.0
+* fixes, writing of the manual, etc
+* I feel that I've ate something bad. Oh shit.
+
+07.08.2004
+* GTK 2.0 compatibility?
+
+
+05.08.2004
+* TEA exit by x-button fixed
+
+04.08.2004
++ config:: def_doc_browser=string
+* Links menu has moved into Nav menu as a submenu
+
+
+03.08.2004
+* dir. names was changed:
+doc/RU = doc/ru
+doc/EN = doc/en
+
+02.08.2004
+* what a fucking day :(
+
+01.08.2004
+* single hotkeys assignment fixed (i.e. F1, etc)
+
+
+28.07.2004
++ Tools > Control Center >Edit user menu
+
+27.07.2004
++ Search > Find case insensitive
++ Search > Find next case insensitive
++ Kwas > Run with...
++ Kwas > Refresh Kwas
+
+
+26.07.2004
++ Kwas menu
+* "New Kwas" moved from File menu to Kwas menu
++ Kwas > Get file info
+* "replace all" fixed
+
+25.07.2004
++ Nav > Go to first tab
++ Nav > Go to last tab
++ Nav > Go to selection
+
+
+24.07.2004
++ View > Hide highlighting
+
+21.07.2004
+* "Go to previous tab" renamed to "Go to recent tab"
++ Nav > Go to next tab
++ Nav > Go to prevoius tab
+
+
+19.07.2004
+* "Enclose each line with..." renamed to "Apply a template to each line"
+
+
+18.07.2004
+* Recent files list rewritten
+- Arachne browser support
+* "Enclose each line with..." function has new format string, printf-like. I.e. new format strings
+must be something like: <li>%s</li> or %s---------%s
+* "Numerate lines" has also printf-like format, more free than before. Example:
+%d.)%s -- %s ~5
+
+
+15.07.2004
++ aspell optional support
+
+12.07.2004
+* snippets engine fixed
+
+
+12.07.2004 //0.9.1
+
+
+08.07.2004
++ View > Show images in the text
++ support for elinks (http://elinks.or.cz/) //config:: elinks
+
+07.07.2004
++ Functions > Format > Kill leading whitespace in each line
++ Functions > Format > Kill trailing whitespace in each line
+
+
+04.07.2004 //0.9.0
+* RTF reader fixed
+
+02.07.2004
+* editor set pos fixed
+
+30.06.2004
++ Tabs menu
+
+28.06.2004
++ Function > Filter > "Kill all lines < N characters"
++ Function > Filter > "Kill all lines > N characters"
++ Function > Sort > Sort lines by length
+* all sorting functions moved into the Sort menu
+
+27.06.2004 //0.8.0
++ File > Crapbook
+
+26.06.2004
++ Tools > Spell check
++ config:: tag_spellcheck=color
++ Function > Format > Kill formatting on each line
+
+
+24.06.2004
++ config:: integer variable "famous_history_max". Default = 7. Max items in the FTE history
++ new the famous text entry
+
+22.06.2004
++ Function > Format > Wrap on spaces at position //i.e preserving words
+
+21.06.2004
++ Function > Format > Wrap raw at position
+
+
+19.06.2004
++ Function > Format > Kill formatting
++ Function > Format > Wrap raw at pos
+* sort insensetive funtion in TEA and Kwas is fixed now
+
+16.06.2004 //0.7.0
+
+14.06.2004
++ file manager Kwas
+
+12.06.2004
+* templates now must be in UTF-8 ONLY!!!
+
+08.06.2004
++ Functions > String > Sort lines case insensetive
+
+07.06.2004
++ Edit > Cup/Copy/Paste/Delete/Select all (in addition to the same stuff at the editor's context menu)
+
+
+04.06.2004
++ Functions > String > Convert tabs to spaces
+//FAMOUS text entry = tabsize
+
++ Functions > String > Convert spaces to tabs
+//FAMOUS text entry = how many spaces to find for replace each of them to the tab
+
++ Edit > Delete current line (Ctrl-Y)
++ Markup > Comment - has moved to Edit menu, and now it can handle
+C/C++ and Pascal syntax (including HTML, of course)
+
++ new design of tea.linux.kiev.ua. I've used CSS wizard from Quanta Plus :)
+
+
+03.06.2004 //0.6.2
+* siberian bear says the prophecy words: good enough!
+* some UI and manual updates, and inner improvments
+
+
+30.05.2004
++ config variable: rtf_enc. By default rtf_enc=CP1251
+It hold the default encoding for all opening RTF-files
+
+
+29.05.2004
+//0.6.1
+
+26.05.2004
+* BUG: TEA cannot open files with spaces in their names, if they are used in drag and drop
++ TEA now can OPEN (in a VERY dirty way) RTF-files. Not to save. Just to read.
+
+
+24.05.2004
++ Tools > UNITAZ > Call UNITAZ with sorting abc case insensitive
++ Tools > UNITAZ > Call UNITAZ with sorting by count case insensitive
+
+
+20.05.2004 //0.6.0
++ Functions > String > Shuffle lines
+
+19.05.04
++ Functions > String > Numerate lines
+//ideas that are taken from ReZound:
++ Edit > Paste to new
++ Edit > Cut to new
++ Edit > Copy to new
+
+
+17.05.2004
++ Edit > Copy all
++ Edit > Copy current URL
++ Edit > Swop //it replaces selection with clipboard content, and vice versa
+
+16.05.2004
+* code cleanup
+* enc. autodetection works also if a file is opened from the command line
++ Tools > UNITAZ > Call UNITAZ with sorting by count
+
+
+12.05.2004 //0.5.0
++ the X-glyph on a close tab button
+* many bugfixes, etc.
+
+10.05.2004
++ Functions > String > Kill duplicates
++ Tools > UNIversal Text AnalyZer > Extract words
+* np Scorn "Automata" (Germ mix from "Ellipsis")
+
+09.05.2004
++ Universal text analyser called UNITAZ
++ Nav > Focus the text
++ Tools > UNIversal Text AnalyZer > Call UNITAZ with sorting abc
++ Tools > UNIversal Text AnalyZer > Call UNITAZ plain
+
+
+08.05.2004
++ enc_det_serbian, enc_det_polish, enc_det_portuguese,
+enc_det_spanish, enc_det_turkish,
+ enc_det_slovak, enc_det_slovenian, enc_det_latvian variables
++ statusbar now shows an encoding of the current file
+
+07.05.2004
++ new config boolean variables for automatic charset detection management. You can of and off
+autodetection of some encodings using the:
+
+enc_det_cp1251=0 or 1
+enc_det_koi8r=0 or 1
+enc_det_koi8u=0 or 1
+enc_det_866=0 or 1
+enc_det_finnish=0 or 1
+enc_det_german=0 or 1
+
+All are "0" by default!!!
++ Finnish and German encodings added for autodetection.
+I hope it works. It uses ISO_8859-15 - am I correct with that?
+
+
+06.05.2004 //0.4.0
+* code cleanup
+
+05.05.2004
++ with d'n'd and File open, charset autodetection is working now. CP1251, KOI8R, KOI8U, DOS866 and UTF-8
+are supported. Will be more soon :)
++ config:: do_enc_autodetect=1 or 0 //on and off charset autodetection, OFF by default
++ Nav > Focus the FAMOUS text entry //useful if you want use just keyb. shortcuts
+* file opening is completely rewritten
+
+04.05.2004
+* Utils menu renamed into Tools
+
+03.05.2004
+* code cleanup
+* "Go to last tab" fixed
+
+30.04.2004 //0.3.3
++ Now TEA can open multiply files from the command line, e.g. tea file1 file2 file10
+
+28.04.2004
+* A bug with Cancel from "Choose encoding" dialog is fixed (probably)
+
+
+26.04.2004
++ Nav > Go to previous tab //thanx for idea to Oleg Bartunov
+
+25.04.2004 //0.3.2
++ build-in image viewer (for Open at cursor)
++ config:: use_ext_image_viewer variable
+* I hope that I fix the crash with Open config!
+* d'n'd image crash fixed
+
+22.04.2004
+//0.3.1 release
+
+17.04.2004
+- Utils > Save main window settings //as obsolete
++ config:: use_snippets boolean variable
++ Snippets engine (Functions > Snippets)
++ File > Open/Save as snippet
+* n.p. Yab Yum - Dead Moon Ritual
++ File > Save as snippet, File > Open snippet
+
+16.04.2004
+* UI-settings now saves in ANY case by exit
+
+14.04.2004
+* "linkify"-function is rewritten by myself
+* I hope that string sorting is more UTF-8 correctly now
+
+13.04.2004 //0.3.0
+* bug with crashing after "file save as" was fixed
++ new TEA icon //thanx to Zhu Baoshi for hieroglyphs
+
+12.04.2004
+- libhtmlparse, because I had rewrite some code for myself.
+
+11.04.2004
+* work with encodings is rewritten, so I try to find bugs. There were presents...
+* n.p. Nirvana - D-7
+* I've got a good English textbook. I hope to deal with articles and tenses :)
+
+09.04.2004
++ hotkeys customization thru the file tea_hotkeys
+Format is:
+Menu item caption=hotkey
+4xample:
+Reverse=Ctrl Alt R
+Characters case is non-important. Hotkeys are updates after "tea_hotkeys" file saving.
+Side effect: if a new hotkey overlaps the old one, the new hotkey will be only applied after TEA restart.
+
++D'n'd support - works fine with text and image files (if you want to insert image-tag into your HTML-document).
+Tested at least with Konqueror and Gqview.
+
+
+06.04.2004
+//0.2.3
+* many inner modification :)
++ icon (tea_icon.png). GIMP rules forever.
+* search and replace are case-sensitive now
+
+
+03.04.2004
+* some inner modifications
+
+01.04.2004
+//0.2.2
+
+30.03.2004
+* "Open/Edit at cursor" has moved to Nav-menu
+
+29.03.2004
++ "Open at cursor", ia the addition to old features, it can jump by a link to the local label
+within the HTML-document. For example, it you have some link to the label, you
+can quick go to the place, where the label is defined. So press F2 and enjoy :)
+
+28.03.2004
++ new menu, Nav
++ Nav > Go to the block start {
++ Nav > Go to the block end }
+
+
+27.03.2004
++ TEA now can normally handle files with localized filenames
+
+26.03.2004 //0.2.1
+* released
+
+24.03.2004
+- config:: hl_text_foreground, hl_font variables
+
+18.04.2004
++ Pascal highlighting, but very slow :(
+
+17.04.2004
+* here we are. C/C++ highlighting parser is almost done. I've switched to Mandrake 10 (from 9.2)
+
+11.04.2004
+* Open/Edit at cursor, now can handle links that begins from /
+
+10.04.2004
++ config:: hl_font - this variable defines a highlighting font representation.
+Example: hl_font=Monospace Bold 16
+
+09.03.2004
+//0.2.0 release
+
+07.03.2004
++ config:: logmemo_lines_max variable
+
+05.03.2004
++ new config variables: saveopen_h and saveopen_w (all in %), which sets a size of File save
+and File open dialogs.
+
+04.03.2004
+* "Select a color" crash fixed
++ Functions > String > Trim each line right on char N
++ Functions > String > Trim each line left on char N
+
+
+03.03.2004
++ Functions > String > Trim each line left on N
+* File > "Open selected / Edit selected" are ranamed to "Open at cursor", "Edit at cursor"
+and moved to Edit-menu. Now they works in a normal way - you simply set cursor on the filename
+in the your HTML-page, and use the function "Open at cursor" or "Edit at cursor". Enjoy :)
+
+02.03.2004
+* fixed bug with recent list maximum count of elements - before that, they are saved without
+any count control.
+* antispam-email function is fixed
+
+
+01.03.2004
+* I saw a dead baby at the container for a garbage. The baby was killed by two
+hits into the head - probably with a woman's shoe heel. That looks like two bloody
+dimes over a pink skin. Fuck. Fuck. It is a 21 century. It is so-called civilization.
+Human society. A society of inhuman paralogical madmans. Stupid, evil, mental freaks.
+It is the end. Remember 'bout an existence of A-bombs. They're look at us.
+As an another form of a woman's shoe heel.
+
++ new variables for the config: text_foreground, text_background, text_sel_foreground, text_sel_background
++ tab_size variable (tab_size=width_in_characters)
+
+
+*n.p. Scorn - Gyral - Six Hours One Week
+
+
+27.02.2004
++ do_hl_on_fileopen variable (in config) - if 1, then highlighting in "on" after file open
+
+
+27.02.2004
++ ugly HTML-syntax highlighting
++ View > Refresh highlight
++ colorized messages in the logmemo
+* bookmarks update fixed
+
+
+24.02.2004
+- last_dir variable
+
+23.02.2004
+* small bugfixes (incl. FileOpen in the dir of a current file)
+
+22.02.2004
+* "Error by opening %s :(" shows, if TEA can't open file from Links menu //don't forget to localize!
+
+20.02.2004 //0.1.5
+* File open/save dialog are can be resized again ;) //so funny :(
+* "recent list" is rewritten
+* "ASCII chars to HTML-entities" renamed to "Convert tags to entities"
+
+19.02.2004
+* Firebird menu is renamed to Firefox, same changes are in the config variable
+* Ukrainian language support is fixed
+
+
+18.02.2004
++ File > Bookmarks
++ File > Manage bookmarks > Add a bookmark
++ File > Manage bookmarks > Open a bookmarks file
+* n.p. Radiohead - Heil To The Thief - 2 + 2 = 5
+* codecleanup___
++ recent files list // need for hard testings
+
+
+16.02.2004
+* min. deps locked to GTK 2.2 //I need it for skome GDK-ralated functions and want not to deal with X11-api
++ File > Backup
+
+14.02.2004 //0.1.4
+* TEA now can to open symlinks
++ Search > Scan for SRC
++ HTML > Document weight
+* "color select" has been rewritten, so it is safe now
+
+Friday, 13.02.2004 :)
++ Functions > Filter > Kill lines that contain a phrase
++ Functions > Filter > Kill all lines except with a phrase
+- crash after Save version //it was a rare bug
++ checking read permissions, and all permissions checks are uses access func. now
+* n.p. Orbital - The Box (edit)
+
+
+12.02.2004
+- Markup > Bolditalic //as obsolete
+
+10.02.2004
++ Search > Goto line
++ word_wrap, show_line_nums variables in the config
++ permission checking on saving
++ HTML > ASCII chars to HTML-entities //taken from Bluefish
+* n.p. Nirvana - Even In This Youth (non-LP)
+
+
+08.02.2004
+//0.1.3 is released
+
+07.02.2004
+* open_session rewritten
+
+06.02.2004
++ Functions > Insert > Date/Time
+
+04.02.2004
++ Markup > Align menu
++ HTML > Make a table (using template from the FAMOUS text entry)
++ File > Revert to saved
+* n.p. Scorn - Colossus - Whire Irises Blind
+
+03.02.2004
+* again - fixed all bugs in encoding-related functions
++ Co menu (abbr. from Codepage)
+* dir of TEA renamed from "tea_dir" to ".tea", so don't forget to copy your files from the old one
+
+02.02.2004
++ Search > Scan for local links
++ Links menu
+
+30.1.2004 //0.1.2
++ Ukrainian documentation translation
+* Ukrainian interface localization in progress
+* Eng and Rus dox are updated
+* code cleanup
+* n.p. THE FUTURE SOUND OF LONDON - WE HAVE EXPLOSIVE
+
+29.1.2004
++ File > New from template
++ File > Save as template
++ File > Open selected
++ File > Edit selected
+* cursor now sets normal when file open
+* auto-saving info about last opened dir
+* image-links now insert with a relative path
+* big code cleanup
+* n.p.: Nirvana - In Utero - Gallons Of Rubbin Alcohol
+
+29.1.2004
+* documentation fixed //also fixed wrong e-mail contacts :)
+* code cleanup
+
+27.1.2004
+* first pre-release
+
+26.1.2004
+* many things are added. And code cleanup, of course. How we can live without good old code cleanup?
++ English documentation. Ugly, but...
++ Russian translation of interface and documentation.
+
+
+23.1.2004 03:01 AM
++ added save/load main windows pos'n'size
++ Search > Replace all
+
+22.1.2004
++ Fucntions > String > Reverse order of lines
+- showing of col/row position at statusbas - as obsolete
+
+
+21.1.2004
++ Functions > String > Remove blank lines
++ Functions > String > Sort lines
++ Functions > String > Enclose each line with
+
+19.1.2004
++ Search > Find
++ Search > Find next
+* search text entry added
+
+18.1.2004
++ HTML > Enclose selected link into tags
+* some shit happen - but, in a true, more than shit happen. The first shit is -
+my FAT32-partitions are <VERY censored>, so I dealed with a partitioning by the
+whole day. Then, my mobo's north bridge is overheated (+78 C), 'cause I've bought
+a defective one. But while resellers says what it's all right with my mobo,
+and while I dealing with 'em trying to get my money back or exchange that defective
+mobo with a new another one, I've got Epox on KT400A, ~ $60. Good enough for me.
+But, agpgart module refuses to work correctly - I haven't hardware acceleration.
+More of than - there are strange screen artifacts from time to time. So now I've
+changed drivers, turned off agpgart-module and waiting for new disasters or
+miracle. Just stability - that what I want.
+
+
+12.1.2004
+* there are strange bug in doc_get_word and related stuff. It is not working in the first
+line of a text.
+
+11.1.2004
++ backup. function
++ HTML > Strip tags
+
+8.1.2004
++ Markup > Color
+* tryin' to handle find/replace
+* n.p. Nirvana - Demented seven
+* +14 C at home. We are not penguins. Why I must accept it? Fuckin' why, in a "center of Europe", we have +14 C at home? How. I. Hate. This. Absurd. Being!
+
+7.1.2004
+* took undo.c/h from gtk2edit (http://ex-code.com/gtk2edit/) by Victor Porton
+* trying to adapt it for TEA... seems working...
+* n.p. Iggy Pop - Skull Ring - Motor Inn
+
+
+5.1.2004
+* n.p. Gravediggaz - 1-800-Suicide
+* doc_get_word function completed, hurray for me
+
+3.1.2004
+*n.p. Angelo Badalamenti - Questions In A World Of Blue (Twin Peaks soundtrack)
++ read/write files on current locale
++ readin'/writin' thru iconv
+
+2.1.2004
+* n.p. Radiohead - Hail To The Thief - 2+2=5
++ Markup > Link
++ Utils > Documents stats
+
+
+1.1.2004, 02:24
+* n.p. Creedence Clearwater Revival - Run Through The Jungle
++ Bro menu seems working fine. Yes I know, inner implementation is ugly, but optimal
+* Damned petards... I hate holidays. Just day numbers in calendar, nothing more.
+ Wanna be happy from numbers? So funny...
+* sittin', listenin' DrDre, readin' Erwin-editor code
+
+
+31.12.2003
++ interface redesign, logmemo added. No, sometimes I love Glade, I really love.
+* now I understands how working po-files :)
+
+30.12.2003
+* config update on saving works now
+* n.p. A.L.Webber - Jesus Christ SuperStar - What's The Buzz
+
+29.12.2003
+* cleanup project
+
+25-26-27.12.2003
+* big code-cleanup, junk killin' - so no one lives forever...
++ HTML > Built-in template. Yeah, it's hardcoded.
++ File > Save session
++ File > Open session
++ File > Open session file
++ Functions > Antispam e-mail
++ got hosting at linux.kiev.ua, thanx for Michael Shigorin
+
+24.12.2003
++ add buttons on tabs, tab closing rewritten
+* n.p. JR Ewing "The Perfect Drama" - "Lights Of Stereo"
+
+23.12.2003
++ View > Line numbers //taken from Bluefish
+* scrollbars are OK now (thanx for Bluefish code again)
+
+22.12.2003
++ open multiply files from Open file dialog
++ Functions > Numbers > Arabian to Roman [numerals]
+
+21.12.2003
++ View > Word wrap
++ Format > BR
+* inner getsel/repsel rewritten
+* I must to deal with textview enormous width if I playing with a scrollpolicy
+(now commented; all default; have horiz. scrollbar always visible)
+
+19.12.2003
+* all previously working function works now with multitab-engine, heil me.
+Now I can to concentrate work on undo/redo.
+
+18.12.2003
+* Behold! Behold... File opens :) Even from argv [1] :)
+
+17.12.2003
+* that mofo tabs engine works now. Basically. Somehow. Awesome. Burn engine burn!
+* n.p. JR Ewing "The Perfect Drama" - "Nickels For Your Pity"
+
+16.12.2003
++ Format > Paragraph
++ Format > headers menu
+* n.p. Guano Apes "Walking On A Thin Line" - "Diokhan"
+
+15.12.2003
++ File > Save version
++ Format > Bold/Italic/Underline/Bold and Italic
+
+12.12.2003
++ Functions > String > Reverse
+* made first gz-distribution what can be compiled outta my develop-directory :)
+* n.p. Rasputina "Transylvanian Regurgitations" - "Transylvanian Concubine" (M.Manson remix)
++ load file from argv[1]
+
+10.12.2003
++ File > New
++ Functions > Case > UPCASE/lowcase, and I made it with Ctrl-Up/Down shotcuts,
+as in the original Windows-TEA
+
+08.12.2003
+* "open file" rewritten
++ "file save as" - cool, eh? //ironic
+* n.p. Nirvana "If you must"
+* no one rock band has influence on me more than Nirvana.
+Kurt Kobain, thanx for inspiration.
+
+08.12.2003
++ "open file" added
+
+06.12.2003
++ With some code taken from Bluefish editor, got text buffer and print it
+ to console.
+
+02.12.2003
++ WHOAA! Now I can add in GTK editor some text :)
+
+29.11.2003
+* I've just saw "The City Of Lost Children", English version, with terrible russian
+subtitles. I wanna have an original French version. Janeut/Caro rules. Or how that families
+write on English?
+* made project in KDevelop. I've tryed to do it with Anjuta, but found that KDevelop more
+useful for me. So, project file made based of existing automake-files. I need to explain - now
+I know very few 'bout Linux programming, C/C++ and GTK; and my English language is BAD, so
+this CHANGELOG will be weird and sometimes actually stupid. Let's see what will happen
+in the future...
++ had a shave
+
+28.11.2003
++ added some functionality such as quit, made Glade-code more usable - objects of interface are global now
+* readin' GTK+ tutorial ;)
+
+27.11.2003
++ start this log :)
++ Made basic interface with Glade-2
+* decided to have a shave

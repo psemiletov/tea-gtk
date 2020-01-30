@@ -1,0 +1,300 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>IDE</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="TEA Manual"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Functions"
+HREF="c387.html"><LINK
+REL="PREVIOUS"
+TITLE="LaTeX"
+HREF="x400.html"><LINK
+REL="NEXT"
+TITLE="Calendar"
+HREF="x460.html"></HEAD
+><BODY
+CLASS="section"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>TEA Manual</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x400.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Chapter 9. Functions</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x460.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="AEN426"
+>9.3. IDE</A
+></H1
+><P
+>Among other features, TEA supports some kind of IDE (Intergrated Development Environment) functions, such as project handling. TEA also can call <B
+CLASS="command"
+>make</B
+> utility and run a binary file.
+</P
+><P
+>How it works? TEA IDE project does not contain any files except of a single project file. To create it use a <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>New project</B
+></SPAN
+> function. You will see a dialog window with some entries. There are:
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Project name</B
+></SPAN
+> - the name of your project.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Makefile directory</B
+></SPAN
+> - that where TEA can find makefile of your project to call <B
+CLASS="command"
+>make</B
+> utility.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Source directory</B
+></SPAN
+> - where you keep source files of the project.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Target executable</B
+></SPAN
+> - filename (without the full path) of the binary file. TEA supposes that this file is in the Source directory. TEA runs <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>target executable</B
+></SPAN
+> when you activate 
+<SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Run</B
+></SPAN
+> menu item.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Project properties</B
+></SPAN
+> menu item - use it to edit  properties of the current project (do not forget to save it after that).
+</P
+><P
+>When you <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Make</B
+></SPAN
+> your program using TEA, it shows error and warning messages in the Logmemo. You can double-click on some error message string, and TEA jump to that line at the source file. Colors of error message lines you can set at <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Preferences &#62; Colors &#62; IDE</B
+></SPAN
+> section.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Refresh tags with ctags</B
+></SPAN
+> - creates the tags file using <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>ctags</B
+></SPAN
+> at the directory of the current file.</P
+><P
+>In the addition to IDE functions you can use <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>View &#62; Switch header/source</B
+></SPAN
+> menu item. Note: it works only if the source and header files are in the same directory. Only C/C++ files are supported. Also you can use <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Nav &#62; Browse the symbol's declaration</B
+></SPAN
+>  to jump to the declaration of the C/C++ function that is under the cursor. It requires <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>tags</I
+></SPAN
+> file from <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>ctags</B
+></SPAN
+>. If TEA can't find this file, TEA run <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>ctags</B
+></SPAN
+> to create the <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>tags</I
+></SPAN
+> file. Otherwise TEA uses the existing <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>tags</I
+></SPAN
+> file, even if it is outdated. For sure you always can refresh it with <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>IDE &#62; Refresh ctags</B
+></SPAN
+>.
+</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x400.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x460.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>LaTeX</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c387.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Calendar</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,2609 @@
+# Czech translation of tea.
+# Copyright (C) 2005 THE tea'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the tea package.
+# Zbynek Mrkvicka <zbynek@oachot.cz>, 2005.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tea 17.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-30 12:48+0200\n"
+"PO-Revision-Date: 2007-09-26 17:28+0100\n"
+"Last-Translator: Zbynek Mrkvicka <zbynek@mrkvicka.eu>\n"
+"Language-Team: Czech <zbynek@mrkvicka.eu>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Czech\n"
+"X-Poedit-Country: CZECH REPUBLIC\n"
+
+#: interface.c:118
+msgid "Save under a different name"
+msgstr "Uložit pod jiným názvem"
+
+#: interface.c:119
+msgid "Save the current file"
+msgstr "Uložit aktuální soubor"
+
+#: interface.c:120
+msgid "Open a file"
+msgstr "Otevřít soubor"
+
+#: interface.c:121
+msgid "Create a new file"
+msgstr "Vytvořit nový soubor"
+
+#: interface.c:198
+msgid "Close the current document"
+msgstr "Zavřít aktuální dokument"
+
+#: interface.c:200
+msgid "File"
+msgstr "Soubor"
+
+#: interface.c:204
+msgid "New"
+msgstr "Nový"
+
+#: interface.c:205
+msgid "New Kwas (file manager)"
+msgstr "Kwas (správce souborů)"
+
+#: interface.c:214
+msgid "Crapbook"
+msgstr "Crapbook"
+
+#: interface.c:217 callbacks.c:6231
+msgid "Print"
+msgstr "Tisk"
+
+#: interface.c:221
+msgid "Add to..."
+msgstr "Přidat do..."
+
+#: interface.c:224
+msgid "Add to Bookmarks"
+msgstr "Přidat do záložek"
+
+#: interface.c:225
+msgid "Add to the autosaving list"
+msgstr "Přidat do seznamu automatického uložení"
+
+#: interface.c:229
+msgid "Open"
+msgstr "Otevřít"
+
+#: interface.c:231
+msgid "The last opened file"
+msgstr "Poslední otevřený soubor"
+
+#: interface.c:233
+msgid "Open different"
+msgstr "Otevřít jiné"
+
+#: interface.c:236
+msgid "Open movie"
+msgstr "Otevřít film"
+
+#: interface.c:238
+msgid "Open the autosaved session"
+msgstr "Otevřít automaticky uložené sezení"
+
+#: interface.c:239
+msgid "Open from the Famous text entry"
+msgstr "Otevřít z FAMOUS"
+
+#: interface.c:243
+msgid "Recent files"
+msgstr "Nedávno otevřené"
+
+#: interface.c:246 tea_kwas.c:974
+msgid "Bookmarks"
+msgstr "Záložky"
+
+#: interface.c:249 tea_config.c:77 tea_options.c:985
+msgid "Sessions"
+msgstr "Sezení"
+
+#: interface.c:252 tea_config.c:74 tea_options.c:953
+msgid "Templates"
+msgstr "Šablony"
+
+#: interface.c:257
+msgid "Save"
+msgstr "Uložit"
+
+#: interface.c:258
+msgid "Save as"
+msgstr "Uložit jako"
+
+#: interface.c:260
+msgid "Save different"
+msgstr "Uložit jiné"
+
+#: interface.c:264
+msgid "Save a session"
+msgstr "Uložit sezení"
+
+#: interface.c:266
+msgid "Save as a template"
+msgstr "Uložit jako šablonu"
+
+#: interface.c:267
+msgid "Save as a snippet"
+msgstr "Uložit jako snippet"
+
+#: interface.c:268
+msgid "Save as a replacement table"
+msgstr "Uložit jako tabulku nahrazení"
+
+#: interface.c:270
+msgid "Save version"
+msgstr "Uložit verzi"
+
+#: interface.c:271
+msgid "Backup"
+msgstr "Záloha"
+
+#: interface.c:273
+msgid "Save packed"
+msgstr "Uložit zabalené"
+
+#: interface.c:275
+msgid "Save all"
+msgstr "Uložit vše"
+
+#: interface.c:277
+msgid "Revert to saved"
+msgstr "Vrátit"
+
+#: interface.c:281
+msgid "Manage utility files"
+msgstr "Spravovat konfigurační soubory"
+
+#: interface.c:284
+msgid "Autoreplace words file"
+msgstr "Soubor automatického nahrazení slov"
+
+#: interface.c:285
+msgid "Autosaving list"
+msgstr "Seznam automatického uložení"
+
+#: interface.c:286
+msgid "Main config"
+msgstr "Hlavní konfigurace"
+
+#: interface.c:287
+msgid "Hotkeys config"
+msgstr "Konfigurace zkratek"
+
+#: interface.c:288
+msgid "External programs list config"
+msgstr "Konfigurace seznamu externích programů"
+
+#: interface.c:289
+msgid "Bookmarks file"
+msgstr "Soubor záložek"
+
+#: interface.c:290
+msgid "Open the crashfile"
+msgstr "Otevřít havarijní soubor"
+
+#: interface.c:292
+msgid "Preferences"
+msgstr "Nastavení"
+
+#: interface.c:296
+msgid "Close current"
+msgstr "Zavřít současný"
+
+#: interface.c:297
+msgid "Close all"
+msgstr "Zavřít vše"
+
+#: interface.c:299
+msgid "Quit"
+msgstr "Ukončit"
+
+#: interface.c:302
+msgid "Edit"
+msgstr "Úpravy"
+
+#: interface.c:306
+msgid "Indent"
+msgstr "Odsadit"
+
+#: interface.c:307
+msgid "Unindent"
+msgstr "Zrušit odsazení"
+
+#: interface.c:311
+msgid "Copy"
+msgstr "Kopírovat"
+
+#: interface.c:312
+msgid "Copy all"
+msgstr "Kopírovat vše"
+
+#: interface.c:313
+msgid "Copy the current filename"
+msgstr "Kopírovat název současného souboru"
+
+#: interface.c:315
+msgid "Cut!"
+msgstr "Vyjmout!"
+
+#: interface.c:316
+msgid "Paste"
+msgstr "Vložit"
+
+#: interface.c:317
+msgid "Swop"
+msgstr ""
+
+#: interface.c:320
+msgid "Move a line up"
+msgstr "Přesunout řádek nahoru"
+
+#: interface.c:322
+msgid "Move a line down"
+msgstr "Přesunout řáde dolů"
+
+#: interface.c:327
+msgid "Cut to new"
+msgstr "Vyjmout do nového"
+
+#: interface.c:328
+msgid "Copy to new"
+msgstr "Kopírovat do nového"
+
+#: interface.c:329
+msgid "Paste to new"
+msgstr "Vložit do nového"
+
+#: interface.c:330
+msgid "Add to Crapbook"
+msgstr "Připojit ke Crapbooku"
+
+#: interface.c:332
+msgid "Select all"
+msgstr "Vybrat vše"
+
+#: interface.c:334
+msgid "Delete current line"
+msgstr "Smazat aktuální řádek"
+
+#: interface.c:335
+msgid "Delete"
+msgstr "Smazat"
+
+#: interface.c:339
+msgid "Undo"
+msgstr "Zpět"
+
+#: interface.c:340
+msgid "Redo"
+msgstr "Znovu"
+
+#: interface.c:343
+msgid "Search"
+msgstr "Hledat"
+
+#: interface.c:348
+msgid "Marking"
+msgstr "Označení"
+
+#: interface.c:352
+msgid "Mark"
+msgstr "Označit"
+
+#: interface.c:353
+msgid "Copy marked"
+msgstr "Kopírovat označené"
+
+#: interface.c:354
+msgid "Unmark all"
+msgstr "Odznačit vše"
+
+#: interface.c:355
+msgid "Mark each n-th line"
+msgstr "Označit každý n-tý řádek"
+
+#: interface.c:356
+msgid "Mark lines containing the string"
+msgstr "Označit řádky obsahující řetězec"
+
+#: interface.c:357
+msgid "Mark by regexp"
+msgstr "Označit podle regexp"
+
+#: interface.c:358
+msgid "Mark all fuzzy and empty translations"
+msgstr "Označit fuzzy a nepřeložené řetězce"
+
+#: interface.c:359
+msgid "Find and mark"
+msgstr "Najít a označit"
+
+#: interface.c:360
+msgid "Mark lines > n characters"
+msgstr "Označit řádky > n znaků"
+
+#: interface.c:362 tea_findfiles_mult.c:296
+msgid "Find in files"
+msgstr "Hledat v souborech"
+
+#: interface.c:363
+msgid "Search and Replace (tool)"
+msgstr "Okno Hledat a Nahradit"
+
+#: interface.c:364 tea_fr.c:139 tea_findfiles_mult.c:324
+msgid "Find"
+msgstr "Najít"
+
+#: interface.c:365
+msgid "Find case insensitive"
+msgstr "Najít s rozlišením velikosti"
+
+#: interface.c:366 tea_fr.c:131
+msgid "Find next"
+msgstr "Najít další"
+
+#: interface.c:367
+msgid "Find next case insensitive"
+msgstr "Najít další s rozlišením velikosti"
+
+#: interface.c:368 tea_fr.c:123
+msgid "Replace"
+msgstr "Nahradit"
+
+#: interface.c:369
+msgid "Goto line"
+msgstr "Jít na řádek"
+
+#: interface.c:370
+msgid "Replace all"
+msgstr "Nahradit vše"
+
+#: interface.c:372
+msgid "Mark broken local links"
+msgstr "Označit neplatné místní odkazy"
+
+#: interface.c:373
+msgid "Scan for local links"
+msgstr "Skenovat místní odkazy"
+
+#: interface.c:374
+msgid "Scan for SRC"
+msgstr "Skenovat SRC"
+
+#: interface.c:375
+msgid "Run grep"
+msgstr "Spustit grep"
+
+#: interface.c:379
+msgid "Markup"
+msgstr "Značky"
+
+#: interface.c:383
+msgid "Markup mode"
+msgstr "Mód značek"
+
+#: interface.c:393
+msgid "Wikipedia elements"
+msgstr "Prvky Wikipedia"
+
+#: interface.c:397
+msgid "Internal link"
+msgstr "Interní odkaz"
+
+#: interface.c:399
+msgid "LaTeX elements"
+msgstr "Prvky LaTeX"
+
+#: interface.c:404
+msgid "Begin/end block"
+msgstr "Blok begin / end"
+
+#: interface.c:431
+msgid "Docbook elements"
+msgstr "Prvky Docbook"
+
+#: interface.c:451
+msgid "HTML tools"
+msgstr "HTML nástroje"
+
+#: interface.c:455
+msgid "Built-in template"
+msgstr "Zabudovaná šablona"
+
+#: interface.c:457
+msgid "Strip tags"
+msgstr "Odstranit tagy"
+
+#: interface.c:458
+msgid "Enclose selected link into tags"
+msgstr "Uzavřít vybraný odkaz do tagu"
+
+#: interface.c:459
+msgid "Convert tags to entities"
+msgstr "Převést tagy na entity"
+
+#: interface.c:460
+msgid "Document weight"
+msgstr "Váha dokumentu"
+
+#: interface.c:461
+msgid "Text to HTML"
+msgstr "Text na HTML"
+
+#: interface.c:465
+msgid "Bold"
+msgstr "Tučně"
+
+#: interface.c:466
+msgid "Italic"
+msgstr "Kurzíva"
+
+#: interface.c:468
+msgid "Emphasis"
+msgstr ""
+
+#: interface.c:469
+msgid "Underline"
+msgstr "Podtržení"
+
+#: interface.c:473
+msgid "Close the current tag"
+msgstr "Zavřít aktuální tag"
+
+#: interface.c:474
+msgid "Comment"
+msgstr "Komentář"
+
+#: interface.c:475
+msgid "Chapter"
+msgstr "Kapitola"
+
+#: interface.c:476
+msgid "Section"
+msgstr "Sekce"
+
+#: interface.c:477
+msgid "Paragraph"
+msgstr "Odstavec"
+
+#: interface.c:478
+msgid "Link"
+msgstr "Odkaz"
+
+#: interface.c:479
+msgid "Color"
+msgstr "Barva"
+
+#: interface.c:480
+msgid "Image"
+msgstr "Obrázek"
+
+#: interface.c:481
+msgid "Line break"
+msgstr "Zalomení řádku"
+
+#: interface.c:484
+msgid "Non-breaking space"
+msgstr "Nedělitelná mezera"
+
+#: interface.c:491
+msgid "List stuff"
+msgstr "Seznamy"
+
+#: interface.c:495
+msgid "Itemized list"
+msgstr "Seznam kategorií"
+
+#: interface.c:496
+msgid "Enumerated list"
+msgstr "Číslovaný seznam"
+
+#: interface.c:497
+msgid "List item"
+msgstr "Položka seznamu"
+
+#: interface.c:499
+msgid "Table stuff"
+msgstr "Tabulky"
+
+#: interface.c:503
+msgid "Make a table"
+msgstr "Vytvořit tabulku"
+
+#: interface.c:504
+msgid "Table"
+msgstr "Tabulka"
+
+#: interface.c:505
+msgid "Row"
+msgstr "Řádek"
+
+#: interface.c:506
+msgid "Cell"
+msgstr "Buňka"
+
+#: interface.c:508
+msgid "H"
+msgstr "H"
+
+#: interface.c:522
+msgid "Align"
+msgstr "Zarovnání"
+
+#: interface.c:531 tea_options.c:942 tea_options.c:1360 image_browser.c:806
+msgid "Functions"
+msgstr "Funkce"
+
+#: interface.c:535 tea_calendar.c:191
+msgid "Calendar"
+msgstr "Kalendář"
+
+#: interface.c:537
+msgid "Document stats"
+msgstr "Statistika dokumentu"
+
+#: interface.c:538
+msgid "Document readability"
+msgstr ""
+
+#: interface.c:542
+msgid "Spell-checker languages"
+msgstr "Jazyky kontroly pravopisu"
+
+#: interface.c:544 interface.c:551
+msgid "Spell check"
+msgstr "Kontrola pravopisu"
+
+#: interface.c:545 interface.c:552
+msgid "Suggest a word"
+msgstr "Navrhnout slovo"
+
+#: interface.c:546
+msgid "Add to dictionary"
+msgstr "Přidat do slovníku"
+
+#: interface.c:553
+msgid "Add to dict"
+msgstr "Přidat do slovníku"
+
+#: interface.c:561 tea_options.c:454
+msgid "Process with LaTeX"
+msgstr "Zpracovat pomocí LaTeX"
+
+#: interface.c:562 tea_options.c:455
+msgid "Process with pdflatex"
+msgstr "Zpracovat pomocí pdflatex"
+
+#: interface.c:564 tea_options.c:457
+msgid "dvi to PS"
+msgstr "dvi na PS"
+
+#: interface.c:565 tea_options.c:456
+msgid "dvi to PDF"
+msgstr "dvi na PDF"
+
+#: interface.c:566 tea_options.c:459
+msgid "View PDF"
+msgstr "Zobrazit PDF"
+
+#: interface.c:567 tea_options.c:458
+msgid "View dvi"
+msgstr "Zobrazit dvi"
+
+#: interface.c:568 tea_options.c:460
+msgid "View PS"
+msgstr "Zobrazit PS"
+
+#: interface.c:570 tea_options.c:1078
+msgid "IDE"
+msgstr "IDE"
+
+#: interface.c:574
+msgid "New project"
+msgstr "Nový projekt"
+
+#: interface.c:575
+msgid "Open project"
+msgstr "Otevřít projekt"
+
+#: interface.c:576
+msgid "Save project"
+msgstr "Uložit projekt"
+
+#: interface.c:577
+msgid "Save project as"
+msgstr "Uložit projekt jako"
+
+#: interface.c:578 tea_proj.c:184
+msgid "Project properties"
+msgstr "Vlastnosti projektu"
+
+#: interface.c:579
+msgid "Make"
+msgstr "Přeložit s Make"
+
+#: interface.c:580
+msgid "Execute"
+msgstr "Spustit"
+
+#: interface.c:581
+msgid "Refresh tags with ctags"
+msgstr "Obnovit tagy s ctags"
+
+#: interface.c:583
+msgid "UNIversal Text AnalyZer"
+msgstr "UNIverzální Textový AnalyZér"
+
+#: interface.c:586
+msgid "Call UNITAZ with sorting abc"
+msgstr "Zavolat UNITAZ s tříděním abc"
+
+#: interface.c:587
+msgid "Call UNITAZ with sorting by count"
+msgstr "Zavolat UNITAZ s tříděním podle počtu"
+
+#: interface.c:588
+msgid "Call UNITAZ with sorting abc case insensitive"
+msgstr "Zavolat UNITAZ s tříděním abc bez rozlišení velikosti"
+
+#: interface.c:589
+msgid "Call UNITAZ with sorting by count case insensitive"
+msgstr "Zavolat UNITAZ s tříděním podle počtu s rozlišením velikosti"
+
+#: interface.c:590
+msgid "Call UNITAZ plain"
+msgstr "Zavolat UNITAZ"
+
+#: interface.c:591
+msgid "Extract words"
+msgstr "Extrahovat slova"
+
+#: interface.c:595
+msgid "Replacement tables"
+msgstr "Tabulky nahrazení"
+
+#: interface.c:598 tea_config.c:78 tea_options.c:1001
+msgid "Scripts"
+msgstr "Skripty"
+
+#: interface.c:601 tea_config.c:76 tea_options.c:969
+msgid "Snippets"
+msgstr "Ústřižky"
+
+#: interface.c:604
+msgid "Tools"
+msgstr "Nástroje"
+
+#: interface.c:608
+msgid "Mass encode tool"
+msgstr "Hromadná změna kódování"
+
+#: interface.c:612
+msgid "Insert"
+msgstr "Vložit"
+
+#: interface.c:616
+msgid "Insert entity"
+msgstr "Vložit entitu"
+
+#: interface.c:622
+msgid "Insert DOCTYPE"
+msgstr "Vložit DOCTYPE"
+
+#: interface.c:634
+msgid "Lorem ipsum"
+msgstr "Lorem ipsum"
+
+#: interface.c:635
+msgid "Date/Time"
+msgstr "Datum/Čas"
+
+#: interface.c:636
+msgid "Dump menu"
+msgstr "Dumpnout menu"
+
+#: interface.c:639
+msgid "Case"
+msgstr "Velikost"
+
+#: interface.c:643
+msgid "UPCASE"
+msgstr "VELKÝMI"
+
+#: interface.c:646
+msgid "lowcase"
+msgstr "malými"
+
+#: interface.c:649
+msgid "Upcase The First Letter Of Each Word"
+msgstr "První Písmeno Každého Slova Velké"
+
+#: interface.c:651
+msgid "cRAcKeriZE"
+msgstr "cRAcKeriZOvaT"
+
+#: interface.c:653
+msgid "Numbers"
+msgstr "Čísla"
+
+#: interface.c:657 tea_calendar.c:218
+msgid "Calculate"
+msgstr "Spočítat"
+
+#: interface.c:658
+msgid "Arabian to Roman"
+msgstr "Arabské na římské"
+
+#: interface.c:659
+msgid "Roman to Arabian"
+msgstr "Římské na arabské"
+
+#: interface.c:661
+msgid "HEX to decimal"
+msgstr "HEX na DEC"
+
+#: interface.c:662
+msgid "Decimal to hex"
+msgstr "DEC na HEX"
+
+#: interface.c:663
+msgid "Binary to decimal"
+msgstr "BIN na DEC"
+
+#: interface.c:664
+msgid "Counter"
+msgstr "Počítadlo"
+
+#: interface.c:666
+msgid "Format"
+msgstr "Formát"
+
+#: interface.c:670
+msgid "Browser to text"
+msgstr ""
+
+#: interface.c:672
+msgid "Kill formatting"
+msgstr "Odstranit formátování"
+
+#: interface.c:673
+msgid "Kill formatting on each line"
+msgstr "Odstranit formátování na každém řádku"
+
+#: interface.c:675
+msgid "Wrap raw at position"
+msgstr "Zalomit na pozici"
+
+#: interface.c:676
+msgid "Wrap on spaces at position"
+msgstr "Zalomit na mezerách v pozici"
+
+#: interface.c:678
+msgid "Kill leading whitespace on each line"
+msgstr "Odstranit prázdné místo na začátku řádků"
+
+#: interface.c:679
+msgid "Kill trailing whitespace on each line"
+msgstr "Odstranit prázdné místo na konci každého řádku"
+
+#: interface.c:681
+msgid "Sort"
+msgstr "Seřadit"
+
+#: interface.c:685
+msgid "Sort lines"
+msgstr "Seřadit řádky"
+
+#: interface.c:686
+msgid "Sort lines by length"
+msgstr "Seřadit řádky podle délky"
+
+#: interface.c:687
+msgid "Sort lines case insensitive"
+msgstr "Seřadit řádky bez rozlišení velikosti"
+
+#: interface.c:688
+msgid "Reverse order of lines"
+msgstr "Obrátit pořadí řádků"
+
+#: interface.c:690
+msgid "String"
+msgstr "Řetězec"
+
+#: interface.c:694
+msgid "Double quotes to facing quotes"
+msgstr "Převést normální uvozovky na TeX uvozovky"
+
+#: interface.c:696
+msgid "CSV-like table to LaTeX table"
+msgstr "Tabulka CVS na tabulku LaTeX"
+
+#: interface.c:697
+msgid "Convert usual quotes to TeX quotes"
+msgstr "Převést normální uvozovky na TeX uvozovky"
+
+#: interface.c:698
+msgid "Escape and quote"
+msgstr ""
+
+#: interface.c:699
+msgid "Unescape and unquote"
+msgstr ""
+
+#: interface.c:700
+msgid "Reverse"
+msgstr "Obrátit"
+
+#: interface.c:701
+msgid "Antispam e-mail"
+msgstr ""
+
+#: interface.c:702
+msgid "Remove blank lines"
+msgstr "Odstranit prázdné řádky"
+
+#: interface.c:703
+msgid "Kill duplicates"
+msgstr "Odstranit duplikáty"
+
+#: interface.c:704
+msgid "Numerate lines"
+msgstr "Očíslovat řádky"
+
+#: interface.c:706
+msgid "Shuffle lines"
+msgstr "Zamíchat řádky"
+
+#: interface.c:707
+msgid "Convert tabs to spaces"
+msgstr "Převést tabulátory na mezery"
+
+#: interface.c:708
+msgid "Convert spaces to tabs"
+msgstr "Převést mezery na tabulátory"
+
+#: interface.c:709
+msgid "Split to TeX paragraphs"
+msgstr "Rozdělit na odstavce TeX"
+
+#: interface.c:710
+msgid "Split by the delimiter"
+msgstr "Rozdělit oddělovačem"
+
+#: interface.c:711
+msgid "Split after the delimiter"
+msgstr "Rozdělit za oddělovačem"
+
+#: interface.c:713
+msgid "Apply a template to each line"
+msgstr "Použít šablonu na každý řádek"
+
+#: interface.c:715
+msgid "Filter"
+msgstr "Filtr"
+
+#: interface.c:719
+msgid "Extract at the each line"
+msgstr "Extrahovat na každém řádku"
+
+#: interface.c:720
+msgid "Extract at the each line before a separator"
+msgstr "Extrahovat na každém řádku před oddělovačem"
+
+#: interface.c:721
+msgid "Extract at the each line after a separator"
+msgstr "Extrahovat na každém řádku po oddělovači"
+
+#: interface.c:723
+msgid "Kill lines containing the phrase"
+msgstr "Odstranit řádky obsahující frázi"
+
+#: interface.c:724
+msgid "Kill all lines except with the phrase"
+msgstr "Odstranit řádky neobsahující frázi"
+
+#: interface.c:726
+msgid "Kill lines containing a regexp"
+msgstr "Odstranit řádky obsahující regexp"
+
+#: interface.c:727
+msgid "Kill all lines without a regexp"
+msgstr "Odstranit řádky neobsahující regexp"
+
+#: interface.c:729
+msgid "Kill all lines <= N characters"
+msgstr "Odstranit všechny řádky <= N znaků"
+
+#: interface.c:730
+msgid "Kill all lines > N characters"
+msgstr "Odstranit všechny řádky > N znaků"
+
+#: interface.c:732
+msgid "End of line"
+msgstr "Konec řádku"
+
+#: interface.c:735
+msgid "Convert to LF"
+msgstr "Převést na LF"
+
+#: interface.c:736
+msgid "Convert to CR"
+msgstr "Převést na CR"
+
+#: interface.c:737
+msgid "Convert to CR/LF"
+msgstr "Převést na CR/LF"
+
+#: interface.c:739
+msgid "Morse code"
+msgstr "Morseovka"
+
+#: interface.c:742
+msgid "Encode to Morse code EN"
+msgstr "Kódovat do morseovky"
+
+#: interface.c:743
+msgid "Decode from Morse code EN"
+msgstr "Dekódovat z morseovky"
+
+#: interface.c:745
+msgid "Last used"
+msgstr "Naposledy použité"
+
+#: interface.c:747
+msgid "Tabs"
+msgstr "Karty"
+
+#: interface.c:750
+msgid "Run"
+msgstr "Spustit"
+
+#: interface.c:753
+msgid "Nav"
+msgstr "Nav"
+
+#: interface.c:757
+msgid "Links"
+msgstr "Odkazy"
+
+#: interface.c:760
+msgid "Save the position"
+msgstr "Uložit pozici"
+
+#: interface.c:761
+msgid "Jump to the saved position"
+msgstr "Přejít na uloženou pozici"
+
+#: interface.c:763
+msgid "Go to the block start {"
+msgstr "Jít na začátek bloku {"
+
+#: interface.c:768
+msgid "Go to the block end }"
+msgstr "Jít na konec bloku }"
+
+#: interface.c:773
+msgid "Go to recent tab"
+msgstr "Jít na předchozí kartu"
+
+#: interface.c:774
+msgid "Go to next tab"
+msgstr "Jít na kartu vpravo"
+
+#: interface.c:775
+msgid "Go to previous tab"
+msgstr "Jít na kartu vlevo"
+
+#: interface.c:776
+msgid "Go to first tab"
+msgstr "Jít na první kartu"
+
+#: interface.c:777
+msgid "Go to last tab"
+msgstr "Jít na poslední kartu"
+
+#: interface.c:778
+msgid "Go to selection"
+msgstr "Jít na výběr"
+
+#: interface.c:780
+msgid "Focus the FAMOUS text entry"
+msgstr "Přejít do FAMOUS"
+
+#: interface.c:781
+msgid "Focus the text"
+msgstr "Přejít do textu"
+
+#: interface.c:783
+msgid "Open at cursor"
+msgstr "Otevřít na kurzoru"
+
+#: interface.c:785
+msgid "Edit at cursor"
+msgstr "Upravit na kurzoru"
+
+#: interface.c:786
+msgid "Browse the symbol's definition"
+msgstr "/Tagy/Seznam/De_finice"
+
+#: interface.c:788
+msgid "View"
+msgstr "Zobrazit"
+
+#: interface.c:792 tea_options.c:1356
+msgid "Encoding"
+msgstr "Kódování"
+
+#: interface.c:796
+msgid "Profiles"
+msgstr "Profily"
+
+#: interface.c:798
+msgid "Save profile"
+msgstr "Uložit profil"
+
+#: interface.c:800
+msgid "Hide error marks"
+msgstr "Schovat označení chyb"
+
+#: interface.c:801 tea_options.c:533
+msgid "Word wrap"
+msgstr "Zalamování řádků"
+
+#: interface.c:802
+msgid "Line numbers"
+msgstr "Čísla řádků"
+
+#: interface.c:803
+msgid "Toggle image visibility"
+msgstr "Přepnout zobrazení obrázků"
+
+#: interface.c:805
+msgid "Switch header/source"
+msgstr "Přepnout hlavička/zdroj"
+
+#: interface.c:806
+msgid "Preview with Mplayer"
+msgstr "Náhled s Mplayerem"
+
+#: interface.c:807
+msgid "Fullscreen"
+msgstr "Celá obrazovka"
+
+#: interface.c:808
+msgid "Un-fullscreen"
+msgstr "Obnovit pohled"
+
+#: interface.c:809
+msgid "Window on top"
+msgstr "Okno navrchu"
+
+#: interface.c:812
+msgid "Help"
+msgstr "Nápověda"
+
+#: interface.c:816 tea_about.c:84
+msgid "About"
+msgstr "O aplikaci"
+
+#: interface.c:818
+msgid "Read the fine manual"
+msgstr "Číst úplný manuál"
+
+#: interface.c:819
+msgid "Read the fine English manual anyway"
+msgstr "Číst úplný anglický manuál"
+
+#: interface.c:820
+msgid "Self check"
+msgstr "Kontrola prostředí"
+
+#: interface.c:896
+msgid "Click here to search this through the text"
+msgstr "Klikněte sem pro hledání v textu"
+
+#: interface.c:900
+msgid "Click here to open a file"
+msgstr "Klikněte sem pro otevření souboru"
+
+#: interface.c:952
+msgid "PLEASE read the manual :)"
+msgstr "PROSÍM, přečtěte si manuál :)"
+
+#: interface.c:968
+msgid "It is the Famous text entry... Read the Manual for more!"
+msgstr ""
+
+#: callbacks.c:257
+msgid "Read the manual!"
+msgstr "Číst manuál!"
+
+#: callbacks.c:461
+#, c-format
+msgid "%s saved OK"
+msgstr "%s byl uložen"
+
+#: callbacks.c:583
+msgid "Save the file first..."
+msgstr "Nejprve uložte soubor..."
+
+#: callbacks.c:990
+msgid "Save the session as:"
+msgstr "Uložit sezení jako:"
+
+#: callbacks.c:1135 callbacks.c:4944
+msgid "File open"
+msgstr "Otevřít soubor"
+
+#: callbacks.c:1142
+msgid "Image files"
+msgstr "Soubory obrázků"
+
+#: callbacks.c:1158 callbacks.c:4960
+msgid "All files"
+msgstr "Všechny soubory"
+
+#: callbacks.c:1461
+msgid "Now look into the Links menu ;)"
+msgstr "Teď se podívejte do menu Odkazy ;)"
+
+#: callbacks.c:1476
+msgid "No, I can't!"
+msgstr "Ne, nemůžu!"
+
+#: callbacks.c:1679
+#, c-format
+msgid "I can't reload %s :("
+msgstr "Nemohu znovu načíst %s :("
+
+#: callbacks.c:1681
+#, c-format
+msgid "%s is reloaded :)"
+msgstr "%s byl znovu načten :)"
+
+#: callbacks.c:1833 callbacks.c:1841
+#, c-format
+msgid "%s = %d Kb"
+msgstr "%s = %d Kb"
+
+#: callbacks.c:1847
+#, c-format
+msgid "Total weight for %s is %d Kb"
+msgstr "Celková váha %s je %d Kb"
+
+#: callbacks.c:1897
+msgid "Now look into Links menu ;)"
+msgstr "Teď se podívejte do menu Odkazy ;)"
+
+#: callbacks.c:1908
+msgid "Select a color"
+msgstr "Vyberte barvu"
+
+#: callbacks.c:2054
+msgid "Please unselect the text, then try again"
+msgstr ""
+
+#: callbacks.c:2986
+msgid "you can put some crap here..."
+msgstr "sem můžete dát nějakou hovadinu..."
+
+#: callbacks.c:3177 callbacks.c:3200
+msgid "text to find"
+msgstr "Text k nalezení"
+
+#: callbacks.c:3368
+msgid "Before using that, go to File > Open different > Open movie."
+msgstr "Před použitím jděte na Soubor > Otevřít jiné > .Otevřít film"
+
+#: callbacks.c:3443
+msgid "Open a movie:"
+msgstr "Otevřít film:"
+
+#: callbacks.c:3894
+msgid "Save a project"
+msgstr "Uložit projekt:"
+
+#: callbacks.c:3937
+msgid "Open a project"
+msgstr "Otevřít projekt"
+
+#: callbacks.c:4151
+msgid "Open the file first"
+msgstr "Nejprve uložte soubor..."
+
+#: callbacks.c:4920
+#, c-format
+msgid "%s session is saved"
+msgstr "%s sezení uloženo"
+
+#: callbacks.c:4962
+msgid "Plain text files"
+msgstr "Soubory prostého textu"
+
+#: callbacks.c:4965
+msgid "Office text format files"
+msgstr ""
+
+#: callbacks.c:4993
+msgid "TEA special locations:"
+msgstr "Speciální umístění TEA:"
+
+#: callbacks.c:4994 callbacks.c:5099
+msgid "Encoding: "
+msgstr "Kódování:"
+
+#: callbacks.c:5061
+msgid "Save as..."
+msgstr "Uložit jako..."
+
+#: callbacks.c:5152 tea_text_document.c:2312
+msgid "Question"
+msgstr "Otázka"
+
+#: callbacks.c:5152
+#, c-format
+msgid "%s is exists. Do you want to overwrite it?"
+msgstr "%s existuje. Chcete ho přepsat?"
+
+#: callbacks.c:5169
+#, c-format
+msgid "error by saving %s!!!"
+msgstr "chyba při ukládání %s!!!"
+
+#: callbacks.c:5730
+#, c-format
+msgid ""
+"for %s:\n"
+"fuzzy = %d\n"
+"empty = %d\n"
+"fuzzy + empty = %d\n"
+"not translated: %.3f%%"
+msgstr ""
+
+#: callbacks.c:5920
+msgid "antiword - ok //it helps TEA to open MS Word documents"
+msgstr "antiword - ok //umožňuje otevírat dokumenty MS Word"
+
+#: callbacks.c:5922
+msgid "antiword - not found //TEA cannot open MS Word documents without it"
+msgstr "antiword - nenalezen //TEA tak nemůže otevřít dokument MS Word"
+
+#: callbacks.c:5928
+msgid "gunzip - ok //it lets TEA to read ZIP and GZ files"
+msgstr "gunzip - ok //umožňuje číst ZIP a GZ soubory"
+
+#: callbacks.c:5930
+msgid "gunzip - not found //TEA cannot open read ZIP and GZ files without it"
+msgstr "gunzip - nenalezen //TEA tak nemůže číst ZIP a GZ soubory"
+
+#: callbacks.c:6329
+msgid "Save the profile as:"
+msgstr "Uložit profil jako:"
+
+#: callbacks.c:6485
+msgid "Save your document as a normal text file first, then save it packed"
+msgstr ""
+
+#: callbacks.c:6493
+msgid "A file is packed OK"
+msgstr "Soubor byl v pořádku zabalen"
+
+#: tea_funx.c:164
+#, c-format
+msgid "noname_%d"
+msgstr "beznazvu_%d"
+
+#: tea_funx.c:917
+#, c-format
+msgid "(built on %s with GTK %d.%d.%d and GLib %d.%d.%d)"
+msgstr "(sestaveno na %s s GTK %d.%d.%d a GLib %d.%d.%d)"
+
+#: tea_config.c:75 tea_options.c:1018
+msgid "Tables"
+msgstr "Tabulky"
+
+#: tea_config.c:429
+#, c-format
+msgid "%s is not exists"
+msgstr "%s neexistuje"
+
+#: tea_config.c:503
+msgid "Left"
+msgstr "Vlevo"
+
+#: tea_config.c:504
+msgid "Right"
+msgstr "Vpravo"
+
+#: tea_config.c:505
+msgid "Top"
+msgstr "Nahoře"
+
+#: tea_config.c:506
+msgid "Bottom"
+msgstr "Dole"
+
+#: tea_config.c:735
+msgid "non-breaking space"
+msgstr "nedělitelná mezera"
+
+#: tea_config.c:736
+msgid "cent sign"
+msgstr "cent"
+
+#: tea_config.c:737
+msgid "pound sign"
+msgstr "libra"
+
+#: tea_config.c:738
+msgid "currency sign"
+msgstr "měna"
+
+#: tea_config.c:739
+msgid "yen sign"
+msgstr "jen"
+
+#: tea_config.c:740
+msgid "section sign"
+msgstr ""
+
+#: tea_config.c:741
+msgid "copyright sign"
+msgstr "copyright"
+
+#: tea_config.c:742
+msgid "trade mark sign"
+msgstr "TM"
+
+#: tea_config.c:743
+msgid "feminine ordinal indicator"
+msgstr ""
+
+#: tea_config.c:744
+msgid "left-pointing double angle quotation mark"
+msgstr ""
+
+#: tea_config.c:745
+msgid "soft hyphen"
+msgstr ""
+
+#: tea_config.c:746
+msgid "registered sign"
+msgstr "registrováno"
+
+#: tea_config.c:747
+msgid "degree sign"
+msgstr "stupeň"
+
+#: tea_config.c:748
+msgid "plus-minus sign"
+msgstr "plus-minus"
+
+#: tea_config.c:749
+msgid "right-pointing double angle quotation mark"
+msgstr ""
+
+#: tea_config.c:750
+msgid "left single quotation mark"
+msgstr "levá jednoduchá uvozovka"
+
+#: tea_config.c:751
+msgid "right single quotation mark"
+msgstr "pravá jednoduchá uvozovka"
+
+#: tea_config.c:752
+msgid "euro sign"
+msgstr "euro"
+
+#: tea_config.c:753
+msgid "greek pi symbol"
+msgstr "řecké pi"
+
+#: tea_config.c:754
+msgid "leftwards arrow"
+msgstr "šipka doleva"
+
+#: tea_config.c:755
+msgid "upwards arrow"
+msgstr "šipka nahoru"
+
+#: tea_config.c:756
+msgid "rightwards arrow"
+msgstr "šipka doprava"
+
+#: tea_config.c:757
+msgid "downwards arrow"
+msgstr "šipka dolů"
+
+#: tea_config.c:758
+msgid "square root"
+msgstr "odmocnina"
+
+#: tea_config.c:759
+msgid "spade suit"
+msgstr "píky"
+
+#: tea_config.c:760
+msgid "club suit"
+msgstr "listy"
+
+#: tea_config.c:761
+msgid "heart suit"
+msgstr "srdce"
+
+#: tea_config.c:762
+msgid "diamond suit"
+msgstr "káry"
+
+#: tea_config.c:763
+msgid "masculine ordinal indicator"
+msgstr "Mužské znamení"
+
+#: tea_config.c:764
+msgid "quotation mark"
+msgstr "otazník"
+
+#: tea_config.c:765
+msgid "ampersand"
+msgstr "zavináč"
+
+#: tea_config.c:766
+msgid "less-than sign"
+msgstr "menší než"
+
+#: tea_config.c:767
+msgid "greater-than sign"
+msgstr "větší než"
+
+#: tea_config.c:768
+msgid "apostrophe"
+msgstr "apostrof"
+
+#: tea_config.c:944
+msgid "#TEA editor configuration file. Please read the manual"
+msgstr "#Konfigurační soubor editoru TEA. Přečtěte si manuál, prosím."
+
+#: tea_text_document.c:1599
+#, c-format
+msgid ""
+"Sorry, but I cannot determine the charset of %s. Please try again and select "
+"it manually."
+msgstr ""
+"Promiňte, ale nemohu určit znakovou sadu %s. Zkuste to, prosím, znovu a "
+"vyberte znakovou sadu ručně."
+
+#: tea_text_document.c:1625 tea_text_document.c:4171
+msgid "This file is read-only"
+msgstr "Tento soubor je jen pro čtení"
+
+#: tea_text_document.c:1634 tea_text_document.c:4180
+msgid "Warning!"
+msgstr "Varování!"
+
+#: tea_text_document.c:1634 tea_text_document.c:1635 tea_text_document.c:4180
+#: tea_text_document.c:4181
+#, c-format
+msgid "%s is not writable for you!"
+msgstr "Pro zápis do %s nemáte oprávnění!"
+
+#: tea_text_document.c:1641 tea_text_document.c:4187
+msgid "And how I can save this text file as a DIRECTORY?!"
+msgstr "A jak můžu uložit tento textový soubor jako ADRESÁŘ?!"
+
+#: tea_text_document.c:1660
+msgid "config reloaded"
+msgstr "konfigurace znovu načtena"
+
+#: tea_text_document.c:1666
+msgid "hotkeys reloaded"
+msgstr "zkratky znovu načteny"
+
+#: tea_text_document.c:1672
+msgid "external programs list reloaded"
+msgstr "seznam externích programů byl znovu načten"
+
+#: tea_text_document.c:1681 tea_text_document.c:1687
+#, c-format
+msgid "%s reloaded"
+msgstr "%s znovu načten"
+
+#: tea_text_document.c:2007
+msgid "Cannot convert filename to UTF-8, abort"
+msgstr ""
+
+#: tea_text_document.c:2013 tea_text_document.c:2046
+#, c-format
+msgid "%s is not exists!"
+msgstr "%s neexistuje!"
+
+#: tea_text_document.c:2020 tea_text_document.c:2038
+#, c-format
+msgid "You have NO access to %s"
+msgstr "Nemáte ŽÁDNÝ přístup do %s"
+
+#: tea_text_document.c:2205
+#, c-format
+msgid "%s is opened"
+msgstr "%s je otevřen"
+
+#: tea_text_document.c:2312
+#, c-format
+msgid "%s is modified but not saved. Save it?"
+msgstr "%s je modifikován ale neuložen. Uložit?"
+
+#: tea_text_document.c:3341
+msgid "Saving all documents... begin"
+msgstr "Ukládání všech dokumentů... začínám"
+
+#: tea_text_document.c:3351 tea_text_document.c:4197
+#, c-format
+msgid "%s is saved"
+msgstr "%s byl uložen"
+
+#: tea_text_document.c:3357
+msgid "Saving all documents... end"
+msgstr "Ukládání všech dokumentů... končím"
+
+#: tea_text_document.c:3974
+#, c-format
+msgid "%d words were replaced"
+msgstr "%d slov nahrazeno"
+
+#: tea_text_document.c:4465
+#, c-format
+msgid "bytes: %d\n"
+msgstr "bajtů: %d\n"
+
+#: tea_text_document.c:4466
+#, c-format
+msgid "lines: %d\n"
+msgstr "řádků: %d\n"
+
+#: tea_text_document.c:4467 tea_text_document.c:4828
+#, c-format
+msgid "words: %d\n"
+msgstr "slov: %d\n"
+
+#: tea_text_document.c:4468 tea_text_document.c:4829
+#, c-format
+msgid "chars: %d\n"
+msgstr "znaků: %d\n"
+
+#: tea_text_document.c:4469
+#, c-format
+msgid "chars non-space: %d\n"
+msgstr "viditelných znaků: %d\n"
+
+#: tea_text_document.c:4474
+msgid "stats for "
+msgstr "statistika pro "
+
+#: tea_text_document.c:4484
+msgid "stats for selected:\n"
+msgstr "statistika pro vybrané:\n"
+
+#: tea_text_document.c:4745
+#, c-format
+msgid "Text analysis results for %s:"
+msgstr "Výsledky textové analýzy pro %s:"
+
+#: tea_text_document.c:4746
+#, c-format
+msgid "Words total: %d"
+msgstr "Počet slov: %d"
+
+#: tea_text_document.c:4747
+#, c-format
+msgid "Words unique: %d"
+msgstr "Unikátní slova: %d"
+
+#: tea_text_document.c:4748
+#, c-format
+msgid "Words total / Words unique = %.6f"
+msgstr "Počet slov / Unikátní slova = %.6f"
+
+#: tea_text_document.c:4749
+#, c-format
+msgid "Sentences = %d"
+msgstr "Věty = %d"
+
+#: tea_text_document.c:4750
+#, c-format
+msgid "Average sentence length (words) = %.6f"
+msgstr ""
+
+#: tea_text_document.c:4751
+#, c-format
+msgid "Average word length = %.6f"
+msgstr ""
+
+#: tea_text_document.c:4753
+msgid "Number:"
+msgstr "Číslo:"
+
+#: tea_text_document.c:4753
+msgid "Word:"
+msgstr "Slovo:"
+
+#: tea_text_document.c:4827
+#, c-format
+msgid "sentences: %d\n"
+msgstr "věty: %d\n"
+
+#: tea_text_document.c:4833
+msgid "Readability:\n"
+msgstr ""
+
+#: tea_text_document.c:4834
+msgid "Automated Readability Index (ARI): "
+msgstr ""
+
+#: tea_text_document.c:4835
+msgid "Coleman-Liau Index: "
+msgstr ""
+
+#: tea_text_document.c:4836
+msgid "Stats:\n"
+msgstr "Statistika:\n"
+
+#: tea_about.c:70
+#, c-format
+msgid "%s is missing! I cannot show you the About window :("
+msgstr "%s chybí! Nemohu zobrazit okno O aplikaci :("
+
+#: tea_about.c:110
+msgid "Code"
+msgstr "Kód"
+
+#: tea_about.c:125
+msgid "Acknowledgements"
+msgstr "Poděkování"
+
+#: tea_about.c:140
+msgid "Translators"
+msgstr "Přeložili"
+
+#: tea_about.c:155
+msgid "Packages"
+msgstr "Balíčky"
+
+#: tea_fr.c:88
+msgid "Search and Replace window"
+msgstr "Okno Hledat a Nahradit"
+
+#: tea_fr.c:98 tea_findfiles_mult.c:314
+msgid "Text to find"
+msgstr "Text k nalezení"
+
+#: tea_fr.c:107
+msgid "Replace with"
+msgstr "Nahradit s"
+
+#: tea_fr.c:113
+msgid "Case insensitive"
+msgstr "Nerozlišovat velikost písma"
+
+#: tea_fr.c:147
+msgid "Jump to top"
+msgstr "Skočit na začátek"
+
+#: tea_kwas.c:462
+#, c-format
+msgid "%-10d Kb"
+msgstr "%-10d Kb"
+
+#: tea_kwas.c:826
+msgid "Names: "
+msgstr "Názvy:"
+
+#: tea_kwas.c:832
+msgid "Access: "
+msgstr "Přístup:"
+
+#: tea_kwas.c:838
+msgid "Size: "
+msgstr "Velikost:"
+
+#: tea_kwas.c:844
+msgid "Date and time: "
+msgstr "Datum a čas:"
+
+#: tea_kwas.c:936
+msgid "Kwas"
+msgstr "Kwas"
+
+#: tea_kwas.c:954
+msgid "Actions"
+msgstr "Akce"
+
+#: tea_kwas.c:958
+msgid "Refresh Kwas"
+msgstr "Obnovit KWAS"
+
+#: tea_kwas.c:963
+msgid "Get file info"
+msgstr "Získat info o souboru"
+
+#: tea_kwas.c:965
+msgid "Run with..."
+msgstr "Spustit s..."
+
+#: tea_kwas.c:966
+msgid "Copy current file name"
+msgstr "Kopírovat název současného souboru"
+
+#: tea_kwas.c:968
+msgid "Navigate"
+msgstr "Navigovat"
+
+#: tea_kwas.c:972
+msgid "Go to the home directory"
+msgstr "Přejít do domovského adresáře"
+
+#: tea_kwas.c:979
+msgid "Ins to editor"
+msgstr "Vložit do editoru"
+
+#: tea_kwas.c:982
+msgid "Insert image"
+msgstr "Vložit obrázek"
+
+#: tea_kwas.c:983
+msgid "Insert link"
+msgstr "Vložit odkaz"
+
+#: tea_kwas.c:1047
+msgid "Go to"
+msgstr "Jít na"
+
+#: tea_gtk_utils.c:186 tea_findfiles_mult.c:154
+msgid "Select a directory"
+msgstr "Vybrat adresář"
+
+#: tea_options.c:91
+msgid "Highlighting color scheme"
+msgstr "Barevné schéma zvýrazňování"
+
+#: tea_options.c:346
+msgid "Defaults"
+msgstr "Výchozí"
+
+#: tea_options.c:354
+msgid "Default charset for File open"
+msgstr "Výchozí znaková sada pro otevírání souborů"
+
+#: tea_options.c:355
+msgid "Default charset for File save as"
+msgstr "Výchozí znaková sada pro ukládání souborů"
+
+#: tea_options.c:356
+msgid "Default charset for RTF"
+msgstr "Výchozí znaková sada pro RTF"
+
+#: tea_options.c:358 tea_options.c:430
+msgid "Misc"
+msgstr "Různé"
+
+#: tea_options.c:366
+msgid "Detect a charset by the [X]HTML meta header"
+msgstr "Detekovat znakovou sady z meta hlavičky [X]HTML"
+
+#: tea_options.c:367
+msgid "On autodetect failed, fallback to this charset:"
+msgstr ""
+
+#: tea_options.c:368
+msgid "Fallback charset"
+msgstr ""
+
+#: tea_options.c:370
+msgid "Autodetect"
+msgstr "Autodetekovat"
+
+#: tea_options.c:379
+msgid "CP 1251"
+msgstr "CP 1251"
+
+#: tea_options.c:380
+msgid "KOI8-R"
+msgstr "KOI8-R"
+
+#: tea_options.c:381
+msgid "KOI8-U"
+msgstr "KOI8-U"
+
+#: tea_options.c:382
+msgid "DOS 866"
+msgstr "DOS 866"
+
+#: tea_options.c:383
+msgid "Czech"
+msgstr "České"
+
+#: tea_options.c:384
+msgid "Finnish"
+msgstr "Finské"
+
+#: tea_options.c:385
+msgid "German"
+msgstr "Německé"
+
+#: tea_options.c:386
+msgid "Serbian"
+msgstr "Srbské"
+
+#: tea_options.c:387
+msgid "Latvian"
+msgstr "Lotyšské"
+
+#: tea_options.c:388
+msgid "Polish"
+msgstr "Polské"
+
+#: tea_options.c:389
+msgid "Portuguese"
+msgstr "Portugalské"
+
+#: tea_options.c:390
+msgid "Slovak"
+msgstr "Slovenské"
+
+#: tea_options.c:391
+msgid "Slovenian"
+msgstr "Slovinské"
+
+#: tea_options.c:392
+msgid "Spanish"
+msgstr "Španělské"
+
+#: tea_options.c:393
+msgid "Turkish"
+msgstr "Turecké"
+
+#: tea_options.c:395
+msgid "Management"
+msgstr "Správa"
+
+#: tea_options.c:416
+msgid "Selected"
+msgstr "Vybráno"
+
+#: tea_options.c:419
+msgid "Configure charsets"
+msgstr "Konfigurovat znakové sady"
+
+#: tea_options.c:438
+msgid "External image editor"
+msgstr "Externí editor obrázků"
+
+#: tea_options.c:439
+msgid "External image viewer"
+msgstr "Externí prohlížeč obrázků"
+
+#: tea_options.c:440
+msgid "Run Mplayer with subtitles"
+msgstr "Spustit Mplayer s titulky"
+
+#: tea_options.c:441
+msgid "A command for Save packed"
+msgstr "Příkaz pro Uložit zabalené"
+
+#: tea_options.c:443
+msgid "Browser for the manual"
+msgstr "Prohlížeč manuálu"
+
+#: tea_options.c:444
+msgid "Use this browser"
+msgstr "Použít tento prohlížeč"
+
+#: tea_options.c:446
+msgid "LaTeX"
+msgstr "LaTeX"
+
+#: tea_options.c:471
+msgid "Now Playing string format"
+msgstr "Formát řetězce Nyní přehrávám"
+
+#: tea_options.c:472
+msgid "Date and time format"
+msgstr "Formát data a času"
+
+#: tea_options.c:473
+msgid "Date format for Save version"
+msgstr "Uložit verzi"
+
+#: tea_options.c:475
+msgid "The format of the Color function"
+msgstr "Formát funkce Barva"
+
+#: tea_options.c:476
+msgid "JPEG compression (1..100)"
+msgstr "JPEG komprese (1..100)"
+
+#: tea_options.c:488
+msgid "Save/Open dialogs width per cents"
+msgstr "Šířka dialogu Uložit/Otevřít v procentech"
+
+#: tea_options.c:489
+msgid "Save/Open dialogs height per cents"
+msgstr "Výška dialogu Uložit/Otevřít v procentech"
+
+#: tea_options.c:490
+msgid "Image thumbnail width"
+msgstr "Šířka náhledů obrázků"
+
+#: tea_options.c:491
+msgid "Image thumbnail height"
+msgstr "Výška náhledů obrázků"
+
+#: tea_options.c:493
+msgid "Exclusive \"Enter\" mode at save/open dialogs"
+msgstr ""
+
+#: tea_options.c:494
+msgid "Show the full path in the window caption"
+msgstr "Zobrazit plnou cestu v titulku okna"
+
+#: tea_options.c:495
+msgid "Show the main toolbar"
+msgstr "Zobrazit hlavní nástrojovou lištu"
+
+#: tea_options.c:496
+msgid "Show the common close button"
+msgstr "Zobrazit společné tlačítko zavírání"
+
+#: tea_options.c:497
+msgid "Show the cursor position at statusbar"
+msgstr "Zobrazit pozici kurzoru na stavovém řádku"
+
+#: tea_options.c:499
+msgid "Start in the full-screen mode"
+msgstr "Spustit v celoobrazovkovém režimu"
+
+#: tea_options.c:501
+msgid "Tabs position"
+msgstr "Pozice tabů"
+
+#: tea_options.c:503
+msgid "Max. recent files"
+msgstr "Max. nedávných souborů"
+
+#: tea_options.c:504
+msgid "Logmemo lines limit"
+msgstr "Limit řádků longmemo"
+
+#: tea_options.c:517
+msgid "Automatic markup mode"
+msgstr "Automatický mód značkování"
+
+#: tea_options.c:519
+msgid "Save the crashfile on terminate"
+msgstr "Uložit havarijní soubor při ukončení"
+
+#: tea_options.c:520
+msgid "Save all on the abnormal termination (SIGTERM, etc)"
+msgstr "Uložit vše při abnormálním ukončení (SIGTERM atd.)"
+
+#: tea_options.c:522
+msgid "Restore the last session on start"
+msgstr "Obnovit poslední sezení při spuštění"
+
+#: tea_options.c:523
+msgid "Start TEA with a blank file"
+msgstr "Spustit TEA s prázdným souborem"
+
+#: tea_options.c:525
+msgid "Determine a scripts highlighting by the content"
+msgstr "Určit zvýrazňování podle obsahu"
+
+#: tea_options.c:529
+msgid "Show hidden files in Kwas"
+msgstr "Zobrazit skryté soubory v KWAS"
+
+#: tea_options.c:530
+msgid "Use external image viewer"
+msgstr "Použít externí prohlížeč obrázků"
+
+#: tea_options.c:531
+msgid "Do backup"
+msgstr "Zálohovat"
+
+#: tea_options.c:532
+msgid "Show line numbers"
+msgstr "Zobrazit čísla řádků"
+
+#: tea_options.c:534
+msgid "Scan for links on file open"
+msgstr "Skenovat odkazy při otevření souboru"
+
+#: tea_options.c:535
+msgid "Imageplane insert tags by default"
+msgstr ""
+
+#: tea_options.c:546
+msgid "Warn before closing a modified file"
+msgstr "Varovat před uzavřením modifikovaného souboru"
+
+#: tea_options.c:547
+msgid "Overwrite the existing file"
+msgstr "Přepsat existující soubor"
+
+#: tea_options.c:565
+msgid "Please select the font"
+msgstr "Vyberte font, prosím"
+
+#: tea_options.c:598
+msgid "Configuration restored, please close and reopen the Preferences window."
+msgstr "Konfigurace byla obnovena, zavřete a otevřete okno Nastavení"
+
+#: tea_options.c:610
+msgid ""
+"Configuration is reseted to default, please close and reopen the Preferences "
+"window."
+msgstr ""
+"Konfigurace byla nastavena na výchozí, zavřete a otevřete okno Nastavení."
+
+#: tea_options.c:623 tea_options.c:678 tea_options.c:733 tea_options.c:788
+#: tea_options.c:878
+msgid "Confirmation!"
+msgstr "Potvrzení"
+
+#: tea_options.c:623 tea_options.c:678 tea_options.c:733 tea_options.c:788
+#: tea_options.c:878
+#, c-format
+msgid "Are you sure to delete %s?"
+msgstr "Opravdu chcete smazat %s?"
+
+#: tea_options.c:647 tea_options.c:702 tea_options.c:757 tea_options.c:812
+#: tea_options.c:911
+msgid "Rename as:"
+msgstr "Přejmenovat na:"
+
+#: tea_options.c:838
+msgid "Select a file:"
+msgstr "Vybrat soubor:"
+
+#: tea_options.c:944
+msgid "Backup the current config"
+msgstr "Zálohovat současnou konfiguraci"
+
+#: tea_options.c:945
+msgid "Config restore"
+msgstr "Obnovit konfiguraci"
+
+#: tea_options.c:946
+msgid "Reset config to default"
+msgstr "Vrátit konfiguraci na výchozí"
+
+#: tea_options.c:947
+msgid "Put the launcher to the desktop"
+msgstr "Vytvořit spouštěč na ploše"
+
+#: tea_options.c:948
+msgid "Remove the launcher from the desktop"
+msgstr "Odebrat spouštěč z plochy"
+
+#: tea_options.c:959
+msgid "Templates management"
+msgstr "Šablony"
+
+#: tea_options.c:964 tea_options.c:980 tea_options.c:996 tea_options.c:1013
+#: tea_options.c:1029 tea_options.c:1327
+msgid "Remove"
+msgstr "Odstranit"
+
+#: tea_options.c:965 tea_options.c:981 tea_options.c:997 tea_options.c:1014
+#: tea_options.c:1030
+msgid "Rename"
+msgstr "Název souboru:"
+
+#: tea_options.c:975
+msgid "Snippets management"
+msgstr "Správa snippetů"
+
+#: tea_options.c:991
+msgid "Sessions management"
+msgstr "Správa sezení"
+
+#: tea_options.c:1007
+msgid "Scripts management"
+msgstr "Správa skriptů"
+
+#: tea_options.c:1012
+msgid "Add"
+msgstr "Přidat"
+
+#: tea_options.c:1024
+msgid "Replacement tables management"
+msgstr "Správa tabulek náhrad"
+
+#: tea_options.c:1044 tea_options.c:1362
+msgid "Editor"
+msgstr "Editor"
+
+#: tea_options.c:1046
+msgid "Text foreground"
+msgstr "Popředí textu"
+
+#: tea_options.c:1047
+msgid "Text background"
+msgstr "Pozadí textu"
+
+#: tea_options.c:1048
+msgid "Selected foreground"
+msgstr "Vybrané popředí"
+
+#: tea_options.c:1049
+msgid "Selected background"
+msgstr "Vybrané pozadí"
+
+#: tea_options.c:1051
+msgid "Marking function foreground"
+msgstr ""
+
+#: tea_options.c:1052
+msgid "Marking function background"
+msgstr ""
+
+#: tea_options.c:1054
+msgid "Current line foreground"
+msgstr "Popředí aktuálního řádku"
+
+#: tea_options.c:1055
+msgid "Current line background"
+msgstr "Pozadí aktuálního řádku"
+
+#: tea_options.c:1057
+msgid "Spellchecker marks"
+msgstr "Značky kontroly chyb"
+
+#: tea_options.c:1080
+msgid "Errors foreground (logmemo)"
+msgstr "Popředí chyb (logmemo)"
+
+#: tea_options.c:1081
+msgid "Errors background (logmemo)"
+msgstr "Pozadí chyb (logmemo)"
+
+#: tea_options.c:1111
+msgid "Font"
+msgstr "Písmo"
+
+#: tea_options.c:1114
+msgid "Max undo levels"
+msgstr "Maximální počet vrácení"
+
+#: tea_options.c:1116
+msgid "Tab size in spaces"
+msgstr "Šířka tabulátoru v mezerách"
+
+#: tea_options.c:1117
+msgid "Smart Home/End"
+msgstr ""
+
+#: tea_options.c:1119
+msgid "Insert spaces on TAB key"
+msgstr "Vložit mezery při stisku TAB"
+
+#: tea_options.c:1120
+msgid "Automatic indent"
+msgstr "Automatické odsazení"
+
+#: tea_options.c:1121
+msgid "Autoreplace"
+msgstr "Automatické nahrazení"
+
+#: tea_options.c:1122
+msgid "Autoclose tags"
+msgstr "Automatické uzavírání tagů"
+
+#: tea_options.c:1123
+msgid "Cursor blink"
+msgstr "Blikání kurzoru"
+
+#: tea_options.c:1124
+msgid "Autosaving interval, minutes"
+msgstr "Interval automatického ukládání (min.)"
+
+#: tea_options.c:1125
+msgid "Enable the autosaving"
+msgstr "Povolit automatické ukládání"
+
+#: tea_options.c:1126
+msgid "Autosave a session on each interval"
+msgstr "Automaticky uložit sezení po uplynutí intervalu"
+
+#: tea_options.c:1128
+msgid "Highlight the current line"
+msgstr "Zvýraznit aktuální řádek"
+
+#: tea_options.c:1130
+msgid "Show the margin"
+msgstr "Zobrazit okraj"
+
+#: tea_options.c:1131
+msgid "Position of the margin (GtkSourceView-only)"
+msgstr "Pozice okraje (pouze GtkSourceView)"
+
+#: tea_options.c:1142
+msgid "Default file saving directory"
+msgstr "Výchozí adresář pro ukládání souborů"
+
+#: tea_options.c:1143
+msgid "Use default saving directory"
+msgstr "Použít výchozí adresář pro ukládání souborů"
+
+#: tea_options.c:1144
+msgid "Default file opening directory"
+msgstr "Výchozí adresář pro otevírání souborů"
+
+#: tea_options.c:1145
+msgid "Use default file opening directory"
+msgstr "Použít výchozí adresář pro otevírání souborů"
+
+#: tea_options.c:1147
+msgid "Add this extension to the file which is *Saving as*"
+msgstr "Přidat tuto příponu souboru"
+
+#: tea_options.c:1148
+msgid "(<i>for example, txt, html, etc</i>)"
+msgstr "(<i>například txt, html, atd...</i>)"
+
+#: tea_options.c:1302
+msgid "Quick search"
+msgstr "Rychlé hledání"
+
+#: tea_options.c:1324
+msgid "Shortcut"
+msgstr "Klávesová zkratk"
+
+#: tea_options.c:1326
+msgid "Assign"
+msgstr "Přiřadit"
+
+#: tea_options.c:1339
+msgid "Options, I presume..."
+msgstr "Možnosti, které předpokládám..."
+
+#: tea_options.c:1355
+msgid "Switches"
+msgstr "Přepínače"
+
+#: tea_options.c:1361
+msgid "Interface"
+msgstr "Rozhraní"
+
+#: tea_options.c:1366
+msgid "Highlighting"
+msgstr "Zvýrazňování"
+
+#: tea_options.c:1368
+msgid "Colors"
+msgstr "Barvy"
+
+#: tea_options.c:1370
+msgid "Commands"
+msgstr "Příkazy"
+
+#: tea_options.c:1372
+msgid "Paths"
+msgstr "Cesty"
+
+#: tea_options.c:1374
+msgid "Confirmations"
+msgstr "Potvrzení"
+
+#: tea_options.c:1376
+msgid "Maintenance"
+msgstr "Údržba"
+
+#: tea_options.c:1377
+msgid "Keyboard"
+msgstr "Klávesnice"
+
+#: tea_options.c:1405
+msgid "Save and apply"
+msgstr "Uložit a použít"
+
+#: tea_proj.c:56
+msgid "Project name"
+msgstr "Název projektu"
+
+#: tea_proj.c:57
+msgid "Makefile directory"
+msgstr "Adresář Makefile"
+
+#: tea_proj.c:58
+msgid "Source directory"
+msgstr "Zdrojový adresář"
+
+#: tea_proj.c:59
+msgid "Target executable"
+msgstr "Cílová binárka"
+
+#: tea_proj.c:197
+msgid "Main"
+msgstr "Hlavní"
+
+#: tea_findfiles_mult.c:236
+msgid "File save"
+msgstr "Soubor"
+
+#: tea_findfiles_mult.c:321
+msgid "And where to find?"
+msgstr "A kde hledat?"
+
+#: tea_findfiles_mult.c:322 tea_encode.c:211
+msgid "File pattern"
+msgstr "Maska souboru"
+
+#: tea_findfiles_mult.c:325
+msgid "Copy to the directory"
+msgstr "Kopírovat do adresáře"
+
+#: tea_findfiles_mult.c:326
+msgid "Save as a session"
+msgstr "Uložit sezení"
+
+#: tea_findfiles_mult.c:327
+msgid "Copy a filename"
+msgstr "Kopírovat název souboru"
+
+#: tea_findfiles_mult.c:328
+msgid "Clear a list"
+msgstr "Vyčistit seznam"
+
+#: tea_findfiles_mult.c:330
+msgid "Found files"
+msgstr "Nalezené soubory"
+
+#: tea_calendar.c:167
+#, c-format
+msgid "Days between %s and %s = %d"
+msgstr "Dny mezi %s a %s = %d"
+
+#: tea_calendar.c:197
+msgid "Days between"
+msgstr "Dnů mezi"
+
+#: tea_calendar.c:208
+msgid "date1"
+msgstr "datum1"
+
+#: tea_calendar.c:213
+msgid "date2"
+msgstr "datum2"
+
+#: tea_calendar.c:225
+msgid "Insert as a date"
+msgstr "Vložit jako datum"
+
+#: tea_calendar.c:230
+msgid "Insert as a julian day"
+msgstr "Vložit jako juliánské datum"
+
+#: tea_calendar.c:235
+msgid "Insert as a day of year"
+msgstr "Vložit jako den roku"
+
+#: image_browser.c:591
+msgid "Slow zoom in (+)"
+msgstr "Pomalu zvětšit (+)"
+
+#: image_browser.c:592
+msgid "Slow zoom out (-)"
+msgstr "Pomalu zmenšit (-)"
+
+#: image_browser.c:593
+msgid "Actual size (=)"
+msgstr "Aktuální velikost (=)"
+
+#: image_browser.c:594
+msgid "Zoom to fit screen (S)"
+msgstr "Přizpůsobit velikosti okna (S)"
+
+#: image_browser.c:595
+msgid "Fast zoom in (*)"
+msgstr "Rychle zvětšit (*)"
+
+#: image_browser.c:596
+msgid "Fast zoom out (/)"
+msgstr "Rychle zmenšit (/)"
+
+#: image_browser.c:600
+msgid "Set image as wallpaper centered"
+msgstr "Nastavit obrázek jako pozadí na střed"
+
+#: image_browser.c:601
+msgid "Set image as wallpaper scaled"
+msgstr "Nastavit a přizpůsobit obrázek jako pozadí"
+
+#: image_browser.c:604
+msgid "Toggle fullscreen (F)"
+msgstr "Přepnout do fullscreen (F)"
+
+#: image_browser.c:605
+msgid "Insert this image into the current document (Ins or I)"
+msgstr "Vložit tento obrázek do aktuálního dokumentu (Ins nebo I)"
+
+#: image_browser.c:606
+msgid "Insert this image into the current document //with the current size (D)"
+msgstr ""
+"Vložit tento obrázek do aktuálního dokumentu //v aktuální velikosti (D)"
+
+#: image_browser.c:608
+msgid "Copy this image to clipboard"
+msgstr "Kopírovat obrázek do schránky"
+
+#: image_browser.c:610
+msgid "Load next image (PgDown)"
+msgstr "Načíst další obrázek (PgDown)"
+
+#: image_browser.c:611
+msgid "Load previous image (PgUp)"
+msgstr "Načíst předchozí obrázek (PgUp)"
+
+#: image_browser.c:910
+msgid "Insert tags"
+msgstr "Vložit tagy"
+
+#: image_browser.c:919
+msgid "Insert the tag rather than view image"
+msgstr "Vložit tag (nezobrazit obrázek)"
+
+#: latex_support.c:51 latex_support.c:76 latex_support.c:100
+#: latex_support.c:126
+msgid "Done"
+msgstr "Hotovo"
+
+#: latex_support.c:55
+#, c-format
+msgid "dvi to PS results for %s:"
+msgstr "Výsledky dvi na PS pro %s:"
+
+#: latex_support.c:80
+#, c-format
+msgid "LaTeX processing results for %s:"
+msgstr "Výsledky zpracování LaTeX pro %s:"
+
+#: latex_support.c:104
+#, c-format
+msgid "pdflatex processing results for %s:"
+msgstr "Výsledky zpracování pdflatex pro %s:"
+
+#: latex_support.c:130
+#, c-format
+msgid "dvi to PDF results for %s:"
+msgstr "Výsledky dvi na PDF pro %s:"
+
+#: tea_encode.c:196
+msgid "Encode files"
+msgstr "Zakódovat soubor"
+
+#: tea_encode.c:210
+msgid "Directory"
+msgstr "Adresář:"
+
+#: tea_encode.c:213
+msgid "Convert ends of lines"
+msgstr "Převést konce řádků"
+
+#: tea_encode.c:228
+msgid "Find and convert"
+msgstr "Najít a převést"
+
+#: tea_encode.c:240
+msgid "From: "
+msgstr "Od:"
+
+#: tea_encode.c:243
+msgid "To: "
+msgstr "Do:"
+
+#~ msgid "*Now playing* string from Amarok"
+#~ msgstr "Řetězec Amaroku *Nyní přehrávám*"
+
+#~ msgid "Take screenshot (screen)"
+#~ msgstr "Sejmout obrazovku (celou)"
+
+#~ msgid "Take screenshot (window)"
+#~ msgstr "Sejmout obrazovku (okno)"
+
+#~ msgid "Take screenshot (region)"
+#~ msgstr "Sejmout obrazovku (oblast)"
+
+#~ msgid "Take screenshot (clipboard)"
+#~ msgstr "Sejmout obrazovku (shránka)"
+
+#~ msgid "Highlighting mode"
+#~ msgstr "Mód zvýrazňování"
+
+#~ msgid "Refresh highlighting"
+#~ msgstr "Obnovit zvýrazňování"
+
+#~ msgid "Hide highlighting"
+#~ msgstr "Skrýt zvýrazňování"
+
+#~ msgid "[X]HTML/XML and CSS files"
+#~ msgstr "Soubory [X]HTML a CSS"
+
+#~ msgid "C/C++ sources and headers"
+#~ msgstr "Zdrojové a hlavičkové soubory C/C++"
+
+#~ msgid "Screenshot is saved to %s OK"
+#~ msgstr "Screenshot je uložen jako %s"
+
+#~ msgid "Available highlighting modes"
+#~ msgstr "Dostupné módy zvýrazňování"
+
+#~ msgid "Elements"
+#~ msgstr "Prvky"
+
+#~ msgid "Element foreground"
+#~ msgstr "Popředí prvku"
+
+#~ msgid "Screenshot delay (in seconds)"
+#~ msgstr "Sejmout obrazovku za (v sekundách)"
+
+#~ msgid "Cursor color"
+#~ msgstr "Barva kurzoru"
+
+#~ msgid "Comments"
+#~ msgstr "Komentáře"
+
+#~ msgid "Identifiers"
+#~ msgstr "Identifikátory"
+
+#~ msgid "Digits"
+#~ msgstr "Ćíslice"
+
+#~ msgid "Strings"
+#~ msgstr "Řetězce"
+
+#~ msgid "HTML tags"
+#~ msgstr "HTML tagy"
+
+#~ msgid "Preprocessor"
+#~ msgstr "Preprocesor"
+
+#~ msgid "Types"
+#~ msgstr "Typy"
+
+#~ msgid "Editor font"
+#~ msgstr "Písmo editoru"
+
+#~ msgid "Comments font"
+#~ msgstr "Písmo komentářů"
+
+#~ msgid "Identifiers font"
+#~ msgstr "Písmo identifikátorů"
+
+#~ msgid "Digits font"
+#~ msgstr "Písmo číslic"
+
+#~ msgid "Strings font"
+#~ msgstr "Písmo řetězců"
+
+#~ msgid "HTML tags font"
+#~ msgstr "Písmo HTML tagů"
+
+#~ msgid "Preprocessor font"
+#~ msgstr "Písmo preprocesoru"
+
+#~ msgid "Types font"
+#~ msgstr "Písmo typů"
+
+#~ msgid "Change all fonts"
+#~ msgstr "Změnit všechny fonty"
+
+#~ msgid "Fonts"
+#~ msgstr "Fonty"

@@ -1,0 +1,21 @@
+# List of source files containing translatable strings.
+
+main.c
+interface.c
+callbacks.c
+rox_strings.c
+tea_funx.c
+tea_config.c
+tea_text_document.c
+tea_about.c
+tea_fr.c
+tea_kwas.c
+tea_gtk_utils.c
+tea_options.c
+tea_proj.c
+tea_findfiles_mult.c
+tea_calendar.c
+image_browser.c
+latex_support.c
+tea_encode.c
+

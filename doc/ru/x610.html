@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Фильтр</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="TEA - полное ноговодство"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Функции"
+HREF="c320.html"><LINK
+REL="PREVIOUS"
+TITLE="Сортировка"
+HREF="x601.html"><LINK
+REL="NEXT"
+TITLE="Код Морзе"
+HREF="x639.html"></HEAD
+><BODY
+CLASS="section"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>TEA - полное ноговодство</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x601.html"
+ACCESSKEY="P"
+>&#1055;&#1088;&#1077;&#1076;.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>&#1043;&#1083;&#1072;&#1074;&#1072; 9. Функции</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x639.html"
+ACCESSKEY="N"
+>&#1057;&#1083;&#1077;&#1076;.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="AEN610"
+>9.17. Фильтр</A
+></H1
+><P
+>&#13;<SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Извлечь в каждой строке</B
+></SPAN
+> - оставляет в каждой строке подстроку между двумч символами-разделителями. Разделители эти надобно прописать в Знаменитом поле ввода, в формете <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>первый разделитель~второй разделитель</I
+></SPAN
+>, то бишь между разделителями должна стоять тильда. 
+</P
+><P
+>Вот вам пример. У нас есть две строки, в которых мы хотим оставить только текст, заключенный в кавычки:</P
+><P
+>&#13;<PRE
+CLASS="programlisting"
+>g_print ("hello\n"); 
+g_print ("world\n");</PRE
+>
+</P
+><P
+>&#13;Пишем в Знаменитом поле ввода шаблон обработки: <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>"~"</I
+></SPAN
+>, а затем выделяем текст и применяем функцию. В результате получается следующее:
+</P
+><P
+>&#13;<PRE
+CLASS="programlisting"
+>hello\n 
+world\n</PRE
+>
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Извлечь перед разделителем в каждой строке</B
+></SPAN
+>, <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Извлечь после разделителя в каждой строке</B
+></SPAN
+>. Функции, сходные с предшествующей, однако в Знаменитое поле ввода надо прописать только один разделитель. Например, если вы хотите убрать в каждой строке комментарии, что в Знаменитое поле ввода надо ввести "<SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>//</I
+></SPAN
+>" (без кавычек) и применить функцию <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Извлечь перед разделителем в каждой строке</B
+></SPAN
+>.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Убить строки, содержащие фразу</B
+></SPAN
+>. Выделяете текст. В знаменитом поле ввода набираете некую фразу. Применяете эту функцию. Все строки, содержащие эту фразу, будут удалены (в выделенном вами фрагменте, разумеется).
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Убить все строки без фразы</B
+></SPAN
+>. А вот тут наоборот - убиваются те строки, что НЕ содержат заданной фразы.
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Убить строки, содержащие регулярное выражение</B
+></SPAN
+> и <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Убить строки без регулярного выражения</B
+></SPAN
+>. То же, что и две функции выше, только образец искомого текста задается в виде регулярного выражения. Что это даст? Например, чтобы удалить все строки, которые начинаются с "Иван" (т.е. это может быть и Иванова, и Иванов, и Иван-дурак), надо в Знаменитое поле ввода ввести "Иван*" и использовать фильтр <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Убить строки, содержащие регулярное выражение</B
+></SPAN
+>. Символ "звездочка" означает, что после этого символа в строке могут быть какие угодно символы, лишь бы "Иван" было. Либо, бы хотите отфильтровать строки со словом, которое начинается на "ов" и заканчивается на "ка". То бишь это и овечка, и овчарка, и овсянка. Строка-фильтр будет такова: "ов*ка".
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Убить строки длиной &#60; N символов</B
+></SPAN
+> - убивает в выделенном тексте строки, длина которых меньше N символов. N - число, веденное в Знаменитое поле ввода. 
+</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Убить строки длиной &#62; N символов</B
+></SPAN
+> - убивает в выделенном тексте строки, длина которых больше N символов. N - число, веденное в Знаменитое поле ввода.
+</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x601.html"
+ACCESSKEY="P"
+>&#1055;&#1088;&#1077;&#1076;.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>&#1053;&#1072;&#1095;&#1072;&#1083;&#1086;</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x639.html"
+ACCESSKEY="N"
+>&#1057;&#1083;&#1077;&#1076;.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Сортировка</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c320.html"
+ACCESSKEY="U"
+>&#1059;&#1088;&#1086;&#1074;&#1077;&#1085;&#1100; &#1074;&#1099;&#1096;&#1077;</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Код Морзе</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

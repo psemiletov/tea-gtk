@@ -1,0 +1,30 @@
+README
+
+--------------------------------------------------------------------------------
+TEA-GTK is a powerful and simple-in-use GTK-based text editor for GNU/Linux and *BSD.
+
+2000-2013 Peter Semiletov (tea@list.ru, http://semiletov.org)
+
+http://semiletov.org/tea
+
+There are two separated branches of TEA - main (Qt-based) and old, but renewed one (GTK3-based).
+TEA-GTK 17 is GTK2-based, and TEA-GTK 18.x+ is ported to GTK3 with major code cleanup and changes, so TEA-GTK 18+ can be unstable.
+
+----------------------------------------------------------------------------------
+:to run TEA-GTK, use the command "teagtk":
+----------------------------------------------------------------------------------
+
+INSTALLATION AND DEPENDENCIES
+
+
+Mandatory dependencies: Gtk3, GtkSourceView3, Scons.
+Optional: libaspell, zziplib.
+
+To build and install TEA-GTK, run as root at the source top directory:
+
+scons install
+
+To uninstall TEA-GTK, run:
+
+scons uninstall
+

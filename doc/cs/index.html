@@ -1,0 +1,980 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link href="../tea_doc.css" rel="stylesheet" type="text/css">
+
+<title>TEA manuál</title>
+</head>
+
+<body>
+
+<p>(c)2004, 2005 <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#101;&#97;&#64;&#108;&#105;&#115;&#116;&#46;&#114;&#117;">Peter 'Roxton' Semiletov</a>
+<br>
+Oficiální stránky TEA: <a href="http://tea.linux.kiev.ua">http://tea.linux.kiev.ua</a>
+<br>
+TEA je licencována jako <a href="http://www.gnu.org">GPL</a>.
+</p>
+
+<h1>TEA MANUÁL</h1>
+
+<p><i>Tibi et igni</i></p>
+
+<h1>Obsah</h1>
+
+<a href="#intro">Nezbytný úvod</a><br>
+<a href="#interface">Rozhraní</a><br>
+Menu<br>
+&nbsp;&nbsp;<a href="#mni_file">Soubor</a><br>
+&nbsp;&nbsp;<a href="#mni_kwas">Souborový manažer Kwas</a><br>
+&nbsp;&nbsp;<a href="#mni_edit">Úpravy</a><br>
+&nbsp;&nbsp;<a href="#mni_search">Hledat</a><br>
+&nbsp;&nbsp;<a href="#mni_markup">Značky</a><br>
+&nbsp;&nbsp;<a href="#mni_html">Značky &gt; HTML nástroje</a><br>
+&nbsp;&nbsp;<a href="#mni_functions">Funkce</a><br>
+&nbsp;&nbsp;<a href="#mni_ide">IDE</a><br>
+&nbsp;&nbsp;<a href="#mni_bro">Pro [hlížeč]</a><br>
+&nbsp;&nbsp;<a href="#mni_nav">Nav [igace]</a>//<b class="b_em">dočtete se i o editaci SRT titulků!</b><br>
+&nbsp;&nbsp;<a href="#mni_utils">Nástroje</a><br>
+&nbsp;&nbsp;<a href="#mni_view">Zobrazit</a><br>
+<a href="#charsets">Jak pracuje TEA s různými znakovými sadami</a><br>
+<a href="#preferences">Nastavení</a><br>
+<a href="#cmline">Možnosti příkazového řádku</a><br>
+<a href="#roxton">O mně</a><br>
+
+<a name="intro"></a>
+<h1>Nezbytný úvod</h1>
+
+<p>Na podzim roku 2000 jsem začal vyvíjet textový editor (pro Windows), který se jmenoval TEA (něco jako "<b>T</b>ext <b>E</b>diting and <b>A</b>uthoring program"). Byl populární v postsovětských zemích (Ukrajina, Rusko, Bělorusko a další) a do roku 2004 jsem vytvořil 11 verzí. Pak jsem vývoj "<a href="http://http://my.elvisti.com/roxton/tea.html">TEA pro Windows</a>" ukončil za začal pracovat na "TEA pro Linux". Je to můj první linuxový program a můj vůbec první program psaný v C :) Nejsem jenom programátor. Jsem spisovatel a novinář a tak potřebuji textový editor, který mi bude vyhovovat. A tak se snažím takový napsat.
+</p>
+
+<!-- <p>
+I completely understand that my English is truly BAD (articles, tenses and other stuff), but I tries to write this manual good as I can.
+</p> -->
+
+<p>
+Pokud máte jakékoli dotazy, nápady, návrhy nebo záplaty, napište mi na <a href="mailto:roxton@ua.fm">roxton@ua.fm</a>. <!-- By the way, I <b>understands</b> English good as my native Russian, so don't look at how terrible I write. -->
+</p>
+
+<p>
+Prosím, přečtěte si celý tento manuál, protože v jistých ohledech je TEA velice nestandardní.
+</p>
+
+
+<p class="p_music">&#9835; současná muzika: Nirvana - I Hate Myself And I Want To Die</p>
+
+<a name="interface"></a>
+<h1>Rozhraní</h1>
+
+<p>
+Několik slov k rozhraní. Pozor, prosím! Naše letadlo je bezpečné, jenom trochu neobvyklé.<br>
+Tady je rozložení ovládacích prvků TEA odshora dolu:
+</p>
+
+<p>
+1. Window bar (sic!).<br>
+2. Menu. //hmm, opravdové menu...<br>
+3. Oblast textových karet.<br>
+4. Textové pole zvané "<b>log_memo</b>" pro informační výstup.<br>
+5. Textový vstupní řádek (Nazývám jej "<b class="b_em">the famous text entry</b>") pro různé hodnoty jako např. text pro vyhledání, tagy pro ohrazení výběru, atd. Tlačítko "Spustit" provádí stejnou funkci jako stisk klávesy <i>ENTER</i> v textovém vstupním řádku.<br>
+6. Stavový řádek, pěkný a široký. Stojí za pozornost!
+</p>
+
+<p>
+<b>O drag and drop</b>. Když dropnete nějaký textový soubor[y] do okna TEA, tak se tento soubor[y] otevře v editoru. Pokud je tím souborem obrázek, vloží se do otevřeného dokumentu jako IMG tag. Funguje to s Konquerorem, Gqview atd. Pokud použijete drag and drop, TEA předpokládá, že soubor bude v kódování, které je zvoleno v <b class="mi">Nastavení &gt; Kódování &gt; Výchozí znaková stránka pro otevírání souborů.</b>
+</p>
+
+<p class="p_music">&#9835; současná muzika: Scorn - Logghi Barogghi - Weakener</p>
+
+
+<h1>Menu</h1>
+
+<a name="mni_file"></a>
+<h2>Soubor</h2>
+
+<p><b class="mi">Nový</b> - vytvoří nový prázdný dokument v kódování UTF-8.</p>
+
+<p><b class="mi">Nový Kwas</b> - otevře nové okno Kwas. <a href="#mni_kwas">Detaily</a>
+</p>
+
+<p>
+<b class="mi">Crapbook</b> - Crapbook je jednoduše textový soubor uložený v <i>$HOME/.tea/crapbook.txt</i>. Můžete ho zavolat stisknutím kombinace kláves Alt-M. TEA ukládá tento soubor automaticky při ukončení programu TEA nebo při uzavření samotného souboru <i>crapbook.txt</i>. Myslím si, že je to užitečné při psaní poznámek, citátů atp.
+</p>
+
+<p><b class="mi">Přidat do... &gt; Přidat do záložek</b> - přidá nový záznam do seznamu Záložek. Každý záznam obsahuje název souboru, znakovou sadu a informaci o pozici. Pro úpravu souboru záložek (což je jednoduchý textový soubor se seznamem položek) přejděte na <b  class="mi">Soubor &gt; Spravovat konfigurační soubory &gt; Soubor záložek</b>. 
+</p>
+
+<p><b class="mi">Přidat do... &gt; Přidat do seznamu automatického uložení</b> - přidá současný soubor do speciálního seznamu souborů. Tyto soubory jsou automaticky ukládány při jejich uzavření.
+Pro úpravu souboru se seznamem přejděte na <b  class="mi">Soubor &gt; Spravovat konfigurační soubory &gt; Seznam automatického uložení</b>. 
+</p>
+
+<p>
+Tato vlastnost je užitečná, pokud chcete používat nějaké soubory jako sklad různých informací. Můžete třeba vytvořit zástupce v KDE, který spustí "tea ~/my_links.txt", a dát tento my_links.txt do seznamu automatického uložení.
+</p>
+
+<p>
+<b class="mi">Otevřít</b> - otevře soubor[y]. V dialogovém okně je možnost výběru znakové sady. Vyberte správné kódování, jinak se opravdu pobavíte. Detailní informace o tom, jak TEA zachází s různými znakovými sadami se dočtete <a href="#charsets">tady</a>.
+</p>
+
+<p>Při otevírání více souborů musí být tyto soubory stejné kódování (vybranou znakovou stránku), nebo se stane průšvih. Nemůžu říct nic o povaze toho hypotetického průšvihu, ale byli jste varováni.  
+</p>
+
+<p>
+TEA používá dialog pro otevírání souborů uvedený v GTK+ 2.4. Podporuje některé klávesové zkratky pro různé akce:
+</p>
+
+<p>
+Otevřít umístění - CTRL-L<br>
+Otevřít rodiče - ALT-Up<br>
+Adresář dolů - ALT-Down<br>
+Přejít domů - ALT-Home<br>
+</p>
+
+<p>
+<b>O RTF souborech</b>.<br> Ano, TEA je umí OTEVŘÍT. Neumí je ukládat. Pro správné otevření RTF souboru můžete definovat výchozí kódování RTF dokumentů. To provedete v <b class="mi">Nastavení &gt; Kódování &gt; Výchozí znaková sada pro RTF</b>. Pokud jste anglicky mluvící uživatel, potom vás toto nastavení moc neovlivní. 
+</p>
+
+<p>Jiná otázka je <b>jak</b> TEA otevírá RTF soubory :) Zvláštně, ale funguje to. Pokud chcete pouze rychle číst RTF, použijte TEA. Pokud je ale chcete upravovat, použijte OOO, nebo KWord, nebo AbiWord, nebo cokoli jiného.  
+</p>
+
+<p><b class="mi">Otevřít jiné</b> - z tohoto menu můžete rychle otevřít ústřižky, sezení a šablony pro úpravu.
+</p>
+
+<p>
+<b class="mi">Šablony</b> - z tohoto menu jsou dostupné uživatelské šablony. Všechny šablony jsou uloženy v <i>$HOME/.tea/templates</i>. Pro uložení souboru jako šablony použijte <b class="mi">Uložit jiné &gt; Uložit jako šablonu</b>.
+</p>
+
+<p><b class="mi">Sezení</b> - inspirováno prohlížečem Opera - můžete uložit seznam souborů a pak tyto soubory znovu otevřít. Existuje i jedna položka v menu - <b class="mi">Otevřít jiné &gt; Otevřít soubor sezení</b> - která otevře soubor sezení v TEA jako normální textový soubor bez načtení seznamu souborů.<br> 
+TEA ukládá do sezení 3 položky pro každý soubor - název souboru, kódování a pozici kurzoru.
+</p>
+
+<p>Pro uložení souborů jako sezení, použijte <b class="mi">Uložit jiné &gt; Uložit sezení</b>.</p>
+
+<p class="p_music">&#9835; současná muzika: Yab Yum - Dead Moon Ritual (Source Mutation Mix)</p>
+
+<p>
+<b class="mi">Uložit jiné &gt; Záloha</b> - TEA vytváří kopii právě uloženého souboru, nikoli právě editovaného textu.
+</p>
+
+<p><b class="mi">Uložit</b> - asi víte, co? Jenom poznámka - dokument bude uložen ve stejném kódování, v jakém jste jej otevřeli.</p>
+
+<p><b class="mi">Uložit jako</b> - mimochodem, v tomto dialogu můžete vybrat ze seznamu dostupných kódování. Pokud chcete převést svůj soubor do jiné znakové sady, použijte tento způsob. Všimněte si, že menu <b class="mi">Co</b> nabízí pouze znovu-načtení souboru s vybraným kódováním, nikoli pro jeho konverzi. 
+</p>
+
+<p><b  class="mi">Uložit jiné &gt; Uložit jako šablonu</b> - uloží současný soubor jako šablonu do výchozího adresáře šablon: <i>$HOME/.tea/templates</i>.</p>
+
+<p><b  class="mi">Uložit jiné &gt; Uložit verzi</b> - uloží kopii současného dokumentu pod názvem založeným na původním názvu souboru, současném datu a čase.</p>
+
+<p><b class="mi">Spravovat konfigurační soubory</b> - odsud můžete přímo otevřít všechny konfigurační soubory programu TEA (uložené v <i>$HOME/.tea/</i>). Změny se použijí po úpravě a uložení. Nedoporučuji vám upravovat soubor <b>Hlavní konfigurace</b>, protože TEA má na tuto konfiguraci nástroj - <b>Nastavení</b>. Ovšem, dělejte si, co chcete. 
+</p>
+
+<p>
+<b class="mi">Spravovat konfigurační soubory &gt; Soubor automatického nahrazení slov</b> - tady můžete otevřít soubor se seznamem slov pro automatické nahrazení (což můžete zapnout v <b>Nastavení &gt; Spoluautor &gt; Automatické nahrazení</b>). Tento soubor obsahuje řádky ve velice jednoduchém formátu: <i>string1=string2</i>.<br>
+Například:
+</p>
+
+<p class="p_ex">
+Linux=GNU/Linux<br>
+sxe=straight edge<br>
+FSOL=Future Sound Of London<br>
+hl=highlighting
+</p>
+
+<p>
+Po uložení tohoto souboru bude vnitřní seznam auto-nahrazení aktualizován. Pro použití této funkce zapněte automatické nahrazení a začněte psát text. Při psaní krátkého ekvivalentu budou všechna slova ze seznamu budou nahrazena/expandována. Potom stiskněte buď mezerník, nebo jakoukoli interpunkční klávesu. <span style="color:#e00202;">Automatické nahrazení rozlišuje velikost písmen</span>.
+</p>
+
+<p>
+<b class="mi">Spravovat konfigurační soubory &gt; Konfigurace zkratek</b> - použitím tohoto souboru můžete přiřadit klávesovou zkratku pro jakoukoli položku menu. Všechny zkratky jsou uloženy v souboru <i>$HOME/.tea/tea_hotkeys</i>. Tento soubor musí obsahovat pouze a jenom data v kódování UTF-8. Všechny změny budou použity po uložení tohoto souboru. Pokud se nová zkratka pro položku menu kryje s nějakou starší, budou změny použity po restartu TEA. Předdefinované zkratky se nedají změnit.
+</p>
+
+<p>
+Každý řádek <i>tea_hotkeys</i> má jednoduchý formát:<br>
+<i>popis položky menu=zkratka</i><br>
+Například:
+</p>
+
+<p class="p_ex">Obrátit=Alt Shift R<br>
+Číst úplný manuál=F1
+</p>
+<p>
+Poznámky: v popisech položek se rozlišuje velikost písmen. Proto je musíte napsat přesně tak, jak jsou zapsány v menu TEA. Naopak ve zkratce se nerozlišuje velikost a tak můžete zapsat třeba: "shift ctrl F5". Dostupné modifikátory jsou : <i>Alt, Ctrl, Shift</i>. Oddělují se mezerami.
+</p>
+
+<p>
+Zkratku můžete přiřadit jakékoli položce menu, dokonce i pro dynamicky vytvářené (např. záložky). 
+</p>
+
+
+<a name="mni_kwas"></a>
+<h2>Kwas</h2>
+
+<p>
+Kwas je navržen jako náhrada standardního dialogu "Otevřít soubor", proto od tohoto souborového manažeru nečekejte mnoho. Můžete jej otevřít v několika oknech, můžete procházet adresáře, můžete otevírat souboru v požadovaném kódování a také můžete prohlížet obrázky. V budoucnu rozšířím jeho možnosti, ale prozatím je to vše.
+</p> 
+
+<p>
+Pro adresu v Kwas můžete použít textové vstupní pole. Napište do něj cestu a stiskněte klávesu Enter. <b>Backspace</b> v seznamu souborů otevře nadřazený adresář.
+</p>
+
+<p>Kwas má svoje menu. Z menu <b class="mi">Akce</b> můžete:
+</p>
+
+<p>
+<b class="mi">Obnovit Kwas</b> - aktualizuje seznam souborů. Kwas toto automaticky neumí.
+</p>
+
+<p>
+<b class="mi">Přidat adresář k záložkám</b> - přidá současný adresář do menu Záložky v okně Kwas. Pro úpravu záložek přejděte do hlavního menu TEA, <b class="mi">Soubor &gt; Spravovat konfigurační soubory &gt; Konfigurace záložek Kwas</b>. V případě vymazání záložky bude menu aktualizováno při vytvoření nového okna Kwas.
+</p>
+
+<p>
+<b class="mi">Získat info o souboru</b> - získá informace o současném (vybraném) souboru. Výstup bude v okně log memo. TEA používá standardní utilitu <i>file</i>.
+</p>
+
+<p>
+<b class="mi">Spustit s...</b> - spustí současný (ano, vybraný) soubor v požadovaném programu. Napište příkaz do FAMOUS TEXT ENTRY. Příkazem musí být pouze název programu, tedy jenom <i>opera</i> nebo <i>xmms</i>.  
+</p>
+
+<p class="p_music">&#9835; současná muzika: Scorn - Anamnesis - Rarities 1994-1997 - Maker Of Angels</p>
+
+<p>Nabízí se i menu <b class="mi">Vložit do editoru</b>:</p>
+
+<p>
+<b class="mi">Vložit obrázek</b> - vloží vybraný (aktivní) soubor s obrázkem jako IMG tag do současného textového dokumentu.
+</p>
+
+<p>
+<b class="mi">Vložit odkaz</b> - vloží vybraný (aktivní) soubor jako HREF tag do současného textového dokumentu.
+</p>
+
+<a name="mni_edit"></a>
+<h2>Úpravy</h2>
+
+<p>
+<b class="mi">Odsadit/Zrušit odsazení</b> - přesouvá text doprava či doleva o jeden znak tabulátoru, nebo o několik mezer (podívejte se na <b>Nastavení, Editor</b>). Pro odsazení můžete použít i klávesu TAB. Obě funkce pracují buď s jedním nebo více řádky. 
+</p>
+
+<p><b class="mi">Připojit ke Crapbooku</b> - přidá výběr do Crapbooku. Není podstatné jestli je Crapbook otevřený nebo ne, tato funkce funguje pořád.
+</p>
+
+<p><b class="mi">Swop</b> - přehodí vybraný text s obsahem schránky. Tedy, vybraný text se přesune do schránky a současně se původní obsah schránky přesune na místo výběru.
+</p>
+
+<p>
+<b class="mi">Kopírovat vše</b> - kopíruje celý text do schránky.
+</p>
+
+<p><b class="mi">Kopírovat současnou URL</b> - před použitím této funkce musíte nastavit kurzor na URL v textu.
+</p>
+
+
+<a name="mni_search"></a>
+<h2>Hledat</h2>
+
+<p>Samozřejmě, že můžete. TEA může dokonce najít tu nejmenší hvězdičku na nebi - stačí mu jen předhodit text do FAMOUS textového vstupního pole. Žádný dialog, žádná tlačítka OK/Zrušit a další tradiční postupy. Proč? Proto :)<br> 
+Jednoduše napište text, který chcete najít a stiskněte Enter nebo CTRL-F. K nalezení dalšího výskytu stiskněte F3.<br>
+<b>Ve všech případech začíná hledání od současné pozice kurzoru</b>.  
+</p>
+
+<p>
+<b class="mi">Najít/Najít další</b> - co k tomu dodat.
+</p>
+
+<p>
+Pokud chcete tradičnější nástroj k vyhledávání, můžete použít <b>Okno Hledat a Nahradit</b>. Má daleko od ideálního stavu, ale je jakž-takž použitelné.
+</p>
+
+<p>
+<b class="mi">Jít na řádek</b> - napište číslo řádku na FAMOUS textového vstupního pole a použijte tuto funkci.
+</p>
+
+
+<p>
+<b class="mi">Nahradit vše</b> - a teď něco naprosto odlišného - "and now for something completely different" (c)Monty Python's Flying Circus.<br> Znovu se pracuje s FAMOUS textovým vstupním polem. Teď ovšem ve speciálním formátu:<br>
+<i>text k nalezení~text k nahrazení
+</i> 
+<br>
+Například:
+</p>
+<p class="p_ex">
+hell~heck
+</p>
+
+<p>
+<b class="mi">Skenovat místní odkazy</b> - najde v dokumentu href odkazy na místní soubory a přidá je (pokud jsou) do menu <b class="mi">Nav &gt; Odkazy</b>, ze kterého můžete textové soubory otevřít v TEA a obrázky ve vestavěném, nebo externím prohlížeči (stejně jako <b class="mi">Otevřít na kurzoru</b>). 
+</p>
+
+<p><b class="mi">Skenovat SRC's</b> - podobné jako <i>Skenovat místní odkazy</i>, ale teď vyplní menu <b class="mi">Nav &gt; Odkazy</b> všemi místními SRC položkami - ve většině případů obrázky. To je velmi užitečné pokud chcete vidět banner nebo nějaký další obrázek a nechcete ho hledat v kódu. 
+</p>
+
+
+<a name="mni_html"></a>
+<h2>Značky &gt; HTML nástroje</h2>
+
+<p>
+<b class="mi">Document weight</b> - spočítá celkovou váhu dokumentu včetně všech SRC položek (tedy obrázků, flash animací atd.). Pro výsledek se podívejte do log memo okna.
+</p>
+
+<p>
+<b class="mi">Vytvořit tabulku</b> - Nesnáším jakékoli průvodce, ale vždycky jsem snil o nástroji na rychlé vytvoření prázdných tabulek. A udělal jsem ho. Opět použijeme FAMOUS textové vstupní pole. Je to velice jednoduché. Napište jen:<br>
+<i>počet řádků~počet sloupců</i><br>
+A použijte tuto funkci...<br>
+Chceme například vytvořit tabulku 2x4 - 2 řádky se 4 buňkami v každém řádku. Naše šablona bude vypadat takto:
+</p>
+<p class="p_ex">
+2~4
+</p>
+Máte to? A teď něco naprosto odlišného.
+</p>
+
+<p>
+<b class="mi">Zabudované šablony</b> - vloží pevnou HTML šablonu do dokumentu.
+</p>
+
+<p>
+<b class="mi">Uzavřít vybraný odkaz do tagu</b> - přesně to dělá. Pokud chcete uzavřít <i>www.foo.bar</i> nebo <i>ftp.foo.bar</i>, <i>nebo mailto:foo@bar.com</i> do "a href"-tagu, použijete tuto funkci a budete šťastní ;) .
+</p>
+
+<p>
+<b class="mi">Odstranit tagy</b> - odstraní všechny tagy z HTML dokumentu. 
+</p>
+
+<p>
+<b class="mi">Převést tagy na entity</b> - pokud chcete ukázat nějaký HTML kód ve vašem HTML dokumentu, vyberte kus kódu a použijte tuto funkci. Výstup bude například:
+</p>
+
+<p class="p_ex">&amp;lt;b&amp;gt;demo&amp;lt;/b&amp;gt;</p>
+
+<a name="mni_markup"></a>
+<h2>Značky &gt; Další</h2>
+
+<p>
+Některé z níže popsaných funkcí fungují dvoucestně - pokud není vybraný text, bude vložen pár tagů, jinak se vybraný text uzavře do tagů.   
+</p>
+
+<p>
+<b class="mi">Komentář</b> - uzavře výběr do komentáře. Funguje se soubory HTML, CSS, Pascalem a C/C++, podle pravidel jejich syntaxe.
+</p>
+
+<p>
+<b class="mi">Barva</b> - otevře dialog pro výběr barvy. Pokud není vybraný text, potom se na pozici kurzoru vloží HTML barva, pokud je text vybrán, uzavře se do tagu SPAN s CSS vlastností barvy.
+</p>
+
+<p>
+<b class="mi">Obrázek</b> - otevře dialog pro otevření souboru. Můžete vybrat obrázek[ky], které se vloží jako img tagy (s vyplněnými atributy height a width) do současného dokumentu. Podporované jsou všechny typy obrázků, kterým GTK+ 2 obvykle rozumí -  PNG, JPEG, GIF, WBMP atd.  
+</p>
+
+
+<a name="mni_functions"></a>
+<h2>Funkce</h2>
+
+<p>
+<b class="mi">Kontrola pravopisu</b> - TEA používá pro kontrolu pravopisu <a href="http://aspell.net">Aspell</a>. V tomto menu najdete seznam slovníků instalovaných s aspell. Funguje s celým textem, nikoli jenom s výběrem. 
+</p>
+
+<p>Pravděpodobně chybná slova budou označena barvou, kterou specifikujete v <b>Nastavení &gt; Barvy</b>.
+</p>
+
+<p>
+TEA umí jenom zobrazit chyby. Opravit je musíte ručně. Když opravíte chybu, bude opravené slovo zbarveno jako předtím. To je kvůli povaze TEA - aktualizuje se manuálně, proto musíte použít kontrolu pravopisu znova. Pokud chcete vypnout zobrazení chyb, použijte <b class="mi">Zobrazit &gt; Skrýt zvýrazňování</b>.
+</p>
+
+<p>
+<b class="mi">Statistika dokumentu</b> - vypíše statistiku celého či vybraného textu do log memo. 
+</p>
+
+
+<b class="mi">UNIverzální Textový AnalyZér</b>.<br>
+
+<p>Co je UNITAZ? Je to nástroj pro analýzu textu. Umí zobrazit seznam slov ze současného dokumentu a zobrazit počet jednotlivých slov. <b class="mi">Zavolat UNITAZ s tříděním abc</b> - provede analýzu a potom seřadí seznam slov, <b class="mi">Zavolat UNITAZ</b> - provede analýzu bez řazení. <b class="mi">Zavolat UNITAZ s tříděním podle počtu</b> - to samé, jenom s řazením podle počtu slov.</p>
+
+<p>
+<b class="mi">Extrahovat slova</b> - extrahuje všechna slova ze současného dokumentu. To je užitečné v případě, ze chcete vytvořit třeba nějaký druh slovníku. Varování! Všechny tyto funkce jsou relativně pomalé, buďte trpěliví a nemyslete se, že TEA zamrzl. 
+</p>
+
+<p>UNITAZ také zobrazuje kolik slov je celkem a množství <i>unikátních</i> slov - počet slov BEZ opakování těchto slov.
+</p>
+
+
+<p><b class="b_em">K použití funkcí pro zpracování textu musíte nějaký text vybrat</b>.</p>
+
+<p>
+<b class="mi">Uživatelské menu</b> - v TEA můžete vytvořit své vlastní menu pro spouštění programů nebo pro spuštění současného souboru s těmito programy. K úpravě uživatelského menu přejděte do <b class="mi">Soubor &gt; Spravovat konfigurační soubory &gt; Konfigurace uživatelského menu</b>. Otevře se soubor s konfigurací uživatelského menu. Upravte jej a uložte. Menu se aktualizuje. Formát tohoto souboru je jednoduchý. Je to seznam s něčím jako:</p>
+
+<p class="p_ex">
+Opera=opera %s &amp;<br>
+Kwrite=kwrite %s &amp;
+</p>
+
+<p>
+Takže, jak vidíte, "%s"-makro znamená název současného souboru. Pokud chcete spustit program jako proces v pozadí, musíte přidat znak &amp; na konec řádku.
+</p>
+
+<p>
+<b class="mi">Ústřižky</b>.<br> 
+Ústřižek je kousek kódu, který můžete vložit do textu. TEA ukládá každý ústřižek jako soubor v adresáři <i>$HOME/.tea/snippets</i>. Název souboru s ústřižkem je zároveň položkou menu Ústřižky, neboli, obsah menu Ústřižky je seznamem souborů v adresáři <i>$HOME/.tea/snippets</i>. 
+Pro vytvoření ústřižku musíte:
+</p>
+
+<p>1. Napsat text.<br>
+2. Soubor &gt; Uložit jiné &gt; Uložit jako ústřižek. Pouze UTF-8!<br>
+3. Užijte si to :)
+</p>
+
+<p>
+Můžete také vytvořit ústřižek, který nějak pracuje s výběrem textu. Například, chcete vytvořit ústřižek, který uzavře vybraný text do nějakého HTML tagu. Makro "<i>%s</i>" reprezentuje vybraný text. Tady je příklad takového ústřižku:
+</p>
+
+<p class="p_ex">
+&lt;a href=&quot;%s&quot;&gt;%s&lt;/a&gt;
+</p>
+
+<p>
+Pokud se takový ústřižek použije, %s bude nahrazeno vybraným textem. Pokud není vybraný text, vloží se do dokumentu obsah ústřižku.
+</p>
+
+<p>
+<b class="mi">Formát &gt; Odstranit formátování</b> - odstraní formátování (tabulátory, nové řádky, jednoduché mezery atd.)
+</p>
+
+<p>
+<b class="mi">Formát &gt; Zalomit na pozici</b> - zalomí řádek na pozici, kterou specifikujete ve FAMOUS.
+</p>
+
+<p>
+<b class="mi">Formát &gt; Zalomit na mezerách v pozici</b> - zalomí řádek na pozici, kterou specifikujete ve FAMOUS, ovšem zachová rozdělování slov. 
+</p>
+
+<p>
+<b class="mi">Vložit &gt; Dumpnout menu</b> - zapíše všechny položky menu do nového souboru. To je užitečné, pokud chcete přidat nějaký záznam do konfigurace zkratek. 
+</p>
+
+<p>
+<b class="mi">Vložit &gt; Datum/Čas</b> - vloží datum/čas ve specifikovaném formátu. Formát musíte definovat v <b>Nastavení &gt; Funkce &gt; Formát data a času</b> 
+</p>
+
+<p>
+A quote from <i>Edition 0.10, last updated 2001-07-06, of The GNU C Library Reference Manual, for Version 2.2.x of the GNU C Library</i> (the quoted text is edited, to make it short, by Roxton): 
+</p>
+<p>
+%a - The abbreviated weekday name according to the current locale.<br>
+%A - The full weekday name according to the current locale.<br>
+%b - The abbreviated month name according to the current locale.<br>
+%B - The full month name according to the current locale.<br>
+%c - The preferred calendar time representation for the current locale.<br>
+%C - The century of the year. This is equivalent to the greatest integer not greater than the year divided by 100.<br>
+%d - The day of the month as a decimal number (range 01 through 31).<br>
+%D - The date using the format %m/%d/%y.<br> 
+%e -  The day of the month like with %d, but padded with blank (range 1 through 31).<br>
+%F - The date using the format %Y-%m-%d. This is the form specified in the ISO 8601 standard and is the preferred form for all uses.<br>
+%g - The year corresponding to the ISO week number, but without the century (range 00 through 99). This has the same format and value as %y, except that if the ISO week number (see %V) belongs to the previous or next year, that year is used instead.<br>
+%G - The year corresponding to the ISO week number. This has the same format and value as %Y, except that if the ISO week number (see %V) belongs to the previous or next year, that year is used instead.<br>
+%h - The abbreviated month name according to the current locale. The action is the same as for %b.<br>
+%H - The hour as a decimal number, using a 24-hour clock (range 00 through 23).<br>
+%I - The hour as a decimal number, using a 12-hour clock (range 01 through 12).<br>
+%j - The day of the year as a decimal number (range 001 through 366).<br>
+%k - The hour as a decimal number, using a 24-hour clock like %H, but padded with blank (range 0 through 23). This format is a GNU extension.<br>
+%l - The hour as a decimal number, using a 12-hour clock like %I, but padded with blank (range 1 through 12). This format is a GNU extension.<br>
+%m - The month as a decimal number (range 01 through 12).<br>
+%M - The minute as a decimal number (range 00 through 59).<br>
+%n - A single \n (newline) character.<br>
+%p - Either AM or PM, according to the given time value; or the corresponding strings for the current locale. Noon is treated as PM and midnight as AM.<br>
+%P - Either am or pm, according to the given time value; or the corresponding strings for the current locale, printed in lowercase characters. Noon is treated as pm and midnight as am.<br>
+%r - The complete calendar time using the AM/PM format of the current locale.<br>
+%R - The hour and minute in decimal numbers using the format %H:%M.<br>
+%s - The number of seconds since the epoch, i.e., since 1970-01-01 00:00:00 UTC. Leap seconds are not counted unless leap second support is available. This format is a GNU extension.<br>
+%S - The seconds as a decimal number (range 00 through 60).<br>
+%t - A single \t (tabulator) character.<br>
+%T - The time of day using decimal numbers using the format %H:%M:%S.<br>
+%u - The day of the week as a decimal number (range 1 through 7), Monday being 1.<br>
+%U - The week number of the current year as a decimal number (range 00 through 53), starting with the first Sunday as the first day of the first week. Days preceding the first Sunday in the year are considered to be in week 00.<br>
+%V - The ISO 8601:1988 week number as a decimal number (range 01 through 53). ISO weeks start with Monday and end with Sunday. Week 01 of a year is the first week which has the majority of its days in that year; this is equivalent to the week containing the year's first Thursday, and it is also equivalent to the week containing January 4. Week 01 of a year can contain days from the previous year. The week before week 01 of a year is the last week (52 or 53) of the previous year even if it contains days from the new year.<br>
+%w - The day of the week as a decimal number (range 0 through 6), Sunday being 0.<br>
+%W - The week number of the current year as a decimal number (range 00 through 53), starting with the first Monday as the first day of the first week. All days preceding the first Monday in the year are considered to be in week 00.<br>
+%x - The preferred date representation for the current locale.<br>
+%X - The preferred time of day representation for the current locale.<br>
+%y - The year without a century as a decimal number (range 00 through 99). This is equivalent to the year modulo 100.<br>
+%Y - The year as a decimal number, using the Gregorian calendar. Years before the year 1 are numbered 0, -1, and so on.<br>
+%z - RFC 822/ISO 8601:1988 style numeric time zone (e.g., -0600 or +0100), or nothing if no time zone is determinable.A full RFC 822 timestamp is generated by the format "%a, %d %b %Y %H:%M:%S %z" (or the equivalent "%a, %d %b %Y %T %z").<br>
+%Z - The time zone abbreviation (empty if the time zone can't be determined).<br>
+%% - A literal % character.
+</p>
+
+<p>
+Jako výchozí používá TEA formátovací řetězec <i>"%d/%m/%Y %T"</i>, takže<br>
+<i>date_time=%d/%m/%Y %T</i>
+</p>
+
+<p>
+<b class="mi">Velikost &gt; VELKÝMI/malými</b> - provede akci s vybraným textem, nebo slovem pod kurzorem.
+</p>
+
+<p>
+<b class="mi">Čísla &gt; Arabské na římské</b> - například z <i>1977</i> bude <i>MCMLXXVII</i>.
+</p>
+
+<p>
+<b class="mi">Čísla &gt; Počítadlo</b> - generuje seznam čísel. Formát musíte definovat ve FAMOUS textovém vstupním poli. Formát je:<br>
+<i>startovní_hodnota~koncová_hodnota~[krok]</i><br>  
+Například:
+</p>
+<p class="p_ex">
+1~10~5
+</p>
+<p>
+A jako výsledek dostaneme:
+</p>
+ 
+<p class="p_ex">
+5<br>
+10<br>
+15<br>
+20<br>
+25<br>
+30<br>
+35<br>
+40<br>
+45<br>
+50<br>
+</p>
+
+<p>Mimochodem, výchozí hodnota pro "krok" = 1
+</p>
+
+<p>
+<b class="mi">Řetězec &gt; Očíslovat řádky</b>.<br>
+Očísluje vybrané řádky. Formát číslování musíte specifikovat ve FAMOUS poli. Formát je trochu podivný:<br>
+<i>printf-formátovací řetězec~krok počítadla~počáteční hodnota počítadla</i><br>
+Poslední dva parametry jsou nepovinné a jako výchozí jsou nastaveny na 1. Pro příklad si uvedeme seznam názvů kapel:
+</p>
+
+<p class="p_ex">
+Nirvana<br>
+Scorn<br>
+Napalm Death<br>
+Defecation<br>
+Neck<br>
+JR Ewing<br>
+Fall<br>
+Meathook Seed<br>
+The Doors<br>
+Led Zeppelin
+</p>
+
+<p>
+Teď chcete přidat číslování v uživatelském formátu. TEA do provede za vás. Napíšete <i>formátovací řetězec</i> do FAMOUS. Formát řetězce vychází z printf, můžete tedy použít dvě makra - %d pro počítadlo a %s pro řetězec.
+</p>
+
+<p>
+Příklady formátovacího řetězce:
+</p>
+
+<p class="p_ex">
+%d.)%s<br>
+%d.)%s~10<br>
+%d.)%s~10~4<
+</p>
+<p>
+Druhý řádek reprezentuje formátovací řetězec s parametrem krok. 10 je hodnota kroku. Třetí řádek formátovací řetězec s krokem a počáteční hodnotou počítadla. 10 je krok a 4 je počáteční hodnota. 
+</p>
+
+<p>
+%d můžete použít i po %s, takže "%s (%d)" zobrazí výsledek:
+</p>
+
+<p class="p_ex">
+Nirvana (1)<br>
+Scorn (2)<br>
+Napalm Death (3)<br>
+Defecation (4)<br>
+Neck (5)<br>
+JR Ewing (6)<br>
+Fall (7)<br>
+Meathook Seed (8)<br>
+The Doors (9)<br>
+Led Zeppelin (10)
+</p>
+
+<p>
+<b class="mi">Řetězec &gt; Převést tabulátory na mezery</b>.<br>
+Ujistěte se, že jste před použitím funkce napsali šířku tabulátoru do FAMOUS. Hodnota šířky tabulátoru je počet znaků na tabulátor.
+</p>
+
+<p>
+<b class="mi">Řetězec &gt; Převést mezery na tabulátory</b>.<br>
+Obsah FAMOUS se rovná počtu mezer, které se mají najít a nahradit tabulátorem.
+</p>
+
+<p>
+<b class="mi">Řetězec &gt; Obrátit</b> - obrátí text. Například, co bylo <i>roxton</i>, je nyní <i>notxor</i>. 
+</p>
+
+<p>
+<b class="mi">Řetězec &gt; Antispam e-mail</b> - vybraný mailto odkaz se převede do pravděpodobně neviditelného formátu pro spamovací roboty, když zkonvertuje adresu do entit. Když se například podíváte do zdroje dokumentu, uvidíte <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#101;&#97;&#64;&#108;&#105;&#115;&#116;&#46;&#114;&#117;">tento odkaz</a> bude vypadat jako halda odpadu. Jak doufám, tak spamovací roboti tomuto formátu nerozumí. Tento nápad jsem vybral z vydání <a href="http://linuxgazette.net/">LinuxGazette</a>.
+</p>
+
+<p>
+<b class="mi">Řetězec &gt; Odstranit prázdné řádky</b> - odstraní prázdné řádky z vybraného textu. Nemyslím si, že je to podstatná funkce, ale... Možná jí někdo využije.
+</p>
+
+<p>
+<b class="mi">Řetězec &gt; Odstranit duplikáty</b> - odstraní duplikované <b>řádky</b>. 
+</p>
+
+<p>
+<b class="mi">Řetězec &gt; Obrátit pořadí řádků</b> - lepší bude příklad:<br> 
+Máme:
+</p>
+
+<p class="p_ex">Řádek 1<br>
+Řádek 2<br>
+Řádek 3
+</p>
+
+<p>Bude:
+</p>
+
+<p class="p_ex">Řádek 3<br>
+Řádek 2<br>
+Řádek 1
+</p>
+
+<p>
+<b class="mi">Řetězec &gt; Použít šablonu na každý řádek</b> - a znova použijeme FAMOUS. Například, když chci přidat tag BR na konec každého řádku, napíšu do vstupu:
+</p>
+
+<p class="p_ex">%s&lt;br&gt;
+</p>
+
+<p>A potom použiji tuto funkci. Získám tag BR, který je přidán na konec každého řádku. V jiném případě chci uzavřít každý řádek mezi tagy LI. Napíšu: 
+</p>
+
+<p class="p_ex">&lt;li>%s&lt;/li&gt;
+</p>
+
+<p>
+A použiji funkci. Jak jistě chápete, makro <i>%s</i> = text řádku. A další případ: 
+</p>
+
+<p class="p_ex">
+&lt;a href=&quot;%s&quot;&gt;%s&lt;/a&gt;
+</p>
+
+<p>
+<b class="mi">Seřadit &gt; Seřadit řádky</b> - Seřadí řádky v abecedním pořádku.
+</p>
+
+<p>
+<b class="mi">Filtry &gt; Odstranit řádky obsahující frázi</b><br>
+Vyberte text. Napište nějakou frázi do FAMOUS. Použijte tuto funkci. Všechny <i>řádky</i> <b class="b_em">obsahují</b> vaší frázi budou odstraněny.
+</p>
+
+<p>
+<b class="mi">Filtry &gt; Odstranit řádky neobsahující frázi</b><br>
+Vyberte text. Napište nějakou frázi do FAMOUS. Použijte tuto funkci. Všechny <i>řádky</i> <b class="b_em">neobsahující</b> vaši frázi budou odstraněny.
+</p>
+
+<p>
+<b class="mi">Filtry &gt; Odstranit všechny řádky &lt; N znaků</b><br>
+Odstraní ve výběru všechny řádky kratší než N (hodnota ve FAMOUS) znaků.
+</p>
+
+<p>
+<b class="mi">Filtry &gt; Odstranit všechny řádky &gt; N znaků</b><br>
+Odstraní ve výběru všechny řádky delší než N (hodnota ve FAMOUS) znaků.
+</p>
+
+
+<p>
+<b class="mi">Morseovka &gt; Kódovat do morseovky</b><br>
+Nejsem guru morseovky, ale doufám, že moje úsilí v implementaci této funkce bylo správné. Touto funkcí můžete přeložit anglický text do morseovky. Například: 
+</p>
+
+<p class="p_ex">
+Drum and bass
+</p>
+
+<p>Bude:</p>
+
+<p class="p_ex">
+-.. .-. ..- --  .- -. -..  -... .- ... ... 
+</p>
+
+<p>TEA vkládá mezeru mezi jednotlivé znaky morseovky a dvě mezery mezi slova.
+</p>
+
+<p>
+<b class="mi">Morseovka &gt; Dekódovat z morseovky</b><br>
+Inverzní akce k předchozí funkci. Můžete dekódovat jakoukoli anglickou zprávu v morseovce. Musíte ovšem vědět, že TEA předpokládá mezeru mezi znaky a dvě mezery mezi slovy.
+</p>
+
+
+<a name="mni_ide"></a>
+<h2>IDE</h2>
+
+<p>Mimo jiné, TEA podporuje jakési funkce IDE (integrovaného vývojového prostředí), jako například správu projektů. TEA také může volat utilitu <b>make</b> a spouštět projekty.
+</p>
+
+<p>
+Jak to funguje? TEA IDE projekt neobsahuje žádné soubory mimo jediného souboru projektu. Pro jeho vytvoření použijte funkci <b>Nový projekt</b>. Zobrazí se vám dialogové okno s položkami:
+</p>
+
+<p>
+<b>Název projektu</b> - název vašeho projektu.<br>
+<b>Adresář Makefile</b> - adresář, kde má TEA hledat soubor Makefile, který volá utilita <b>make</b>.<br>
+<b>Zdrojový adresář</b> - kde máte svoje zdrojové soubory pařící do projektu?<br>
+<b>Cílová binárka</b> - název (bez cesty) binárního souboru. TEA předpokládá, že se tento soubor nachází ve Zdrojovém adresáři. TEA spustí <i>cílovou binárku</i>, když aktivujete funkci <b>Spustit</b>.
+</p>
+
+<p><b>Vlastnosti projektu</b> - použijte tuto položku menu v případě, že chcete změnit vlastnosti současného projektu (nezapomeňte ovšem uložit změny).<br>
+</p>
+
+<p>
+Když spustíte <b>Make</b> v programu TEA, zobrazí se chyby a varování k log memo. Dvouklikem na chybovou zprávu přejdete na odpovídající řádek ve zdrojovém kódu. Barvy chybových hlášení se nastavují v sekci <b>Nastavení &gt; Barvy &gt; IDE</b>.
+</p>
+
+<p>Jako přídavek IDE funkcí můžete použít položku menu <b>Zobrazit &gt; Přepnout hlavička/zdroj</b>. Toto funguje pouze tehdy, pokud je zdrojový soubor a hlavičkový soubor ve stejném adresáři. Podporovány jsou jenom C/C++ soubory.
+</p>
+
+
+<a name="mni_bro"></a>
+<h2>Pro</h2>
+
+<p>
+Toto menu je nazváno krátce z historických důvodů. TEA pro Windows měl VELIKÉ menu, kde nebylo místo na všechny položky, a proto jsem je zkrátil - z "Prohlížeč" na "Pro". Z tohoto menu můžete prohlížet současný soubor v různých prohlížečích. Pro potlačení výchozích příkazových řádků jednotlivých prohlížečů upravte údaje v <b>Nastavení &gt; Prohlížeče</b>. 
+Příklad za všechny: <i>konqueror=konqueror %s &amp;</i>. %s je makro pro název současného souboru. 
+</p>
+
+<a name="mni_nav"></a>
+<h2>Nav</h2>
+
+<p><b class="mi">Uložit pozici</b> - uloží pozici kurzoru. Na tuto pozici se později dostanete použitím položky menu <b class="mi">Přejít na uloženou pozici</b>. 
+</p>
+
+<p>
+<b class="mi">Náhled s Mplayerem</b>.<br>
+Tak, jak se vlastně překládají, či upravují titulky v TEA? TEA rozpoznává pouze SRT titulky. Pro správné fungování musíte:<br>
+1. Otevřít SRT soubor jako obyčejný text.<br>
+2. "Otevřít" film z položky menu <b class="mi">Soubor &gt; Otevřít jiné &gt; Otevřít film.</b><br>
+3. Upravit váš SRT soubor.<br>
+4. Když aktivujete <b class="mi">Náhled s Mplayerem</b>, TEA najde <i>počáteční čas</i> současné sekce titulků a spustí v Mplayeru film, který jste vybrali dialogem <b class="mi">Otevřít film</b>. TEA také řekne Mplayeru, aby přeskočil na místo, kde se vyskytuje současná sekce titulků (ve skutečnosti, po takovém přesunu zobrazí Mplayer další titulek po právě požadovaném, takže pro správné zobrazení vybírejte v TEA předchozí titulek. Divná věta, že ano? Ale zkuste to a budete tomu rozumět). 
+</p>
+
+<p>
+<b class="mi">Odkazy</b> - zde jsou názvy místních souborů z odkazů v současném dokumentu - získáte je použitím funkce <b class="mi">Hledat &gt; Skenovat místní odkazy</b> (to jsem popsal výše). Navíc, z tohoto menu můžete přepínat mezi otevřenými dokumenty. 
+</p>
+
+<p>
+<b class="mi">Jít na předchozí kartu</b> - přepnout na poslední navštívenou kartu.
+</p>
+
+<p>
+<b class="mi">Přejít do textu/Přejít do FAMOUS</b> - užitečné, pokud těmto funkcím přiřadíte klávesové zkratky. Přepíná mezi textem a FAMOUS textovým vstupním polem. 
+</p>
+
+<p>
+<b class="mi">Jít na začátek/konec bloku</b> - provede právě tohle :) v jazycích C nebo PHP. Přesune kurzor na začátek či konec současného bloku (znaky { a }). Myslím si, že je to užitečné.
+</p>
+
+<p><b class="mi">Otevřít na kurzoru</b> - pokud máte v HTML textu odkaz na místní soubor, můžete ho touto funkcí otevřít. Přejděte na tento odkaz a touto funkcí (má přiřazenou zkratku F2) jej otevřete. Pokud je cílovým souborem obrázek, otevře se buď ve vestavěném, nebo externím prohlížeči podle preferencí v <b>Nastavení &gt; Příkazy</b>. Příkazem může být třeba <i>display %s&amp;</i>. V tomto případě ovšem musíte zapnout možnost <b>Nastavení &gt; Přepínače &gt; Použít externí prohlížeč obrázků</b>.
+</p>
+
+<p> 
+Pokud souborem není obrázek, potom funkce <b class="mi">Otevřít na kurzoru</b> otevře soubor v TEA s tím kódováním, které má současný soubor. Pokud je cílový soubor již otevřen, přepne se TEA do jeho karty.
+</p>
+
+<p>
+<b class="b_em">Pokud máte odkaz na nějaké místní návěstí "a name=" - potom stiskem klávesy F2 přeskočíte na místo definice tohoto návěstí.</b>
+</p>
+
+
+<p><b class="mi">Upravit na kurzoru</b> - provede totéž jako předchozí funkce, s tím rozdílem, že místo prohlížeče zavolá externí editor. Tento editor nastavíte v <b>Nastavení &gt; Příkazy</b>. Příkladem může být řádek: <i>gimp %s&amp;</i>
+</p>
+
+
+<a name="mni_view"></a>
+<h2>Zobrazit</h2>
+
+<p>
+<b class="mi">Mód zvýrazňování</b> - v tomto submenu si můžete vybrat individuální způsob zvýraznění pro současný dokument.
+</p>
+
+<p>
+<b class="mi">Skrýt zvýrazňování</b> - skryje zvýrazňování dokumentu. Odstraní zvýrazňování syntaxe a rovněž značky kontroly chyb.
+</p>
+
+<p>
+<b class="mi">Přepnout zobrazení obrázků</b> - zobrazí obrázky v blízkosti jejich IMG tagů přímo v textu.
+</p>
+
+<p>
+<b class="mi">Obnovit zvýrazňování</b> - schopnosti TEA ve zvýrazňování kódu jsou slabé. S touto funkcí aktualizujete zvýrazňování.
+</p>
+
+<p>
+<b class="mi">Zalamování řádků</b> - potřebuje vysvětlení? A proč píšu tenhle odstavec?
+</p>
+
+<p>
+<b class="mi">Čísla řádků</b> - pořád stejná písnička...
+</p>
+
+
+<a name="preferences"></a>
+<h1>Nastavení</h1>
+
+<p>
+A konečně... V TEA existuje okno <b>Soubor &gt; Nastavení</b>. Už nepotřebujete upravovat textové soubory. Použijte GUI, to není kacířství. Myslím, že nepotřebujete popis všech položek v tomto okně, neboť jejich názvy jsou výmluvné.  
+</p>
+
+<p>
+Jsou zde karty a dvě veliká tlačítka. Tlačítka jsou: <b>Zavřít</b> a <b>Uložit a použít</b>. První z nich pouze zavře dialogové okno. Druhé tlačítko provede dvě podstatné věci. Jednak uloží všechny změny do konfiguračního souboru a potom znovu načte konfiguraci. Pokud nekliknete na <b>Použít</b>, žádná změna se neuloží. TEA si neukládá konfiguraci při ukončení programu, to provede pouze a jenom po stisknutí tohoto tlačítka.
+</p>
+
+<p>Tady je několik informací o kartách.</p>
+
+<h2>Přepínače</h2>
+
+<p>
+Různé přepínače. Jsou zde:
+</p>
+
+<p><b>Určit zvýrazňování podle obsahu</b> - to je pro zvýrazňování syntaxe. Zapněte, pokud chcete automaticky zvýrazňovat Bash skripty, které nemají příponu .sh. 
+</p>
+
+<p>
+<b>XHTML mód pro Značky</b> - velice dobrá možnost pro funkce z menu Značky a pro funkce jako <b>Vložit obrázek</b>. Pokud chcete XHTML syntaxi, zapněte tuto položku.
+</p>
+
+<p>
+<b>Použít ústřižky</b> - ústřižky fungují jenom když zapnete tuto funkci. Proč to tak je? Někdy se stane, že TEA prochází adresář z ústřižky pomalu a proto jde tato funkce dočasně vypnout.
+</p>
+
+<p>
+<b>Zobrazit čísla řádků</b> - jestli se číslování má zobrazovat při spuštění.
+</p>
+
+<p>
+<b>Zalamování řádků</b> - zalomit či nezalomit, to je oč tu běží - ano při spuštění.
+</p>
+
+<p>
+<b>Skenovat odkazy v při otevření souboru</b><br>
+Pokud je zapnuto, TEA bude skenovat místní odkazy automaticky při otevření souboru. Výchozí je vypnuto.
+</p>
+
+<p>
+<b>Zálohovat</b><br>
+Zatrhněte, pokud chcete, aby TEA vytvářel zálohu při uložení souboru.
+</p>
+
+<h2>Kódování</h2>
+
+<p>Zde můžete zapnout autodetekci kódování a vybrat znakové sady, které chcete autodetekovat.
+</p>
+
+<h2>Funkce</h2>
+
+<p>
+<b>Formát funkce Barva</b> - ovlivní výsledek funkce <b class="mi">Značky &gt; Barva</b>. Použijte makro <i>@color</i> pro definování místa, kam se vloží barva a makro <i>@text</i> jako náhradu za vybraný text (tedy, kam se vloží výsledný řetězec).
+</p>
+
+<h2>Rozhraní</h2>
+
+<p>
+Tady můžete nastavit výšku a šířku dialogu Uložit/Otevřít v procentech a také vypnout možnost zobrazení plné cesty v titulku okna. Potom bude zobrazen pouze název souboru.
+</p>
+
+<h2>Limity</h2>
+
+<p>
+Neomezujte sebe. radši omezte TEA. Zde se nastaví třeba počet položek v seznamu nedávno otevřených souborů a mnoho dalších možností.
+</p>
+
+<h2>Editor</h2>
+
+<p>
+Tato karta má mnoho možností - zkuste se tady neztratit. <b>Šířka tabulátoru v mezerách</b> - definuje výchozí šířku tabulátoru počtem mezer, takže hodnota 3 bude zhruba odpovídat 3 mezerám.
+</p>
+
+<h2>Prohlížeče</h2>
+
+<p>Tady můžete změnit výchozí příkazy pro spouštění prohlížečů. Položkou <b>Prohlížeč manuálu</b> definujete, čím se má prohlížet manuál TEA. V součinnosti s touto možností zapněte volbu <b>Použít tento prohlížeč</b>.
+</p>
+
+<p>Mimochodem, pokud není definován prohlížeč dokumentace, TEA se pokusí najít ve vašem systému jeden z těch lepších a použije ho.</p>
+
+
+<h2>Cesty</h2>
+
+<p>
+<b>Výchozí adresář pro ukládání souborů</b> a <b>Použít výchozí adresář pro ukládání souborů</b>. Použijte tyto možnosti pro potlačení výchozích cest v dialog Uložit jako/Otevřít.
+</p>
+
+
+<a name="cmline"></a>
+<h1>Možnosti příkazového řádku</h1>
+
+<p>
+<b>--crapbook</b> - spustí TEA s otevřeným Crapbookem.
+</p>
+
+<p>
+<b>--charset=nazev_znakove_sady</b> - nastaví znakovou sadu pro otevíraný soubor[y]. Například, pokud chceme otevřít soubor1 se znakovou sadou CP1251 a soubor2 se znakovou sadou UTF-8, napíšeme:
+</p>
+
+<p class="p_ex">
+tea --charset=cp1251 soubor1 --charset=utf-8 soubor2
+</p>
+
+
+<a name="charsets"></a>
+<h1>Jak pracuje TEA s různými znakovými sadami</h1>
+
+<p>
+TEA umí zacházet ze všemi znakovými sadami, které jsou v Linuxu dostupné prostřednictvím knihovny iconv. V základu můžete použít dvě znakové sady pro operace se soubory - UTF-8 a systémovou znakovou sadu. Pro otevírání souborů navíc existuje možnost <b>autodetekce</b>.
+</p>
+
+<p>
+Pokud zvolíte autodetekci, TEA se bude snažit určit aktuální kódování dokumentu automaticky a pokud neuspěje, budete muset vybrat správné kódování ručně. Funkce autodetekce má polymorfní povahu a je rozdělena do více než jedné podfunkce. Příklad: TEA má možnosti <b>autodetekce</b> a <b>Japonské autodetekce</b>. Pokud vyberete první možnost, musíte také vybrat znakové sady, ze kterých TEA vybírá. Všechny tyto sady jsou dostupné v sekci <b>Nastavení &gt; Kódování &gt; Autodetekovat</b>.
+</p>
+
+<p>
+Takže, pokud otevíráte soubor, můžete si vybrat <b>autodetekci</b> znakové sady a TEA zkusí detekovat kódování vybraná v sekci "Autodetekovat".
+</p>
+
+<p>
+Jiný případ je <b>Japonská autodetekce</b> - toto je odděleno od obvyklé funkce <b>autodetekce</b> kvůli odlišné implementaci.
+</p>
+
+<p>
+Jak se přidají další znakové sady do seznamu dostupných kódování? Jděte do <b class="mi">Soubor &gt; Nastavení &gt; Kódování</b>, přepněte se do karty <b>Konfigurovat znakové sady</b> a uvidíte dva seznamy. <b>Dostupné</b> a <b>Vybrané</b>. Vyberte si znakovou sadu v seznamu <b>Dostupné</b> a klikněte na tlačítko <b>Přidat</b>. Tím přidáte znakovou sadu do seznamu <b>Vybrané</b>. Znakové sady ze seznamu <b>Vybrané</b> budou dostupné v dialogu Otevřít/Uložit soubor, v Kwas atd.
+</p>
+
+<p>
+Pro odstranění položky ze seznamu <b>Vybrané</b> stiskněte tlačítko <b>Odstranit</b>. Označená položka se smaže.
+</p>
+
+<p>
+TEA má menu<b>Zobrazení &gt; Co</b>. Z tohoto menu můžete přepínat kódování současného dokumentu. Kódování jsou stejná jako v dialogu Otevřít soubor/Uložit jako. Když přepnete kódování, znamená to, že se obsah současného souboru znovu načte s odlišným kódováním. <b class="b_em">Používejte tuto funkci opatrně, pouze v případě, že místo textu vidíte nějaké nesmysly.</b>
+</p>
+
+
+<a name="roxton"></a>
+<h1>O mně</h1> 
+
+<p>
+Peter 'Roxton' Semiletov (1977-20??). Dnes pracuji jako nezávislý novinář na Ukrajině a v Rusku. Vydal jsem asi 300 papírových publikací (od konce roku 2000) a myslím si, že nejsou špatné. Ano, prodávám své články, ale neobchoduji se svými romány a povídkami - všechny jsou dostupné zdarma na Síti (podívejte se na www.roxton.kiev.ua).
+</p>
+
+
+<p>
+Věci, které mám rád: punk, rock, Nirvana, AMD CPU, ruskou klasickou literaturu, psaní, Napalm Death, Scorn, indie-filmy, vegetariánství, KDE, Led Zeppelin, Linux Mandrake, cola, Fallout, RPG, svou vlastní otřesnou hru na kytaru a zpěv, (ó, můj estetický grindcorový zpěv), Mitsumi klávesnice, Sinclairy, NES, Sega MegaDrive/Genesis, Fender mediator .88 mm M/H (takovej zelenej), Monty Python's Flying Circus, H.P. Lovecraftovu prózu, Radiohead, Musorgsky, svobodu volby, GPL, čaj, kwas, černá trika s rockovými tématy, gcc, 3dfx Voodoo 3000 (navždy), mplayer, xmms, Nokia 3100, GIMP, klasické kytary Hohner, laciné EPOX mobos, S3 Virge 4Mb, panamas, chození, staré němé filmy s Busterem Keatonem a Fatty Arbucklem, malby Hieronyma Bosche, moje vlastní realistické sny (ve kterých také vyvíjím TEA).  
+</p>
+
+
+//poslední update roxton 22 leden 2005<br>
+</body>
+</html>

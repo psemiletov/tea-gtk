@@ -1,0 +1,184 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Snippets</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+TITLE="TEA Manual"
+HREF="index.html"><LINK
+REL="UP"
+TITLE="Functions"
+HREF="c387.html"><LINK
+REL="PREVIOUS"
+TITLE="Scripts"
+HREF="x520.html"><LINK
+REL="NEXT"
+TITLE="Tools"
+HREF="x552.html"></HEAD
+><BODY
+CLASS="section"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>TEA Manual</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x520.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Chapter 9. Functions</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x552.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="AEN541"
+>9.10. Snippets</A
+></H1
+><P
+>A snippet is the piece of code, which you can insert into the text. TEA keeps each snippet as a single file in <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>$HOME/.tea/snippets</I
+></SPAN
+> directory. File name of a snippet is a menu item in Snippets-menu, i.e. the content of Snippets menu is the list of files from <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>$HOME/.tea/snippets</I
+></SPAN
+>. To create a new snippet, you should do:
+</P
+><P
+>1. Write some text. 2. <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>File &#62; Save different &#62; Save as snippet</B
+></SPAN
+>. UTF-8 only!
+3. Enjoy :)
+</P
+><P
+>You can create a snippet that use a text selection in a some way. For example, you want to make a snippet which encloses the selected text into some HTML-tags. The <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>%s</I
+></SPAN
+> macro represents a text selection. Here is the example of such snippet:
+</P
+><P
+>&#60;a href="%s"&#62;%s&#60;/a&#62;
+</P
+><P
+>When this snippet will be applied, %s will be replaced with a selected text. If there no text is selected, snippet content will be inserted into the text.
+</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x520.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x552.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Scripts</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="c387.html"
+ACCESSKEY="U"
+>Up</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Tools</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

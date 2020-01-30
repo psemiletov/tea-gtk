@@ -1,0 +1,2531 @@
+# translation of ja.po to Japanese
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# UTUMI Hirosi <utuhiro78@yahoo.co.jp>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ja\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-30 12:48+0200\n"
+"PO-Revision-Date: 2004-12-22 02:50+0900\n"
+"Last-Translator: \n"
+"Language-Team:  <ja@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: interface.c:118
+msgid "Save under a different name"
+msgstr ""
+
+#: interface.c:119
+msgid "Save the current file"
+msgstr ""
+
+#: interface.c:120
+msgid "Open a file"
+msgstr "ファイルを開く"
+
+#: interface.c:121
+msgid "Create a new file"
+msgstr "新規ファイルを作成"
+
+#: interface.c:198
+msgid "Close the current document"
+msgstr ""
+
+#: interface.c:200
+msgid "File"
+msgstr "ファイル"
+
+#: interface.c:204
+msgid "New"
+msgstr "新規"
+
+#: interface.c:205
+msgid "New Kwas (file manager)"
+msgstr "新規Kwas(ファイルマネージャ)"
+
+#: interface.c:214
+msgid "Crapbook"
+msgstr "メモ"
+
+#: interface.c:217 callbacks.c:6231
+msgid "Print"
+msgstr ""
+
+#: interface.c:221
+msgid "Add to..."
+msgstr ""
+
+#: interface.c:224
+msgid "Add to Bookmarks"
+msgstr ""
+
+#: interface.c:225
+msgid "Add to the autosaving list"
+msgstr ""
+
+#: interface.c:229
+msgid "Open"
+msgstr "開く"
+
+#: interface.c:231
+msgid "The last opened file"
+msgstr "最後に開いたファイル"
+
+#: interface.c:233
+msgid "Open different"
+msgstr "別形式のファイルを開く"
+
+#: interface.c:236
+msgid "Open movie"
+msgstr "動画を開く"
+
+#: interface.c:238
+msgid "Open the autosaved session"
+msgstr ""
+
+#: interface.c:239
+msgid "Open from the Famous text entry"
+msgstr ""
+
+#: interface.c:243
+msgid "Recent files"
+msgstr "最近使ったファイル"
+
+#: interface.c:246 tea_kwas.c:974
+msgid "Bookmarks"
+msgstr "ブックマーク"
+
+#: interface.c:249 tea_config.c:77 tea_options.c:985
+msgid "Sessions"
+msgstr "セッション"
+
+#: interface.c:252 tea_config.c:74 tea_options.c:953
+msgid "Templates"
+msgstr "テンプレート"
+
+#: interface.c:257
+msgid "Save"
+msgstr "保存"
+
+#: interface.c:258
+msgid "Save as"
+msgstr "別名で保存"
+
+#: interface.c:260
+msgid "Save different"
+msgstr "別形式で保存"
+
+#: interface.c:264
+msgid "Save a session"
+msgstr ""
+
+#: interface.c:266
+msgid "Save as a template"
+msgstr ""
+
+#: interface.c:267
+msgid "Save as a snippet"
+msgstr ""
+
+#: interface.c:268
+msgid "Save as a replacement table"
+msgstr ""
+
+#: interface.c:270
+msgid "Save version"
+msgstr "バージョン名で保存"
+
+#: interface.c:271
+msgid "Backup"
+msgstr "バックアップを作成"
+
+#: interface.c:273
+msgid "Save packed"
+msgstr ""
+
+#: interface.c:275
+msgid "Save all"
+msgstr ""
+
+#: interface.c:277
+msgid "Revert to saved"
+msgstr "保存時の状態に戻す"
+
+#: interface.c:281
+msgid "Manage utility files"
+msgstr ""
+
+#: interface.c:284
+msgid "Autoreplace words file"
+msgstr "自動置換に使う用語ファイル"
+
+#: interface.c:285
+msgid "Autosaving list"
+msgstr ""
+
+#: interface.c:286
+msgid "Main config"
+msgstr "メイン設定"
+
+#: interface.c:287
+msgid "Hotkeys config"
+msgstr "ホットキー設定"
+
+#: interface.c:288
+msgid "External programs list config"
+msgstr ""
+
+#: interface.c:289
+msgid "Bookmarks file"
+msgstr "ブックマークファイル"
+
+#: interface.c:290
+msgid "Open the crashfile"
+msgstr ""
+
+#: interface.c:292
+msgid "Preferences"
+msgstr "設定"
+
+#: interface.c:296
+msgid "Close current"
+msgstr "現在のファイルを閉じる"
+
+#: interface.c:297
+msgid "Close all"
+msgstr ""
+
+#: interface.c:299
+msgid "Quit"
+msgstr ""
+
+#: interface.c:302
+msgid "Edit"
+msgstr "編集"
+
+#: interface.c:306
+msgid "Indent"
+msgstr "インデントする"
+
+#: interface.c:307
+msgid "Unindent"
+msgstr ""
+
+#: interface.c:311
+msgid "Copy"
+msgstr "コピー"
+
+#: interface.c:312
+msgid "Copy all"
+msgstr "全てコピー"
+
+#: interface.c:313
+msgid "Copy the current filename"
+msgstr ""
+
+#: interface.c:315
+msgid "Cut!"
+msgstr "切り取り"
+
+#: interface.c:316
+msgid "Paste"
+msgstr "貼り付け"
+
+#: interface.c:317
+msgid "Swop"
+msgstr "交換"
+
+#: interface.c:320
+msgid "Move a line up"
+msgstr ""
+
+#: interface.c:322
+msgid "Move a line down"
+msgstr ""
+
+#: interface.c:327
+msgid "Cut to new"
+msgstr "新規ファイルに切り取り"
+
+#: interface.c:328
+msgid "Copy to new"
+msgstr "新規ファイルにコピー"
+
+#: interface.c:329
+msgid "Paste to new"
+msgstr "新規ファイルに貼り付け"
+
+#: interface.c:330
+msgid "Add to Crapbook"
+msgstr ""
+
+#: interface.c:332
+msgid "Select all"
+msgstr "全て選択"
+
+#: interface.c:334
+msgid "Delete current line"
+msgstr "現在の行を削除"
+
+#: interface.c:335
+msgid "Delete"
+msgstr "削除"
+
+#: interface.c:339
+msgid "Undo"
+msgstr "元に戻す"
+
+#: interface.c:340
+msgid "Redo"
+msgstr "やり直す"
+
+#: interface.c:343
+msgid "Search"
+msgstr "検索"
+
+#: interface.c:348
+msgid "Marking"
+msgstr ""
+
+#: interface.c:352
+msgid "Mark"
+msgstr ""
+
+#: interface.c:353
+msgid "Copy marked"
+msgstr ""
+
+#: interface.c:354
+msgid "Unmark all"
+msgstr ""
+
+#: interface.c:355
+msgid "Mark each n-th line"
+msgstr ""
+
+#: interface.c:356
+msgid "Mark lines containing the string"
+msgstr ""
+
+#: interface.c:357
+msgid "Mark by regexp"
+msgstr ""
+
+#: interface.c:358
+msgid "Mark all fuzzy and empty translations"
+msgstr ""
+
+#: interface.c:359
+msgid "Find and mark"
+msgstr ""
+
+#: interface.c:360
+msgid "Mark lines > n characters"
+msgstr ""
+
+#: interface.c:362 tea_findfiles_mult.c:296
+msgid "Find in files"
+msgstr ""
+
+#: interface.c:363
+msgid "Search and Replace (tool)"
+msgstr ""
+
+#: interface.c:364 tea_fr.c:139 tea_findfiles_mult.c:324
+msgid "Find"
+msgstr "検索"
+
+#: interface.c:365
+msgid "Find case insensitive"
+msgstr "検索(大文字小文字の区別なし)"
+
+#: interface.c:366 tea_fr.c:131
+msgid "Find next"
+msgstr "次を検索"
+
+#: interface.c:367
+msgid "Find next case insensitive"
+msgstr "次を検索(大文字小文字の区別なし)"
+
+#: interface.c:368 tea_fr.c:123
+msgid "Replace"
+msgstr "置換"
+
+#: interface.c:369
+msgid "Goto line"
+msgstr "指定行に移動"
+
+#: interface.c:370
+msgid "Replace all"
+msgstr "全て置換"
+
+#: interface.c:372
+msgid "Mark broken local links"
+msgstr ""
+
+#: interface.c:373
+msgid "Scan for local links"
+msgstr "ローカルリンクをスキャン"
+
+#: interface.c:374
+msgid "Scan for SRC"
+msgstr "SRCをスキャン"
+
+#: interface.c:375
+msgid "Run grep"
+msgstr ""
+
+#: interface.c:379
+msgid "Markup"
+msgstr "タグ"
+
+#: interface.c:383
+msgid "Markup mode"
+msgstr ""
+
+#: interface.c:393
+msgid "Wikipedia elements"
+msgstr ""
+
+#: interface.c:397
+msgid "Internal link"
+msgstr ""
+
+#: interface.c:399
+msgid "LaTeX elements"
+msgstr ""
+
+#: interface.c:404
+msgid "Begin/end block"
+msgstr ""
+
+#: interface.c:431
+msgid "Docbook elements"
+msgstr ""
+
+#: interface.c:451
+msgid "HTML tools"
+msgstr "HTMLツール"
+
+#: interface.c:455
+msgid "Built-in template"
+msgstr ""
+
+#: interface.c:457
+msgid "Strip tags"
+msgstr "タグを削除"
+
+#: interface.c:458
+msgid "Enclose selected link into tags"
+msgstr "選んだリンクにタグを付ける"
+
+#: interface.c:459
+msgid "Convert tags to entities"
+msgstr "タグを平文に変換"
+
+#: interface.c:460
+msgid "Document weight"
+msgstr "ドキュメントの容量"
+
+#: interface.c:461
+msgid "Text to HTML"
+msgstr ""
+
+#: interface.c:465
+msgid "Bold"
+msgstr "ボールド"
+
+#: interface.c:466
+msgid "Italic"
+msgstr "イタリック"
+
+#: interface.c:468
+msgid "Emphasis"
+msgstr ""
+
+#: interface.c:469
+msgid "Underline"
+msgstr "下線"
+
+#: interface.c:473
+msgid "Close the current tag"
+msgstr ""
+
+#: interface.c:474
+msgid "Comment"
+msgstr "コメント"
+
+#: interface.c:475
+msgid "Chapter"
+msgstr ""
+
+#: interface.c:476
+msgid "Section"
+msgstr ""
+
+#: interface.c:477
+msgid "Paragraph"
+msgstr "段落"
+
+#: interface.c:478
+msgid "Link"
+msgstr "リンク"
+
+#: interface.c:479
+msgid "Color"
+msgstr "色"
+
+#: interface.c:480
+msgid "Image"
+msgstr "画像"
+
+#: interface.c:481
+msgid "Line break"
+msgstr ""
+
+#: interface.c:484
+msgid "Non-breaking space"
+msgstr ""
+
+#: interface.c:491
+msgid "List stuff"
+msgstr ""
+
+#: interface.c:495
+msgid "Itemized list"
+msgstr ""
+
+#: interface.c:496
+msgid "Enumerated list"
+msgstr ""
+
+#: interface.c:497
+msgid "List item"
+msgstr ""
+
+#: interface.c:499
+msgid "Table stuff"
+msgstr "テーブル関係"
+
+#: interface.c:503
+msgid "Make a table"
+msgstr "テーブルを作成"
+
+#: interface.c:504
+msgid "Table"
+msgstr ""
+
+#: interface.c:505
+msgid "Row"
+msgstr ""
+
+#: interface.c:506
+msgid "Cell"
+msgstr ""
+
+#: interface.c:508
+msgid "H"
+msgstr "見出し"
+
+#: interface.c:522
+msgid "Align"
+msgstr "文字寄せ"
+
+#: interface.c:531 tea_options.c:942 tea_options.c:1360 image_browser.c:806
+msgid "Functions"
+msgstr "ツール"
+
+#: interface.c:535 tea_calendar.c:191
+msgid "Calendar"
+msgstr ""
+
+#: interface.c:537
+msgid "Document stats"
+msgstr "ドキュメントの状態"
+
+#: interface.c:538
+msgid "Document readability"
+msgstr ""
+
+#: interface.c:542
+msgid "Spell-checker languages"
+msgstr ""
+
+#: interface.c:544 interface.c:551
+msgid "Spell check"
+msgstr "スペルチェック"
+
+#: interface.c:545 interface.c:552
+msgid "Suggest a word"
+msgstr ""
+
+#: interface.c:546
+msgid "Add to dictionary"
+msgstr ""
+
+#: interface.c:553
+msgid "Add to dict"
+msgstr ""
+
+#: interface.c:561 tea_options.c:454
+msgid "Process with LaTeX"
+msgstr ""
+
+#: interface.c:562 tea_options.c:455
+msgid "Process with pdflatex"
+msgstr ""
+
+#: interface.c:564 tea_options.c:457
+msgid "dvi to PS"
+msgstr ""
+
+#: interface.c:565 tea_options.c:456
+msgid "dvi to PDF"
+msgstr ""
+
+#: interface.c:566 tea_options.c:459
+msgid "View PDF"
+msgstr ""
+
+#: interface.c:567 tea_options.c:458
+msgid "View dvi"
+msgstr ""
+
+#: interface.c:568 tea_options.c:460
+msgid "View PS"
+msgstr ""
+
+#: interface.c:570 tea_options.c:1078
+msgid "IDE"
+msgstr "IDE"
+
+#: interface.c:574
+msgid "New project"
+msgstr "新規プロジェクト"
+
+#: interface.c:575
+msgid "Open project"
+msgstr "プロジェクトを開く"
+
+#: interface.c:576
+msgid "Save project"
+msgstr "プロジェクトを保存"
+
+#: interface.c:577
+msgid "Save project as"
+msgstr "プロジェクトを別名で保存"
+
+#: interface.c:578 tea_proj.c:184
+msgid "Project properties"
+msgstr "プロジェクトのプロパティ"
+
+#: interface.c:579
+msgid "Make"
+msgstr ""
+
+#: interface.c:580
+msgid "Execute"
+msgstr ""
+
+#: interface.c:581
+msgid "Refresh tags with ctags"
+msgstr ""
+
+#: interface.c:583
+msgid "UNIversal Text AnalyZer"
+msgstr "単語の数"
+
+#: interface.c:586
+msgid "Call UNITAZ with sorting abc"
+msgstr "abc順に並べる"
+
+#: interface.c:587
+msgid "Call UNITAZ with sorting by count"
+msgstr "多い順に並べる"
+
+#: interface.c:588
+msgid "Call UNITAZ with sorting abc case insensitive"
+msgstr "abc順に並べる(大文字小文字の区別なし)"
+
+#: interface.c:589
+msgid "Call UNITAZ with sorting by count case insensitive"
+msgstr "多い順に並べる(大文字小文字の区別なし)"
+
+#: interface.c:590
+msgid "Call UNITAZ plain"
+msgstr "プレーンに並べる"
+
+#: interface.c:591
+msgid "Extract words"
+msgstr "１語ずつ並べる"
+
+#: interface.c:595
+msgid "Replacement tables"
+msgstr ""
+
+#: interface.c:598 tea_config.c:78 tea_options.c:1001
+msgid "Scripts"
+msgstr ""
+
+#: interface.c:601 tea_config.c:76 tea_options.c:969
+msgid "Snippets"
+msgstr "草稿"
+
+#: interface.c:604
+msgid "Tools"
+msgstr ""
+
+#: interface.c:608
+msgid "Mass encode tool"
+msgstr ""
+
+#: interface.c:612
+msgid "Insert"
+msgstr "挿入"
+
+#: interface.c:616
+msgid "Insert entity"
+msgstr "記号を挿入"
+
+#: interface.c:622
+msgid "Insert DOCTYPE"
+msgstr "DOCTYPEを挿入"
+
+#: interface.c:634
+msgid "Lorem ipsum"
+msgstr ""
+
+#: interface.c:635
+msgid "Date/Time"
+msgstr "日付/時間"
+
+#: interface.c:636
+msgid "Dump menu"
+msgstr "メニューを出力"
+
+#: interface.c:639
+msgid "Case"
+msgstr "大文字小文字"
+
+#: interface.c:643
+msgid "UPCASE"
+msgstr "大文字に変換"
+
+#: interface.c:646
+msgid "lowcase"
+msgstr "小文字に変換"
+
+#: interface.c:649
+msgid "Upcase The First Letter Of Each Word"
+msgstr "単語の最初の文字を大文字に変換"
+
+#: interface.c:651
+msgid "cRAcKeriZE"
+msgstr "cRAcKer風ごちゃまぜ"
+
+#: interface.c:653
+msgid "Numbers"
+msgstr "数字"
+
+#: interface.c:657 tea_calendar.c:218
+msgid "Calculate"
+msgstr ""
+
+#: interface.c:658
+msgid "Arabian to Roman"
+msgstr "アラビア数字をローマ数字に"
+
+#: interface.c:659
+msgid "Roman to Arabian"
+msgstr ""
+
+#: interface.c:661
+msgid "HEX to decimal"
+msgstr "16進数を10進数に"
+
+#: interface.c:662
+msgid "Decimal to hex"
+msgstr ""
+
+#: interface.c:663
+msgid "Binary to decimal"
+msgstr ""
+
+#: interface.c:664
+msgid "Counter"
+msgstr "カウンタ"
+
+#: interface.c:666
+msgid "Format"
+msgstr "整形"
+
+#: interface.c:670
+msgid "Browser to text"
+msgstr ""
+
+#: interface.c:672
+msgid "Kill formatting"
+msgstr "整形を取る"
+
+#: interface.c:673
+msgid "Kill formatting on each line"
+msgstr "選択部分の整形を取る"
+
+#: interface.c:675
+msgid "Wrap raw at position"
+msgstr ""
+
+#: interface.c:676
+msgid "Wrap on spaces at position"
+msgstr ""
+
+#: interface.c:678
+msgid "Kill leading whitespace on each line"
+msgstr ""
+
+#: interface.c:679
+msgid "Kill trailing whitespace on each line"
+msgstr ""
+
+#: interface.c:681
+msgid "Sort"
+msgstr "並べ替え"
+
+#: interface.c:685
+msgid "Sort lines"
+msgstr "行を並べ替え"
+
+#: interface.c:686
+msgid "Sort lines by length"
+msgstr "行を並べ替え(長さで)"
+
+#: interface.c:687
+msgid "Sort lines case insensitive"
+msgstr ""
+
+#: interface.c:688
+msgid "Reverse order of lines"
+msgstr "行を逆に並べ替え"
+
+#: interface.c:690
+msgid "String"
+msgstr "文字"
+
+#: interface.c:694
+msgid "Double quotes to facing quotes"
+msgstr ""
+
+#: interface.c:696
+msgid "CSV-like table to LaTeX table"
+msgstr ""
+
+#: interface.c:697
+msgid "Convert usual quotes to TeX quotes"
+msgstr ""
+
+#: interface.c:698
+msgid "Escape and quote"
+msgstr ""
+
+#: interface.c:699
+msgid "Unescape and unquote"
+msgstr ""
+
+#: interface.c:700
+msgid "Reverse"
+msgstr "逆順"
+
+#: interface.c:701
+msgid "Antispam e-mail"
+msgstr "Emailを加工(スパム避け)"
+
+#: interface.c:702
+msgid "Remove blank lines"
+msgstr "空行を削除"
+
+#: interface.c:703
+msgid "Kill duplicates"
+msgstr "重複を削除"
+
+#: interface.c:704
+msgid "Numerate lines"
+msgstr "行に番号を振る"
+
+#: interface.c:706
+msgid "Shuffle lines"
+msgstr "行をシャッフルする"
+
+#: interface.c:707
+msgid "Convert tabs to spaces"
+msgstr "タブをスペースに置換"
+
+#: interface.c:708
+msgid "Convert spaces to tabs"
+msgstr "スペースをタブに置換"
+
+#: interface.c:709
+msgid "Split to TeX paragraphs"
+msgstr ""
+
+#: interface.c:710
+msgid "Split by the delimiter"
+msgstr ""
+
+#: interface.c:711
+msgid "Split after the delimiter"
+msgstr ""
+
+#: interface.c:713
+msgid "Apply a template to each line"
+msgstr "テンプレートを選択部分に適用"
+
+#: interface.c:715
+msgid "Filter"
+msgstr "絞りこみ"
+
+#: interface.c:719
+msgid "Extract at the each line"
+msgstr ""
+
+#: interface.c:720
+msgid "Extract at the each line before a separator"
+msgstr ""
+
+#: interface.c:721
+msgid "Extract at the each line after a separator"
+msgstr ""
+
+#: interface.c:723
+msgid "Kill lines containing the phrase"
+msgstr ""
+
+#: interface.c:724
+msgid "Kill all lines except with the phrase"
+msgstr ""
+
+#: interface.c:726
+msgid "Kill lines containing a regexp"
+msgstr ""
+
+#: interface.c:727
+msgid "Kill all lines without a regexp"
+msgstr ""
+
+#: interface.c:729
+msgid "Kill all lines <= N characters"
+msgstr ""
+
+#: interface.c:730
+msgid "Kill all lines > N characters"
+msgstr "N文字以上の行を削除"
+
+#: interface.c:732
+msgid "End of line"
+msgstr "行末"
+
+#: interface.c:735
+msgid "Convert to LF"
+msgstr "タブをスペースに置換"
+
+#: interface.c:736
+msgid "Convert to CR"
+msgstr ""
+
+#: interface.c:737
+msgid "Convert to CR/LF"
+msgstr ""
+
+#: interface.c:739
+msgid "Morse code"
+msgstr "モールス信号"
+
+#: interface.c:742
+msgid "Encode to Morse code EN"
+msgstr "英語をモールス信号にエンコード"
+
+#: interface.c:743
+msgid "Decode from Morse code EN"
+msgstr "モールス信号を英語にデコード"
+
+#: interface.c:745
+msgid "Last used"
+msgstr ""
+
+#: interface.c:747
+msgid "Tabs"
+msgstr "タブ"
+
+#: interface.c:750
+msgid "Run"
+msgstr "実行"
+
+#: interface.c:753
+msgid "Nav"
+msgstr "移動"
+
+#: interface.c:757
+msgid "Links"
+msgstr "リンク"
+
+#: interface.c:760
+msgid "Save the position"
+msgstr "位置を保存"
+
+#: interface.c:761
+msgid "Jump to the saved position"
+msgstr "保存した位置にジャンプ"
+
+#: interface.c:763
+msgid "Go to the block start {"
+msgstr ""
+
+#: interface.c:768
+msgid "Go to the block end }"
+msgstr ""
+
+#: interface.c:773
+msgid "Go to recent tab"
+msgstr "最近使ったタブに移動"
+
+#: interface.c:774
+msgid "Go to next tab"
+msgstr "次のタブに移動"
+
+#: interface.c:775
+msgid "Go to previous tab"
+msgstr "前のタブに移動"
+
+#: interface.c:776
+msgid "Go to first tab"
+msgstr "最初のタブに移動"
+
+#: interface.c:777
+msgid "Go to last tab"
+msgstr "最後のタブに移動"
+
+#: interface.c:778
+msgid "Go to selection"
+msgstr ""
+
+#: interface.c:780
+msgid "Focus the FAMOUS text entry"
+msgstr ""
+
+#: interface.c:781
+msgid "Focus the text"
+msgstr ""
+
+#: interface.c:783
+msgid "Open at cursor"
+msgstr "カーソル位置で開く"
+
+#: interface.c:785
+msgid "Edit at cursor"
+msgstr "カーソル位置で編集"
+
+#: interface.c:786
+msgid "Browse the symbol's definition"
+msgstr ""
+
+#: interface.c:788
+msgid "View"
+msgstr "表示"
+
+#: interface.c:792 tea_options.c:1356
+msgid "Encoding"
+msgstr "文字コード"
+
+#: interface.c:796
+msgid "Profiles"
+msgstr ""
+
+#: interface.c:798
+msgid "Save profile"
+msgstr ""
+
+#: interface.c:800
+msgid "Hide error marks"
+msgstr ""
+
+#: interface.c:801 tea_options.c:533
+msgid "Word wrap"
+msgstr "ワードラップ"
+
+#: interface.c:802
+msgid "Line numbers"
+msgstr "行番号"
+
+#: interface.c:803
+msgid "Toggle image visibility"
+msgstr ""
+
+#: interface.c:805
+msgid "Switch header/source"
+msgstr "ヘッダ/ソースを切替"
+
+#: interface.c:806
+msgid "Preview with Mplayer"
+msgstr "Mplayerでプレビュー"
+
+#: interface.c:807
+msgid "Fullscreen"
+msgstr ""
+
+#: interface.c:808
+msgid "Un-fullscreen"
+msgstr ""
+
+#: interface.c:809
+msgid "Window on top"
+msgstr ""
+
+#: interface.c:812
+msgid "Help"
+msgstr "ヘルプ"
+
+#: interface.c:816 tea_about.c:84
+msgid "About"
+msgstr "About"
+
+#: interface.c:818
+msgid "Read the fine manual"
+msgstr "マニュアルを読む"
+
+#: interface.c:819
+msgid "Read the fine English manual anyway"
+msgstr ""
+
+#: interface.c:820
+msgid "Self check"
+msgstr ""
+
+#: interface.c:896
+msgid "Click here to search this through the text"
+msgstr ""
+
+#: interface.c:900
+msgid "Click here to open a file"
+msgstr ""
+
+#: interface.c:952
+msgid "PLEASE read the manual :)"
+msgstr "マニュアルを読んでください :)"
+
+#: interface.c:968
+msgid "It is the Famous text entry... Read the Manual for more!"
+msgstr ""
+
+#: callbacks.c:257
+msgid "Read the manual!"
+msgstr "マニュアルを読んでください"
+
+#: callbacks.c:461
+#, c-format
+msgid "%s saved OK"
+msgstr ""
+
+#: callbacks.c:583
+msgid "Save the file first..."
+msgstr "ファイルを先に保存してください"
+
+#: callbacks.c:990
+msgid "Save the session as:"
+msgstr "セッションを次のように保存:"
+
+#: callbacks.c:1135 callbacks.c:4944
+msgid "File open"
+msgstr "ファイルを開く"
+
+#: callbacks.c:1142
+msgid "Image files"
+msgstr ""
+
+#: callbacks.c:1158 callbacks.c:4960
+msgid "All files"
+msgstr ""
+
+#: callbacks.c:1461
+msgid "Now look into the Links menu ;)"
+msgstr ""
+
+#: callbacks.c:1476
+msgid "No, I can't!"
+msgstr ""
+
+#: callbacks.c:1679
+#, c-format
+msgid "I can't reload %s :("
+msgstr ""
+
+#: callbacks.c:1681
+#, c-format
+msgid "%s is reloaded :)"
+msgstr ""
+
+#: callbacks.c:1833 callbacks.c:1841
+#, c-format
+msgid "%s = %d Kb"
+msgstr ""
+
+#: callbacks.c:1847
+#, c-format
+msgid "Total weight for %s is %d Kb"
+msgstr "%s のサイズは %d Kb です"
+
+#: callbacks.c:1897
+msgid "Now look into Links menu ;)"
+msgstr ""
+
+#: callbacks.c:1908
+msgid "Select a color"
+msgstr "色を選択"
+
+#: callbacks.c:2054
+msgid "Please unselect the text, then try again"
+msgstr ""
+
+#: callbacks.c:2986
+msgid "you can put some crap here..."
+msgstr "メモを書くことができます..."
+
+#: callbacks.c:3177 callbacks.c:3200
+msgid "text to find"
+msgstr ""
+
+#: callbacks.c:3368
+msgid "Before using that, go to File > Open different > Open movie."
+msgstr ""
+
+#: callbacks.c:3443
+msgid "Open a movie:"
+msgstr "動画を開く:"
+
+#: callbacks.c:3894
+msgid "Save a project"
+msgstr "プロジェクトを保存"
+
+#: callbacks.c:3937
+msgid "Open a project"
+msgstr "プロジェクトを開く"
+
+#: callbacks.c:4151
+msgid "Open the file first"
+msgstr ""
+
+#: callbacks.c:4920
+#, c-format
+msgid "%s session is saved"
+msgstr ""
+
+#: callbacks.c:4962
+msgid "Plain text files"
+msgstr ""
+
+#: callbacks.c:4965
+msgid "Office text format files"
+msgstr ""
+
+#: callbacks.c:4993
+msgid "TEA special locations:"
+msgstr ""
+
+#: callbacks.c:4994 callbacks.c:5099
+msgid "Encoding: "
+msgstr "文字コード: "
+
+#: callbacks.c:5061
+msgid "Save as..."
+msgstr "別名で保存..."
+
+#: callbacks.c:5152 tea_text_document.c:2312
+msgid "Question"
+msgstr ""
+
+#: callbacks.c:5152
+#, c-format
+msgid "%s is exists. Do you want to overwrite it?"
+msgstr ""
+
+#: callbacks.c:5169
+#, c-format
+msgid "error by saving %s!!!"
+msgstr "%s の保存中にエラー"
+
+#: callbacks.c:5730
+#, c-format
+msgid ""
+"for %s:\n"
+"fuzzy = %d\n"
+"empty = %d\n"
+"fuzzy + empty = %d\n"
+"not translated: %.3f%%"
+msgstr ""
+
+#: callbacks.c:5920
+msgid "antiword - ok //it helps TEA to open MS Word documents"
+msgstr ""
+
+#: callbacks.c:5922
+msgid "antiword - not found //TEA cannot open MS Word documents without it"
+msgstr ""
+
+#: callbacks.c:5928
+msgid "gunzip - ok //it lets TEA to read ZIP and GZ files"
+msgstr ""
+
+#: callbacks.c:5930
+msgid "gunzip - not found //TEA cannot open read ZIP and GZ files without it"
+msgstr ""
+
+#: callbacks.c:6329
+msgid "Save the profile as:"
+msgstr ""
+
+#: callbacks.c:6485
+msgid "Save your document as a normal text file first, then save it packed"
+msgstr ""
+
+#: callbacks.c:6493
+msgid "A file is packed OK"
+msgstr ""
+
+#: tea_funx.c:164
+#, c-format
+msgid "noname_%d"
+msgstr ""
+
+#: tea_funx.c:917
+#, c-format
+msgid "(built on %s with GTK %d.%d.%d and GLib %d.%d.%d)"
+msgstr ""
+
+#: tea_config.c:75 tea_options.c:1018
+msgid "Tables"
+msgstr ""
+
+#: tea_config.c:429
+#, c-format
+msgid "%s is not exists"
+msgstr ""
+
+#: tea_config.c:503
+msgid "Left"
+msgstr ""
+
+#: tea_config.c:504
+msgid "Right"
+msgstr ""
+
+#: tea_config.c:505
+msgid "Top"
+msgstr ""
+
+#: tea_config.c:506
+msgid "Bottom"
+msgstr ""
+
+#: tea_config.c:735
+msgid "non-breaking space"
+msgstr ""
+
+#: tea_config.c:736
+msgid "cent sign"
+msgstr ""
+
+#: tea_config.c:737
+msgid "pound sign"
+msgstr ""
+
+#: tea_config.c:738
+msgid "currency sign"
+msgstr ""
+
+#: tea_config.c:739
+msgid "yen sign"
+msgstr ""
+
+#: tea_config.c:740
+msgid "section sign"
+msgstr ""
+
+#: tea_config.c:741
+msgid "copyright sign"
+msgstr ""
+
+#: tea_config.c:742
+msgid "trade mark sign"
+msgstr ""
+
+#: tea_config.c:743
+msgid "feminine ordinal indicator"
+msgstr ""
+
+#: tea_config.c:744
+msgid "left-pointing double angle quotation mark"
+msgstr ""
+
+#: tea_config.c:745
+msgid "soft hyphen"
+msgstr ""
+
+#: tea_config.c:746
+msgid "registered sign"
+msgstr ""
+
+#: tea_config.c:747
+msgid "degree sign"
+msgstr ""
+
+#: tea_config.c:748
+msgid "plus-minus sign"
+msgstr ""
+
+#: tea_config.c:749
+msgid "right-pointing double angle quotation mark"
+msgstr ""
+
+#: tea_config.c:750
+msgid "left single quotation mark"
+msgstr ""
+
+#: tea_config.c:751
+msgid "right single quotation mark"
+msgstr ""
+
+#: tea_config.c:752
+msgid "euro sign"
+msgstr ""
+
+#: tea_config.c:753
+msgid "greek pi symbol"
+msgstr ""
+
+#: tea_config.c:754
+msgid "leftwards arrow"
+msgstr ""
+
+#: tea_config.c:755
+msgid "upwards arrow"
+msgstr ""
+
+#: tea_config.c:756
+msgid "rightwards arrow"
+msgstr ""
+
+#: tea_config.c:757
+msgid "downwards arrow"
+msgstr ""
+
+#: tea_config.c:758
+msgid "square root"
+msgstr ""
+
+#: tea_config.c:759
+msgid "spade suit"
+msgstr ""
+
+#: tea_config.c:760
+msgid "club suit"
+msgstr ""
+
+#: tea_config.c:761
+msgid "heart suit"
+msgstr ""
+
+#: tea_config.c:762
+msgid "diamond suit"
+msgstr ""
+
+#: tea_config.c:763
+msgid "masculine ordinal indicator"
+msgstr ""
+
+#: tea_config.c:764
+msgid "quotation mark"
+msgstr ""
+
+#: tea_config.c:765
+msgid "ampersand"
+msgstr ""
+
+#: tea_config.c:766
+msgid "less-than sign"
+msgstr ""
+
+#: tea_config.c:767
+msgid "greater-than sign"
+msgstr ""
+
+#: tea_config.c:768
+msgid "apostrophe"
+msgstr ""
+
+#: tea_config.c:944
+msgid "#TEA editor configuration file. Please read the manual"
+msgstr ""
+
+#: tea_text_document.c:1599
+#, c-format
+msgid ""
+"Sorry, but I cannot determine the charset of %s. Please try again and select "
+"it manually."
+msgstr ""
+
+#: tea_text_document.c:1625 tea_text_document.c:4171
+msgid "This file is read-only"
+msgstr ""
+
+#: tea_text_document.c:1634 tea_text_document.c:4180
+msgid "Warning!"
+msgstr ""
+
+#: tea_text_document.c:1634 tea_text_document.c:1635 tea_text_document.c:4180
+#: tea_text_document.c:4181
+#, c-format
+msgid "%s is not writable for you!"
+msgstr ""
+
+#: tea_text_document.c:1641 tea_text_document.c:4187
+msgid "And how I can save this text file as a DIRECTORY?!"
+msgstr ""
+
+#: tea_text_document.c:1660
+msgid "config reloaded"
+msgstr ""
+
+#: tea_text_document.c:1666
+msgid "hotkeys reloaded"
+msgstr ""
+
+#: tea_text_document.c:1672
+msgid "external programs list reloaded"
+msgstr ""
+
+#: tea_text_document.c:1681 tea_text_document.c:1687
+#, c-format
+msgid "%s reloaded"
+msgstr ""
+
+#: tea_text_document.c:2007
+msgid "Cannot convert filename to UTF-8, abort"
+msgstr ""
+
+#: tea_text_document.c:2013 tea_text_document.c:2046
+#, c-format
+msgid "%s is not exists!"
+msgstr ""
+
+#: tea_text_document.c:2020 tea_text_document.c:2038
+#, c-format
+msgid "You have NO access to %s"
+msgstr ""
+
+#: tea_text_document.c:2205
+#, c-format
+msgid "%s is opened"
+msgstr ""
+
+#: tea_text_document.c:2312
+#, c-format
+msgid "%s is modified but not saved. Save it?"
+msgstr "%s は変更されています。保存しますか？"
+
+#: tea_text_document.c:3341
+msgid "Saving all documents... begin"
+msgstr ""
+
+#: tea_text_document.c:3351 tea_text_document.c:4197
+#, c-format
+msgid "%s is saved"
+msgstr ""
+
+#: tea_text_document.c:3357
+msgid "Saving all documents... end"
+msgstr ""
+
+#: tea_text_document.c:3974
+#, c-format
+msgid "%d words were replaced"
+msgstr ""
+
+#: tea_text_document.c:4465
+#, c-format
+msgid "bytes: %d\n"
+msgstr ""
+
+#: tea_text_document.c:4466
+#, c-format
+msgid "lines: %d\n"
+msgstr ""
+
+#: tea_text_document.c:4467 tea_text_document.c:4828
+#, c-format
+msgid "words: %d\n"
+msgstr ""
+
+#: tea_text_document.c:4468 tea_text_document.c:4829
+#, c-format
+msgid "chars: %d\n"
+msgstr ""
+
+#: tea_text_document.c:4469
+#, c-format
+msgid "chars non-space: %d\n"
+msgstr ""
+
+#: tea_text_document.c:4474
+msgid "stats for "
+msgstr ""
+
+#: tea_text_document.c:4484
+msgid "stats for selected:\n"
+msgstr ""
+
+#: tea_text_document.c:4745
+#, c-format
+msgid "Text analysis results for %s:"
+msgstr ""
+
+#: tea_text_document.c:4746
+#, c-format
+msgid "Words total: %d"
+msgstr ""
+
+#: tea_text_document.c:4747
+#, c-format
+msgid "Words unique: %d"
+msgstr ""
+
+#: tea_text_document.c:4748
+#, c-format
+msgid "Words total / Words unique = %.6f"
+msgstr ""
+
+#: tea_text_document.c:4749
+#, c-format
+msgid "Sentences = %d"
+msgstr ""
+
+#: tea_text_document.c:4750
+#, c-format
+msgid "Average sentence length (words) = %.6f"
+msgstr ""
+
+#: tea_text_document.c:4751
+#, c-format
+msgid "Average word length = %.6f"
+msgstr ""
+
+#: tea_text_document.c:4753
+msgid "Number:"
+msgstr ""
+
+#: tea_text_document.c:4753
+msgid "Word:"
+msgstr ""
+
+#: tea_text_document.c:4827
+#, c-format
+msgid "sentences: %d\n"
+msgstr ""
+
+#: tea_text_document.c:4833
+msgid "Readability:\n"
+msgstr ""
+
+#: tea_text_document.c:4834
+msgid "Automated Readability Index (ARI): "
+msgstr ""
+
+#: tea_text_document.c:4835
+msgid "Coleman-Liau Index: "
+msgstr ""
+
+#: tea_text_document.c:4836
+msgid "Stats:\n"
+msgstr ""
+
+#: tea_about.c:70
+#, c-format
+msgid "%s is missing! I cannot show you the About window :("
+msgstr ""
+
+#: tea_about.c:110
+msgid "Code"
+msgstr "コード"
+
+#: tea_about.c:125
+msgid "Acknowledgements"
+msgstr ""
+
+#: tea_about.c:140
+msgid "Translators"
+msgstr "翻訳"
+
+#: tea_about.c:155
+msgid "Packages"
+msgstr "パッケージ"
+
+#: tea_fr.c:88
+msgid "Search and Replace window"
+msgstr "検索/置換ウィンドウ"
+
+#: tea_fr.c:98 tea_findfiles_mult.c:314
+msgid "Text to find"
+msgstr "検索する文字列"
+
+#: tea_fr.c:107
+msgid "Replace with"
+msgstr "置換後の文字列"
+
+#: tea_fr.c:113
+msgid "Case insensitive"
+msgstr "大文字小文字を区別"
+
+#: tea_fr.c:147
+msgid "Jump to top"
+msgstr "最初に移動"
+
+#: tea_kwas.c:462
+#, c-format
+msgid "%-10d Kb"
+msgstr ""
+
+#: tea_kwas.c:826
+msgid "Names: "
+msgstr ""
+
+#: tea_kwas.c:832
+msgid "Access: "
+msgstr ""
+
+#: tea_kwas.c:838
+msgid "Size: "
+msgstr ""
+
+#: tea_kwas.c:844
+msgid "Date and time: "
+msgstr "日付と時間: "
+
+#: tea_kwas.c:936
+msgid "Kwas"
+msgstr ""
+
+#: tea_kwas.c:954
+msgid "Actions"
+msgstr ""
+
+#: tea_kwas.c:958
+msgid "Refresh Kwas"
+msgstr ""
+
+#: tea_kwas.c:963
+msgid "Get file info"
+msgstr ""
+
+#: tea_kwas.c:965
+msgid "Run with..."
+msgstr ""
+
+#: tea_kwas.c:966
+msgid "Copy current file name"
+msgstr "現在のファイル名をコピー"
+
+#: tea_kwas.c:968
+msgid "Navigate"
+msgstr ""
+
+#: tea_kwas.c:972
+msgid "Go to the home directory"
+msgstr ""
+
+#: tea_kwas.c:979
+msgid "Ins to editor"
+msgstr ""
+
+#: tea_kwas.c:982
+msgid "Insert image"
+msgstr ""
+
+#: tea_kwas.c:983
+msgid "Insert link"
+msgstr "リンクを挿入"
+
+#: tea_kwas.c:1047
+msgid "Go to"
+msgstr ""
+
+#: tea_gtk_utils.c:186 tea_findfiles_mult.c:154
+msgid "Select a directory"
+msgstr "ディレクトリを選択"
+
+#: tea_options.c:91
+msgid "Highlighting color scheme"
+msgstr ""
+
+#: tea_options.c:346
+msgid "Defaults"
+msgstr "デフォルト"
+
+#: tea_options.c:354
+msgid "Default charset for File open"
+msgstr "ファイルを開くときの文字コード"
+
+#: tea_options.c:355
+msgid "Default charset for File save as"
+msgstr "ファイル保存するときの文字コード"
+
+#: tea_options.c:356
+msgid "Default charset for RTF"
+msgstr "RTFのデフォルトの文字コード"
+
+#: tea_options.c:358 tea_options.c:430
+msgid "Misc"
+msgstr "その他"
+
+#: tea_options.c:366
+msgid "Detect a charset by the [X]HTML meta header"
+msgstr ""
+
+#: tea_options.c:367
+msgid "On autodetect failed, fallback to this charset:"
+msgstr ""
+
+#: tea_options.c:368
+msgid "Fallback charset"
+msgstr ""
+
+#: tea_options.c:370
+msgid "Autodetect"
+msgstr "自動検出"
+
+#: tea_options.c:379
+msgid "CP 1251"
+msgstr "CP 1251"
+
+#: tea_options.c:380
+msgid "KOI8-R"
+msgstr "KOI8-R"
+
+#: tea_options.c:381
+msgid "KOI8-U"
+msgstr "KOI8-U"
+
+#: tea_options.c:382
+msgid "DOS 866"
+msgstr "DOS 866"
+
+#: tea_options.c:383
+msgid "Czech"
+msgstr ""
+
+#: tea_options.c:384
+msgid "Finnish"
+msgstr ""
+
+#: tea_options.c:385
+msgid "German"
+msgstr ""
+
+#: tea_options.c:386
+msgid "Serbian"
+msgstr ""
+
+#: tea_options.c:387
+msgid "Latvian"
+msgstr ""
+
+#: tea_options.c:388
+msgid "Polish"
+msgstr ""
+
+#: tea_options.c:389
+msgid "Portuguese"
+msgstr ""
+
+#: tea_options.c:390
+msgid "Slovak"
+msgstr ""
+
+#: tea_options.c:391
+msgid "Slovenian"
+msgstr ""
+
+#: tea_options.c:392
+msgid "Spanish"
+msgstr ""
+
+#: tea_options.c:393
+msgid "Turkish"
+msgstr ""
+
+#: tea_options.c:395
+msgid "Management"
+msgstr ""
+
+#: tea_options.c:416
+msgid "Selected"
+msgstr ""
+
+#: tea_options.c:419
+msgid "Configure charsets"
+msgstr ""
+
+#: tea_options.c:438
+msgid "External image editor"
+msgstr "外部画像エディタ"
+
+#: tea_options.c:439
+msgid "External image viewer"
+msgstr "外部画像ビューア"
+
+#: tea_options.c:440
+msgid "Run Mplayer with subtitles"
+msgstr "Mplayerをサブタイトル付きで実行"
+
+#: tea_options.c:441
+msgid "A command for Save packed"
+msgstr ""
+
+#: tea_options.c:443
+msgid "Browser for the manual"
+msgstr "マニュアル用のブラウザ"
+
+#: tea_options.c:444
+msgid "Use this browser"
+msgstr "このブラウザを使う"
+
+#: tea_options.c:446
+msgid "LaTeX"
+msgstr ""
+
+#: tea_options.c:471
+msgid "Now Playing string format"
+msgstr ""
+
+#: tea_options.c:472
+msgid "Date and time format"
+msgstr "日付と時間の形式"
+
+#: tea_options.c:473
+msgid "Date format for Save version"
+msgstr ""
+
+#: tea_options.c:475
+msgid "The format of the Color function"
+msgstr "色指定の形式"
+
+#: tea_options.c:476
+msgid "JPEG compression (1..100)"
+msgstr ""
+
+#: tea_options.c:488
+msgid "Save/Open dialogs width per cents"
+msgstr ""
+
+#: tea_options.c:489
+msgid "Save/Open dialogs height per cents"
+msgstr ""
+
+#: tea_options.c:490
+msgid "Image thumbnail width"
+msgstr ""
+
+#: tea_options.c:491
+msgid "Image thumbnail height"
+msgstr ""
+
+#: tea_options.c:493
+msgid "Exclusive \"Enter\" mode at save/open dialogs"
+msgstr ""
+
+#: tea_options.c:494
+msgid "Show the full path in the window caption"
+msgstr "ウィンドウのキャプションにフルパスを表示"
+
+#: tea_options.c:495
+msgid "Show the main toolbar"
+msgstr "メインツールバーを表示"
+
+#: tea_options.c:496
+msgid "Show the common close button"
+msgstr ""
+
+#: tea_options.c:497
+msgid "Show the cursor position at statusbar"
+msgstr ""
+
+#: tea_options.c:499
+msgid "Start in the full-screen mode"
+msgstr ""
+
+#: tea_options.c:501
+msgid "Tabs position"
+msgstr ""
+
+#: tea_options.c:503
+msgid "Max. recent files"
+msgstr "最近使ったファイル"
+
+#: tea_options.c:504
+msgid "Logmemo lines limit"
+msgstr ""
+
+#: tea_options.c:517
+msgid "Automatic markup mode"
+msgstr ""
+
+#: tea_options.c:519
+msgid "Save the crashfile on terminate"
+msgstr ""
+
+#: tea_options.c:520
+msgid "Save all on the abnormal termination (SIGTERM, etc)"
+msgstr ""
+
+#: tea_options.c:522
+msgid "Restore the last session on start"
+msgstr ""
+
+#: tea_options.c:523
+msgid "Start TEA with a blank file"
+msgstr "空のファイルを起動時に開く"
+
+#: tea_options.c:525
+msgid "Determine a scripts highlighting by the content"
+msgstr "内容からハイライト形式を決定する"
+
+#: tea_options.c:529
+msgid "Show hidden files in Kwas"
+msgstr "隠しファイルをKwasで表示"
+
+#: tea_options.c:530
+msgid "Use external image viewer"
+msgstr "外部の画像ビューアを使う"
+
+#: tea_options.c:531
+msgid "Do backup"
+msgstr "バックアップを作成"
+
+#: tea_options.c:532
+msgid "Show line numbers"
+msgstr "行番号を表示"
+
+#: tea_options.c:534
+msgid "Scan for links on file open"
+msgstr "ファイルオープン時にリンクをスキャン"
+
+#: tea_options.c:535
+msgid "Imageplane insert tags by default"
+msgstr ""
+
+#: tea_options.c:546
+msgid "Warn before closing a modified file"
+msgstr "変更を保存していないときは尋ねる"
+
+#: tea_options.c:547
+msgid "Overwrite the existing file"
+msgstr "既存のファイルを上書き"
+
+#: tea_options.c:565
+msgid "Please select the font"
+msgstr ""
+
+#: tea_options.c:598
+msgid "Configuration restored, please close and reopen the Preferences window."
+msgstr "設定をリストアします。設定ウィンドウを一度閉じて、開き直してください"
+
+#: tea_options.c:610
+msgid ""
+"Configuration is reseted to default, please close and reopen the Preferences "
+"window."
+msgstr ""
+
+#: tea_options.c:623 tea_options.c:678 tea_options.c:733 tea_options.c:788
+#: tea_options.c:878
+msgid "Confirmation!"
+msgstr ""
+
+#: tea_options.c:623 tea_options.c:678 tea_options.c:733 tea_options.c:788
+#: tea_options.c:878
+#, c-format
+msgid "Are you sure to delete %s?"
+msgstr ""
+
+#: tea_options.c:647 tea_options.c:702 tea_options.c:757 tea_options.c:812
+#: tea_options.c:911
+msgid "Rename as:"
+msgstr ""
+
+#: tea_options.c:838
+msgid "Select a file:"
+msgstr ""
+
+#: tea_options.c:944
+msgid "Backup the current config"
+msgstr "現在の設定をバックアップ"
+
+#: tea_options.c:945
+msgid "Config restore"
+msgstr "設定をリストア"
+
+#: tea_options.c:946
+msgid "Reset config to default"
+msgstr "設定をデフォルトに戻す"
+
+#: tea_options.c:947
+msgid "Put the launcher to the desktop"
+msgstr ""
+
+#: tea_options.c:948
+msgid "Remove the launcher from the desktop"
+msgstr ""
+
+#: tea_options.c:959
+msgid "Templates management"
+msgstr ""
+
+#: tea_options.c:964 tea_options.c:980 tea_options.c:996 tea_options.c:1013
+#: tea_options.c:1029 tea_options.c:1327
+msgid "Remove"
+msgstr ""
+
+#: tea_options.c:965 tea_options.c:981 tea_options.c:997 tea_options.c:1014
+#: tea_options.c:1030
+msgid "Rename"
+msgstr ""
+
+#: tea_options.c:975
+msgid "Snippets management"
+msgstr ""
+
+#: tea_options.c:991
+msgid "Sessions management"
+msgstr ""
+
+#: tea_options.c:1007
+msgid "Scripts management"
+msgstr ""
+
+#: tea_options.c:1012
+msgid "Add"
+msgstr ""
+
+#: tea_options.c:1024
+msgid "Replacement tables management"
+msgstr ""
+
+#: tea_options.c:1044 tea_options.c:1362
+msgid "Editor"
+msgstr "エディタ"
+
+#: tea_options.c:1046
+msgid "Text foreground"
+msgstr "文字"
+
+#: tea_options.c:1047
+msgid "Text background"
+msgstr "背景"
+
+#: tea_options.c:1048
+msgid "Selected foreground"
+msgstr "選択部分の文字"
+
+#: tea_options.c:1049
+msgid "Selected background"
+msgstr "選択部分の背景"
+
+#: tea_options.c:1051
+msgid "Marking function foreground"
+msgstr ""
+
+#: tea_options.c:1052
+msgid "Marking function background"
+msgstr ""
+
+#: tea_options.c:1054
+msgid "Current line foreground"
+msgstr ""
+
+#: tea_options.c:1055
+msgid "Current line background"
+msgstr ""
+
+#: tea_options.c:1057
+msgid "Spellchecker marks"
+msgstr "スペルチェッカのマーク"
+
+#: tea_options.c:1080
+msgid "Errors foreground (logmemo)"
+msgstr ""
+
+#: tea_options.c:1081
+msgid "Errors background (logmemo)"
+msgstr ""
+
+#: tea_options.c:1111
+msgid "Font"
+msgstr ""
+
+#: tea_options.c:1114
+msgid "Max undo levels"
+msgstr ""
+
+#: tea_options.c:1116
+msgid "Tab size in spaces"
+msgstr "タブの長さ"
+
+#: tea_options.c:1117
+msgid "Smart Home/End"
+msgstr ""
+
+#: tea_options.c:1119
+msgid "Insert spaces on TAB key"
+msgstr "TABキーでスペースを挿入"
+
+#: tea_options.c:1120
+msgid "Automatic indent"
+msgstr "自動インデント"
+
+#: tea_options.c:1121
+msgid "Autoreplace"
+msgstr "自動置換"
+
+#: tea_options.c:1122
+msgid "Autoclose tags"
+msgstr ""
+
+#: tea_options.c:1123
+msgid "Cursor blink"
+msgstr ""
+
+#: tea_options.c:1124
+msgid "Autosaving interval, minutes"
+msgstr ""
+
+#: tea_options.c:1125
+msgid "Enable the autosaving"
+msgstr ""
+
+#: tea_options.c:1126
+msgid "Autosave a session on each interval"
+msgstr ""
+
+#: tea_options.c:1128
+msgid "Highlight the current line"
+msgstr ""
+
+#: tea_options.c:1130
+msgid "Show the margin"
+msgstr ""
+
+#: tea_options.c:1131
+msgid "Position of the margin (GtkSourceView-only)"
+msgstr ""
+
+#: tea_options.c:1142
+msgid "Default file saving directory"
+msgstr "保存するときのデフォルトDir"
+
+#: tea_options.c:1143
+msgid "Use default saving directory"
+msgstr "このディレクトリを使う"
+
+#: tea_options.c:1144
+msgid "Default file opening directory"
+msgstr "開くときのデフォルトDir"
+
+#: tea_options.c:1145
+msgid "Use default file opening directory"
+msgstr "このディレクトリを使う"
+
+#: tea_options.c:1147
+msgid "Add this extension to the file which is *Saving as*"
+msgstr ""
+
+#: tea_options.c:1148
+msgid "(<i>for example, txt, html, etc</i>)"
+msgstr ""
+
+#: tea_options.c:1302
+msgid "Quick search"
+msgstr ""
+
+#: tea_options.c:1324
+msgid "Shortcut"
+msgstr ""
+
+#: tea_options.c:1326
+msgid "Assign"
+msgstr ""
+
+#: tea_options.c:1339
+msgid "Options, I presume..."
+msgstr "オプション"
+
+#: tea_options.c:1355
+msgid "Switches"
+msgstr "切り替え"
+
+#: tea_options.c:1361
+msgid "Interface"
+msgstr "インタフェース"
+
+#: tea_options.c:1366
+msgid "Highlighting"
+msgstr "ハイライト"
+
+#: tea_options.c:1368
+msgid "Colors"
+msgstr "配色"
+
+#: tea_options.c:1370
+msgid "Commands"
+msgstr "コマンド"
+
+#: tea_options.c:1372
+msgid "Paths"
+msgstr "パス"
+
+#: tea_options.c:1374
+msgid "Confirmations"
+msgstr "確認"
+
+#: tea_options.c:1376
+msgid "Maintenance"
+msgstr "メンテナンス"
+
+#: tea_options.c:1377
+msgid "Keyboard"
+msgstr ""
+
+#: tea_options.c:1405
+msgid "Save and apply"
+msgstr "保存して適用"
+
+#: tea_proj.c:56
+msgid "Project name"
+msgstr "プロジェクト名"
+
+#: tea_proj.c:57
+msgid "Makefile directory"
+msgstr "Makefileのディレクトリ"
+
+#: tea_proj.c:58
+msgid "Source directory"
+msgstr "ソースのディレクトリ"
+
+#: tea_proj.c:59
+msgid "Target executable"
+msgstr ""
+
+#: tea_proj.c:197
+msgid "Main"
+msgstr ""
+
+#: tea_findfiles_mult.c:236
+msgid "File save"
+msgstr ""
+
+#: tea_findfiles_mult.c:321
+msgid "And where to find?"
+msgstr ""
+
+#: tea_findfiles_mult.c:322 tea_encode.c:211
+msgid "File pattern"
+msgstr ""
+
+#: tea_findfiles_mult.c:325
+msgid "Copy to the directory"
+msgstr ""
+
+#: tea_findfiles_mult.c:326
+msgid "Save as a session"
+msgstr ""
+
+#: tea_findfiles_mult.c:327
+msgid "Copy a filename"
+msgstr ""
+
+#: tea_findfiles_mult.c:328
+msgid "Clear a list"
+msgstr ""
+
+#: tea_findfiles_mult.c:330
+msgid "Found files"
+msgstr ""
+
+#: tea_calendar.c:167
+#, c-format
+msgid "Days between %s and %s = %d"
+msgstr ""
+
+#: tea_calendar.c:197
+msgid "Days between"
+msgstr ""
+
+#: tea_calendar.c:208
+msgid "date1"
+msgstr ""
+
+#: tea_calendar.c:213
+msgid "date2"
+msgstr ""
+
+#: tea_calendar.c:225
+msgid "Insert as a date"
+msgstr ""
+
+#: tea_calendar.c:230
+msgid "Insert as a julian day"
+msgstr ""
+
+#: tea_calendar.c:235
+msgid "Insert as a day of year"
+msgstr ""
+
+#: image_browser.c:591
+msgid "Slow zoom in (+)"
+msgstr ""
+
+#: image_browser.c:592
+msgid "Slow zoom out (-)"
+msgstr ""
+
+#: image_browser.c:593
+msgid "Actual size (=)"
+msgstr ""
+
+#: image_browser.c:594
+msgid "Zoom to fit screen (S)"
+msgstr ""
+
+#: image_browser.c:595
+msgid "Fast zoom in (*)"
+msgstr ""
+
+#: image_browser.c:596
+msgid "Fast zoom out (/)"
+msgstr ""
+
+#: image_browser.c:600
+msgid "Set image as wallpaper centered"
+msgstr ""
+
+#: image_browser.c:601
+msgid "Set image as wallpaper scaled"
+msgstr ""
+
+#: image_browser.c:604
+msgid "Toggle fullscreen (F)"
+msgstr ""
+
+#: image_browser.c:605
+msgid "Insert this image into the current document (Ins or I)"
+msgstr ""
+
+#: image_browser.c:606
+msgid "Insert this image into the current document //with the current size (D)"
+msgstr ""
+
+#: image_browser.c:608
+msgid "Copy this image to clipboard"
+msgstr ""
+
+#: image_browser.c:610
+msgid "Load next image (PgDown)"
+msgstr ""
+
+#: image_browser.c:611
+msgid "Load previous image (PgUp)"
+msgstr ""
+
+#: image_browser.c:910
+msgid "Insert tags"
+msgstr ""
+
+#: image_browser.c:919
+msgid "Insert the tag rather than view image"
+msgstr ""
+
+#: latex_support.c:51 latex_support.c:76 latex_support.c:100
+#: latex_support.c:126
+msgid "Done"
+msgstr ""
+
+#: latex_support.c:55
+#, c-format
+msgid "dvi to PS results for %s:"
+msgstr ""
+
+#: latex_support.c:80
+#, c-format
+msgid "LaTeX processing results for %s:"
+msgstr ""
+
+#: latex_support.c:104
+#, c-format
+msgid "pdflatex processing results for %s:"
+msgstr ""
+
+#: latex_support.c:130
+#, c-format
+msgid "dvi to PDF results for %s:"
+msgstr ""
+
+#: tea_encode.c:196
+msgid "Encode files"
+msgstr ""
+
+#: tea_encode.c:210
+msgid "Directory"
+msgstr ""
+
+#: tea_encode.c:213
+msgid "Convert ends of lines"
+msgstr ""
+
+#: tea_encode.c:228
+msgid "Find and convert"
+msgstr ""
+
+#: tea_encode.c:240
+msgid "From: "
+msgstr ""
+
+#: tea_encode.c:243
+msgid "To: "
+msgstr ""
+
+#~ msgid "Highlighting mode"
+#~ msgstr "ハイライトモード"
+
+#~ msgid "Refresh highlighting"
+#~ msgstr "ハイライトを更新"
+
+#~ msgid "Hide highlighting"
+#~ msgstr "ハイライトを隠す"
+
+#~ msgid "Comments"
+#~ msgstr "コメント"
+
+#~ msgid "HTML tags"
+#~ msgstr "HTMLタグ"
+
+#~ msgid "Editor font"
+#~ msgstr "エディタ"
+
+#~ msgid "Comments font"
+#~ msgstr "コメント"
+
+#~ msgid "HTML tags font"
+#~ msgstr "HTMLタグ"
+
+#~ msgid "Fonts"
+#~ msgstr "フォント"

@@ -1,0 +1,56 @@
+a:link 
+{
+color: #3535c9;
+}
+
+a:visited 
+{
+color: #3535c9;
+}
+
+a:active 
+{
+color: #e71c1c;
+}
+
+a:hover 
+{
+text-decoration: none; 
+color: black;
+outline: thin dashed black; 
+}
+
+.b_em
+{
+color: red;
+}
+
+.mi
+{
+/*background: #2482fd;*/
+background: #e3e3e3;
+/*color: white;*/
+/*outline: thin solid;*/
+/*text-decoration: underline;*/
+}
+
+
+.p_ex
+{
+background: #e5e5e5;
+color: black;
+border-width: 1px;
+border-style: dashed;
+font-family: monospace;
+}
+
+.p_music
+{
+color: #c52929;
+}
+
+
+body
+{
+font-family: serif;
+}
